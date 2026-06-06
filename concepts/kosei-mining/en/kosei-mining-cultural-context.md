@@ -313,6 +313,10 @@ Throughout that time, I carried an inner pressure (内圧) that I could not full
 
 KOSEI Mining is the protocol that emerged from following that signal.
 
+The immediate catalyst was AI — not because AI taught me something, but because AI provided a low-cost, high-frequency friction surface that was unavailable before. Human dialogue carries social cost: the risk of being judged, misunderstood, or dismissed. AI carries none of these costs. It is inexhaustible, non-judgmental, and available at any hour. This made it possible to generate pure cognitive friction at a volume and frequency that accelerated what had been a slow, largely unconscious process of delayed-evaluation thinking into something that could be observed, structured, and eventually protocolized.
+
+The inner pressure had been accumulating for decades. The friction surface — AI — provided the ignition. What emerged was not a new idea. It was the excavation of something that had been forming underground for half a century.
+
 It is not a self-help method. It is not a productivity tool. It is a response to a specific structural condition: the condition of being a human being whose authentic self has been buried under layers of rational adaptive conformity — and who is trying to excavate what remains.
 
 The history described in this document is not abstract context. It is the cost structure that produced the inner pressure that produced the protocol. Not a history of suppression, but a history of adaptation — and the long work of finding what was underneath.
