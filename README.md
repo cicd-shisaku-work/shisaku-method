@@ -51,6 +51,16 @@ AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、
 
 詳細 → `concepts/shisaku-persona-architecture/`
 
+### 前提優位理論（Premise Primacy）
+本リポジトリの諸概念が立つ、最上流の基盤理論。強制力が働かない場面では、介入は「対象」として処理される層よりも、「前提」として作動する層に効率よく作用する——という介入の抽象原理（Theory of Intervention）。
+
+詳細 → `concepts/premise-primacy/`
+
+### シサク認知フレーム理論（Shisaku Cognitive Frame Theory）
+KOSEI Mining（採掘）と対をなす概念。掘り出した認知フレーム（思考に先立つ着眼の構造）を、AIや他者に装着し継承するための理論。原典（着眼の原理）・AI用ランタイムモジュール（生成の機構）・運用ガイド（人間の運用）からなり、前提優位理論を基盤に持つ。
+
+詳細 → `concepts/shisaku-cognitive-frame/`
+
 ---
 
 ## リポジトリ構造
@@ -71,11 +81,21 @@ shisaku-method/
 │   ├── personal-llmo/
 │   │   ├── ja/
 │   │   └── en/
-│   └── shisaku-persona-architecture/
+│   ├── shisaku-persona-architecture/
+│   │   ├── ja/
+│   │   │   ├── shisaku-persona-architecture-design-memo-v0.1.md
+│   │   │   ├── honest-domain-strict-v1.0.md
+│   │   │   └── lens-conductor-honest-v6.0.md
+│   │   └── en/
+│   ├── premise-primacy/
+│   │   ├── ja/
+│   │   │   └── premise-primacy.md
+│   │   └── en/
+│   └── shisaku-cognitive-frame/
 │       ├── ja/
-│       │   ├── shisaku-persona-architecture-design-memo-v0.1.md
-│       │   ├── honest-domain-strict-v1.0.md
-│       │   └── lens-conductor-honest-v6.0.md
+│       │   ├── shisaku-cognitive-frame-canon.md
+│       │   ├── shisaku-cognitive-frame-runtime.md
+│       │   └── shisaku-cognitive-frame-operation-guide-vcurrent.md
 │       └── en/
 │
 └── logs/                              # AI対話ログ（証跡）
@@ -146,6 +166,16 @@ An attempt to optimize one's web-published data so that a person's multi-faceted
 An ongoing attempt to design AI personas modeled on human cognitive structure. Starting from an object-oriented class model of human cognition (Human Class Model) — covering the flow from perception through judgment to execution — the architecture maps that structure onto prompt design. Evolved through the Logos-go persona series (Kai, Jemi, Roji, Kurogane, Shirogane, et al.) from 2025, and concretized as Lens-Conductor-Honest (Ver 6.0). Prompt implementations live in a separate repository.
 
 → `concepts/shisaku-persona-architecture/`
+
+### Premise Primacy
+The most upstream foundational theory on which the concepts in this repository stand. A theory of intervention: where no coercive force applies, intervention acts more efficiently on the layer that operates as *premise* than on the layer processed as *object*.
+
+→ `concepts/premise-primacy/`
+
+### Shisaku Cognitive Frame Theory
+The counterpart to KOSEI Mining (excavation): a theory for casting and inheriting the cognitive frames one has excavated — the attentional structures that precede thought — onto AI and other people. It comprises a Canon (principles of attention), a Runtime Module for AI (the mechanism of generation), and an Operation Guide (human operation), and stands on Premise Primacy.
+
+→ `concepts/shisaku-cognitive-frame/`
 
 ---
 
