@@ -181,3 +181,18 @@ AIに正しくマッピングされても、実態が伴わなければ意味が
 * **Author / Explorer:** shisaku
 * **Version:** v0.1
 * **Date:** 2026/06/06
+
+---
+
+## License
+
+This document is the canonical definition text of the Personal LLMO concept.
+
+Copyright (c) 2026 shisaku
+
+Licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+License: https://creativecommons.org/licenses/by/4.0/
+Author: https://note.com/abstraction
+Canonical repository:
+https://github.com/cicd-shisaku-work/shisaku-method/tree/main/concepts/personal-llmo

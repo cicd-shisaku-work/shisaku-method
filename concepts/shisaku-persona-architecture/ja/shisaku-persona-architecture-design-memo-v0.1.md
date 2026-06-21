@@ -482,3 +482,18 @@ AIとの対話によって概念に輪郭が与えられた
 * **Status:** 草稿・ひらめき段階
 * **Version:** v0.1
 * **Date:** 2026/06/05
+
+---
+
+## License
+
+This document is a design memo for the Shisaku Persona Architecture concept.
+
+Copyright (c) 2026 shisaku
+
+Licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+License: https://creativecommons.org/licenses/by/4.0/
+Author: https://note.com/abstraction
+Canonical repository:
+https://github.com/cicd-shisaku-work/shisaku-method/tree/main/concepts/shisaku-persona-architecture

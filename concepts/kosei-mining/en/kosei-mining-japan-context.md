@@ -239,3 +239,18 @@ This document therefore should not be read as an argument about Japan alone. It 
 * **Status:** Supplementary explanatory document
 * **Version:** v0.1
 * **Date:** 2026/06/06
+
+---
+
+## License
+
+This document is a supplementary cultural-context text (Japan) for the KOSEI Mining concept.
+
+Copyright (c) 2026 shisaku
+
+Licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+License: https://creativecommons.org/licenses/by/4.0/
+Author: https://note.com/abstraction
+Canonical repository:
+https://github.com/cicd-shisaku-work/shisaku-method/tree/main/concepts/kosei-mining

@@ -367,3 +367,18 @@ That is where KOSEI Mining comes from.
 * **Status:** Working hypothesis — one person's observation
 * **Version:** v0.1
 * **Date:** 2026/06/06
+
+---
+
+## License
+
+This document is a cultural-context supplement to the KOSEI Mining concept.
+
+Copyright (c) 2026 shisaku
+
+Licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+License: https://creativecommons.org/licenses/by/4.0/
+Author: https://note.com/abstraction
+Canonical repository:
+https://github.com/cicd-shisaku-work/shisaku-method/tree/main/concepts/kosei-mining

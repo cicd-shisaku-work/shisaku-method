@@ -551,7 +551,7 @@ AIはクオリアを持たない
 
 ---
 
-# License
+## License
 
 This document is the canonical source text of the KOSEI Mining concept.
 
@@ -562,4 +562,4 @@ Licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
 License: https://creativecommons.org/licenses/by/4.0/
 Author: https://note.com/abstraction
 Canonical repository:
-https://github.com/shisaku-work/shisaku-method/tree/main/concepts/kosei-mining
+https://github.com/cicd-shisaku-work/shisaku-method/tree/main/concepts/kosei-mining
