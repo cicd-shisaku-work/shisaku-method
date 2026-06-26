@@ -112,7 +112,9 @@ shisaku-method/
 │   ├── published/                     # 公開記事から参照される安定成果物
 │   │   ├── note/
 │   │   │   ├── ja/
-│   │   │   │   └── pees-prelim-business.md
+│   │   │   │   └── pees/
+│   │   │   │       ├── pees-prelim-business.md
+│   │   │   │       └── pees-prelim-business-output-format.md
 │   │   │   └── en/
 │   │   ├── medium/
 │   │   │   ├── ja/
