@@ -113,11 +113,16 @@ shisaku-method/
 │   ├── published/                     # 公開記事から参照される安定成果物
 │   │   ├── note/
 │   │   │   ├── ja/
-│   │   │   │   └── pees/
-│   │   │   │       ├── pees-prelim-business.md
-│   │   │   │       ├── pees-prelim-business-output-format.md
-│   │   │   │       ├── shisaku-evaluator-axioms.md   # SEFA（PEES同時読み用の上位公理）
-│   │   │   │       └── verification-results/
+│   │   │   │   ├── pees/
+│   │   │   │   │   ├── pees-prelim-business.md
+│   │   │   │   │   ├── pees-prelim-business-output-format.md
+│   │   │   │   │   ├── shisaku-evaluator-axioms.md   # SEFA（PEES同時読み用の上位公理）
+│   │   │   │   │   └── verification-results/
+│   │   │   │   └── swp/                              # シサク書き手原則フレーム（SWP）
+│   │   │   │       ├── README.md
+│   │   │   │       ├── swp-writer-principles.md
+│   │   │   │       ├── swp-claude-generation-guideline.md
+│   │   │   │       └── swp-voice-extraction-prompts.md
 │   │   │   └── en/
 │   │   ├── medium/
 │   │   │   ├── ja/
