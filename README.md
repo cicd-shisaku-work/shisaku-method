@@ -35,6 +35,20 @@ logs/          — 概念構築の過程としてのAI対話ログ
 
 ---
 
+## これらをどう読むか（仮説としての性格）
+
+本リポジトリの諸概念は、いずれも**仮説であり、設計のための公理系**である。読むときの前提を七点：
+
+1. **仮説である**——検証された科学的命題ではなく、まだ工学化されていない対象（人間の認知・表現）をシステム思考で設計図に起こす試みである。
+2. **実証は下流にしかない**——有効性は、これに基づく表現が受け手にどう残るかによって弱く判定される。理論そのものの中に実証はない。
+3. **接地は傍証であって証明ではない**——進化・認知科学などへの接続は論理密度を上げる足場であって、証明ではない。クオリアの発生は哲学的な原始項として残す。
+4. **命令でなく機構で書く**——「こうせよ」ではなく「なぜそうすると効くのか」を記述する。
+5. **設計・監査のための文書であり、生成の現場へ添付しない**——機構の記述は作り手の設計・監査を助けるもので、生成器へ注入する自己正当化ではない。
+6. **新規性は要素でなく圧縮**——構成要素はいずれも既知である。新しいのは関係構造への圧縮であり、置換検査（外部の既存概念に置き換えて主張が成立するなら新規でない）に耐える核を持つ。
+7. **原典／補足／プロファイルの三層**——原典（一般理論）は不変の骨組み、補足は応用層の地図（候補＋独立性検査であって固定分類でない）、具体は各実装が埋める。倫理条項は理論の不可分の一部として扱う。
+
+---
+
 ## 含まれる概念
 
 ### KOSEI Mining（エゴ・マイニング）
@@ -68,7 +82,7 @@ KOSEI Mining（採掘）と対をなす概念。掘り出した認知フレー�
 詳細 → `concepts/trust-signal-frame/`
 
 ### シサク・ヒト変容理論（SHTT）と四成分
-前提優位理論をヒト種の「表現による変容」へ展開した系。変容（表現との接触で残る不可逆な差分＝残存＋累積）を通し軸に、四つの構造理論——**軌跡（SHTST：何を体験させ何を変容させるか）／表現（SHEST：どう実装するか）／距離（SHDST：何が届き何が届かないか）／共鳴（SHKST：実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・距離軸の全域スキャン・共鳴の入口・クオリア欲求の類型・媒体の四層マップ）を持つ。前提優位理論を上流に持つ。
+前提優位理論をヒト種の「表現による変容」へ展開した系。変容（表現との接触で残る不可逆な差分＝残存＋累積）を通し軸に、四つの構造理論——**軌跡（SHTST：何を体験させ何を変容させるか）／表現（SHEST：どう実装するか）／距離（SHDST：何が届き何が届かないか）／共鳴（SHKST：実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・距離軸の全域スキャン・共鳴の入口・クオリア欲求の類型・媒体の四層マップ）を持つ。上流は二軸——**前提優位理論（力学の最上流）とシサク哲学（目的の最上流＝なぜ表現するか・人間はシステムという世界解釈）**。
 
 詳細 → `concepts/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
 
@@ -219,6 +233,20 @@ The concepts here were born through ego-mining (KOSEI Mining). The records of th
 
 ---
 
+## How to read these (their hypothetical character)
+
+Every concept here is a **hypothesis and an axiomatic system for design**, not a verified scientific claim. Seven premises for reading:
+
+1. **Hypothesis** — an attempt to render not-yet-engineered objects (human cognition, expression) as design blueprints via systems thinking.
+2. **Validation lies only downstream** — effectiveness is weakly judged by how expressions built on it remain with receivers; there is no validation inside the theory itself.
+3. **Grounding is corroboration, not proof** — links to evolutionary/cognitive science raise logical density but do not prove; the arising of qualia remains a philosophical primitive.
+4. **Written as mechanism, not command** — "why it works," not "do this."
+5. **For design and audit, not for injection into generation** — mechanism descriptions aid the maker's design/audit; they are not self-justification injected into a generator.
+6. **Novelty is compression, not elements** — the components are all known; what is new is the compression into a relational structure, holding a core that survives the substitution test.
+7. **Three layers (origin / supplement / profile)** — origin (general theory) is the invariant skeleton; supplements are application-layer maps (candidates with independence tests, not fixed taxonomies); specifics are filled by each implementation. The ethics clause is inseparable from each theory.
+
+---
+
 ## Concepts
 
 ### KOSEI Mining (Ego-Mining / エゴ・マイニング)
@@ -254,7 +282,7 @@ A cognitive frame for the *entrance* of a piece of writing — its title, openin
 → `concepts/trust-signal-frame/`
 
 ### Shisaku Human Transformation Theory (SHTT) and its four components
-An extension of Premise Primacy to human transformation through expression. With *transformation* (the irreversible residue left after contact — residue + accumulation) as the through-axis, it binds four structure-theories: **Trajectory (SHTST — what experience to induce and what to transform) / Expression (SHEST — how to implement it) / Distance (SHDST — what does and does not reach) / Kyōmei·Resonance (SHKST — what actually resonated and remained)**. Each component carries application-layer supplements (transformation object-layers, a distance-axis survey, resonance entry-points, qualia-desire types, and a media four-layer map). Stands on Premise Primacy.
+An extension of Premise Primacy to human transformation through expression. With *transformation* (the irreversible residue left after contact — residue + accumulation) as the through-axis, it binds four structure-theories: **Trajectory (SHTST — what experience to induce and what to transform) / Expression (SHEST — how to implement it) / Distance (SHDST — what does and does not reach) / Kyōmei·Resonance (SHKST — what actually resonated and remained)**. Each component carries application-layer supplements (transformation object-layers, a distance-axis survey, resonance entry-points, qualia-desire types, and a media four-layer map). Two upstreams: **Premise Primacy (the upstream of mechanism) and Shisaku philosophy (the upstream of purpose — why we express; humans as systems).**
 
 → `concepts/shisaku-human-transformation/` (transformation, umbrella) / `-trajectory-structure/` / `-expression-structure/` / `-distance-structure/` / `-kyomei-structure/`
 
