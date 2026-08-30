@@ -94,7 +94,7 @@
   <text class="ann" x="560" y="472" font-weight="700" fill="#256a6a">同調の条件／深さ ≠ 広さ</text>
   <text class="ann" x="560" y="491" font-size="11.5">一次体験（＋その合成＝シミュレーション）に接続した記述ほど防衛を貫きやすい。</text>
   <text class="ann" x="560" y="507" font-size="11.5">接地なき借り物・捏造された情感は検知に弾かれやすい。</text>
-  <text class="ann" x="560" y="525" font-size="11.5">深さ（鳴りの深さ）と広さ（届く母数）は別軸——混同しない。</text>
+  <text class="ann" x="560" y="525" font-size="11.5">深さ（鳴りの深さ）と広さ（届いた受け手の数）は別軸——混同しない。</text>
 
   <!-- Ethics band -->
   <rect class="c-eth" x="44" y="556" width="992" height="46" rx="8"/>
