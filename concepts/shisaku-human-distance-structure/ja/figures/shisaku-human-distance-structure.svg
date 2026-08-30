@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  シサク・ヒト距離構造理論 (Shisaku Human Distance-Structure Theory — SHDST)
+  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
+  統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝距離（紫）。
+  Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+  Author: https://note.com/abstraction
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 660" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic',sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#444"/></marker>
+    <style>
+      .bg{fill:#ffffff}
+      .title{fill:#111;font-weight:700}
+      .sub{fill:#555}
+      .foot{fill:#777;font-size:11px}
+      .footR{fill:#777;font-size:11px;text-anchor:end}
+      .c-dist{stroke:#6a5a8a;fill:#efe9f4;stroke-width:1.5}
+      .c-distD{stroke:#6a5a8a;fill:#e4dcf0;stroke-width:1.6}
+      .c-prem{stroke:#7a8a99;fill:#f4f6f8;stroke-width:1.4}
+      .c-eth{stroke:#9a7a5a;fill:#f7f2ec;stroke-width:1.4}
+      .nlbl{fill:#1a2530;font-size:15px;text-anchor:middle;font-weight:700}
+      .ann{fill:#33414d;font-size:12px}
+      .annC{fill:#33414d;font-size:11.5px;text-anchor:middle}
+      .purple{fill:#5a4a7a}
+      .axname{fill:#3a2f52;font-size:12px}
+      .track{stroke:#cfc6e2;stroke-width:2.4;fill:none}
+      .distseg{stroke:#6a5a8a;stroke-width:2.4;fill:none;stroke-dasharray:3 4}
+      .dend{fill:#6a5a8a}
+      .dlbl{fill:#6a5a8a;font-size:10px;text-anchor:middle}
+      .cross{stroke:#6a5a8a;stroke-width:1.4;fill:none}
+      .panelH{fill:#3a2f52;font-size:12.5px;font-weight:700}
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1080" height="660"/>
+
+  <!-- Title -->
+  <text class="title" x="540" y="40" font-size="25" text-anchor="middle">シサク・ヒト距離構造理論</text>
+  <text class="sub" x="540" y="63" font-size="14" text-anchor="middle">Shisaku Human Distance-Structure Theory — SHDST</text>
+  <text class="sub" x="540" y="84" font-size="12.5" text-anchor="middle">何が届き何が届かないか　／　表現者↔受け手の多次元の距離（関係差分）　／　点でなく場（SHTT の距離成分）</text>
+  <text class="footR" x="1040" y="112">略号：上位＝SHTT／成分＝SH＋頭字＋ST</text>
+  <text class="footR" x="1040" y="127">軌跡 SHTST・表現 SHEST・距離 SHDST・共鳴 SHKST</text>
+
+  <!-- Endpoints -->
+  <rect class="c-distD" x="44" y="176" width="60" height="204" rx="8"/>
+  <text class="nlbl" x="74" y="278" font-size="13" transform="rotate(-90 74,278)">表現者（主体）</text>
+  <rect class="c-distD" x="600" y="176" width="60" height="204" rx="8"/>
+  <text class="nlbl" x="630" y="278" font-size="13" transform="rotate(-90 630,278)">受け手（客体）</text>
+  <text class="annC" x="352" y="168" fill="#5a4a7a">多次元の距離＝各軸で独立に遠近（＝関係差分。距離が両端点を定義する）</text>
+
+  <!-- 7 axes: 表現者(178) .. 受け手(590), gap in middle = distance -->
+  <!-- 身体 遠 -->
+  <text class="axname" x="112" y="204">身体</text>
+  <path class="track" d="M178,200 L590,200"/><path class="distseg" d="M300,200 L470,200"/><text class="dlbl" x="385" y="192">遠</text>
+  <!-- 感情 中 -->
+  <text class="axname" x="112" y="232">感情</text>
+  <path class="track" d="M178,228 L590,228"/><path class="distseg" d="M340,228 L430,228"/><text class="dlbl" x="385" y="220">中</text>
+  <!-- 認知 近 -->
+  <text class="axname" x="112" y="260">認知</text>
+  <path class="track" d="M178,256 L590,256"/><path class="distseg" d="M360,256 L400,256"/><text class="dlbl" x="380" y="248">近</text>
+  <!-- 経験 遠 -->
+  <text class="axname" x="112" y="288">経験</text>
+  <path class="track" d="M178,284 L590,284"/><path class="distseg" d="M295,284 L475,284"/><text class="dlbl" x="385" y="276">遠</text>
+  <!-- 記号 中 -->
+  <text class="axname" x="112" y="316">記号</text>
+  <path class="track" d="M178,312 L590,312"/><path class="distseg" d="M335,312 L435,312"/><text class="dlbl" x="385" y="304">中</text>
+  <!-- 価値 遠 -->
+  <text class="axname" x="112" y="344">価値</text>
+  <path class="track" d="M178,340 L590,340"/><path class="distseg" d="M300,340 L470,340"/><text class="dlbl" x="385" y="332">遠</text>
+  <!-- 時間 中 -->
+  <text class="axname" x="112" y="372">時間</text>
+  <path class="track" d="M178,368 L590,368"/><path class="distseg" d="M345,368 L420,368"/><text class="dlbl" x="382" y="360">中</text>
+  <!-- endpoints dots -->
+  <circle class="dend" cx="178" cy="200" r="3"/><circle class="dend" cx="590" cy="200" r="3"/>
+
+  <!-- 横断: one core crossing multiple axes -->
+  <path class="cross" d="M520,196 L520,372"/>
+  <circle class="dend" cx="520" cy="200" r="3.5"/><circle class="dend" cx="520" cy="284" r="3.5"/><circle class="dend" cx="520" cy="340" r="3.5"/>
+  <text class="dlbl" x="520" y="388" fill="#5a4a7a">横断＝複数軸を同時に越える → 深い</text>
+
+  <!-- Right panels -->
+  <!-- 場の3態 -->
+  <rect class="c-prem" x="684" y="150" width="352" height="112" rx="8"/>
+  <text class="panelH" x="700" y="170">距離は点でなく場（多主体・カーディナリティ）</text>
+  <text class="ann" x="700" y="196" font-size="11.5">1×1 ＝ 距離ベクトル（多軸の隔たり）</text>
+  <text class="ann" x="700" y="216" font-size="11.5">1×n ＝ 距離分布（母集団への散らばり）</text>
+  <text class="ann" x="700" y="236" font-size="11.5">n×n ＝ 距離行列・場（主体間・客体間も）</text>
+  <text class="ann" x="700" y="254" font-size="11" fill="#5a4a7a">時間発展 → 流行・集団学習・文化形成</text>
+
+  <!-- 文化 -->
+  <rect class="c-dist" x="684" y="272" width="352" height="58" rx="8"/>
+  <text class="panelH" x="700" y="292">文化 ＝ 距離軸間の相関を生む上位構造</text>
+  <text class="ann" x="700" y="312" font-size="11.5">共有された経験・記号・価値・規範＋共通基盤。</text>
+  <text class="ann" x="700" y="326" font-size="11" fill="#5a4a7a">軸をまとめて縮め、横断を効きやすくする。</text>
+
+  <!-- 横断と深さ -->
+  <rect class="c-prem" x="684" y="340" width="352" height="48" rx="8"/>
+  <text class="panelH" x="700" y="360">横断と深さ／広さ ≠ 深さ</text>
+  <text class="ann" x="700" y="378" font-size="11">複数軸を同時に越えるほど深い。届く母数（広さ）とは別軸。</text>
+
+  <!-- notes row -->
+  <rect class="c-prem" x="44" y="480" width="616" height="60" rx="8"/>
+  <text class="ann" x="58" y="500" font-weight="700" fill="#5a4a7a">距離＝予測誤差の静的な役（接合の候補・要検証）</text>
+  <text class="ann" x="58" y="517" font-size="11.5">距離は多次元の関係差分（前提差が中心軸）。前提のずれ＝静的な役は接触時点の意味で、</text>
+  <text class="ann" x="58" y="533" font-size="11.5">系全体では距離も時間で変化。軌跡・表現の動的な役とは別の顔（同一量の保証なし）。</text>
+
+  <rect class="c-prem" x="676" y="480" width="360" height="60" rx="8"/>
+  <text class="ann" x="690" y="500" font-weight="700" fill="#5a4a7a">両端点の同定</text>
+  <text class="ann" x="690" y="517" font-size="11.5">主体は両端点（距離）と元手で、客体は受容で</text>
+  <text class="ann" x="690" y="533" font-size="11.5">特徴づく。自己一致では両端点＝ともに自己。</text>
+
+  <!-- Ethics band -->
+  <rect class="c-eth" x="44" y="556" width="992" height="46" rx="8"/>
+  <text class="ann" x="60" y="577" font-size="12.5" font-weight="700" fill="#7a5a3a">倫理＝操作構造の境界（四成分に共通・不可分）</text>
+  <text class="ann" x="60" y="594" font-size="11.5">近さを装い共有を偽装する誘導＝操作／開示された誘導＝招待。　透明性・自己選択・賞味期限・自己更新の不可侵（境界は動機でなく「開かれているか」）。</text>
+
+  <!-- Audit note + credit -->
+  <text class="foot" x="44" y="624">接地：共通基盤（common ground）・説得知識・文化進化・記号論・社会ネットワークの伝播・予測符号化＝傍証であって証明でない。クオリア発生は哲学的原始項。設計・監査用（生成非注入）。</text>
+  <text class="footR" x="1036" y="644">© 2026 shisaku ／ CC BY 4.0</text>
+</svg>
