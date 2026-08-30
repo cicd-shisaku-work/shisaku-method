@@ -67,6 +67,11 @@ KOSEI Mining（採掘）と対をなす概念。掘り出した認知フレー�
 
 詳細 → `concepts/trust-signal-frame/`
 
+### シサク・ヒト変容理論（SHTT）と四成分
+前提優位理論をヒト種の「表現による変容」へ展開した系。変容（表現との接触で残る不可逆な差分＝残存＋累積）を通し軸に、四つの構造理論——**軌跡（SHTST：何を体験させ何を変容させるか）／表現（SHEST：どう実装するか）／距離（SHDST：何が届き何が届かないか）／共鳴（SHKST：実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・距離軸の全域スキャン・共鳴の入口・クオリア欲求の類型・媒体の四層マップ）を持つ。前提優位理論を上流に持つ。
+
+詳細 → `concepts/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
+
 ---
 
 ## リポジトリ構造
@@ -104,9 +109,40 @@ shisaku-method/
 │   │   │   ├── shisaku-cognitive-frame-runtime.md
 │   │   │   └── shisaku-cognitive-frame-operation-guide-vcurrent.md
 │   │   └── en/
-│   └── trust-signal-frame/            # 信頼signalフレーム（モードI適用例）
+│   ├── trust-signal-frame/            # 信頼signalフレーム（モードI適用例）
+│   │   ├── ja/
+│   │   │   └── trust-signal-frame.md
+│   │   └── en/
+│   ├── shisaku-human-transformation/         # 変容理論（SHTT・上位／四成分を統べる）
+│   │   ├── ja/
+│   │   │   ├── shisaku-human-transformation.md
+│   │   │   ├── shtt-object-layers.md          # 補足：変容の対象層（種類の軸）
+│   │   │   ├── shtt-authoring-policy.md       # 資料作成オペレーションルール（原典/補足の境界）
+│   │   │   └── figures/shisaku-human-transformation.svg
+│   │   └── en/
+│   ├── shisaku-human-trajectory-structure/   # 軌跡（SHTST）
+│   │   ├── ja/
+│   │   │   ├── shisaku-human-trajectory-structure.md
+│   │   │   └── figures/shisaku-human-trajectory-structure.svg
+│   │   └── en/
+│   ├── shisaku-human-expression-structure/   # 表現（SHEST）
+│   │   ├── ja/
+│   │   │   ├── shisaku-human-expression-structure.md
+│   │   │   ├── shest-media-map.md             # 補足：媒体の四層マップと受容系全表
+│   │   │   ├── shest-qualia-desire-types.md   # 補足：クオリア欲求の類型・再構成タイプ
+│   │   │   └── figures/shisaku-human-expression-structure.svg
+│   │   └── en/
+│   ├── shisaku-human-distance-structure/     # 距離（SHDST）
+│   │   ├── ja/
+│   │   │   ├── shisaku-human-distance-structure.md
+│   │   │   ├── shdst-distance-axes.md         # 補足：距離軸の全域スキャン
+│   │   │   └── figures/shisaku-human-distance-structure.svg
+│   │   └── en/
+│   └── shisaku-human-kyomei-structure/       # 共鳴（SHKST）
 │       ├── ja/
-│       │   └── trust-signal-frame.md
+│       │   ├── shisaku-human-kyomei-structure.md
+│       │   ├── shkst-entry-points.md          # 補足：入口（同調の起動点）のカタログ
+│       │   └── figures/shisaku-human-kyomei-structure.svg
 │       └── en/
 │
 ├── publications/                      # メディアから参照されるサンプル・成果物
@@ -216,6 +252,11 @@ The counterpart to KOSEI Mining (excavation): a theory for casting and inheritin
 A cognitive frame for the *entrance* of a piece of writing — its title, opening lines, and the sentence shared on social media. It asks whether the entrance withholds assumptions about the reader's inner pressure (room to decide), keeps the writer's position visible (authentic orientation), avoids intimidating the reader (threshold), points to what the reader takes home (takeaway), and promises only what the body of the text can pay (promissory integrity). A Mode (I) application generated under the Shisaku Cognitive Frame Theory, standing on Premise Primacy and the Canon.
 
 → `concepts/trust-signal-frame/`
+
+### Shisaku Human Transformation Theory (SHTT) and its four components
+An extension of Premise Primacy to human transformation through expression. With *transformation* (the irreversible residue left after contact — residue + accumulation) as the through-axis, it binds four structure-theories: **Trajectory (SHTST — what experience to induce and what to transform) / Expression (SHEST — how to implement it) / Distance (SHDST — what does and does not reach) / Kyōmei·Resonance (SHKST — what actually resonated and remained)**. Each component carries application-layer supplements (transformation object-layers, a distance-axis survey, resonance entry-points, qualia-desire types, and a media four-layer map). Stands on Premise Primacy.
+
+→ `concepts/shisaku-human-transformation/` (transformation, umbrella) / `-trajectory-structure/` / `-expression-structure/` / `-distance-structure/` / `-kyomei-structure/`
 
 ---
 

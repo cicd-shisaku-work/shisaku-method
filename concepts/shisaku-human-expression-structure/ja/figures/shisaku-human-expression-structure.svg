@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  シサク・ヒト表現構造理論 (Shisaku Human Expression-Structure Theory — SHEST)
+  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
+  統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝表現（緑）。
+  Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+  Author: https://note.com/abstraction
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 660" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic',sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#444"/></marker>
+    <marker id="arrowExpr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#4a7a4a"/></marker>
+    <marker id="arrowAmber" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#c98a2a"/></marker>
+    <style>
+      .bg{fill:#ffffff}
+      .title{fill:#111;font-weight:700}
+      .sub{fill:#555}
+      .foot{fill:#777;font-size:11px}
+      .footR{fill:#777;font-size:11px;text-anchor:end}
+      .c-expr{stroke:#4a7a4a;fill:#eef5ee;stroke-width:1.5}
+      .c-exprDn{stroke:#6b8a6b;fill:#f1f5f1;stroke-width:1.4}
+      .c-kyo{stroke:#2f7d7d;fill:#e3f1f1;stroke-width:1.5}
+      .c-trans{stroke:#b07a3a;fill:#fbf3e8;stroke-width:1.6}
+      .c-prem{stroke:#7a8a99;fill:#f4f6f8;stroke-width:1.4}
+      .c-eth{stroke:#9a7a5a;fill:#f7f2ec;stroke-width:1.4}
+      .nlbl{fill:#1a2530;font-size:15px;text-anchor:middle;font-weight:700}
+      .nsub{fill:#4a5a4a;font-size:10.5px;text-anchor:middle}
+      .ann{fill:#33414d;font-size:12px}
+      .annR{fill:#33414d;font-size:11.5px;text-anchor:end}
+      .transh{fill:#8a5a1a;font-size:14px;font-weight:700}
+      .transb{fill:#4a3a24;font-size:12px}
+      .green{fill:#3a6a3a}
+      .flow{stroke:#444;stroke-width:1.7;fill:none}
+      .fb{stroke:#4a7a4a;stroke-width:1.5;fill:none;stroke-dasharray:6 4}
+      .dash{stroke:#b0954a;stroke-width:1.3;fill:none;stroke-dasharray:5 4}
+      .brace{stroke:#7a8a99;stroke-width:1.3;fill:none}
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1080" height="660"/>
+
+  <!-- Title -->
+  <text class="title" x="540" y="40" font-size="25" text-anchor="middle">シサク・ヒト表現構造理論</text>
+  <text class="sub" x="540" y="63" font-size="14" text-anchor="middle">Shisaku Human Expression-Structure Theory — SHEST</text>
+  <text class="sub" x="540" y="84" font-size="12.5" text-anchor="middle">それをどう実装するか　／　上流から逆算され下流から折り返すカスケード　／　変容という目的関数（SHTT の表現成分）</text>
+  <text class="footR" x="1040" y="112">略号：上位＝SHTT／成分＝SH＋頭字＋ST</text>
+  <text class="footR" x="1040" y="127">軌跡 SHTST・表現 SHEST・距離 SHDST・共鳴 SHKST</text>
+
+  <!-- Cascade (center-left) -->
+  <rect class="c-expr" x="300" y="150" width="250" height="38" rx="7"/><text class="nlbl" x="425" y="174">クオリア発生</text>
+  <path class="flow" d="M425,188 L425,200" marker-end="url(#arrow)"/>
+  <rect class="c-expr" x="300" y="200" width="250" height="40" rx="7"/><text class="nlbl" x="425" y="219">クオリア欲求</text><text class="nsub" x="425" y="233">類型（何を起こすか）＋自己一致（内向き）</text>
+  <path class="flow" d="M425,240 L425,252" marker-end="url(#arrow)"/>
+  <rect class="c-expr" x="300" y="252" width="250" height="40" rx="7"/><text class="nlbl" x="425" y="271">対象・関係差分</text><text class="nsub" x="425" y="285">＝言葉の起源（源とのずれ）</text>
+  <path class="flow" d="M425,292 L425,304" marker-end="url(#arrow)"/>
+  <rect class="c-exprDn" x="300" y="304" width="250" height="40" rx="7"/><text class="nlbl" x="425" y="323">媒体選択</text><text class="nsub" x="425" y="337">媒体＝内部状態を状態変化へ変換する経路</text>
+  <path class="flow" d="M425,344 L425,356" marker-end="url(#arrow)"/>
+  <rect class="c-exprDn" x="300" y="356" width="250" height="34" rx="7"/><text class="nlbl" x="425" y="378">構成</text>
+  <path class="flow" d="M425,390 L425,400" marker-end="url(#arrow)"/>
+  <rect class="c-exprDn" x="300" y="400" width="250" height="34" rx="7"/><text class="nlbl" x="425" y="422">表層</text>
+  <path class="flow" d="M425,434 L425,444" marker-end="url(#arrow)"/>
+  <rect class="c-exprDn" x="300" y="444" width="250" height="34" rx="7"/><text class="nlbl" x="425" y="466">実装</text>
+
+  <!-- Left brackets: 元手依存の非対称 -->
+  <path class="brace" d="M292,152 L285,152 L285,290 L292,290"/>
+  <text class="annR" x="278" y="196">上流＝元手依存</text>
+  <text class="annR" x="278" y="212" font-size="11">身銭を切った一次体験</text>
+  <text class="annR" x="278" y="228" font-size="11">＝AI 代替不可（深さに比例）</text>
+  <path class="brace" d="M292,306 L285,306 L285,478 L292,478"/>
+  <text class="annR" x="278" y="388">下流＝構成・表層・実装</text>
+  <text class="annR" x="278" y="404" font-size="11">技術として記述・支援可＝AI 代替可</text>
+  <text class="annR" x="278" y="270" font-size="11">目的が変われば技法は反転</text>
+  <text class="annR" x="278" y="285" font-size="11">（逆算従属）</text>
+
+  <!-- feedback arc (down-stream re-perception rewrites upstream) -->
+  <path class="fb" d="M550,461 C588,461 588,214 550,214" marker-end="url(#arrowExpr)"/>
+  <text class="green" font-size="11" transform="translate(602,340) rotate(90)" text-anchor="middle">フィードバック：再知覚が上流を書き換える</text>
+
+  <!-- 変容 panel (objective) -->
+  <rect class="c-trans" x="628" y="150" width="408" height="196" rx="10"/>
+  <text class="transh" x="646" y="176">変容 ＝ 表現の定義的機能（残存差分）</text>
+  <text class="transb" x="646" y="198" font-size="11" fill="#7a5a2a">設計目的はクオリア欲求（自己一致／他者／双方）。変容は必ず掲げる目的でない。</text>
+  <text class="transb" x="646" y="222">・接触後に残る差分＝残存（共鳴＝時間内／変容＝時間後）。内容を忘れても残る。</text>
+  <text class="transb" x="646" y="250">・深さ＝差分がどの層まで及ぶか。前提の更新は「深い変容」の一形態。</text>
+  <text class="transb" x="646" y="278">・累積：点→線→面。加算でなく別構造 C へ＝未来の変容の材料。</text>
+  <text class="transb" x="646" y="312" font-size="11.5" fill="#7a5a2a">狙う深さは設計選択（浅い一過も正当／不全＝目的と設計の乖離）</text>
+
+  <!-- 実装 → 受け手 (擬似共有) -->
+  <path class="flow" d="M550,461 C600,472 610,508 628,516" marker-end="url(#arrow)"/>
+  <text class="ann" x="560" y="498" font-size="11">擬似共有</text>
+  <text class="ann" x="560" y="513" font-size="11">＝構造的再構成</text>
+  <!-- 受け手 -->
+  <rect class="c-kyo" x="628" y="500" width="190" height="42" rx="7"/><text class="nlbl" x="723" y="526">受け手</text>
+  <!-- 受け手 → 変容 (残存) -->
+  <path class="dash" d="M723,500 L723,346" marker-end="url(#arrowAmber)"/>
+  <text class="ann" x="730" y="430" font-size="11" fill="#9a7a3a">接触後に残る＝変容</text>
+  <!-- SHKST link -->
+  <rect class="c-kyo" x="836" y="500" width="200" height="42" rx="7"/><text class="nlbl" x="936" y="520" font-size="13">共鳴構造（SHKST）</text><text class="nsub" x="936" y="535" fill="#2f6a6a">受容の機構＝なぜ・どこまで残るか</text>
+  <path class="flow" d="M818,521 L836,521" marker-end="url(#arrow)"/>
+
+  <!-- notes row -->
+  <rect class="c-prem" x="628" y="360" width="408" height="52" rx="8"/>
+  <text class="ann" x="642" y="380" font-weight="700" fill="#3a6a3a">元手依存の非対称</text>
+  <text class="ann" x="642" y="397" font-size="11.5">上流（元手＝体験・観測・個性／論旨＋その合成）は AI 代替不可、下流（技術）は代替可。</text>
+  <text class="ann" x="642" y="412" font-size="11.5" fill="#3a6a3a">依存は変容の深さに比例。元手なき生成は平均へ漂流。</text>
+
+  <!-- Ethics band -->
+  <rect class="c-eth" x="44" y="556" width="992" height="46" rx="8"/>
+  <text class="ann" x="60" y="577" font-size="12.5" font-weight="700" fill="#7a5a3a">倫理＝操作構造の境界（四成分に共通・不可分）</text>
+  <text class="ann" x="60" y="594" font-size="11.5">開示された誘導＝招待／隠して自己選択を奪う誘導＝操作。　透明性・自己選択・賞味期限・自己更新の不可侵（境界は動機でなく「開かれているか」で引く）。</text>
+
+  <!-- Audit note + credit -->
+  <text class="foot" x="44" y="624">接地：言語行為論・身体化認知・予測符号化・志向性・コストリー・シグナリング・暗黙知・シミュレーション（心の理論）・概念ブレンディング・拡張された表現型・進化心理学・動物行動学＝傍証であって証明でない。クオリア発生は哲学的原始項。設計・監査用（生成非注入）。</text>
+  <text class="footR" x="1036" y="644">© 2026 shisaku ／ CC BY 4.0</text>
+</svg>

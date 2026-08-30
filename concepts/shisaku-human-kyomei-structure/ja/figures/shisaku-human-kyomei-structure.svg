@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  シサク・ヒト共鳴構造理論 (Shisaku Human Kyōmei-Structure Theory — SHKST)
+  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
+  統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝共鳴（teal）。
+  Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+  Author: https://note.com/abstraction
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 660" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic',sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#444"/></marker>
+    <marker id="arrowKyo" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 Z" fill="#2f7d7d"/></marker>
+    <style>
+      .bg{fill:#ffffff}
+      .title{fill:#111;font-weight:700}
+      .sub{fill:#555}
+      .foot{fill:#777;font-size:11px}
+      .footR{fill:#777;font-size:11px;text-anchor:end}
+      .c-kyo{stroke:#2f7d7d;fill:#e3f1f1;stroke-width:1.5}
+      .c-kyoD{stroke:#2f7d7d;fill:#d3e9e9;stroke-width:1.6}
+      .c-prem{stroke:#7a8a99;fill:#f4f6f8;stroke-width:1.4}
+      .c-eth{stroke:#9a7a5a;fill:#f7f2ec;stroke-width:1.4}
+      .nlbl{fill:#123030;font-size:14px;text-anchor:middle;font-weight:700}
+      .nsub{fill:#2f5a5a;font-size:10.5px;text-anchor:middle}
+      .ann{fill:#33414d;font-size:12px}
+      .teal{fill:#256a6a}
+      .panelH{fill:#1f5555;font-size:12.5px;font-weight:700}
+      .flow{stroke:#444;stroke-width:1.6;fill:none}
+      .step{stroke:#2f7d7d;stroke-width:1.8;fill:none}
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1080" height="660"/>
+
+  <!-- Title -->
+  <text class="title" x="540" y="40" font-size="25" text-anchor="middle">シサク・ヒト共鳴構造理論</text>
+  <text class="sub" x="540" y="63" font-size="14" text-anchor="middle">Shisaku Human Kyōmei-Structure Theory — SHKST</text>
+  <text class="sub" x="540" y="84" font-size="12.5" text-anchor="middle">実際に受け手側で何が起きたか　／　再演による同調と、残存としての変容　／　（SHTT の共鳴成分）</text>
+  <text class="footR" x="1040" y="112">略号：上位＝SHTT／成分＝SH＋頭字＋ST</text>
+  <text class="footR" x="1040" y="127">軌跡 SHTST・表現 SHEST・距離 SHDST・共鳴 SHKST</text>
+
+  <!-- 再演による同調 (top flow) -->
+  <rect class="c-kyo" x="44" y="148" width="180" height="40" rx="7"/><text class="nlbl" x="134" y="166">送り手の内的運動</text><text class="nsub" x="134" y="180">元手＝コストリー・シグナル</text>
+  <path class="flow" d="M224,168 L256,168" marker-end="url(#arrow)"/>
+  <rect class="c-kyoD" x="256" y="148" width="180" height="40" rx="7"/><text class="nlbl" x="346" y="166">受け手が内で再演</text><text class="nsub" x="346" y="180">＝防衛を貫いて同調（点火）</text>
+  <path class="flow" d="M436,168 L468,168" marker-end="url(#arrow)"/>
+  <rect class="c-kyo" x="468" y="148" width="192" height="40" rx="7"/><text class="nlbl" x="564" y="166">構造的に類似した状態</text><text class="nsub" x="564" y="180">＝擬似共有の受容側（同一でない）</text>
+
+  <!-- 深さの階梯 stairs -->
+  <text class="panelH" x="44" y="216">深さの階梯（共鳴の深度・神経可塑性に接地）</text>
+  <path class="step" d="M64,392 L64,232 L660,232" opacity="0"/>
+  <!-- step1 -->
+  <rect class="c-kyo" x="64" y="352" width="140" height="40" rx="7"/><text class="nlbl" x="134" y="370">① 一時的な快</text><text class="nsub" x="134" y="385">化学的な活性化</text>
+  <path class="step" d="M204,360 L214,332" marker-end="url(#arrowKyo)"/>
+  <!-- step2 -->
+  <rect class="c-kyo" x="214" y="312" width="140" height="40" rx="7"/><text class="nlbl" x="284" y="330">② 身体的定着</text><text class="nsub" x="284" y="345">安定化（反芻・口ずさむ）</text>
+  <path class="step" d="M354,320 L364,292" marker-end="url(#arrowKyo)"/>
+  <!-- step3 -->
+  <rect class="c-kyoD" x="364" y="272" width="150" height="40" rx="7"/><text class="nlbl" x="439" y="290">③ 枠組みの変容</text><text class="nsub" x="439" y="305">構造的な再編（リフレーム）</text>
+  <path class="step" d="M514,280 L524,252" marker-end="url(#arrowKyo)"/>
+  <!-- step4 -->
+  <rect class="c-kyoD" x="524" y="232" width="150" height="40" rx="7"/><text class="nlbl" x="599" y="250">④ 日常の統合</text><text class="nsub" x="599" y="265">統合と再固定</text>
+
+  <!-- 天井 marker -->
+  <path class="step" d="M64,406 L354,406" stroke-dasharray="5 4"/>
+  <text class="teal" x="64" y="424" font-size="11">一回の接触は主に ①〜②（天井）</text>
+  <path class="step" d="M364,406 L674,406" stroke-dasharray="5 4"/>
+  <text class="teal" x="674" y="424" font-size="11" text-anchor="end">③〜④は反復・再活性化を時間をかけて要す</text>
+
+  <!-- Right: 三軸 -->
+  <rect class="c-prem" x="700" y="148" width="336" height="120" rx="8"/>
+  <text class="panelH" x="716" y="168">三つの軸（潰さず独立に）</text>
+  <text class="ann" x="716" y="190" font-size="11.5">・入口（同調の起動点）＝どの扉から鳴るか</text>
+  <text class="ann" x="716" y="210" font-size="11.5">・深さ＝どこまで深く鳴ったか（階梯）</text>
+  <text class="ann" x="716" y="230" font-size="11.5">・広さ＝どれだけ多くに届いたか</text>
+  <text class="ann" x="716" y="252" font-size="11" fill="#256a6a">入口⊥深さ／広さは別軸（鼻歌＝深いが広さ0）</text>
+
+  <!-- Right: 信念の再固定 -->
+  <rect class="c-kyo" x="700" y="280" width="336" height="118" rx="8"/>
+  <text class="panelH" x="716" y="300">信念の再固定（深さの時間機構）</text>
+  <text class="ann" x="716" y="322" font-size="11.5">同調（なぞって警戒を解く）→ 引っかかり</text>
+  <text class="ann" x="716" y="340" font-size="11.5">（小さな不整合）→ 転換（予測誤差）→ 着地</text>
+  <text class="ann" x="716" y="358" font-size="11.5">（自分の一次体験へ）。想起→不安定化→再固定。</text>
+  <text class="ann" x="716" y="380" font-size="11" fill="#256a6a">sweet spot＝分かりそうで分からない。作為の認知は受容経路を変える（不可視≠深さ）。</text>
+
+  <!-- notes row -->
+  <rect class="c-prem" x="44" y="452" width="490" height="88" rx="8"/>
+  <text class="ann" x="58" y="472" font-weight="700" fill="#256a6a">反復と累積</text>
+  <text class="ann" x="58" y="491" font-size="11.5">深い層（③〜④）は一撃で完了しない（天井）。浅い差分が</text>
+  <text class="ann" x="58" y="507" font-size="11.5">後の接触の差分と再結合し、ある時ひとつの構造として立ち上がる。</text>
+  <text class="ann" x="58" y="525" font-size="11.5">＝表現者側 SHEST「変容は未来の変容の材料」と受容側で噛み合う。</text>
+
+  <rect class="c-prem" x="546" y="452" width="490" height="88" rx="8"/>
+  <text class="ann" x="560" y="472" font-weight="700" fill="#256a6a">同調の条件／深さ ≠ 広さ</text>
+  <text class="ann" x="560" y="491" font-size="11.5">一次体験（＋その合成＝シミュレーション）に接続した記述ほど防衛を貫きやすい。</text>
+  <text class="ann" x="560" y="507" font-size="11.5">接地なき借り物・捏造された情感は検知に弾かれやすい。</text>
+  <text class="ann" x="560" y="525" font-size="11.5">深さ（鳴りの深さ）と広さ（届く母数）は別軸——混同しない。</text>
+
+  <!-- Ethics band -->
+  <rect class="c-eth" x="44" y="556" width="992" height="46" rx="8"/>
+  <text class="ann" x="60" y="577" font-size="12.5" font-weight="700" fill="#7a5a3a">倫理＝操作構造の境界（四成分に共通・不可分）</text>
+  <text class="ann" x="60" y="594" font-size="11.5">作為を隠して自己選択を奪う誘導＝操作／開示された誘導＝招待。　透明性・自己選択・賞味期限・自己更新の不可侵（境界は動機でなく「開かれているか」）。</text>
+
+  <!-- Audit note + credit -->
+  <text class="foot" x="44" y="624">接地：コストリー・シグナリング・ナラティブ移入・共同注意・身体化認知・予測符号化・記憶の再固定化・神経可塑性・動物行動学＝傍証であって証明でない。クオリア発生は哲学的原始項。設計・監査用（生成非注入）。</text>
+  <text class="footR" x="1036" y="644">© 2026 shisaku ／ CC BY 4.0</text>
+</svg>
