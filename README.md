@@ -86,6 +86,11 @@ KOSEI Mining（採掘）と対をなす概念。掘り出した認知フレー�
 
 詳細 → `concepts/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
 
+### シサク評価統治理論（Shisaku Evaluation Governance Theory / SEGT）
+評価するものが、着眼（何を見るか）を数値へ写すときに混入する「余計な判断」を、機構で止める理論。統治対象は着眼でも点数でもなく、両者を繋ぐ**量子化写像**——ブレは着眼でなくこの一手に宿る。数値を動かした動因が着眼と条項に辿れなければ境界外＝バイアス（過大も過剰防御も同格）、条項が決めきれない未決は数値で埋めず作成者へ差し戻す。特定の道具・モデル・下流実装に依存しない汎用の原理層で、評価者の忠実性を定める公理と適用ルーブリックの上位に立つ。主対象は AI を含む評価主体が評価結果を"生成"する過程で、人間は設計・監査として読む。前提優位理論を基盤に、生成の統治（SGGT）に対する**評価生成の統治**として置かれる。
+
+詳細 → `concepts/shisaku-evaluation-governance/`
+
 ---
 
 ## リポジトリ構造
@@ -123,6 +128,11 @@ shisaku-method/
 │   │   │   ├── shisaku-cognitive-frame-runtime.md
 │   │   │   └── shisaku-cognitive-frame-operation-guide-vcurrent.md
 │   │   └── en/
+│   ├── shisaku-evaluation-governance/        # 評価統治理論（SEGT・忠実性公理/ルーブリックの上位）
+│   │   ├── ja/
+│   │   │   ├── shisaku-evaluation-governance-canon.md
+│   │   │   └── shisaku-evaluation-governance-scoring-runtime.md   # 採点ランタイム（原典の一段具体化・道具依存）
+│   │   └── strip-gakusetsu.py                 # 学説タグ除去（採点ビュー生成）
 │   ├── trust-signal-frame/            # 信頼signalフレーム（モードI適用例）
 │   │   ├── ja/
 │   │   │   └── trust-signal-frame.md
@@ -285,6 +295,11 @@ A cognitive frame for the *entrance* of a piece of writing — its title, openin
 An extension of Premise Primacy to human transformation through expression. With *transformation* (the irreversible residue left after contact — residue + accumulation) as the through-axis, it binds four structure-theories: **Trajectory (SHTST — what experience to induce and what to transform) / Expression (SHEST — how to implement it) / Distance (SHDST — what does and does not reach) / Kyōmei·Resonance (SHKST — what actually resonated and remained)**. Each component carries application-layer supplements (transformation object-layers, a distance-axis survey, resonance entry-points, qualia-desire types, and a media four-layer map). Two upstreams: **Premise Primacy (the upstream of mechanism) and Shisaku philosophy (the upstream of purpose — why we express; humans as systems).**
 
 → `concepts/shisaku-human-transformation/` (transformation, umbrella) / `-trajectory-structure/` / `-expression-structure/` / `-distance-structure/` / `-kyomei-structure/`
+
+### Shisaku Evaluation Governance Theory (SEGT)
+A theory that governs, by mechanism, the "extra judgment" that leaks in when an evaluator maps its perception (what it attends to) onto a number. The object of governance is neither the perception nor the score but the **quantization mapping** between them — variance lives in that step, not in the perception. A determinant that moved the number but cannot be traced to the perception and the rubric clause is out of bounds — bias, symmetric upward and downward; where a clause is undecided, the evaluator does not fill the silence with a number but remands it to the author. A general principle layer, independent of any particular tool, model, or downstream implementation, sitting above evaluator-fidelity axioms and application rubrics. Its primary subject is the process by which an evaluating subject — an AI evaluator above all — generates a score; humans read it chiefly as designers and auditors. Placed as the governance of evaluation generation, sibling to the governance of generation (SGGT), standing on Premise Primacy.
+
+→ `concepts/shisaku-evaluation-governance/`
 
 ---
 
