@@ -1,7 +1,7 @@
 # シサク・ヒト距離構造理論
 ## Shisaku Human Distance-Structure Theory — SHDST
 
-**上流依存：シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流の世界解釈：シサク哲学**
+**上流依存：シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**
 
 ---
 
@@ -137,7 +137,7 @@
 ---
 
 **Shisaku Human Distance-Structure Theory — SHDST**
-**上流依存：シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流の世界解釈：シサク哲学**
+**上流依存：シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**
 * **Author / Explorer:** shisaku
 * **Version:** v0.1.2
 * **Date:** 2026/09/01
