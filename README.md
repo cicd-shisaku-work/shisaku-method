@@ -166,6 +166,7 @@ shisaku-method/
 │   │   ├── ja/
 │   │   │   ├── shisaku-human-kyomei-structure.md
 │   │   │   ├── shkst-entry-points.md          # 補足：入口（同調の起動点）のカタログ
+│   │   │   ├── shkst-instance-decomposition.md # 補足：共鳴事例の分解表（軸の MECE と実例）
 │   │   │   └── figures/shisaku-human-kyomei-structure.svg
 │   │   └── en/
 │   └── shisaku-human-idion-structure/        # IDION（SHTT の入口側＝表現者の固有核）
