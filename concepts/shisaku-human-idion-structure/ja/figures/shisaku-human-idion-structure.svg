@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  シサク・ヒト IDION 構造理論 (Shisaku Human IDION-Structure Theory) v0.1.3 — IDION の形成の構造
+  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
+  統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝IDION（核・葡萄色）。駆動層＝赤褐。層の順序は目安（連続した縦軸）。
+  Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+  Author: https://note.com/abstraction
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" font-family="'Hiragino Sans','Noto Sans JP','Noto Sans CJK JP','Yu Gothic',sans-serif" font-size="14">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a8a8a"/></marker>
+    <marker id="arrd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a3472a"/></marker>
+    <marker id="arri" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6b2d3e"/></marker>
+    <marker id="arrt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b07a3a"/></marker>
+  </defs>
+  <rect width="1500" height="1000" fill="#ffffff"/>
+  <text x="30" y="36" font-size="22" font-weight="700" fill="#111">シサク・ヒト IDION 構造理論——IDION はどう形作られるか（形成の構造）</text>
+  <text x="30" y="58" font-size="13" fill="#555">接触が既存の核の書き換えを迫り、駆動が鳴り、変容コスト（抵抗との闘い／統合）を経て、変容が残って核になる。核は次の接触を濾し、表現化して受け手へ出て、受け手の反応が次の接触になる。</text>
+
+  <!-- 読み方 -->
+  <g font-size="11" fill="#444">
+    <text x="30" y="92" font-weight="700" font-size="12">読み方</text>
+    <text x="30" y="110">・実線＝一回の接触の流れ。破線＝時間をまたぐ経路（保留・記憶の参照・受け手からの戻り）。</text>
+    <text x="30" y="127">・コスト＝接触の外形（時間・労力）でなく、書き換えを成立させる内部の処理＝変容コスト。闘い（防衛／慣性）はその一形態、統合もある。変容コスト≠変容量。</text>
+    <text x="30" y="144">・変容はゼロにならない（少なくとも「これは痛い」が残る）。向きを問わない。強度≠人間的価値。闘いの出口は三つ、どれも変容。</text>
+    <text x="30" y="161">・判定：本人＝一次（変容が意識せず行動に出るか・自己一致・抵抗があればその大きさ〔片側〕）／受け手＝二次（信号）。深さ＝判定を動かした境界の量。核は結果であると同時に次の接触の選択関数。</text>
+    <text x="30" y="178">・層（着眼・判定軸・自己像・世界解釈）は連続した縦軸の目安。深さ＝変容の距離（縦）。結合・波及＝横。</text>
+  </g>
+
+  <!-- 濾す（核 → 照合） -->
+  <path d="M950,320 L950,230 L380,230 L380,318" stroke="#6b2d3e" stroke-width="1.4" fill="none" marker-end="url(#arri)"/>
+  <text x="665" y="222" text-anchor="middle" font-size="13" fill="#6b2d3e">現在の核が次の接触を濾す（濾す側＝形作られる側＝同じ核）</text>
+
+  <!-- 接触 -->
+  <rect x="40" y="330" width="180" height="120" rx="8" fill="#fff" stroke="#444" stroke-width="1.5"/>
+  <text x="130" y="356" text-anchor="middle" font-weight="700">接触</text>
+  <text x="130" y="379" text-anchor="middle" font-size="12">外部刺激（世界・他者・表現）</text>
+  <text x="130" y="397" text-anchor="middle" font-size="12">内部刺激（内省・想起・夢）</text>
+  <text x="130" y="421" text-anchor="middle" font-size="11" fill="#666">外形の負担（時間・労力）は</text>
+  <text x="130" y="436" text-anchor="middle" font-size="11" fill="#666">接触側の性質＝コストではない</text>
+  <path d="M220,390 L298,390" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- 照合 -->
+  <polygon points="380,320 470,390 380,460 290,390" fill="#fff" stroke="#444" stroke-width="1.5"/>
+  <text x="380" y="386" text-anchor="middle" font-weight="700">核と照合</text>
+  <text x="380" y="405" text-anchor="middle" font-size="11">記憶も参照</text>
+
+  <!-- 照合 → 記憶（説明できる） -->
+  <path d="M380,460 L380,548" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="392" y="492" font-size="11" fill="#333">説明・吸収できる</text>
+  <text x="392" y="507" font-size="11" fill="#666">→ 格納のみ（要求なし）</text>
+  <rect x="285" y="550" width="190" height="88" rx="8" fill="#f4f4f2" stroke="#999" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="380" y="574" text-anchor="middle" font-weight="700" fill="#555">記憶の総体</text>
+  <text x="380" y="593" text-anchor="middle" font-size="11" fill="#666">想起できる全記憶 ≠ IDION</text>
+  <text x="380" y="609" text-anchor="middle" font-size="11" fill="#666">経験量 ≠ IDION 量</text>
+  <text x="380" y="626" text-anchor="middle" font-size="11" fill="#888">暗記だけの知識はここで止まる</text>
+  <path d="M290,550 C240,520 250,440 300,410" stroke="#999" stroke-width="1" fill="none" stroke-dasharray="3 3" marker-end="url(#arrg)"/>
+
+  <!-- 照合 → 違和感 -->
+  <path d="M470,390 L538,390" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="504" y="376" text-anchor="middle" font-size="11">説明できない</text>
+
+  <!-- 違和感 -->
+  <rect x="540" y="352" width="160" height="76" rx="8" fill="#fff" stroke="#444" stroke-width="1.5"/>
+  <text x="620" y="378" text-anchor="middle" font-weight="700">違和感</text>
+  <text x="620" y="397" text-anchor="middle" font-size="11">「何かがおかしい」</text>
+  <text x="620" y="414" text-anchor="middle" font-size="11">＝予測誤差（結合の契機）</text>
+  <!-- 違和感 → 記憶（駆動が鳴らない＝無視） -->
+  <path d="M555,428 C530,470 480,540 472,552" stroke="#999" stroke-width="1.1" fill="none" stroke-dasharray="3 3" marker-end="url(#arrg)"/>
+  <text x="438" y="458" font-size="10.5" fill="#777">駆動が鳴らない</text>
+  <text x="438" y="472" font-size="10.5" fill="#777">→ 未説明のまま格納</text>
+
+  <!-- 違和感 → 要求 -->
+  <path d="M620,428 L620,468" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="540" y="470" width="160" height="58" rx="8" fill="#fff" stroke="#444" stroke-width="1.5"/>
+  <text x="620" y="494" text-anchor="middle" font-weight="700">書き換え要求</text>
+  <text x="620" y="513" text-anchor="middle" font-size="11">核のリファクタリング要求</text>
+
+  <!-- 要求 → 抵抗 -->
+  <path d="M620,528 L620,566" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="520" y="568" width="200" height="150" rx="8" fill="#fbf1ec" stroke="#a3472a" stroke-width="1.5"/>
+  <text x="620" y="589" text-anchor="middle" font-weight="700" fill="#a3472a">変容コスト（内部の処理の負荷）</text>
+  <text x="620" y="606" text-anchor="middle" font-size="10">否定・慣性あり→抵抗との闘い／なし→統合</text>
+  <text x="620" y="621" text-anchor="middle" font-size="10">抵抗＝防衛（自己像を守る）／慣性（身体が追いつかない）</text>
+  <text x="620" y="637" text-anchor="middle" font-size="10.5">恐怖・自己理解の否定・積み上げの組み替え</text>
+  <text x="620" y="653" text-anchor="middle" font-size="10.5" font-weight="700">自己喪失（核の喪失）の恐怖</text>
+  <text x="620" y="669" text-anchor="middle" font-size="10" fill="#7a3a22">矛盾・悩み・迷い・恐怖と一つずつ反論して闘う</text>
+  <text x="620" y="685" text-anchor="middle" font-size="10" fill="#7a3a22">統合＝保留の結合・闘いを経ない・快</text>
+  <text x="620" y="701" text-anchor="middle" font-size="10" fill="#7a3a22">コスト≠変容量／抵抗≠負荷／快にも痛にも</text>
+
+  <!-- 駆動 → 要求（確信） -->
+  <path d="M745,860 L745,500 L702,500" stroke="#a3472a" stroke-width="1.4" fill="none" marker-end="url(#arrd)"/>
+  <text x="753" y="836" font-size="11" fill="#a3472a">確信＝「無視できない」「これでいいのだ」</text>
+
+  <!-- 抵抗 → 書き換え（受容的） -->
+  <path d="M720,600 L806,560" stroke="#b07a3a" stroke-width="1.7" marker-end="url(#arrt)"/>
+  <text x="726" y="570" font-size="10" fill="#8a5a1a">欲求側が勝つ→</text>
+  <text x="726" y="583" font-size="10" fill="#8a5a1a">受容的書き換え</text>
+  <!-- 抵抗 → 書き換え（防御的） -->
+  <path d="M720,650 L820,610" stroke="#b07a3a" stroke-width="1.4" stroke-dasharray="6 3" marker-end="url(#arrt)"/>
+  <text x="752" y="652" font-size="10" fill="#8a5a1a">忌避側が勝つ→</text>
+  <text x="752" y="665" font-size="10" fill="#8a5a1a">防御的書き換え（硬化）</text>
+
+  <!-- 抵抗 → 保留 -->
+  <path d="M620,718 L620,752" stroke="#666" stroke-width="1.2" fill="none" stroke-dasharray="5 3" marker-end="url(#arrg)"/>
+  <rect x="510" y="755" width="220" height="62" rx="8" fill="#f4f4f2" stroke="#666" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="620" y="776" text-anchor="middle" font-weight="700" fill="#444">保留——決着せず</text>
+  <text x="620" y="794" text-anchor="middle" font-size="11" fill="#555">要求を残存差分として持つ（核の外環）</text>
+  <text x="620" y="809" text-anchor="middle" font-size="11" fill="#555">自覚あり／無自覚（指摘・きっかけで自覚へ）</text>
+  <!-- 保留 → 照合（参照先に残る） -->
+  <path d="M510,790 L255,790 L255,430 L296,410" stroke="#666" stroke-width="1.2" fill="none" stroke-dasharray="5 3" marker-end="url(#arrg)"/>
+  <text x="262" y="690" font-size="11" fill="#666">保留された差分も</text>
+  <text x="262" y="705" font-size="11" fill="#666">照合の参照先に残る</text>
+  <text x="262" y="720" font-size="11" fill="#666">→ 後の接触（十年後でも）</text>
+  <text x="262" y="735" font-size="11" fill="#666">　が契機で一気に結合</text>
+
+  <!-- 受け手 → 接触（循環） -->
+  <path d="M1320,696 L1320,960 L130,960 L130,452" stroke="#444" stroke-width="1.2" fill="none" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+  <text x="700" y="952" text-anchor="middle" font-size="11" fill="#333">受け手の反応・受け手の変容は、表現者への次の接触になる（他者との相互作用で核が更新され続ける循環）</text>
+
+  <!-- IDION core -->
+  <circle cx="950" cy="480" r="160" fill="#f3e9ec" stroke="#6b2d3e" stroke-width="2"/>
+  <circle cx="950" cy="480" r="120" fill="#e8d6dc" stroke="#6b2d3e" stroke-width="1"/>
+  <circle cx="950" cy="480" r="80" fill="#dcc2ca" stroke="#6b2d3e" stroke-width="1"/>
+  <circle cx="950" cy="480" r="40" fill="#cfa9b5" stroke="#6b2d3e" stroke-width="1"/>
+  <text x="1120" y="312" font-size="18" font-weight="700" fill="#6b2d3e">IDION（核）</text>
+  <text x="950" y="345" text-anchor="middle" font-size="11" fill="#4a1f2c">着眼（何を見るか）</text>
+  <text x="950" y="385" text-anchor="middle" font-size="11" fill="#4a1f2c">判定軸（何で評価するか）</text>
+  <text x="950" y="425" text-anchor="middle" font-size="11" fill="#4a1f2c">自己像・行動原理</text>
+  <text x="950" y="485" text-anchor="middle" font-size="11" font-weight="700" fill="#4a1f2c">世界解釈</text>
+  <text x="950" y="580" text-anchor="middle" font-size="10" fill="#4a1f2c">言語化可能な部分＋非言語部分（手・身体）</text>
+  <text x="950" y="598" text-anchor="middle" font-size="10" fill="#4a1f2c">基準（平均）を持たない／非移転</text>
+  <text x="980" y="682" text-anchor="middle" font-size="11" font-weight="700" fill="#8a5a1a">書き換え＝変容——結合（A＋B→C）／再編成・漸進</text>
+  <text x="980" y="699" text-anchor="middle" font-size="11" fill="#6b2d3e">縦＝深さ（変容の距離・外側ほど浅く内側ほど深い・層は目安）／横＝結合・波及（点→線→面）</text>
+  <text x="980" y="716" text-anchor="middle" font-size="10" fill="#555">矛盾＝深い保留＝材料／抵抗が強ければ深い（片側）・抵抗なしでも統合は深い層に届く</text>
+
+  <!-- 駆動層 -->
+  <rect x="520" y="860" width="640" height="66" rx="8" fill="#fbf1ec" stroke="#a3472a" stroke-width="1.5"/>
+  <text x="840" y="884" text-anchor="middle" font-weight="700" fill="#a3472a">駆動層（欲求／忌避）——言語化以前・IDION の下</text>
+  <text x="840" y="906" text-anchor="middle" font-size="11" fill="#7a3a22">確信はここから鳴る／確信の強さは評価軸にしない／何を核に残すかを選ぶ機構は核の外</text>
+
+  <!-- 表現化 -->
+  <path d="M1110,480 L1178,480" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="1180" y="400" width="280" height="150" rx="8" fill="#eef5ee" stroke="#4a7a4a" stroke-width="1.5"/>
+  <text x="1320" y="426" text-anchor="middle" font-weight="700" fill="#3a6a3a">表現化</text>
+  <text x="1320" y="448" text-anchor="middle" font-size="11">言語化＝論旨（核の部分／全体の射影）</text>
+  <text x="1320" y="466" text-anchor="middle" font-size="11">身体化＝手・動き</text>
+  <text x="1320" y="484" text-anchor="middle" font-size="11">合成＝体験からのシミュレーション</text>
+  <text x="1320" y="508" text-anchor="middle" font-size="11" fill="#666">100% 一致しない（射影）</text>
+  <text x="1320" y="526" text-anchor="middle" font-size="11" fill="#666">他者・道具が演奏してよい／本人が照合し引き受ける</text>
+  <!-- 折り返し -->
+  <path d="M1250,400 C1230,330 1130,330 1085,372" stroke="#4a7a4a" stroke-width="1.3" fill="none" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+  <text x="1150" y="270" font-size="11" fill="#3a6a3a">自己一致（しっくり感）＝折り返し</text>
+  <text x="1150" y="285" font-size="11" fill="#3a6a3a">言語化は核を更新する接触でもある</text>
+
+  <!-- 表現 → 受け手 -->
+  <path d="M1320,550 L1320,598" stroke="#8a8a8a" stroke-width="1.5" marker-end="url(#arrg)"/>
+  <rect x="1180" y="600" width="280" height="96" rx="8" fill="#f4f4f2" stroke="#999" stroke-width="1.2"/>
+  <text x="1320" y="624" text-anchor="middle" font-weight="700" fill="#555">表現 → 受け手（出口＝四成分）</text>
+  <text x="1320" y="646" text-anchor="middle" font-size="11" fill="#666">表現側の不一致＝偽装（核に無いものを自分のものとして表現）</text>
+  <text x="1320" y="663" text-anchor="middle" font-size="11" fill="#666">実装側の不一致＝表現化の失敗（自己一致の不全・SHEST）</text>
+  <text x="1320" y="680" text-anchor="middle" font-size="11" fill="#666">受け手には同じに見える／直し方が違う</text>
+  <text x="1335" y="740" font-size="11" fill="#333">受け手の変容・反応</text>
+
+  <!-- footer -->
+  <text x="30" y="988" font-size="11" fill="#777">Shisaku Human IDION-Structure Theory v0.1.3 — 設計・監査用の図。層の順序と語は目安であり固定しない。</text>
+  <text x="1470" y="988" font-size="11" fill="#777" text-anchor="end">© 2026 shisaku · CC BY 4.0 · https://note.com/abstraction</text>
+</svg>
