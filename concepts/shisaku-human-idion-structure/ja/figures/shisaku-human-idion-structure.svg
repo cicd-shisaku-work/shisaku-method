@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・ヒト IDION 構造理論 (Shisaku Human IDION-Structure Theory) v0.1.2 — IDION の形成の構造
+  シサク・ヒト IDION 構造理論 (Shisaku Human IDION-Structure Theory) v0.1.3 — IDION の形成の構造
   設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝IDION（核・葡萄色）。駆動層＝赤褐。層の順序は目安（連続した縦軸）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
@@ -16,15 +16,15 @@
   </defs>
   <rect width="1500" height="1000" fill="#ffffff"/>
   <text x="30" y="36" font-size="22" font-weight="700" fill="#111">シサク・ヒト IDION 構造理論——IDION はどう形作られるか（形成の構造）</text>
-  <text x="30" y="58" font-size="13" fill="#555">接触が既存の核の書き換えを迫り、駆動が鳴り、抵抗と闘い、変容が残って核になる。核は次の接触を濾し、表現化して受け手へ出て、受け手の反応が次の接触になる。</text>
+  <text x="30" y="58" font-size="13" fill="#555">接触が既存の核の書き換えを迫り、駆動が鳴り、変容コスト（抵抗との闘い／統合）を経て、変容が残って核になる。核は次の接触を濾し、表現化して受け手へ出て、受け手の反応が次の接触になる。</text>
 
   <!-- 読み方 -->
   <g font-size="11" fill="#444">
     <text x="30" y="92" font-weight="700" font-size="12">読み方</text>
     <text x="30" y="110">・実線＝一回の接触の流れ。破線＝時間をまたぐ経路（保留・記憶の参照・受け手からの戻り）。</text>
-    <text x="30" y="127">・コスト＝接触の外形（時間・労力）でなく、既存の核の抵抗と闘うこと（内形）。深い層ほど抵抗が強い＝抵抗の大きさは深さの間接指標。</text>
+    <text x="30" y="127">・コスト＝接触の外形（時間・労力）でなく、書き換えを成立させる内部の処理＝変容コスト。闘い（防衛／慣性）はその一形態、統合もある。変容コスト≠変容量。</text>
     <text x="30" y="144">・変容はゼロにならない（少なくとも「これは痛い」が残る）。向きを問わない。強度≠人間的価値。闘いの出口は三つ、どれも変容。</text>
-    <text x="30" y="161">・判定：本人＝一次（変容が意識せず行動に出るか・自己一致・抵抗の大きさ）／受け手＝二次（信号）。核は結果であると同時に次の接触の選択関数。</text>
+    <text x="30" y="161">・判定：本人＝一次（変容が意識せず行動に出るか・自己一致・抵抗があればその大きさ〔片側〕）／受け手＝二次（信号）。深さ＝判定を動かした境界の量。核は結果であると同時に次の接触の選択関数。</text>
     <text x="30" y="178">・層（着眼・判定軸・自己像・世界解釈）は連続した縦軸の目安。深さ＝変容の距離（縦）。結合・波及＝横。</text>
   </g>
 
@@ -80,13 +80,14 @@
   <!-- 要求 → 抵抗 -->
   <path d="M620,528 L620,566" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
   <rect x="520" y="568" width="200" height="150" rx="8" fill="#fbf1ec" stroke="#a3472a" stroke-width="1.5"/>
-  <text x="620" y="591" text-anchor="middle" font-weight="700" fill="#a3472a">抵抗との闘い＝コスト</text>
-  <text x="620" y="611" text-anchor="middle" font-size="11">信じていたものを捨てる恐怖</text>
-  <text x="620" y="628" text-anchor="middle" font-size="11">自己理解の否定・過去の判断の誤り</text>
-  <text x="620" y="645" text-anchor="middle" font-size="11">積み上げの組み替え</text>
-  <text x="620" y="662" text-anchor="middle" font-size="11" font-weight="700">自己喪失（核の喪失）の恐怖</text>
-  <text x="620" y="684" text-anchor="middle" font-size="10.5" fill="#7a3a22">矛盾・悩み・迷い・恐怖の苦しみと</text>
-  <text x="620" y="699" text-anchor="middle" font-size="10.5" fill="#7a3a22">一つずつ反論しながら闘う（痛み・リスク）</text>
+  <text x="620" y="589" text-anchor="middle" font-weight="700" fill="#a3472a">変容コスト（内部の処理の負荷）</text>
+  <text x="620" y="606" text-anchor="middle" font-size="10">否定・慣性あり→抵抗との闘い／なし→統合</text>
+  <text x="620" y="621" text-anchor="middle" font-size="10">抵抗＝防衛（自己像を守る）／慣性（身体が追いつかない）</text>
+  <text x="620" y="637" text-anchor="middle" font-size="10.5">恐怖・自己理解の否定・積み上げの組み替え</text>
+  <text x="620" y="653" text-anchor="middle" font-size="10.5" font-weight="700">自己喪失（核の喪失）の恐怖</text>
+  <text x="620" y="669" text-anchor="middle" font-size="10" fill="#7a3a22">矛盾・悩み・迷い・恐怖と一つずつ反論して闘う</text>
+  <text x="620" y="685" text-anchor="middle" font-size="10" fill="#7a3a22">統合＝保留の結合・闘いを経ない・快</text>
+  <text x="620" y="701" text-anchor="middle" font-size="10" fill="#7a3a22">コスト≠変容量／抵抗≠負荷／快にも痛にも</text>
 
   <!-- 駆動 → 要求（確信） -->
   <path d="M745,860 L745,500 L702,500" stroke="#a3472a" stroke-width="1.4" fill="none" marker-end="url(#arrd)"/>
@@ -132,7 +133,7 @@
   <text x="950" y="598" text-anchor="middle" font-size="10" fill="#4a1f2c">基準（平均）を持たない／非移転</text>
   <text x="980" y="682" text-anchor="middle" font-size="11" font-weight="700" fill="#8a5a1a">書き換え＝変容——結合（A＋B→C）／再編成・漸進</text>
   <text x="980" y="699" text-anchor="middle" font-size="11" fill="#6b2d3e">縦＝深さ（変容の距離・外側ほど浅く内側ほど深い・層は目安）／横＝結合・波及（点→線→面）</text>
-  <text x="980" y="716" text-anchor="middle" font-size="10" fill="#555">矛盾＝深い保留＝材料／深い層ほど抵抗が強い＝自分の中の重力を破る闘いが大きい</text>
+  <text x="980" y="716" text-anchor="middle" font-size="10" fill="#555">矛盾＝深い保留＝材料／抵抗が強ければ深い（片側）・抵抗なしでも統合は深い層に届く</text>
 
   <!-- 駆動層 -->
   <rect x="520" y="860" width="640" height="66" rx="8" fill="#fbf1ec" stroke="#a3472a" stroke-width="1.5"/>
@@ -163,6 +164,6 @@
   <text x="1335" y="740" font-size="11" fill="#333">受け手の変容・反応</text>
 
   <!-- footer -->
-  <text x="30" y="988" font-size="11" fill="#777">Shisaku Human IDION-Structure Theory v0.1.2 — 設計・監査用の図。層の順序と語は目安であり固定しない。</text>
+  <text x="30" y="988" font-size="11" fill="#777">Shisaku Human IDION-Structure Theory v0.1.3 — 設計・監査用の図。層の順序と語は目安であり固定しない。</text>
   <text x="1470" y="988" font-size="11" fill="#777" text-anchor="end">© 2026 shisaku · CC BY 4.0 · https://note.com/abstraction</text>
 </svg>
