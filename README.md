@@ -91,6 +91,11 @@ KOSEI Mining（採掘）と対をなす概念。掘り出した認知フレー�
 
 詳細 → `concepts/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
 
+### シサク・ヒト IDION 構造理論（IDION）
+SHTT の**入口側**——表現が湧き出す基体＝**表現者自身の変容の集合が形作った固有の核（IDION）**の構造理論。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、核の書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、強度を変容量（深さ＝判定を動かした境界の量／横＝結合則）で測り、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを自分のものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は IDION の日本語グロス。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）。
+
+詳細 → `concepts/shisaku-human-idion-structure/`
+
 ---
 
 ## リポジトリ構造
@@ -157,11 +162,21 @@ shisaku-method/
 │   │   │   ├── shdst-distance-axes.md         # 補足：距離軸の全域スキャン
 │   │   │   └── figures/shisaku-human-distance-structure.svg
 │   │   └── en/
-│   └── shisaku-human-kyomei-structure/       # 共鳴（SHKST）
+│   ├── shisaku-human-kyomei-structure/       # 共鳴（SHKST）
+│   │   ├── ja/
+│   │   │   ├── shisaku-human-kyomei-structure.md
+│   │   │   ├── shkst-entry-points.md          # 補足：入口（同調の起動点）のカタログ
+│   │   │   ├── shkst-instance-decomposition.md # 補足：共鳴事例の分解表（軸の MECE と実例）
+│   │   │   └── figures/shisaku-human-kyomei-structure.svg
+│   │   └── en/
+│   └── shisaku-human-idion-structure/        # IDION（SHTT の入口側＝表現者の固有核）
 │       ├── ja/
-│       │   ├── shisaku-human-kyomei-structure.md
-│       │   ├── shkst-entry-points.md          # 補足：入口（同調の起動点）のカタログ
-│       │   └── figures/shisaku-human-kyomei-structure.svg
+│       │   ├── shisaku-human-idion-structure.md
+│       │   ├── idion-cases.md                 # 補足：具体事例集と分離検出
+│       │   ├── idion-cost-forms.md            # 補足：変容コストの形態の地図
+│       │   ├── idion-axes-map.md              # 補足：層と軸の地図
+│       │   ├── idion-system-isomorphism.md    # 補足：システムとの同型（設計の検査道具）
+│       │   └── figures/shisaku-human-idion-structure.svg
 │       └── en/
 │
 ├── publications/                      # メディアから参照されるサンプル・成果物

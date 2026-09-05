@@ -40,26 +40,26 @@
   <text class="footR" x="1040" y="127">軌跡 SHTST・表現 SHEST・距離 SHDST・共鳴 SHKST</text>
 
   <!-- 再演による同調 (top flow) -->
-  <rect class="c-kyo" x="44" y="148" width="180" height="40" rx="7"/><text class="nlbl" x="134" y="166">送り手の内的運動</text><text class="nsub" x="134" y="180">元手＝コストリー・シグナル</text>
+  <rect class="c-kyo" x="44" y="148" width="180" height="40" rx="7"/><text class="nlbl" x="134" y="166">送り手の内的運動</text><text class="nsub" x="134" y="180">IDION に辿れる記述</text>
   <path class="flow" d="M224,168 L256,168" marker-end="url(#arrow)"/>
   <rect class="c-kyoD" x="256" y="148" width="180" height="40" rx="7"/><text class="nlbl" x="346" y="166">受け手が内で再演</text><text class="nsub" x="346" y="180">＝防衛を貫いて同調（点火）</text>
   <path class="flow" d="M436,168 L468,168" marker-end="url(#arrow)"/>
   <rect class="c-kyo" x="468" y="148" width="192" height="40" rx="7"/><text class="nlbl" x="564" y="166">構造的に類似した状態</text><text class="nsub" x="564" y="180">＝擬似共有の受容側（同一でない）</text>
 
   <!-- 深さの階梯 stairs -->
-  <text class="panelH" x="44" y="216">深さの階梯（共鳴の深度・神経可塑性に接地）</text>
+  <text class="panelH" x="44" y="216">深さの階梯（共鳴の深度のみ・種類は対象層へ・神経可塑性と整合しうるモデル）</text>
   <path class="step" d="M64,392 L64,232 L660,232" opacity="0"/>
   <!-- step1 -->
-  <rect class="c-kyo" x="64" y="352" width="140" height="40" rx="7"/><text class="nlbl" x="134" y="370">① 一時的な快</text><text class="nsub" x="134" y="385">化学的な活性化</text>
+  <rect class="c-kyo" x="64" y="352" width="140" height="40" rx="7"/><text class="nlbl" x="134" y="370">① 一時的な同調</text><text class="nsub" x="134" y="385">接触中・残らない</text>
   <path class="step" d="M204,360 L214,332" marker-end="url(#arrowKyo)"/>
   <!-- step2 -->
-  <rect class="c-kyo" x="214" y="312" width="140" height="40" rx="7"/><text class="nlbl" x="284" y="330">② 身体的定着</text><text class="nsub" x="284" y="345">安定化（反芻・口ずさむ）</text>
+  <rect class="c-kyo" x="214" y="312" width="140" height="40" rx="7"/><text class="nlbl" x="284" y="330">② 反復定着</text><text class="nsub" x="284" y="345">反芻・既存の枠は保たれる</text>
   <path class="step" d="M354,320 L364,292" marker-end="url(#arrowKyo)"/>
   <!-- step3 -->
-  <rect class="c-kyoD" x="364" y="272" width="150" height="40" rx="7"/><text class="nlbl" x="439" y="290">③ 枠組みの変容</text><text class="nsub" x="439" y="305">構造的な再編（リフレーム）</text>
+  <rect class="c-kyoD" x="364" y="272" width="150" height="40" rx="7"/><text class="nlbl" x="439" y="290">③ 枠組みの再編</text><text class="nsub" x="439" y="305">見方が揺らぎ組み替わる</text>
   <path class="step" d="M514,280 L524,252" marker-end="url(#arrowKyo)"/>
   <!-- step4 -->
-  <rect class="c-kyoD" x="524" y="232" width="150" height="40" rx="7"/><text class="nlbl" x="599" y="250">④ 日常の統合</text><text class="nsub" x="599" y="265">統合と再固定</text>
+  <rect class="c-kyoD" x="524" y="232" width="150" height="40" rx="7"/><text class="nlbl" x="599" y="250">④ 恒常統合</text><text class="nsub" x="599" y="265">新たな前提が定常化</text>
 
   <!-- 天井 marker -->
   <path class="step" d="M64,406 L354,406" stroke-dasharray="5 4"/>
