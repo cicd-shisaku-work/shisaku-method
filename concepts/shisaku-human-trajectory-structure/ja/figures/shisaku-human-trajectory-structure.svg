@@ -92,7 +92,7 @@
   <rect class="c-trans" x="800" y="212" width="236" height="150" rx="10"/>
   <text class="transh" x="816" y="238">目標体験軌跡 → 目標変容</text>
   <text class="transb" x="816" y="262">・軌跡は体験の経路、</text>
-  <text class="transb" x="830" y="279">　狙うのはその残存＝変容。</text>
+  <text class="transb" x="830" y="279">　狙うのはその帰趨（残存か変容か）。</text>
   <text class="transb" x="816" y="301">・残ってほしい差分から</text>
   <text class="transb" x="830" y="318">　逆算して経路を置く（二段）。</text>
   <text class="transb" x="816" y="340" fill="#7a5a2a">・目標変容 ≠ 実際の変容</text>

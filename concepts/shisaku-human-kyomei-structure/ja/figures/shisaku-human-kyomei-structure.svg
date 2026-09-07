@@ -35,7 +35,7 @@
   <!-- Title -->
   <text class="title" x="540" y="40" font-size="25" text-anchor="middle">シサク・ヒト共鳴構造理論</text>
   <text class="sub" x="540" y="63" font-size="14" text-anchor="middle">Shisaku Human Kyōmei-Structure Theory — SHKST</text>
-  <text class="sub" x="540" y="84" font-size="12.5" text-anchor="middle">実際に受け手側で何が起きたか　／　再演による同調と、残存としての変容　／　（SHTT の共鳴成分）</text>
+  <text class="sub" x="540" y="84" font-size="12.5" text-anchor="middle">実際に受け手側で何が起きたか　／　再演による同調と、帰趨（残存／変容）　／　（SHTT の共鳴成分）</text>
   <text class="footR" x="1040" y="112">略号：上位＝SHTT／成分＝SH＋頭字＋ST</text>
   <text class="footR" x="1040" y="127">軌跡 SHTST・表現 SHEST・距離 SHDST・共鳴 SHKST</text>
 
@@ -47,7 +47,7 @@
   <rect class="c-kyo" x="468" y="148" width="192" height="40" rx="7"/><text class="nlbl" x="564" y="166">構造的に類似した状態</text><text class="nsub" x="564" y="180">＝擬似共有の受容側（同一でない）</text>
 
   <!-- 深さの階梯 stairs -->
-  <text class="panelH" x="44" y="216">深さの階梯（共鳴の深度のみ・種類は対象層へ・神経可塑性と整合しうるモデル）</text>
+  <text class="panelH" x="44" y="216">到達の射影（①〜④・種類は対象層へ・神経可塑性と整合しうるモデル）</text>
   <path class="step" d="M64,392 L64,232 L660,232" opacity="0"/>
   <!-- step1 -->
   <rect class="c-kyo" x="64" y="352" width="140" height="40" rx="7"/><text class="nlbl" x="134" y="370">① 一時的な同調</text><text class="nsub" x="134" y="385">接触中・残らない</text>
@@ -71,7 +71,7 @@
   <rect class="c-prem" x="700" y="148" width="336" height="120" rx="8"/>
   <text class="panelH" x="716" y="168">三つの軸（潰さず独立に）</text>
   <text class="ann" x="716" y="190" font-size="11.5">・入口（同調の起動点）＝どの扉から鳴るか</text>
-  <text class="ann" x="716" y="210" font-size="11.5">・深さ＝どこまで深く鳴ったか（階梯）</text>
+  <text class="ann" x="716" y="210" font-size="11.5">・深さ＝どこまで深く鳴ったか（共鳴深度≠変容深度）</text>
   <text class="ann" x="716" y="230" font-size="11.5">・広さ＝どれだけ多くに届いたか</text>
   <text class="ann" x="716" y="252" font-size="11" fill="#256a6a">入口⊥深さ／広さは別軸（鼻歌＝深いが広さ0）</text>
 

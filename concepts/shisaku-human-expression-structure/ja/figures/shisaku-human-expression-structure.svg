@@ -61,10 +61,10 @@
   <path class="flow" d="M425,434 L425,444" marker-end="url(#arrow)"/>
   <rect class="c-exprDn" x="300" y="444" width="250" height="34" rx="7"/><text class="nlbl" x="425" y="466">実装</text>
 
-  <!-- Left brackets: 元手依存の非対称 -->
+  <!-- Left brackets: IDION 依存の非対称 -->
   <path class="brace" d="M292,152 L285,152 L285,290 L292,290"/>
-  <text class="annR" x="278" y="196">上流＝元手依存</text>
-  <text class="annR" x="278" y="212" font-size="11">身銭を切った一次体験</text>
+  <text class="annR" x="278" y="196">上流＝IDION 依存</text>
+  <text class="annR" x="278" y="212" font-size="11">表現者の固有の核（IDION）</text>
   <text class="annR" x="278" y="228" font-size="11">＝AI 代替不可（深さに比例）</text>
   <path class="brace" d="M292,306 L285,306 L285,478 L292,478"/>
   <text class="annR" x="278" y="388">下流＝構成・表層・実装</text>
@@ -100,9 +100,9 @@
 
   <!-- notes row -->
   <rect class="c-prem" x="628" y="360" width="408" height="52" rx="8"/>
-  <text class="ann" x="642" y="380" font-weight="700" fill="#3a6a3a">元手依存の非対称</text>
-  <text class="ann" x="642" y="397" font-size="11.5">上流（元手＝体験・観測・個性／論旨＋その合成）は AI 代替不可、下流（技術）は代替可。</text>
-  <text class="ann" x="642" y="412" font-size="11.5" fill="#3a6a3a">依存は変容の深さに比例。元手なき生成は平均へ漂流。</text>
+  <text class="ann" x="642" y="380" font-weight="700" fill="#3a6a3a">IDION 依存の非対称</text>
+  <text class="ann" x="642" y="397" font-size="11.5">上流（IDION＝変容の集合が形作った固有の核・体験／観測／論旨＋合成）は AI 代替不可、下流（技術）は代替可。</text>
+  <text class="ann" x="642" y="412" font-size="11.5" fill="#3a6a3a">依存は狙う変容深度に比例。IDION なき生成は平均へ漂流。</text>
 
   <!-- Ethics band -->
   <rect class="c-eth" x="44" y="556" width="992" height="46" rx="8"/>
