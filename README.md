@@ -87,12 +87,12 @@ KOSEI Mining（採掘）と対をなす概念。掘り出した認知フレー�
 詳細 → `concepts/trust-signal-frame/`
 
 ### シサク・ヒト変容理論（SHTT）と四成分
-前提優位理論をヒト種の「表現による変容」へ展開した系。変容（表現との接触で残る不可逆な差分＝残存＋累積）を通し軸に、四つの構造理論——**軌跡（SHTST：何を体験させ何を変容させるか）／表現（SHEST：どう実装するか）／距離（SHDST：何が届き何が届かないか）／共鳴（SHKST：実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・距離軸の全域スキャン・共鳴の入口・クオリア欲求の類型・媒体の四層マップ）を持つ。上流は二軸——**前提優位理論（力学の最上流）とシサク・世界解釈（目的・観方の最上流＝なぜ表現するか・人間はシステムという世界解釈）**。
+前提優位理論をヒト種の「表現による変容」へ展開した系。**二相**——入口（表現者の核＝IDION）と出口（受け手の変容＝四成分）——に同じ変容が立ち、帰趨（残存／変容の二値・成分ごと）を通し軸に、両端共通の過程（接触→気づき→再演段→照合段→承認段→書き換え段→定常化段→折り返し段）と深度語彙（変容深度・変容広さ・自己距離／共鳴深度・共鳴距離・共鳴強度・共鳴負荷）の区別を置き、四つの構造理論——**軌跡（SHTST：何を体験させ何を変容させるか）／表現（SHEST：どう実装するか）／距離（SHDST：何が届き何が届かないか）／共鳴（SHKST：実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・深度語彙・変容の過程の八段・距離軸の全域スキャン・共鳴の入口・共鳴事例の分解表・クオリア欲求の類型・媒体の四層マップ）を持つ。上流は二軸——**前提優位理論（力学の最上流）とシサク・世界解釈（目的・観方の最上流＝なぜ表現するか・人間はシステムという世界解釈）**。
 
 詳細 → `concepts/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
 
 ### シサク・ヒト IDION 構造理論（IDION）
-SHTT の**入口側**——表現が湧き出す基体＝**表現者自身の変容の集合が形作った固有の核（IDION）**の構造理論。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、核の書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、強度を変容量（深さ＝判定を動かした境界の量／横＝結合則）で測り、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを自分のものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は IDION の日本語グロス。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）。
+SHTT の**入口側**——表現が湧き出す基体＝**表現者自身の変容の集合が形作った固有の核（IDION）**の構造理論（成分でなく、主体の核の側に立つ・略号を持たず把手 IDION で参照）。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、核の書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、強度を変容量（縦＝変容深度〔たどりの長さ〕・変容広さ〔本数〕／横＝結合則）で測り、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを自分のものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は IDION の日本語グロス。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）。
 
 詳細 → `concepts/shisaku-human-idion-structure/`
 
@@ -141,6 +141,8 @@ shisaku-method/
 │   │   ├── ja/
 │   │   │   ├── shisaku-human-transformation.md
 │   │   │   ├── shtt-object-layers.md          # 補足：変容の対象層（種類の軸）
+│   │   │   ├── shtt-depth-terms.md            # 補足：深度語彙（量の語と境界検査）
+│   │   │   ├── shtt-process-stages.md         # 補足：変容の過程の八段（両端共通の詳細）
 │   │   │   ├── shtt-authoring-policy.md       # 資料作成オペレーションルール（原典/補足の境界）
 │   │   │   └── figures/shisaku-human-transformation.svg
 │   │   └── en/
@@ -307,9 +309,14 @@ A cognitive frame for the *entrance* of a piece of writing — its title, openin
 → `concepts/trust-signal-frame/`
 
 ### Shisaku Human Transformation Theory (SHTT) and its four components
-An extension of Premise Primacy to human transformation through expression. With *transformation* (the irreversible residue left after contact — residue + accumulation) as the through-axis, it binds four structure-theories: **Trajectory (SHTST — what experience to induce and what to transform) / Expression (SHEST — how to implement it) / Distance (SHDST — what does and does not reach) / Kyōmei·Resonance (SHKST — what actually resonated and remained)**. Each component carries application-layer supplements (transformation object-layers, a distance-axis survey, resonance entry-points, qualia-desire types, and a media four-layer map). Two upstreams: **Premise Primacy (the upstream of mechanism) and the Shisaku World-Interpretation (the upstream of purpose and seeing — why we express; humans as systems).**
+An extension of Premise Primacy to human transformation through expression. Two ends of one transformation — the entry (the expresser's core, IDION) and the exit (the receiver's transformation, the four components) — with the *outcome* (residue / transformation, read per component) as the through-axis, an eight-stage process common to both ends, and a typed depth vocabulary. It binds four structure-theories: **Trajectory (SHTST — what experience to induce and what to transform) / Expression (SHEST — how to implement it) / Distance (SHDST — what does and does not reach) / Kyōmei·Resonance (SHKST — what actually resonated and remained)**. Each component carries application-layer supplements (transformation object-layers, depth vocabulary, the eight stages of transformation, a distance-axis survey, resonance entry-points, an instance-decomposition table, qualia-desire types, and a media four-layer map). Two upstreams: **Premise Primacy (the upstream of mechanism) and the Shisaku World-Interpretation (the upstream of purpose and seeing — why we express; humans as systems).**
 
 → `concepts/shisaku-human-transformation/` (transformation, umbrella) / `-trajectory-structure/` / `-expression-structure/` / `-distance-structure/` / `-kyomei-structure/`
+
+### Shisaku Human IDION-Structure Theory (IDION)
+The *entry side* of SHTT — the structure of the expresser's own core, **IDION**: the core formed by the set of one's own transformations (not a component; it stands on the subject's side, referred to by the handle IDION without an acronym). Where the four components carry the exit side (the receiver's transformation), IDION stands at the entry end of the same transformation. It distinguishes IDION not by origin but by the traceable history of a core rewrite (transformation cost — struggle is one form, integration another) and by non-transferability; measures strength as transformation quantity (vertical = transformation depth and breadth / horizontal = the combination rule); splits judgment asymmetrically between the person and the receiver; defines disguise as "expressing what is not in one's IDION as one's own" by mechanics rather than morality; and calibrates dignity as honesty + gaze. KOSEI (個性) is the Japanese gloss of IDION. Supplements — worked cases and separation detection / a map of transformation-cost forms / a map of layers and axes / system isomorphism (a design check tool).
+
+→ `concepts/shisaku-human-idion-structure/`
 
 ---
 
