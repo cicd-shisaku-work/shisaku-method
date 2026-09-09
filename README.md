@@ -47,6 +47,8 @@ logs/          — 概念構築の過程としてのAI対話ログ
 6. **新規性は要素でなく圧縮**——構成要素はいずれも既知である。新しいのは関係構造への圧縮であり、置換検査（外部の既存概念に置き換えて主張が成立するなら新規でない）に耐える核を持つ。
 7. **原典／補足／プロファイルの三層**——原典（一般理論）は不変の骨組み、補足は応用層の地図（候補＋独立性検査であって固定分類でない）、具体は各実装が埋める。倫理条項は理論の不可分の一部として扱う。
 
+**語の規約（系列横断）**——同じ語を別の座標軸の概念名に使わない、という規約と、その所在表をリポジトリ直下に置く：`terminology-policy.md`（規約・一語一軸・型付け・単独語のスコープ）と `terminology-ledger.md`（語・軸・対象・定義位置の薄い一枚）。新しい語を立てるとき、また他文書から語を参照するときは、ここを引く。
+
 ---
 
 ## 含まれる概念
@@ -105,6 +107,8 @@ shisaku-method/
 │
 ├── README.md
 ├── CONTRIBUTING.md                    # git運用規約（ブランチ・PR・コミット規約）
+├── terminology-policy.md              # 用語規約（系列横断・一語一軸）
+├── terminology-ledger.md              # 用語台帳（語・軸・対象・定義位置）
 │
 ├── concepts/                          # 概念定義（成果物）
 │   ├── kosei-mining/
@@ -266,6 +270,8 @@ Every concept here is a **hypothesis and an axiomatic system for design**, not a
 5. **For design and audit, not for injection into generation** — mechanism descriptions aid the maker's design/audit; they are not self-justification injected into a generator.
 6. **Novelty is compression, not elements** — the components are all known; what is new is the compression into a relational structure, holding a core that survives the substitution test.
 7. **Three layers (origin / supplement / profile)** — origin (general theory) is the invariant skeleton; supplements are application-layer maps (candidates with independence tests, not fixed taxonomies); specifics are filled by each implementation. The ethics clause is inseparable from each theory.
+
+**Terminology policy (series-wide)** — the rule that one word belongs to one axis, plus an index of where each term is defined, sit at the repository root: `terminology-policy.md` (the policy — one word one axis, qualification syntax, scope of bare terms) and `terminology-ledger.md` (a thin table of word, axis, qualifier, locus of definition). Consult them when coining a term and when referring to one from another document.
 
 ---
 
