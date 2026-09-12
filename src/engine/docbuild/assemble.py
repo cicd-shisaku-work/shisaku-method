@@ -65,7 +65,7 @@ def build_document(idx, src_root, doc_dir, paths, base_url, errors):
             parts = []
             for mod, shift, prefix in entries:
                 body = mod.body if mod.raw else shift_headings(mod.body, shift, prefix)
-                parts.append(resolver.resolve(body, secmap, block.render).strip("\n"))
+                parts.append(resolver.resolve(body, secmap, block.render, optional=tuple(mod.optional)).strip("\n"))
             rendered_groups.append(JOIN.join(parts))
     text = ""
     for i, part in enumerate(rendered_groups):

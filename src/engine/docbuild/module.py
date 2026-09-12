@@ -73,8 +73,6 @@ def _parse_md(text, path):
 
 
 def _parse_xml(text, path):
-    if re.search(r"(?<!\])\]\]>", text.replace("<![CDATA[", "", 1)) and text.count("]]>") > 1:
-        pass  # 分割エスケープ済みは許す。厳密検査は lint 側。
     try:
         root = ET.fromstring(text)
     except ET.ParseError as e:

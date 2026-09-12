@@ -109,7 +109,15 @@ def main():
                 print(f"    - {e}")
             continue
 
-        out_path = os.path.join(ROOT, resolve_output(idx, paths, base_url, errors))
+        out_errors = []
+        out_rel = resolve_output(idx, paths, base_url, out_errors)
+        if out_errors:
+            failed = True
+            print(f"[NG] {idx.id}: 出力先が解決できない")
+            for e in out_errors:
+                print(f"    - {e}")
+            continue
+        out_path = os.path.join(ROOT, out_rel)
         if args.lint_only:
             print(f"[OK] {idx.id}: 検査に通った")
             continue

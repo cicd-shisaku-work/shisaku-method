@@ -1,6 +1,6 @@
 # シサク原典管理スクリプト設計書
 
-**Version:** v0.1
+**Version:** v0.1.1
 **Date:** 2026/09/12
 **性格：** `src/` に置く文書ビルド（モジュール群から公開文書を組み立てるスクリプト）の設計仕様。実装する者が、この文書だけを読んで着手できることを合格条件とする。
 
@@ -312,7 +312,7 @@ raw: true
 **Date:** {{meta:date}}
 ```
 
-- **行落ちの規則：** トークンを外すと空白だけになる行は、その行ごと落とす。これが唯一の条件分岐であり、テンプレート言語は作らない。文書の種類ごとの差（README の `Status`、原典の上流依存、補足に著者が無いこと）は、この規則で吸収する。テンプレートを種類別に増やさない。
+- **行落ちの規則：** ①`optional` に挙げたメタが `[meta]` に無いとき、そのトークンを含む行を落とす。②トークンを埋めた結果、空白だけになった行を落とす。この二つが唯一の条件分岐であり、テンプレート言語は作らない。`optional` に挙げていないキーが `[meta]` に無ければ、行落ちでなくエラーになる（黙って消えない）。文書の種類ごとの差（README の `Status`、原典の上流依存、補足に著者が無いこと）は、この規則で吸収する。テンプレートを種類別に増やさない。
 - 行落ちが空行の重複を生まないよう、任意の行はテンプレート上で前後に空行を置かない書き方に限る。
 - 奥付（`meta/colophon`）も同じ値を差し込む。同じ値が二か所に字面で並ぶ状態を作らない。
 - **共有テンプレートは原典向け。** README のように固有の項目（`Status`・`Friction & Proof`）を持つ文書は、ヘッダーと奥付を文書側のモジュールに置き、値は同じ `[meta]` から差し込む。骨格は文書種別の属性であり、種別の違う文書を一つのテンプレートへ押し込まない。
@@ -334,8 +334,8 @@ output  = "{{path:shisaku-human-idion-structure}}ja/shisaku-human-idion-structur
 [meta]
 title     = "シサク・ヒト IDION 構造理論"
 subtitle  = "Shisaku Human IDION-Structure Theory"
-version   = "v0.1.5"
-date      = "2026/09/07"
+version   = "v0.1.6"
+date      = "2026/09/12"
 author    = "shisaku"
 upstream  = "シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈"
 canonical = "{{url:shisaku-human-idion-structure}}"
@@ -354,13 +354,13 @@ base_depth    = 1
 cluster_depth = 1                    # 先頭 1 セグメントは所属（役）＝深さに数えない
 render        = { sec = "第{n}節" }  # このブロックでの {{sec:…}} の描画
 groups = [
-  ["header"],
-  ["preface"],
-  ["definition"],
-  ["strength", "strength/combination-rule", "strength/contour-definition"],
-  ["discriminators", "six-requirements"],
-  ["colophon"],
-  ["license"],
+  ["shared:meta/header", "document/epigraph"],
+  ["document/preface"],
+  ["subject/definition"],
+  ["subject/strength", "subject/strength/combination-rule", "subject/strength/contour-definition"],
+  ["subject/discriminators", "document/six-requirements"],
+  ["shared:meta/colophon"],
+  ["shared:license/cc-by-4.0"],
 ]
 ```
 
@@ -372,7 +372,7 @@ id     = "readme"
 output = "README.md"
 
 [[block]]
-lang       = "shared"
+lang       = "common"
 base_depth = 0
 groups     = [["header"]]
 
@@ -390,7 +390,7 @@ groups         = [[], ["banner"], ["what-is", "what-is/name"], …]
 allow_unpaired = ["banner"]      # 対になる相手を持たないことを許すモジュール
 
 [[block]]
-lang       = "shared"
+lang       = "common"
 base_depth = 1
 groups     = [["tree"], ["colophon"]]
 ```
@@ -519,6 +519,8 @@ python3 src/engine/build.py --check                        # 組み立て結果�
 python3 src/engine/build.py --lint-only                    # 静的検査のみ
 python3 src/engine/build.py --audit                        # 監査の材料を出す（判定はしない）
 python3 src/engine/build.py <doc> --refs <id>              # そのモジュールの影響半径
+python3 src/engine/build.py --audit-file <path>            # まだ載せていない文書に材料を出す
+python3 src/engine/build.py --impact                       # 変更したモジュールの影響半径（必須調査）
 ```
 
 - 文書の指定は完全一致だけを受ける。省略形・部分一致は持たない（常用は引数なしのビルドであり、名を打つ機会は稀）。
@@ -536,6 +538,7 @@ python3 src/engine/build.py <doc> --refs <id>              # そのモジュー�
 - Python 3.11 以上（`tomllib` を使うため）。macOS 標準の `/usr/bin/python3` は 3.9 で、これには含まれない。3.11 未満のときは `tomli` があればそれを使い、どちらも無ければ理由を示して止める。
 - 標準ライブラリのみ。外部パッケージに依存しない。
 - `build.py` の冒頭で `sys.dont_write_bytecode = True` を設定し、バイトコードのキャッシュ（`__pycache__`）を作らせない。無視設定に頼らず、clone 先でも同じように振る舞わせるため。
+- **この保証は `build.py` を経由したときだけ効く。** `docbuild` を直接 import する経路（対話実行・テスト）ではキャッシュが作られる。作られた `__pycache__` はコミットしない。
 
 ---
 

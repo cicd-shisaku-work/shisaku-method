@@ -41,7 +41,9 @@ def report(doc_id, blocks):
     if sizes:
         lines.append("")
         lines.append(f"-- 粒度（{len(sizes)} モジュール・文字数）")
-        lines.append(f"   最大 {sizes[0][0]} / 最小 {sizes[-1][0]} / 中央 {sizes[len(sizes)//2][0]}")
+        mid = sizes[len(sizes) // 2][0]
+        lines.append(f"   最大 {sizes[0][0]} / 最小 {sizes[-1][0]} / 中央 {mid}"
+                     f"（散らばり 最大÷中央 = {sizes[0][0] / mid:.1f} 倍）")
         for n, lang, mid in sizes[:3]:
             lines.append(f"   大きい: {lang}/{mid} ({n})")
         for n, lang, mid in sizes[-3:]:

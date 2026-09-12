@@ -14,16 +14,21 @@ class Resolver:
         self.base_url = base_url
         self.errors = errors
         self.used_meta = set()
+        self._optional_missing = False
 
     # --- 値の解決 -------------------------------------------------
-    def value(self, kind, key, secmap, render, depth=0):
+    def value(self, kind, key, secmap, render, depth=0, optional=()):
         if kind == "meta":
             if key not in self.meta:
+                if key in optional:
+                    # 任意メタが無い＝その行は出さない（行落ち）。エラーにしない。
+                    self._optional_missing = True
+                    return ""
                 self._err(f"[meta] に無いキー: {{{{meta:{key}}}}}")
                 return None
             self.used_meta.add(key)
             v = str(self.meta[key])
-            return self.resolve(v, secmap, render, depth + 1) if PATTERN.search(v) else v
+            return self.resolve(v, secmap, render, depth + 1, optional) if PATTERN.search(v) else v
         if kind == "path":
             if key not in self.paths:
                 self._err(f"paths.toml に無いキー: {{{{path:{key}}}}}")
@@ -56,7 +61,7 @@ class Resolver:
             self.errors.append(msg)
 
     # --- 本文の解決 -----------------------------------------------
-    def resolve(self, text, secmap, render, depth=0):
+    def resolve(self, text, secmap, render, depth=0, optional=()):
         if depth > MAX_DEPTH:
             self._err("[meta] の参照が深すぎる（循環の疑い）")
             return text
@@ -67,13 +72,16 @@ class Resolver:
                 out.append(line)
                 continue
             original = line
+            self._optional_missing = False
 
             def repl(m):
-                v = self.value(m.group(1), m.group(2), secmap, render, depth)
+                v = self.value(m.group(1), m.group(2), secmap, render, depth, optional)
                 return "" if v is None else v
 
             new = PATTERN.sub(repl, line)
-            # 行落ち：トークンを埋めた結果、空白だけになった行は落とす
+            # 行落ち：(a) 値の無い任意メタを含む行 (b) 埋めた結果、空白だけになった行
+            if self._optional_missing:
+                continue
             if new.strip() == "" and original.strip() != "":
                 continue
             out.append(new)

@@ -18,9 +18,9 @@ def check(idx, src_root, doc_dir, repo_root, paths, blocks, unused_meta):
     v = idx.meta.get("version")
     if v is not None and not VERSION_RE.match(str(v)):
         errors.append(f"version が v0.x[.y] でない、または括弧書きが付いている: {v!r}")
-    d = idx.meta.get("date")
-    if d is not None and not DATE_RE.match(str(d)):
-        errors.append(f"date が YYYY/MM/DD でない: {d!r}")
+    date = idx.meta.get("date")
+    if date is not None and not DATE_RE.match(str(date)):
+        errors.append(f"date が YYYY/MM/DD でない: {date!r}")
 
     # paths.toml のパスが実在するか
     for key, rel in paths.items():
@@ -33,14 +33,14 @@ def check(idx, src_root, doc_dir, repo_root, paths, blocks, unused_meta):
 
     # 孤児（ディレクトリにあるのに、どのグループにも載っていない）
     for lang, ids in listed.items():
-        d = os.path.join(doc_dir, lang)
-        if not os.path.isdir(d):
+        lang_dir = os.path.join(doc_dir, lang)
+        if not os.path.isdir(lang_dir):
             continue
-        for root, _dirs, files in os.walk(d):
+        for root, _dirs, files in os.walk(lang_dir):
             for fn in files:
                 if not fn.endswith((".md", ".xml")):
                     continue
-                mid = os.path.relpath(os.path.join(root, fn), d).rsplit(".", 1)[0]
+                mid = os.path.relpath(os.path.join(root, fn), lang_dir).rsplit(".", 1)[0]
                 if mid not in ids:
                     errors.append(f"インデックスに載っていないモジュール: {lang}/{mid}")
 
