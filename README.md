@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.1  
-**Date:** 2026/06/21
+**Version:** v0.2  
+**Date:** 2026/09/12
 
 ---
 
@@ -11,6 +11,7 @@
 
 シサクメソッドとは、工学化されていない対象を、システム思考で解析し、設計図に起こし、そしてその設計図をもとにアクションを起こすことを試みる実践である。
 
+### 「シサク」という名称
 「シサク（shisaku）」という名称は、日本語において同じ読みを持つ3つの言葉に由来する。
 
 - **思索**（Contemplation）— 考えること
@@ -97,121 +98,6 @@ KOSEI Mining（採掘）と対をなす概念。掘り出した認知フレー�
 SHTT の**入口側**——表現が湧き出す基体＝**表現者自身の変容の集合が形作った固有の核（IDION）**の構造理論（成分でなく、主体の核の側に立つ・略号を持たず把手 IDION で参照）。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、核の書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、強度を変容量（縦＝変容深度〔たどりの長さ〕・変容広さ〔本数〕／横＝結合則）で測り、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを自分のものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は IDION の日本語グロス。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）。
 
 詳細 → `concepts/shisaku-human-idion-structure/`
-
----
-
-## リポジトリ構造
-
-```
-shisaku-method/
-│
-├── README.md
-├── CONTRIBUTING.md                    # git運用規約（ブランチ・PR・コミット規約）
-├── terminology-policy.md              # 用語規約（系列横断・一語一軸）
-├── terminology-ledger.md              # 用語台帳（語・軸・対象・定義位置）
-│
-├── concepts/                          # 概念定義（成果物）
-│   ├── kosei-mining/
-│   │   ├── ja/                        # 日本語版
-│   │   │   ├── kosei-mining-definition.md
-│   │   │   ├── kosei-mining-protocol-definition.md
-│   │   │   ├── kosei-mining-origin.md
-│   │   │   └── kosei-mining-origin-note.md
-│   │   └── en/                        # 英語版（準備中）
-│   ├── personal-llmo/
-│   │   ├── ja/
-│   │   └── en/
-│   ├── shisaku-persona-architecture/
-│   │   ├── ja/
-│   │   │   ├── shisaku-persona-architecture-design-memo-v0.1.md
-│   │   │   ├── honest-domain-strict-v1.0.md
-│   │   │   └── lens-conductor-honest-v6.0.md
-│   │   └── en/
-│   ├── premise-primacy/
-│   │   ├── ja/
-│   │   │   └── premise-primacy.md
-│   │   └── en/
-│   ├── shisaku-cognitive-frame/
-│   │   ├── ja/
-│   │   │   ├── shisaku-cognitive-frame-canon.md
-│   │   │   ├── shisaku-cognitive-frame-runtime.md
-│   │   │   └── shisaku-cognitive-frame-operation-guide-vcurrent.md
-│   │   └── en/
-│   ├── trust-signal-frame/            # 信頼signalフレーム（モードI適用例）
-│   │   ├── ja/
-│   │   │   └── trust-signal-frame.md
-│   │   └── en/
-│   ├── shisaku-human-transformation/         # 変容理論（SHTT・上位／四成分を統べる）
-│   │   ├── ja/
-│   │   │   ├── shisaku-human-transformation.md
-│   │   │   ├── shtt-object-layers.md          # 補足：変容の対象層（種類の軸）
-│   │   │   ├── shtt-depth-terms.md            # 補足：深度語彙（量の語と境界検査）
-│   │   │   ├── shtt-process-stages.md         # 補足：変容の過程の八段（両端共通の詳細）
-│   │   │   ├── shtt-authoring-policy.md       # 資料作成オペレーションルール（原典/補足の境界）
-│   │   │   └── figures/shisaku-human-transformation.svg
-│   │   └── en/
-│   ├── shisaku-human-trajectory-structure/   # 軌跡（SHTST）
-│   │   ├── ja/
-│   │   │   ├── shisaku-human-trajectory-structure.md
-│   │   │   └── figures/shisaku-human-trajectory-structure.svg
-│   │   └── en/
-│   ├── shisaku-human-expression-structure/   # 表現（SHEST）
-│   │   ├── ja/
-│   │   │   ├── shisaku-human-expression-structure.md
-│   │   │   ├── shest-media-map.md             # 補足：媒体の四層マップと受容系全表
-│   │   │   ├── shest-qualia-desire-types.md   # 補足：クオリア欲求の類型・再構成タイプ
-│   │   │   └── figures/shisaku-human-expression-structure.svg
-│   │   └── en/
-│   ├── shisaku-human-distance-structure/     # 距離（SHDST）
-│   │   ├── ja/
-│   │   │   ├── shisaku-human-distance-structure.md
-│   │   │   ├── shdst-distance-axes.md         # 補足：距離軸の全域スキャン
-│   │   │   └── figures/shisaku-human-distance-structure.svg
-│   │   └── en/
-│   ├── shisaku-human-kyomei-structure/       # 共鳴（SHKST）
-│   │   ├── ja/
-│   │   │   ├── shisaku-human-kyomei-structure.md
-│   │   │   ├── shkst-entry-points.md          # 補足：入口（同調の起動点）のカタログ
-│   │   │   ├── shkst-instance-decomposition.md # 補足：共鳴事例の分解表（軸の MECE と実例）
-│   │   │   └── figures/shisaku-human-kyomei-structure.svg
-│   │   └── en/
-│   └── shisaku-human-idion-structure/        # IDION（SHTT の入口側＝表現者の固有核）
-│       ├── ja/
-│       │   ├── shisaku-human-idion-structure.md
-│       │   ├── idion-cases.md                 # 補足：具体事例集と分離検出
-│       │   ├── idion-cost-forms.md            # 補足：変容コストの形態の地図
-│       │   ├── idion-axes-map.md              # 補足：層と軸の地図
-│       │   ├── idion-system-isomorphism.md    # 補足：システムとの同型（設計の検査道具）
-│       │   └── figures/shisaku-human-idion-structure.svg
-│       └── en/
-│
-├── publications/                      # メディアから参照されるサンプル・成果物
-│   ├── published/                     # 公開記事から参照される安定成果物
-│   │   ├── note/
-│   │   │   ├── ja/
-│   │   │   │   ├── pees/
-│   │   │   │   │   ├── pees-prelim-business.md
-│   │   │   │   │   ├── pees-prelim-business-output-format.md
-│   │   │   │   │   ├── shisaku-evaluator-axioms.md   # SEFA（PEES同時読み用の上位公理）
-│   │   │   │   │   └── verification-results/
-│   │   │   │   └── swp/                              # シサク書き手原則フレーム（SWP）
-│   │   │   │       ├── README.md
-│   │   │   │       ├── swp-writer-principles.md
-│   │   │   │       ├── swp-claude-generation-guideline.md
-│   │   │   │       └── swp-voice-extraction-prompts.md
-│   │   │   └── en/
-│   │   ├── medium/
-│   │   │   ├── ja/
-│   │   │   └── en/
-│   │   └── kindle/
-│   │       ├── ja/
-│   │       └── en/
-│   └── tmp/                           # その時のアイデア／プロトタイプの仮置き
-│
-└── logs/                              # AI対話ログ（証跡）
-    ├── kosei-mining/
-    └── personal-llmo/
-```
 
 ---
 
@@ -338,8 +224,123 @@ This repository is not a finished product. It is a prototype in progress.
 
 ---
 
+## リポジトリ構造
+
+```
+shisaku-method/
+│
+├── README.md
+├── CONTRIBUTING.md                    # git運用規約（ブランチ・PR・コミット規約）
+├── terminology-policy.md              # 用語規約（系列横断・一語一軸）
+├── terminology-ledger.md              # 用語台帳（語・軸・対象・定義位置）
+│
+├── concepts/                          # 概念定義（成果物）
+│   ├── kosei-mining/
+│   │   ├── ja/                        # 日本語版
+│   │   │   ├── kosei-mining-definition.md
+│   │   │   ├── kosei-mining-protocol-definition.md
+│   │   │   ├── kosei-mining-origin.md
+│   │   │   └── kosei-mining-origin-note.md
+│   │   └── en/                        # 英語版（準備中）
+│   ├── personal-llmo/
+│   │   ├── ja/
+│   │   └── en/
+│   ├── shisaku-persona-architecture/
+│   │   ├── ja/
+│   │   │   ├── shisaku-persona-architecture-design-memo-v0.1.md
+│   │   │   ├── honest-domain-strict-v1.0.md
+│   │   │   └── lens-conductor-honest-v6.0.md
+│   │   └── en/
+│   ├── premise-primacy/
+│   │   ├── ja/
+│   │   │   └── premise-primacy.md
+│   │   └── en/
+│   ├── shisaku-cognitive-frame/
+│   │   ├── ja/
+│   │   │   ├── shisaku-cognitive-frame-canon.md
+│   │   │   ├── shisaku-cognitive-frame-runtime.md
+│   │   │   └── shisaku-cognitive-frame-operation-guide-vcurrent.md
+│   │   └── en/
+│   ├── trust-signal-frame/            # 信頼signalフレーム（モードI適用例）
+│   │   ├── ja/
+│   │   │   └── trust-signal-frame.md
+│   │   └── en/
+│   ├── shisaku-human-transformation/         # 変容理論（SHTT・上位／四成分を統べる）
+│   │   ├── ja/
+│   │   │   ├── shisaku-human-transformation.md
+│   │   │   ├── shtt-object-layers.md          # 補足：変容の対象層（種類の軸）
+│   │   │   ├── shtt-depth-terms.md            # 補足：深度語彙（量の語と境界検査）
+│   │   │   ├── shtt-process-stages.md         # 補足：変容の過程の八段（両端共通の詳細）
+│   │   │   ├── shtt-authoring-policy.md       # 資料作成オペレーションルール（原典/補足の境界）
+│   │   │   └── figures/shisaku-human-transformation.svg
+│   │   └── en/
+│   ├── shisaku-human-trajectory-structure/   # 軌跡（SHTST）
+│   │   ├── ja/
+│   │   │   ├── shisaku-human-trajectory-structure.md
+│   │   │   └── figures/shisaku-human-trajectory-structure.svg
+│   │   └── en/
+│   ├── shisaku-human-expression-structure/   # 表現（SHEST）
+│   │   ├── ja/
+│   │   │   ├── shisaku-human-expression-structure.md
+│   │   │   ├── shest-media-map.md             # 補足：媒体の四層マップと受容系全表
+│   │   │   ├── shest-qualia-desire-types.md   # 補足：クオリア欲求の類型・再構成タイプ
+│   │   │   └── figures/shisaku-human-expression-structure.svg
+│   │   └── en/
+│   ├── shisaku-human-distance-structure/     # 距離（SHDST）
+│   │   ├── ja/
+│   │   │   ├── shisaku-human-distance-structure.md
+│   │   │   ├── shdst-distance-axes.md         # 補足：距離軸の全域スキャン
+│   │   │   └── figures/shisaku-human-distance-structure.svg
+│   │   └── en/
+│   ├── shisaku-human-kyomei-structure/       # 共鳴（SHKST）
+│   │   ├── ja/
+│   │   │   ├── shisaku-human-kyomei-structure.md
+│   │   │   ├── shkst-entry-points.md          # 補足：入口（同調の起動点）のカタログ
+│   │   │   ├── shkst-instance-decomposition.md # 補足：共鳴事例の分解表（軸の MECE と実例）
+│   │   │   └── figures/shisaku-human-kyomei-structure.svg
+│   │   └── en/
+│   └── shisaku-human-idion-structure/        # IDION（SHTT の入口側＝表現者の固有核）
+│       ├── ja/
+│       │   ├── shisaku-human-idion-structure.md
+│       │   ├── idion-cases.md                 # 補足：具体事例集と分離検出
+│       │   ├── idion-cost-forms.md            # 補足：変容コストの形態の地図
+│       │   ├── idion-axes-map.md              # 補足：層と軸の地図
+│       │   ├── idion-system-isomorphism.md    # 補足：システムとの同型（設計の検査道具）
+│       │   └── figures/shisaku-human-idion-structure.svg
+│       └── en/
+│
+├── publications/                      # メディアから参照されるサンプル・成果物
+│   ├── published/                     # 公開記事から参照される安定成果物
+│   │   ├── note/
+│   │   │   ├── ja/
+│   │   │   │   ├── pees/
+│   │   │   │   │   ├── pees-prelim-business.md
+│   │   │   │   │   ├── pees-prelim-business-output-format.md
+│   │   │   │   │   ├── shisaku-evaluator-axioms.md   # SEFA（PEES同時読み用の上位公理）
+│   │   │   │   │   └── verification-results/
+│   │   │   │   └── swp/                              # シサク書き手原則フレーム（SWP）
+│   │   │   │       ├── README.md
+│   │   │   │       ├── swp-writer-principles.md
+│   │   │   │       ├── swp-claude-generation-guideline.md
+│   │   │   │       └── swp-voice-extraction-prompts.md
+│   │   │   └── en/
+│   │   ├── medium/
+│   │   │   ├── ja/
+│   │   │   └── en/
+│   │   └── kindle/
+│   │       ├── ja/
+│   │       └── en/
+│   └── tmp/                           # その時のアイデア／プロトタイプの仮置き
+│
+└── logs/                              # AI対話ログ（証跡）
+    ├── kosei-mining/
+    └── personal-llmo/
+```
+
+---
+
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
 * **Friction & Proof:** Human KOSEI vs Artificial Logos
-* **Version:** v0.1
-* **Date:** 2026/06/21
+* **Version:** v0.2
+* **Date:** 2026/09/12
