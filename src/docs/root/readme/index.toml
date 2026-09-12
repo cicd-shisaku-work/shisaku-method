@@ -1,0 +1,53 @@
+# README のインデックス（並び・出力先）。正本はモジュール群。
+[doc]
+id     = "readme"
+output = "README.md"
+
+[meta]
+title    = "shisaku-method"
+author   = "shisaku"
+status   = "継続的インテグレーション中 / Continuously Integrating"
+friction = "Human KOSEI vs Artificial Logos"
+version  = "v0.2"
+date     = "2026/09/12"
+
+[numbering]
+enabled = false
+
+[[block]]
+lang       = "common"
+base_depth = 0
+groups     = [["header"]]
+
+[[block]]
+lang       = "ja"
+base_depth = 1
+groups = [
+  ["what-is", "what-is/name"],
+  ["repository"],
+  ["how-to-read"],
+  ["concepts", "concepts/kosei-mining", "concepts/personal-llmo", "concepts/shisaku-persona-architecture",
+   "concepts/shisaku-world-interpretation", "concepts/premise-primacy", "concepts/shisaku-cognitive-frame",
+   "concepts/trust-signal-frame", "concepts/shisaku-human-transformation", "concepts/shisaku-human-idion-structure"],
+  ["who"],
+]
+
+[[block]]
+lang           = "en"
+base_depth     = 1
+allow_unpaired = ["banner"]
+groups = [
+  [],
+  ["banner", "what-is", "what-is/name"],
+  ["repository"],
+  ["how-to-read"],
+  ["concepts", "concepts/kosei-mining", "concepts/personal-llmo", "concepts/shisaku-persona-architecture",
+   "concepts/shisaku-world-interpretation", "concepts/premise-primacy", "concepts/shisaku-cognitive-frame",
+   "concepts/trust-signal-frame", "concepts/shisaku-human-transformation", "concepts/shisaku-human-idion-structure"],
+  ["who"],
+]
+
+[[block]]
+lang       = "common"
+base_depth = 1
+groups     = [["tree"], ["colophon"]]

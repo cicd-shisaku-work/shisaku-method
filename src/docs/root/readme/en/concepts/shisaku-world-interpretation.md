@@ -1,0 +1,7 @@
+---
+id: concepts/shisaku-world-interpretation
+---
+# Shisaku World-Interpretation
+The **starting point** that precedes the shisaku-method, and the most upstream *way of seeing* in the series: a lens that views the human as a hybrid of raw drives (BIOS) and compressed concepts written as stories (OS). It reads the troubles of the present from the mismatch with an accelerating environment, and places — above the survival cravings (safety, status, novelty) — an OS-layer craving: *to be oneself*. One person's interpretation, measured by whether it works, not by whether it is true. **If Premise Primacy is "the upstream of mechanism," this is "the upstream of seeing"** — the two axes on which the series stands. The shisaku-method is, in the end, the activity of writing one's own story (= premise) toward the problem this interpretation names.
+
+→ `{{path:shisaku-world-interpretation}}`

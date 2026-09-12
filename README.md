@@ -332,9 +332,17 @@ shisaku-method/
 │   │       └── en/
 │   └── tmp/                           # その時のアイデア／プロトタイプの仮置き
 │
-└── logs/                              # AI対話ログ（証跡）
-    ├── kosei-mining/
-    └── personal-llmo/
+├── logs/                              # AI対話ログ（証跡）
+│   ├── kosei-mining/
+│   └── personal-llmo/
+│
+└── src/                               # 文書ビルド（モジュールが正本・README等はここから生成）
+    ├── engine/                        # ビルド本体・設計書・運用手順書
+    ├── shared/                        # 文書をまたぐ共有モジュール（ヘッダー・奥付・ライセンス）
+    ├── paths.toml                     # リポジトリ内パスの対応表
+    └── docs/                          # 文書のモジュール（ディレクトリ名＝出力の語幹）
+        ├── root/                      # リポジトリ直下へ出る文書
+        └── concepts/                  # concepts/ へ出る文書
 ```
 
 ---

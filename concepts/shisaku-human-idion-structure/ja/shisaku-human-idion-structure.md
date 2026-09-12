@@ -1,14 +1,17 @@
 # シサク・ヒト IDION 構造理論
 ## Shisaku Human IDION-Structure Theory
 
-**上流依存：シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**
-**バージョン：v0.1.5**（理論名・略号は候補列挙＝末尾「命名」・裁定は提唱者）
+**上流依存：シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**  
+**Version:** v0.1.6  
+**Date:** 2026/09/12
 
 > これは解釈のレンズである。理論の作法で書いたのは、監査し、直せるようにするためである。測るなら、通す前と後で何が違って見えるかで測る。
 
 ---
 
 ## 序：この文書は何か
+
+本書の理論名・略号は候補の列挙であり、裁定は提唱者が行う（末尾「命名」）。
 
 これは、**表現者の側に立つ、変容の入口の理論**である。ヒトが表現によって他者と自己を変容させる系（SHTT）は、四つの成分——軌跡（SHTST）・表現（SHEST）・距離（SHDST）・共鳴（SHKST）——で**出口側**（受け手の変容の 目標→実装→制約→観測）を担う。本書はその**入口側**——表現が湧き出す基体、すなわち**表現者自身の変容の集合が形作った固有の核＝IDION**——を担う。同じ「変容」が、入口（表現者がどう変容してきたか）と出口（受け手がどう変容するか）の両端に立つ。本書は入口端の構造である。
 
@@ -295,8 +298,8 @@ SHTT の略号規則（上位＝SHTT／成分＝SH＋頭字＋ST）を IDION に
 **Shisaku Human IDION-Structure Theory**
 **上流依存：シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**
 * **Author / Explorer:** shisaku
-* **Version:** v0.1.5
-* **Date:** 2026/09/07
+* **Version:** v0.1.6
+* **Date:** 2026/09/12
 
 ---
 
@@ -310,5 +313,4 @@ Licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
 
 License: https://creativecommons.org/licenses/by/4.0/
 Author: https://note.com/abstraction
-Canonical repository:
-https://github.com/cicd-shisaku-work/shisaku-method/tree/main/concepts/shisaku-human-idion-structure
+Canonical repository: https://github.com/cicd-shisaku-work/shisaku-method/tree/main/concepts/shisaku-human-idion-structure
