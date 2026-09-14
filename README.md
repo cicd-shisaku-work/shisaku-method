@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.2.1  
-**Date:** 2026/09/12
+**Version:** v0.2.2  
+**Date:** 2026/09/14
 
 ---
 
@@ -33,6 +33,22 @@ logs/          — 概念構築の過程としてのAI対話ログ
 ```
 
 エゴ・マイニングによって生まれた概念がここに格納される。同時に、エゴ・マイニングそのものの記録もここに格納される。器と内容物が同一の場所に存在する。
+
+---
+
+## 誰が、どこまで読むか
+
+本リポジトリは三種の読み手を想定する。**読む必要のある範囲が違う**ので、それぞれの面だけで何ができるかを分けて書く。
+
+| 読み手 | 読む面 | その面だけでできること |
+| :-- | :-- | :-- |
+| **一般読者** | 原典の本文（`concepts/` の各文書） | **原典だけで理論が読める。** 定義・適用範囲・参照先が本文で辿れ、仕組みを見なくても済む |
+| **評価読者** | ＋ 仕組みの文書（`src/engine/`・`CONTRIBUTING.md`・`terminology-policy.md`）と、文書ビルドに載っている文書のモジュール・インデックス | **作りが辿れる。** なぜこの構造か、何を検査しているか、どこが正本かが読める |
+| **著者** | すべて | — |
+
+**適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。
+
+**この分類が決めるもの。** どの面に何を出すかは、ここから出る。一段目が成り立つのは、定義・適用範囲・参照先を**本文が持つ**ときである。仕組みのための記述は、一段目の読み心地に出さない。
 
 ---
 
@@ -145,6 +161,22 @@ The concepts here were born through ego-mining (KOSEI Mining). The records of th
 
 ---
 
+## Who reads how far
+
+This repository assumes three kinds of readers. Because the range each needs to read differs, what each surface alone lets you do is stated separately.
+
+| Reader | Surface | What that surface alone lets you do |
+| :-- | :-- | :-- |
+| **General reader** | The canonical texts (`concepts/`) | **Read the theory from the canon alone.** Definitions, scope and references are traceable within the text, without looking at the machinery |
+| **Repository reviewer** | ＋ The machinery documents (`src/engine/`, `CONTRIBUTING.md`, `terminology-policy.md`), and the modules and index of documents carried by the document build | **The construction is legible.** Why this structure, what is checked, and where the source of truth sits |
+| **Author** | Everything | — |
+
+**Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's.
+
+**What this classification decides.** What appears on which surface follows from it. The first surface holds when definitions, scope and references live **in the text itself**. Descriptions written for the machinery do not appear in the first surface's reading experience.
+
+---
+
 ## How to read these (their hypothetical character)
 
 Every concept here is a **hypothesis and an axiomatic system for design**, not a verified scientific claim. Seven premises for reading:
@@ -247,5 +279,5 @@ shisaku-method/
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
 * **Friction & Proof:** Human KOSEI vs Artificial Logos
-* **Version:** v0.2.1
-* **Date:** 2026/09/12
+* **Version:** v0.2.2
+* **Date:** 2026/09/14

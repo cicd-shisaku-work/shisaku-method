@@ -8,8 +8,8 @@ title    = "shisaku-method"
 author   = "shisaku"
 status   = "継続的インテグレーション中 / Continuously Integrating"
 friction = "Human KOSEI vs Artificial Logos"
-version  = "v0.2.1"
-date     = "2026/09/12"
+version  = "v0.2.2"
+date     = "2026/09/14"
 
 [numbering]
 enabled = false
@@ -25,6 +25,7 @@ base_depth = 1
 groups = [
   ["what-is", "what-is/name"],
   ["repository"],
+  ["readers"],
   ["how-to-read"],
   ["concepts", "concepts/kosei-mining", "concepts/personal-llmo", "concepts/shisaku-persona-architecture",
    "concepts/shisaku-world-interpretation", "concepts/premise-primacy", "concepts/shisaku-cognitive-frame",
@@ -40,6 +41,7 @@ groups = [
   [],
   ["banner", "what-is", "what-is/name"],
   ["repository"],
+  ["readers"],
   ["how-to-read"],
   ["concepts", "concepts/kosei-mining", "concepts/personal-llmo", "concepts/shisaku-persona-architecture",
    "concepts/shisaku-world-interpretation", "concepts/premise-primacy", "concepts/shisaku-cognitive-frame",
