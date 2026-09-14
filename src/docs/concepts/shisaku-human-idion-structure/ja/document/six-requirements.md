@@ -3,6 +3,7 @@ id: document/six-requirements
 numbered: false
 ---
 # 本書の六要件（別セッションが再導出なしで使うための自己完結）
+<!-- machinery-def: IDION 原典の六要件 -->
 
 - **意味**——表現者の核（IDION）を、定義（{{sec:subject/definition}}）・公理（{{sec:subject/axiom}}）・外延（{{sec:subject/extension}}）・形成の過程と駆動の層（{{sec:subject/structure}}）・強度と結合則（{{sec:subject/strength}}）・判定非対称（{{sec:subject/judgment-asymmetry}}）・偽装（{{sec:subject/disguise}}）・品格（{{sec:subject/dignity}}）・上流接続（{{sec:document/upstream}}）まで、一つの構造として立てる原典。
 - **用法条件**——表現者の核の有無・強さ・偽装・品格を判定・設計・監査するあらゆる局面。とくに、道具や他者が表現者の論旨を敷衍する分業での帰属判定、技巧と偽装の切り分け、品格の較正、SHTT の入口端の据え直し。

@@ -2,6 +2,8 @@
 id: subject/definition
 ---
 # IDION——定義と把手
+<!-- machinery-def: IDION の定義性質 -->
+<!-- machinery-def: IDION の狭い読み -->
 
 **IDION ＝ 変容の集合が形作った、その人に固有の核。** ヒト種に普遍の構造であり、基準（平均）を持たず、それ自体で立つ。表現者の側にあり、表現が湧き出す**入口の基体**である。
 

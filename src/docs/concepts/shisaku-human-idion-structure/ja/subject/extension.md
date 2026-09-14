@@ -2,6 +2,7 @@
 id: subject/extension
 ---
 # 外延——体験に限らない（観測・論旨・合成）
+<!-- machinery-def: IDION の外延 -->
 
 IDION の外延は、生きた実体験に限らない。三つの水準を分ける——**IDION を形作る接触**、**IDION そのもの（核）**、**IDION の表現化**。
 
