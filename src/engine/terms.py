@@ -125,7 +125,156 @@ def scan_marks():
     return hits
 
 
+# ---- 検出（材料を出す。判定しない・AUDIT.md の分界） ----
+
+RANGE_PATS = [
+    re.compile(r"第\s*([0-9]+)\s*〜\s*([0-9]+)\s*節"),
+    re.compile(r"([一二三四五六七八九十0-9]+)\s*〜\s*([一二三四五六七八九十0-9]+)"),
+    re.compile(r"[①②③④⑤⑥⑦⑧]\s*〜\s*[①②③④⑤⑥⑦⑧]"),
+]
+SEC_NUM = re.compile(r"(第\s*[0-9]+(?:\.[0-9]+)?\s*節|§\s*[0-9]+(?:\.[0-9]+)?|原典\s*[0-9]+\.[0-9]+)")
+QUOTED_SEC = re.compile(r"「([^」]{2,40})」の節")
+COUNTER = re.compile(r"[文字行件回日年月人個本種割倍％%頁枚語点]")
+
+
+def corpus_files():
+    """(パス, 文書id, 補足か) を返す。生成物も含む（公開文書を見るため）。
+
+    補足の判別は**文書自身の宣言**で行う——H1 に「補足」を持つもの。
+    ファイル名で当てると、`…-canon.md` のような原典を取り違える。
+    """
+    out = []
+    base = os.path.join(ROOT, "concepts")
+    for d in sorted(os.listdir(base)):
+        ja = os.path.join(base, d, "ja")
+        if not os.path.isdir(ja):
+            continue
+        for fn in sorted(os.listdir(ja)):
+            if not fn.endswith(".md"):
+                continue
+            p = os.path.join(ja, fn)
+            h1 = ""
+            for line in open(p, encoding="utf-8").read().split("\n"):
+                m = HEAD.match(line)
+                if m and len(m.group(1)) == 1:
+                    h1 = m.group(2)
+                    break
+            out.append((p, d, "補足" in h1))
+    return out
+
+
+def ordinal_prefixes(bundles):
+    """`ordinal` のバンドルから、番号が身元である列の接頭辞を集める。"""
+    pre = set()
+    for b in bundles:
+        if "ordinal" not in b[2]:
+            continue
+        for el in re.split(r"[／/]", b[1]):
+            m = re.match(r"\s*([^\s0-9(（]+)\s*[0-9(（]", el)
+            if m:
+                pre.add(m.group(1))
+    return pre
+
+
+def detect(bundles):
+    files = corpus_files()
+    pre = ordinal_prefixes(bundles)
+    heads = set()
+    srcs = [p for p, _d, _s in files] + [
+        os.path.join(ROOT, x) for x in
+        ("README.md", "CONTRIBUTING.md", "terminology-policy.md", "terminology-ledger.md")
+    ]
+    for p in srcs:
+        if not os.path.exists(p):
+            continue
+        for line in open(p, encoding="utf-8").read().split("\n"):
+            m = HEAD.match(line)
+            if m:
+                heads.add(m.group(2))
+
+    a, b, c, d = [], [], [], []
+    # (d) の検索鍵。**三文字未満の裸形は使わない**——「層」「候補」「出口」のような
+    # 断片は、第5条 (i) の節内呼称としては正しいが、文書をまたぐ検索の鍵にならない。
+    names, fragments, owners = {}, [], {}
+    for row in bundles:
+        for n in [row[0]] + [x.strip() for x in re.split(r"[／/]", row[3]) if x.strip()]:
+            owners.setdefault(n, []).append(row[0])
+    for n, own in owners.items():
+        if len(n) < 3:
+            fragments.append((own[0], n))
+            continue
+        if len(own) > 1:
+            continue          # 二つ以上のバンドルを指す裸形は鍵にしない（C7 が別に出す）
+        names[n] = own[0]
+
+    for p, doc, is_sup in files:
+        rel = os.path.relpath(p, ROOT)
+        t = open(p, encoding="utf-8").read()
+        for line in t.split("\n"):
+            if line.lstrip().startswith("<!--"):
+                continue
+            # (a) 番号範囲参照
+            taken = []
+            for pat in RANGE_PATS:
+                for m in pat.finditer(line):
+                    if any(m.start() >= x and m.end() <= y for x, y in taken):
+                        continue                     # 既に拾った範囲の内側
+                    ctx = line[max(0, m.start() - 6):m.start()]
+                    if any(x in ctx for x in pre):
+                        taken.append((m.start(), m.end()))
+                        continue                     # 番号が身元の列＝正常
+                    if COUNTER.match(line[m.end():m.end() + 2]):
+                        taken.append((m.start(), m.end()))
+                        continue                     # 数量であって参照でない
+                    taken.append((m.start(), m.end()))
+                    a.append((rel, m.group(0), line.strip()[:70]))
+            # (b) 補足 → 節番号参照
+            if is_sup:
+                for m in SEC_NUM.finditer(line):
+                    b.append((rel, m.group(0), line.strip()[:70]))
+            # (c) 参照先に無い名
+            for m in QUOTED_SEC.finditer(line):
+                nm = m.group(1)
+                if not any(nm in h for h in heads):
+                    c.append((rel, nm, line.strip()[:70]))
+            # (d) 同じ名の直後の列挙が違う
+            for nm in names:
+                for m in re.finditer(re.escape(nm) + r"[（(]([^）)]{2,60})[）)]", line):
+                    d.append((names[nm], nm, m.group(1), rel))
+    # (d) は文書をまたいで中身が違うものだけ残す
+    grp = {}
+    for owner, nm, body, rel in d:
+        grp.setdefault(owner, set()).add((body, rel))
+    d = [(k, sorted(v)) for k, v in grp.items() if len({x[0] for x in v}) > 1]
+    return a, b, c, d, fragments
+
+
+def run_detect():
+    _w, bundles, _m = load_ledger()
+    a, b, c, d, frag = detect(bundles)
+    print("== 検出（材料。判定はしない） ==")
+    print(f"対象：`concepts/` の公開文書（生成物を含む・全 {len(corpus_files())} 本）")
+    print(f"番号が身元の列（台帳の ordinal から）：{'／'.join(sorted(ordinal_prefixes(bundles))) or 'なし'}")
+    for label, items in (("(a) 番号範囲参照", a), ("(b) 補足からの節番号参照", b), ("(c) 参照先に無い名", c)):
+        print(f"\n-- {label}（{len(items)} 件）")
+        for x in items[:40]:
+            print(f"   {x[0]}  『{x[1]}』  {x[2]}")
+        if len(items) > 40:
+            print(f"   …ほか {len(items) - 40} 件")
+    print(f"\n-- (d) 同じ名で、直後の列挙が文書間で違う（{len(d)} 件）")
+    if frag:
+        print(f"   ※ 検索鍵にしなかった裸形（三文字未満・{len(frag)} 件）："
+              + "／".join(f"{n}←{o}" for o, n in frag))
+    for owner, vs in d:
+        print(f"   「{owner}」")
+        for body, rel in vs:
+            print(f"      {rel}: （{body[:50]}）")
+    return 0
+
+
 def main():
+    if "--detect" in sys.argv:
+        return run_detect()
     words, bundles, machinery = load_ledger()
     marks = scan_marks()
     err, warn, note = [], [], []
