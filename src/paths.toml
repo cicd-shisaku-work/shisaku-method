@@ -1,0 +1,19 @@
+# リポジトリ内パスの対応表。名（キー）は安定、置き場（値）は動く。
+# 配置が変わったとき、書き換えるのはここだけ。
+[base]
+url = "https://github.com/cicd-shisaku-work/shisaku-method/tree/main"
+
+[paths]
+kosei-mining                     = "concepts/kosei-mining/"
+personal-llmo                    = "concepts/personal-llmo/"
+premise-primacy                  = "concepts/premise-primacy/"
+trust-signal-frame               = "concepts/trust-signal-frame/"
+shisaku-cognitive-frame          = "concepts/shisaku-cognitive-frame/"
+shisaku-persona-architecture     = "concepts/shisaku-persona-architecture/"
+shisaku-world-interpretation     = "concepts/shisaku-world-interpretation/"
+shisaku-human-transformation     = "concepts/shisaku-human-transformation/"
+shisaku-human-trajectory-structure = "concepts/shisaku-human-trajectory-structure/"
+shisaku-human-expression-structure = "concepts/shisaku-human-expression-structure/"
+shisaku-human-distance-structure = "concepts/shisaku-human-distance-structure/"
+shisaku-human-kyomei-structure   = "concepts/shisaku-human-kyomei-structure/"
+shisaku-human-idion-structure    = "concepts/shisaku-human-idion-structure/"
