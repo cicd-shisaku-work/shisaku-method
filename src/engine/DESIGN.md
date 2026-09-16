@@ -1,7 +1,7 @@
 # シサク原典管理スクリプト設計書
 
-**Version:** v0.1.5
-**Date:** 2026/09/15
+**Version:** v0.1.6
+**Date:** 2026/09/16
 **性格：** `src/` に置く文書ビルド（モジュール群から公開文書を組み立てるスクリプト）の設計仕様。実装する者が、この文書だけを読んで着手できることを合格条件とする。
 
 **範囲：** 本書はモジュールとスクリプトの設計だけを扱う。日々の運用・移行の手順・コミットの作法は本書に含めない（`OPERATIONS.md`）。
@@ -192,10 +192,13 @@ src/
 │
 ├── shared/                    # 部品（文書をまたぐ共有モジュール）
 │   ├── meta/
-│   │   ├── header.md
-│   │   └── colophon.md
+│   │   ├── header.md               # 原典向け
+│   │   ├── colophon.md             # 原典向け
+│   │   ├── supplement-header.md    # 補足向け
+│   │   └── supplement-colophon.md  # 補足向け
 │   └── license/
-│       └── cc-by-4.0.md
+│       ├── cc-by-4.0.md
+│       └── supplement-cc-by-4.0.md
 │
 ├── paths.toml                 # リポジトリ内パスの対応表
 │
@@ -207,9 +210,16 @@ src/
     │       ├── ja/
     │       └── en/
     └── concepts/              # concepts/ へ出る文書
-        └── shisaku-human-idion-structure/
-            ├── index.toml
-            └── ja/
+        ├── shisaku-human-idion-structure/
+        │   ├── index.toml
+        │   └── ja/
+        └── idion-supplements/     # 仕える原典の名を持つ中間ディレクトリ
+            ├── idion-axes-map/
+            │   ├── index.toml
+            │   └── ja/
+            ├── idion-cases/
+            ├── idion-cost-forms/
+            └── idion-system-isomorphism/
 ```
 
 **名前は一つ。** 文書の識別子は、出力されるファイルの語幹（＝概念ディレクトリ名）と一致させ、短縮した別名を作らない。書き方は英小文字とハイフン（リポジトリのディレクトリ命名に合わせる。`README.md` の識別子は `readme`）。モジュールのディレクトリ名・`[doc] id`・`paths.toml` のキーが、同じ一つの名を指す（`[doc] id` とディレクトリ名の一致は lint が見る）。別名を作ると、同じ文書に三つの名が付き、どれがどれかを覚える仕事が増える。
@@ -217,6 +227,8 @@ src/
 **文書の中は、所属（役）でディレクトリを切る。** その節がどの役に属するか（対象について／適用について／文書について／原典について）をディレクトリで表す。所属は深さに数えない（§8 の `cluster_depth`・§12）。順序は所属でなくインデックスが持つので、骨格の順序が後で変わっても、動くのはインデックスの 1 か所である。
 
 **`docs/` の下は、出力先のトップ区分を写す**（ルート直下か `concepts/` か）。棚（射程）でなく出力先のトップなので、`concepts/` の中が再編されても、この区分は動かない。文書は 1 文書 1 ディレクトリで、`index.toml` を持つディレクトリがビルドの対象になる。
+
+**補足は、仕える原典の名を持つ中間ディレクトリにまとめる。** 原典のディレクトリの下には置けない——`documents()` は `index.toml` を見つけた時点でその下へ降りないので（`dirs[:] = []`）、原典の下に置いた補足は走査に掛からない。**実装の制約であって好みではない。** 兄弟として並べる案は走査には通るが、`concepts/` 直下に並んだ 5 つのうち 4 つが 5 つ目の補足であることが置き場から読めなくなる。中間ディレクトリは `index.toml` を持たないので、走査は素通りして降りる。
 
 出力先そのもの（階層とファイル名）はインデックスが持つ。配置が変わってもソースは動かない。
 
@@ -332,7 +344,7 @@ raw: true
 - **行落ちの規則：** ①`optional` に挙げたメタが `[meta]` に無いとき、そのトークンを含む行を落とす。②トークンを埋めた結果、空白だけになった行を落とす。この二つが唯一の条件分岐であり、テンプレート言語は作らない。`optional` に挙げていないキーが `[meta]` に無ければ、行落ちでなくエラーになる（黙って消えない）。文書の種類ごとの差（README の `Status`、原典の上流依存、補足に著者が無いこと）は、この規則で吸収する。テンプレートを種類別に増やさない。
 - 行落ちが空行の重複を生まないよう、任意の行はテンプレート上で前後に空行を置かない書き方に限る。
 - 奥付（`meta/colophon`）も同じ値を差し込む。同じ値が二か所に字面で並ぶ状態を作らない。
-- **共有テンプレートは原典向け。** README のように固有の項目（`Status`・`Friction & Proof`）を持つ文書は、ヘッダーと奥付を文書側のモジュールに置き、値は同じ `[meta]` から差し込む。骨格は文書種別の属性であり、種別の違う文書を一つのテンプレートへ押し込まない。
+- **テンプレートは種別ごとに一つ。** 骨格は文書種別の属性なので、種別の違う文書を一つのテンプレートへ押し込まない。現在あるのは原典向け（`meta/header` / `meta/colophon` / `license/cc-by-4.0`）と補足向け（`meta/supplement-header` / `meta/supplement-colophon` / `license/supplement-cc-by-4.0`）。補足は、上流依存の欄の代わりに関連（原典と姉妹補足）を持ち、ライセンスの配置先 URL を改行して置く——**字面が違うので、行落ちの規則では吸収できない。** 一件しかない文書（README の `Status`・`Friction & Proof`）は、種別を立てずに文書側のモジュールへ置き、値は同じ `[meta]` から差し込む。
 - ラベル・版の書式・括弧書きを置かない規約は CONTRIBUTING が持ち、その機械的な担保は lint が持つ（§13）。
 
 ---
@@ -661,6 +673,27 @@ ja/
 - 「弁別子」は各節の規則の集約で、節を直せば一緒に動く＝独立の裁定単位ではない。第一陣では 1 モジュールとして置き、生成へ移すのは後（§17）。
 - `header` と `colophon` は、題・上流依存・版・日付を重複して持つ。値は `[meta]` に置き、共有テンプレート `shared:meta/header` / `shared:meta/colophon`（§7.5）で差し込む。版上げがインデックスの 1 か所で済む。
 - ライセンスは共有モジュール（§7.4）を呼ぶ。ただし字面のまま移す工程では文書ごとのモジュールで置き、共有部品への切り替えはその後の正規化として行う。
+
+### 16.3 IDION 補足 4 本
+
+原典と同じく所属（役）でディレクトリを切る。**補足は原典に無い役を一つ持つ**——`canon/`（原典について・§3.2）。
+
+```
+idion-supplements/
+├── idion-axes-map/          document/placement・failure-modes ／ subject/axes・objects・independence・receiver-mapping ／ canon/feedback
+├── idion-cost-forms/        document/placement・failure-modes ／ subject/forms・variables ／ application/distinctions・screening ／ canon/feedback
+├── idion-system-isomorphism/ document/placement・failure-modes ／ application/correspondence・change-kinds・procedure ／ subject/where-it-breaks ／ canon/feedback
+└── idion-cases/             document/placement ／ application/procedure・split-detection ／ canon/cases・feedback・observations
+```
+
+- **27 節のうち `canon/` は 6 節**——4 本それぞれの「原典へのフィードバック候補」、`idion-cases` の「事例集」と「分離候補の観察欄」。
+- **`canon/` の一問には、一段の区別が要る。** 条文は「その節が語っているのは、この文書の外にある原典か」だが、**原典（＝文書）と IDION（＝対象）を分けないと 9 節が鳴る**。`idion-system-isomorphism` の「対応が切れる場所」は IDION（対象）の定義的性質を語るので `subject/`、`idion-cost-forms` の「区別」は原典を**使う**側の規律なので `application/` に入る。§3.2 の条文の手当ては未着手。
+- **残り三役の配属に一問は無い**（§3.2 が持つのは枡の定義だけ）。ここでの 21 件は判別子なしの配属であり、**前例になる**。理由は維持側の記録に残してある。
+- **二役にまたがる節が 2 件ある**——`idion-cases` の「分離検出」（検出の手続き＋原典が語を分けた実績）と `idion-axes-map` の「軸の独立性」（二基準＋6 対の評価）。**本文を動かさないため寄せて置き、混在の注記はインデックスに置いた**（本文に書けば字面が動く）。割る是非は、原因（上流に正本が無いこと）の手当てと一緒に決める。
+- **`idion-cases` には「失敗機構」の節が無い。** 他の 3 本にはある。欠落が補足側か、様式を定める規約側かは決まっていない。
+- 補足の骨格（位置づけ／篩の手続き／非固定の明記／原典へのフィードバック欄）は `shtt-authoring-policy.md` が条文として持つ。**4 本はそれに従っている。**
+- **`idion-axes-map` は、見出し欄の版（v0.1）と奥付の版（v0.1.1）が食い違っている。** 字面を変えないため、インデックスは `header_version` と `version` を別に持つ。**二つの版を持つこと自体が直す対象**であり、一致させる改訂は裁定を経てから行う。
+- ヘッダー・奥付・ライセンスは補足向けの共有テンプレート（§7.5）を呼ぶ。
 
 ## 17. 予約と未決
 

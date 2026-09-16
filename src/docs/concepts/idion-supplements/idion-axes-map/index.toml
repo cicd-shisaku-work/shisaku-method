@@ -1,0 +1,42 @@
+# IDION 構造理論 補足 ― 層と軸の地図 のインデックス（並び・出力先）。正本はモジュール群。
+[doc]
+id     = "idion-axes-map"
+output = "{{path:shisaku-human-idion-structure}}ja/idion-axes-map.md"
+
+[meta]
+title    = 'IDION 構造理論 補足 ― 層と軸の地図'
+subtitle = 'Supplement: A Map of Layers and Axes (Shisaku Human IDION-Structure Theory)'
+related  = 'シサク・ヒト IDION 構造理論（原典）／シサク・ヒト変容理論（SHTT）／姉妹補足：具体事例集と分離検出〔idion-cases.md〕・変容コストの形態の地図〔idion-cost-forms.md〕'
+author   = 'shisaku'
+version  = 'v0.1.1'
+# header_version は本文の見出し欄の版。colophon の version と食い違っている文書があるため、
+# 一致させずに残している（裁定待ち・issue: supplement-version-mismatch）。
+header_version = 'v0.1'
+date     = '2026/09/07'
+canonical      = "{{url:shisaku-human-idion-structure}}"
+copyright_year = "2026"
+license_intro  = '''This document is a supplement to the Shisaku Human IDION-Structure Theory — a map of candidate axes (depth as the amount of judgment moved by boundaries, resolution as boundary inventory, horizontal integration, self-proximity, and the object rewritten), the reading of "deep" from everyday speech, the independence checks between axes, and the candidate mapping from an expresser's depth to a receiver's sense of depth — authored by shisaku. It is released for others to study, adapt, and implement.'''
+
+[numbering]
+enabled = true
+start   = 1
+format  = ["{n}. ", "{n} "]
+
+[[block]]
+lang          = "ja"
+base_depth    = 1
+cluster_depth = 1                    # 先頭 1 セグメントは所属（役）＝深さに数えない
+groups = [
+  ["shared:meta/supplement-header"],
+  ["document/placement"],
+  ["subject/axes"],
+  ["subject/objects"],
+  # 二役にまたがる（寄せて置いた）。二基準＝手続き（application）／6 対の評価＝対象の主張（subject）。
+  # うち 2 行は「原典で確定」であり候補ではない。確定と候補が同じ表にある状態も、その手当てに含む。
+  ["subject/independence"],
+  ["subject/receiver-mapping"],
+  ["canon/feedback"],
+  ["document/failure-modes"],
+  ["shared:meta/supplement-colophon"],
+  ["shared:license/supplement-cc-by-4.0"],
+]
