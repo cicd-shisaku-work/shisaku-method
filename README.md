@@ -2,27 +2,31 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.4  
+**Version:** v0.5  
 **Date:** 2026/09/17
 
 ---
 
-## シサクメソッドとは何か
-
-シサクメソッドとは、工学化されていない対象を、システム思考で解析し、設計図に起こし、そしてその設計図をもとにアクションを起こすことを試みる実践である。
-
-### 「シサク」という名称
-「シサク（shisaku）」という名称は、日本語において同じ読みを持つ3つの言葉に由来する。
-
-- **思索**（Contemplation）— 考えること
-- **試作**（Prototype）— 形にすること
-- **施策**（Deploy）— 実行すること
-
-この三位一体は円環をなし、どれか一つとして欠けてはならない。漢字で表記するなら「志作駆」であり、これはKOSEI Miningにおける志作駆円環の駆動原理とも接続する。
-
----
-
 ## このリポジトリは何か
+
+これは、実践の中で得られた知をシサクがシステム思考によって構造化し、その構造を解析・導出し、図や文章として記述している、シサクによるシサクのための Book of Knowledge として始まったリポジトリである。
+
+一つの問い——
+
+> 仕組みがわかれば、自身の叶えたい未来に対して、より適切な解法を導出できるのではないか。
+
+——から端を発している。その問いの根には、少年の頃に疑問として立った、
+
+* 自分はなぜ生まれたのか
+* 自分は何をしたらいいのか
+* 自分は何をすべきか
+* 自分とはなにか
+
+という問いがある。これらに対する答えを求めるための暫定的な対処として始まったものが、対象を自己から人間、表現、社会、AI へと広げながら現在まで継続し、現在の理論群へと発展している。
+
+なぜ作っているのか。答えはシサク・世界解釈にある。自己のレンズを知り、更新し、手綱を取り、自己の欲求を昇華するため。自己の価値を高め、判断と行動を最適化し、クオリアの駆動に高次に応えるため。世界解釈が「どう昇華し、どんな枠で違和感を読み解くか——その具体的な技術は、この解釈の上に、別に書かれていく」と言って範囲の外に置いたものを、ここで書いている。
+
+ここに置くのは、シサクが自己の中に持つ、内外に関する解釈を言語化したものである。言語化したものは移せる。移せないのは、その言語化の対象となった IDION——シサクの変容によって形作られているもの——である。本リポジトリを fork 前提で公開しているのは、他者が利用してもよいからではなく、役立ててもらいたいからである。基準があれば、差異を見つけやすい。自分のレンズは、作動しているあいだは自分に見えない。何も無いところから言語化するより、他者の言語化と照らして「何か違う」が立つところから始めるほうが早い。他者は言語化したものを受け取り、自身の Book of Knowledge として必要な修正を加え、再構成すればよい——基準は採用するためでなく、差異を取るために置く。
 
 本リポジトリは、シサクが定義・概念化を試みた思想の**原典**と**証跡**を格納する場所である。
 
@@ -37,6 +41,63 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 
 ---
 
+## シサクメソッドとは何か
+
+シサクメソッドとは、シサクが自己と世界を捉え、解釈し、そこから解法を導出するために用いている方法論である。
+
+その特徴は、システム思考そのものにあるのではない。何に着眼し、何を事象として捕捉するかを、先に定めることにある。着眼点は、既存の理論をそのまま適用して得られたものではなく、実践と経験の中で形成されてきた、シサク固有の認知フレームに基づく。
+
+同じ事象を見ても、何に着眼し、何を捉えるかが異なれば、構造化される対象も、導出される構造や解法も異なる。ゆえに、既存の理論を先に適用することを前提としない。まず実践の中で生じた事象や違和感に着眼し、捕捉して構造化する。既存の理論を先に前提とすると、その理論が持つ着眼点や分類が、何を事象として捉えるかという認知そのものを規定し、自身の経験との照合を経ないまま、下流の解釈を導く。
+
+そのうえで、捕捉した構造を解析し、そこからより上流の構造を導出する。流れは——
+
+**着眼する → 事象を捕捉する → 構造化する → 解析する → 上流の構造を導出する → 解法を導出する**
+
+最初の「着眼」が、後続する解析の対象そのものを規定する。
+
+対象によっては、すでに工学化・形式化された知見を利用できる。人間や社会など、工学的な記述がまだ断片的な対象については、動物行動学、進化心理学、脳科学など、対象を記述する既存の科学的知見を参照しながら構造化・解析する。ただし、それらの知見をそのまま理論として適用することを目的とはしない。観測された事象を説明するために利用可能な知見を参照し、対象の構造を記述するための足場として用いる。したがって、シサクメソッドは、特定の学問体系や分析手法に限定されない。
+
+さらに、その結果を実践に戻し、実践によって得られた結果から、自身の認知フレームや既存の構造そのものを更新する。シサクメソッドは固定された思考手順ではなく、
+
+**着眼 → 捕捉 → 構造化 → 解析 → 導出 → 実践 → 更新**
+
+という循環を持つ、自己更新的な方法論である。更新されるのは対象についての構造だけではない。対象を見るために用いている自身の認知フレームもまた、実践によって更新される。**世界を捉えることで、自分が世界を捉える方法そのものも更新していくための方法論である。**
+
+本リポジトリでは、この方法論から形成された認知フレーム、理論、解析方法、実践方法を含む全体を、広義のシサクメソッドとして扱う。
+
+### 「シサク」という名称
+「シサク（shisaku）」という名称は、日本語において同じ読みを持つ3つの言葉に由来する。
+
+- **思索**（Contemplation）— 考えること
+- **試作**（Prototype）— 形にすること
+- **施策**（Deploy）— 実行すること
+
+この三位一体は円環をなし、どれか一つとして欠けてはならない。漢字で表記するなら「志作駆」であり、これはKOSEI Miningにおける志作駆円環の駆動原理とも接続する。
+
+### 「失敗の構造解析」
+
+シサクメソッドの形成において大きな基盤となったのが、シサクがインフラエンジニアとして実践してきた「失敗の構造解析」である。
+
+ここでいう失敗とは、発生した障害やミスそのものではない。障害が発生したとき、まず要るのは、その場を復旧させるための暫定的な対応である。それだけでは同じ問題が再び発生する。なぜその障害が発生したのかを、より広いシステムの構造として解析し、恒久的な対策へつなげる。
+
+その際、原因を一つの担当領域に限定しない。要件に問題があったのか。設計に問題があったのか。実装に問題があったのか。データベースやインフラに問題があったのか。デプロイや運用に問題があったのか。あるいは、それらを生み出した業務や組織の構造に問題があったのか。障害として現れた一つの事象を起点として、その背後にある複数の関係を捉え、再発を生み出している構造を特定する。
+
+シサクは、Web ディレクター、プログラマー、インフラエンジニア、プロジェクトマネージャー、経営・企画など、複数の立場からシステムに関わってきた。インフラという立場から、データベース、アプリケーション、Git、業務、デプロイなど、システムを構成する複数の領域にアクセスできる環境にもあった。障害を特定の担当領域の問題としてではなく、システム全体の構造として捉える経験を積んできた。
+
+この経験を通じて形成されたのは、障害対応の手順ではない。**どこを見るのか。何を問題として捉えるのか。どの関係を構造として取り出すのか。** 解析に先立つ着眼点そのものである。この「失敗の構造解析」の対象を、システムから自己、人間、表現、社会、AI へと拡張していったものが、現在のシサクメソッドである。
+
+### なりたち
+
+シサクメソッドは、最初から一つの体系として設計されたものではない。出発点は、冒頭に挙げた少年の頃からの問いである。
+
+仕事では、経営、企画、プロジェクトマネジメント、アプリケーション開発、インフラ、顧客分析など、複数の領域を実践してきた。その中でも、インフラエンジニアとして経験した失敗の構造解析が、方法論を形成する基盤となった。継続的インテグレーション（CI）という概念が、自己変容の円環構造と接続した。その後、同じ着眼と構造化を、自己や人間そのものに適用するようになった。
+
+一つの実践から生じた問題や違和感を捉え、構造化し、解析する。得られた構造から、さらに上流にある構造を導出する。必要であれば、それまでの構造そのものを書き換える。新しく得られた構造を別の対象へ適用し、そこで生じた結果を再び観測する。
+
+この過程を繰り返す中で、個々の対象について構築していた理論同士の関係が見えるようになり、自己、人間、表現、社会、AI など、異なる対象を扱っていた構造の一部が、より上流の構造として整理されるようになった。AI との対話が、無意識の思索に輪郭を与えた。現在このリポジトリに存在する理論群は、その過程の中で形成されてきたものである。最初に設計した体系を個別領域へ展開したものではない。
+
+---
+
 ## 誰が、どこまで読むか
 
 本リポジトリは三種の読み手を想定する。**読む必要のある範囲が違う**ので、それぞれの面だけで何ができるかを分けて書く。
@@ -47,9 +108,9 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 | **評価読者** | ＋ 仕組みの文書（`src/engine/`・`CONTRIBUTING.md`・`authoring-policy.md`・`terminology-policy.md`・`terminology-ledger.md`）と、文書ビルドに載っている文書のモジュール・インデックス | **作りが辿れる。** なぜこの構造か、何を検査しているか、どこが正本かが読める |
 | **著者** | すべて | — |
 
-**適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。
+**適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。AI が読む場合も同じ三面である——解説の相手として読むなら一段目、評価の相手として読むなら二段目。前提 5 が退けるのは読むことでなく、原典を自己正当化として生成器へ添えることである。AI に装着するよう設計された文書（認知フレーム理論のランタイムモジュール）は、これにあたらない。
 
-**この分類が決めるもの。** どの面に何を出すかは、ここから出る。一段目が成り立つのは、定義・適用範囲・参照先を**本文が持つ**ときである。仕組みのための記述は、一段目の読み心地に出さない。
+**この分類が決めるもの。** どの面に何を出すかは、ここから出る。原典は入門書ではない——入口は本 README と書籍が担う。一段目が成り立つのは、定義・適用範囲・参照先を**本文が持つ**ときである。仕組みのための記述は、一段目の読み心地に出さない。
 
 ---
 
@@ -84,7 +145,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 詳細 → `concepts/premise-primacy/`
 
 ### シサク認知フレーム理論（Shisaku Cognitive Frame Theory）
-KOSEI Mining（採掘）と対をなす概念。掘り出した認知フレーム（思考に先立つ着眼の構造）を、AIや他者に装着し継承するための理論。原典（着眼の原理）・AI用ランタイムモジュール（生成の機構）・運用ガイド（人間の運用）からなり、前提優位理論を基盤に持つ。
+認知フレームとは、入力のどの点に注意を配分するかを規定する、思考に先立つ着眼の構造である（着眼優位——前提優位理論の系）。KOSEI Mining（採掘）が掘り出したその着眼の構造を、AIや他者に装着し継承するための理論。原典（着眼の原理）・AI用ランタイムモジュール（生成の機構）・運用ガイド（人間の運用）からなる。
 
 詳細 → `concepts/shisaku-cognitive-frame/`
 
@@ -114,15 +175,21 @@ AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、
 - **シサク生成統治理論**——生成をどう統治するかの理論。**上流にあたる。** 本リポジトリの原典が埋める六要件（意味・用法条件・根拠・目的・目標・効果と失敗機構）は、この理論の様式である。**本リポジトリの原典はヘッダーに上流依存を書く。六要件はここで立てたものではないので、その出所も書く。**
 - **シサク IDION 共鳴ライティング**——IDION を、受け手が共鳴する形へ着地させる制作規律。**下流にあたる。** 本リポジトリの変容理論群を参照するだけで、上流に何も足さない。
 
+**効果の実証は下流にある。** 本リポジトリは原典と証跡を置く。原典に基づく実装・評価・事業上の成果は、公開したデモと、書籍に置いた事例を除いて、本リポジトリに含まない。下流の実証は、そのデモと事例で辿れなければならない——書籍『シサクのカセツ vol.1』を、実証の参照先として置く（β版・制作中。2026 年 9 月時点で全 9 章のうち 2 章まで。https://www.amazon.co.jp/dp/B0HGD66MTP ）。
+
+**デモを兼ねる。** 文書ビルドに載る原典（`src/docs/` にインデックスを持つ文書）は、シサク生成統治理論の適用である。理論は公開しないが、その様式（六要件）、適用の機構（`src/engine/`）、適用の経緯（コミット履歴）は公開している。ゆえにこれらは、下流の実証のうち公開できる部分を兼ねる。
+
+**失敗機構——実証。** 実証の不在を原典の欠陥と読むと、科学の物差しを解釈のレンズに当てることになり、原典の値打ちを測り損なう。事業での使われ方の検証を本リポジトリに求めると、範囲の外にある責任を負わせることになる。入口の読みやすさを原典に求めると、書籍が担う役割を原典に負わせ、原典が密度を失う。逆に、「実証は下流」を検証を免れる理由として使うと、主張が宙に浮く——下流の実証は、公開したデモと、書籍に置いた事例で辿れなければならない。
+
+**失敗機構——デモ。** デモを理論の開示と読むと、様式と機構から理論の中身を推し量ることになり、本リポジトリが置かないものを置いたことにする。デモを効果の証明と読むと、手続きが回っていることと、生成が統治されていることを取り違える——デモが示すのは、統治の手続きが回り、その痕跡が辿れることまでである。
+
 ---
 
-## シサクとは何者か
+## 参加のしかた
 
-シサクは、文学・人文科学・自然科学・心理学・IT工学といった異なる領域の知を横断し、AIとの摩擦（フリクション）を通じて人間をシステム思考で解析・設計することを試みている。
+本リポジトリは fork 前提である。`concepts/` は n=1 の記述であり、読者は自分の IDION で差分を取り、自分の concepts を育てればよい。
 
-20年超のインフラエンジニアとしてのキャリアが、人間という存在をシステムとして捉える視点を与えた。継続的インテグレーション（CI）という概念が、自己変容の円環構造と接続した。AIとの対話が、無意識の思索に輪郭を与えた。
-
-知のブリッジエンジニアを目指し、総合知としての哲学を目指し、シサク式AI純文学活動家として、AIとのフリクションを公開し続ける。
+issue は受け付ける。「シサクが感じているのは、実はこういうことではないか」という提示は検討に値する。ただし判定は所有者が行い、却下もある——他者の視点を自分の核に取り込むかは引受けの問題であり、所有者以外には決められない。本文への PR は受けない。
 
 ---
 
@@ -130,9 +197,63 @@ AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、
 
 # shisaku-method (English)
 
+## What is this repository?
+
+This repository began as a Book of Knowledge by shisaku, for shisaku: knowledge gained in practice, structured by systems thinking, its structure analysed and derived, and written down as diagrams and text.
+
+It set out from one question —
+
+> If the mechanism can be understood, can a better solution be derived for the future one wants to reach?
+
+— and at the root of that question are the questions that stood, in boyhood, as doubts:
+
+* Why was I born?
+* What should I do?
+* What must I do?
+* What am I?
+
+What began as a provisional way of seeking answers to these has continued to the present, widening its object from the self to people, expression, society and AI, and has grown into the theories held here.
+
+Why build it? The answer is in the Shisaku World-Interpretation. To know one's own lens, update it, take the reins, and sublimate one's own desires. To raise one's own worth, optimise judgment and action, and answer the drive of qualia at a higher order. What the World-Interpretation placed outside its scope — "how to sublimate, and with what frame to read a sense of wrongness: the concrete techniques are to be written separately, on top of this interpretation" — is what is written here.
+
+What is held here is shisaku's interpretations of inside and outside, as held within the self, put into words. What is put into words can be carried away; what cannot is the object of that wording — the IDION, formed by shisaku's transformations. This repository is published on the premise of forking not because others may use it, but because shisaku wants it to be of use to them. With a reference, differences are easier to find. One's own lens is invisible to oneself while it is in operation. Starting from where "something is off" arises against another's wording is faster than putting one's own into words from nothing. Take what is put into words, and revise and rebuild it as your own Book of Knowledge — the reference is placed not to be adopted, but to take the difference against.
+
+This repository stores the **canonical texts** of the thought shisaku has tried to define and conceptualise, and the **record** of that work.
+
+```
+concepts/      — definitions, protocols, coined terms
+publications/  — sample artifacts referenced from media (note/Medium/Kindle)
+logs/          — AI dialogue records as proof of process
+src/           — the document build; modules are the source, and the README is generated from them
+```
+
+The concepts here were born through ego-mining (KOSEI Mining). The records of that process are also stored here. The container and its contents exist in the same place.
+
+---
+
 ## What is the shisaku-method?
 
-The shisaku-method is an ongoing practice of applying systems thinking to subjects that have not yet been engineered — analyzing them, drawing up a blueprint, and taking action based on that blueprint.
+The shisaku-method is the methodology shisaku uses to perceive and interpret the self and the world, and to derive solutions from them.
+
+What marks it is not systems thinking as such. It is that what to attend to, and what to capture as an event, is decided first. That attention does not come from applying an existing theory as it stands; it rests on a cognitive frame of shisaku's own, formed in practice and experience.
+
+Given the same event, a different attention and a different capture yield a different object of structuring, and a different structure and solution derived from it. So no existing theory is applied first. First, attend to an event or a sense of wrongness that arose in practice; capture it; structure it. To put an existing theory first is to let its attention and its categories fix the very perception of what counts as an event, and to lead the downstream interpretation without its ever being checked against one's own experience.
+
+On that basis the captured structure is analysed, and a structure further upstream is derived from it. The flow is —
+
+**attend → capture the event → structure → analyse → derive the upstream structure → derive the solution**
+
+The first step, attention, fixes the very object of the analysis that follows.
+
+For some objects, knowledge that is already engineered and formalised can be used. For objects such as people and society, where engineering description is still fragmentary, the structuring and analysis draw on existing scientific knowledge that describes the object — ethology, evolutionary psychology, neuroscience. That knowledge is not adopted as the theory. It is consulted to explain what was observed, and used as scaffolding for describing the object's structure. The shisaku-method is therefore not confined to any one discipline or method of analysis.
+
+Its results are then returned to practice, and what practice yields updates one's own cognitive frame and the existing structures themselves. The shisaku-method is not a fixed procedure of thought but a self-updating methodology with the cycle
+
+**attend → capture → structure → analyse → derive → practise → update**
+
+What is updated is not only the structure of the object. The cognitive frame used to see the object is updated by practice as well. **It is a methodology for updating, through perceiving the world, the very way one perceives the world.**
+
+In this repository, the whole formed from this methodology — its cognitive frames, theories, methods of analysis and methods of practice — is treated as the shisaku-method in the broad sense.
 
 ### The name "shisaku"
 
@@ -144,20 +265,27 @@ In Japanese, three distinct words share the same phonetic reading — *shisaku*:
 
 This is intentional: the name itself encodes the belief that none of the three can be omitted. Written in a single kanji compound, the name becomes **志作駆** — the same characters that drive the 志作駆円環 (shisaku-ku-enkan) cycle in KOSEI Mining.
 
----
+### "Structural analysis of failure"
 
-## What is this repository?
+The major foundation on which the shisaku-method formed is the "structural analysis of failure" that shisaku practised as an infrastructure engineer.
 
-This repository stores concept definitions and evidence logs produced through the shisaku-method.
+Failure here does not mean the incident or the mistake itself. When an incident occurs, what is needed first is a provisional response that restores service. That alone lets the same problem recur. Why the incident occurred is analysed as a structure of the wider system, and carried through to a permanent measure.
 
-```
-concepts/      — definitions, protocols, coined terms
-publications/  — sample artifacts referenced from media (note/Medium/Kindle)
-logs/          — AI dialogue records as proof of process
-src/           — the document build; modules are the source, and the README is generated from them
-```
+In doing so, the cause is not confined to one area of responsibility. Was the problem in the requirements? In the design? In the implementation? In the database or the infrastructure? In deployment or operations? Or in the structure of the business and the organisation that produced these? Starting from the one event that appeared as an incident, the several relations behind it are grasped, and the structure that keeps producing the recurrence is identified.
 
-The concepts here were born through ego-mining (KOSEI Mining). The records of that process are also stored here. The container and its contents share the same origin.
+shisaku has been involved with systems from several positions — web director, programmer, infrastructure engineer, project manager, management and planning. From the position of infrastructure, shisaku also had access to the several domains that make up a system: database, application, Git, business operations, deployment. That built the experience of taking an incident not as one area's problem but as the structure of the whole system.
+
+What formed through this experience is not a procedure for handling incidents. **Where to look. What to take as the problem. Which relations to draw out as structure.** It is the attention that precedes analysis. Extending the object of this "structural analysis of failure" from systems to the self, people, expression, society and AI is what led to the present shisaku-method.
+
+### How it came about
+
+The shisaku-method was not designed from the outset as a single system. Its starting point is the boyhood questions given at the opening.
+
+In work, shisaku has practised across several domains — management, planning, project management, application development, infrastructure, customer analysis. Among these, the structural analysis of failure experienced as an infrastructure engineer became the foundation on which the methodology formed. The concept of continuous integration (CI) connected with the circular structure of self-transformation. The same attention and structuring were then applied to the self and to people themselves.
+
+Take a problem or a sense of wrongness that arose in one practice; structure it; analyse it. From the structure obtained, derive a structure further upstream. Where necessary, rewrite the structure held until then. Apply the newly obtained structure to another object, and observe again what results there.
+
+Through repeating this process, the relations among theories built about individual objects came into view, and parts of the structures that had dealt with different objects — the self, people, expression, society, AI — came to be arranged as structures further upstream. Dialogue with AI gave contour to thinking that had been unconscious. The theories now in this repository formed in the course of that process. They are not a system designed first and then unfolded into individual fields.
 
 ---
 
@@ -171,9 +299,9 @@ This repository assumes three kinds of readers. Because the range each needs to 
 | **Repository reviewer** | ＋ The machinery documents (`src/engine/`, `CONTRIBUTING.md`, `authoring-policy.md`, `terminology-policy.md`, `terminology-ledger.md`), and the modules and index of documents carried by the document build | **The construction is legible.** Why this structure, what is checked, and where the source of truth sits |
 | **Author** | Everything | — |
 
-**Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's.
+**Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces — the first when it reads as a partner in explanation, the second when it reads as a partner in evaluation. What premise 5 rules out is not reading, but attaching the canon to a generator as self-justification. Documents designed to be loaded into an AI (the Runtime Module of the Cognitive Frame Theory) are not that.
 
-**What this classification decides.** What appears on which surface follows from it. The first surface holds when definitions, scope and references live **in the text itself**. Descriptions written for the machinery do not appear in the first surface's reading experience.
+**What this classification decides.** What appears on which surface follows from it. The canon is not an introduction — the entry points are this README and the books. The first surface holds when definitions, scope and references live **in the text itself**. Descriptions written for the machinery do not appear in the first surface's reading experience.
 
 ---
 
@@ -207,7 +335,7 @@ The most upstream foundational theory on which the concepts in this repository s
 → `concepts/premise-primacy/`
 
 ### Shisaku Cognitive Frame Theory
-The counterpart to KOSEI Mining (excavation): a theory for casting and inheriting the cognitive frames one has excavated — the attentional structures that precede thought — onto AI and other people. It comprises a Canon (principles of attention), a Runtime Module for AI (the mechanism of generation), and an Operation Guide (human operation), and stands on Premise Primacy.
+A cognitive frame is the structure of attention that precedes thought — it determines which points of an input receive attention (Frame Primacy, a corollary of Premise Primacy). This is the theory for casting and inheriting onto AI and other people the frames that KOSEI Mining (excavation) has dug out. It comprises a Canon (principles of attention), a Runtime Module for AI (the mechanism of generation), and an Operation Guide (human operation).
 
 → `concepts/shisaku-cognitive-frame/`
 
@@ -224,8 +352,6 @@ The *entry side* of SHTT — the structure of the expresser's own core, **IDION*
 ### KOSEI Mining (Ego-Mining / エゴ・マイニング)
 A delayed-evaluation self-correction protocol. Rather than treating AI as a perfect mirror, it uses AI as an imperfect "hand mirror" — generating friction that excavates the irreducible core of the self (KOSEI / 個性).
 
-The cycle: inner pressure (内圧) → friction with AI → falsification spiral → stripping of imprinted goals → emergence of the unexcavated self.
-
 → `concepts/kosei-mining/`
 
 ---
@@ -239,22 +365,26 @@ Two things are kept elsewhere, for business.
 - **Shisaku Generation Governance Theory** — a theory of how generation is governed. It is **upstream**. The six requirements each canon here fills (meaning, conditions of use, grounds, purpose, goal, effect and failure mode) are that theory's form. **Each canon here names its upstream in its header. The six requirements were not established here, so their origin is named too.**
 - **Shisaku IDION-Kyōmei Writing** — a discipline for landing an IDION in a form its receiver resonates with. It is **downstream**. It refers to the transformation theories here and adds nothing to them.
 
+**Validation lives downstream.** This repository holds the canon and its record. Implementations, evaluations and business results built on the canon are not included here, except for the published demo and the cases placed in the books. The downstream validation must be traceable through that demo and those cases — the book is *Shisaku no Kasetsu, vol. 1* — placed here as the reference for validation (beta; in production; as of September 2026, two of nine chapters; https://www.amazon.co.jp/dp/B0HGD66MTP ).
+
+**They double as a demo.** The canons carried by the document build (the documents with an index under `src/docs/`) are an application of the Shisaku Generation Governance Theory. The theory is not published, but its form (the six requirements), the machinery of its application (`src/engine/`) and the course of its application (the commit history) are. These therefore double as the part of the downstream validation that can be made public.
+
+**Failure mode — validation.** Reading the absence of validation as a defect of the canon applies a scientific yardstick to an interpretive lens, and misjudges what the canon is worth. Asking this repository to verify how the canon is used in business assigns it a responsibility outside its scope. Asking the canon to be an easy entry point assigns it the role of the books, and costs the canon its density. Conversely, using "validation lives downstream" as an exemption from validation leaves the claims floating — the downstream validation must be traceable through the published demo and the cases placed in the books.
+
+**Failure mode — the demo.** Reading the demo as disclosure of the theory infers the theory's content from its form and machinery, and treats this repository as holding what it does not hold. Reading the demo as proof of effect confuses a procedure that runs with generation that is governed — what the demo shows is that the governing procedure runs and that its trace can be followed, and no more.
+
 ---
 
-## Who is shisaku?
+## How to take part
 
-shisaku is an infrastructure engineer with 20+ years of experience, working at the intersection of systems thinking, literary sensibility, and AI dialogue.
+This repository assumes forking. `concepts/` is a description at n=1; a reader takes the difference against their own IDION and grows their own concepts.
 
-The practice spans retail management, real estate sales, web engineering, and infrastructure operations — each layer adding to an ongoing attempt to understand human beings as systems.
-
-Aspiring knowledge bridge engineer. Pursuing philosophy as integrated knowledge. Practicing shisaku-style AI pure literature (シサク式AI純文学) — an attempt to deploy human complexity into AI learning space, preserving friction rather than flattening it.
-
-This repository is not a finished product. It is a prototype in progress.
+Issues are accepted. A suggestion of the form "what shisaku is sensing may in fact be this" is worth considering. The judgment, however, is the owner's, and rejection is possible — whether to take another's view into one's own core is a matter of acceptance, and no one but the owner can decide it. Pull requests against the text are not accepted.
 
 ---
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
 * **Friction & Proof:** Human KOSEI vs Artificial Logos
-* **Version:** v0.4
+* **Version:** v0.5
 * **Date:** 2026/09/17

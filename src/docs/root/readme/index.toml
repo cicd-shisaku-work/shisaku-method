@@ -8,7 +8,7 @@ title    = "shisaku-method"
 author   = "shisaku"
 status   = "継続的インテグレーション中 / Continuously Integrating"
 friction = "Human KOSEI vs Artificial Logos"
-version  = "v0.4"
+version  = "v0.5"
 date     = "2026/09/17"
 
 [numbering]
@@ -23,15 +23,15 @@ groups     = [["header"]]
 lang       = "ja"
 base_depth = 1
 groups = [
-  ["what-is", "what-is/name"],
   ["repository"],
+  ["what-is", "what-is/name", "what-is/failure-analysis", "what-is/origin"],
   ["readers"],
   ["how-to-read"],
   ["concepts", "concepts/shisaku-world-interpretation", "concepts/premise-primacy",
    "concepts/shisaku-cognitive-frame", "concepts/shisaku-human-transformation",
    "concepts/shisaku-human-idion-structure", "concepts/kosei-mining"],
   ["not-included"],
-  ["who"],
+  ["participation"],
 ]
 
 [[block]]
@@ -40,15 +40,15 @@ base_depth     = 1
 allow_unpaired = ["banner"]
 groups = [
   [],
-  ["banner", "what-is", "what-is/name"],
-  ["repository"],
+  ["banner", "repository"],
+  ["what-is", "what-is/name", "what-is/failure-analysis", "what-is/origin"],
   ["readers"],
   ["how-to-read"],
   ["concepts", "concepts/shisaku-world-interpretation", "concepts/premise-primacy",
    "concepts/shisaku-cognitive-frame", "concepts/shisaku-human-transformation",
    "concepts/shisaku-human-idion-structure", "concepts/kosei-mining"],
   ["not-included"],
-  ["who"],
+  ["participation"],
 ]
 
 [[block]]
