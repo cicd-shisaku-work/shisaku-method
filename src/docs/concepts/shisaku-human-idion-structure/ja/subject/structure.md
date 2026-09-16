@@ -1,7 +1,7 @@
 ---
 id: subject/structure
 ---
-# 構造——書き換えを迫る接触から、変容までの一本の過程
+# 構造
 <!-- machinery-def: IDION 形成の過程 -->
 <!-- machinery-def: 書き換え抵抗の向き -->
 <!-- machinery-def: 闘いの出口 -->

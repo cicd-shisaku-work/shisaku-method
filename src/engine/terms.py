@@ -133,7 +133,7 @@ RANGE_PATS = [
     re.compile(r"[①②③④⑤⑥⑦⑧]\s*〜\s*[①②③④⑤⑥⑦⑧]"),
 ]
 SEC_NUM = re.compile(r"(第\s*[0-9]+(?:\.[0-9]+)?\s*節|§\s*[0-9]+(?:\.[0-9]+)?|原典\s*[0-9]+\.[0-9]+)")
-QUOTED_SEC = re.compile(r"「([^」]{2,40})」の節")
+QUOTED_SEC = re.compile(r"「([^「」]{2,40})」の節")   # 入れ子の「」をまたがない
 COUNTER = re.compile(r"[文字行件回日年月人個本種割倍％%頁枚語点]")
 
 
@@ -302,7 +302,7 @@ def main():
             note.append(f"[C1] 「{name}」の正本の位置に節名が無い（照合できない）")
             continue
         if not any(any(w in h for w in want) for _p, h, _b in hits):
-            err.append(f"[C1] 「{name}」の正本の位置『{want[0]}』が、目印のある節（{hits[0][2][:24]}）と一致しない")
+            err.append(f"[C1] 「{name}」の正本の位置『{want[0]}』が、目印のある節（{hits[0][1]}）と一致しない")
     # C3 台帳の要素が本文に在るか
     for name, hits in mnames.items():
         row = bnames.get(name)

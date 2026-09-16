@@ -52,7 +52,7 @@ class Resolver:
             if kind == "num":
                 return node["section"]
             fmt = render.get("sec", "{n}")
-            return fmt.replace("{n}", node["section"])
+            return fmt.replace("{n}", node["section"]).replace("{t}", node["title"])
         self._err(f"未知の種類: {{{{{kind}:{key}}}}}")
         return None
 

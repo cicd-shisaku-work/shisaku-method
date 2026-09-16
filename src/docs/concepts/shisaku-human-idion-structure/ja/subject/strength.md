@@ -1,7 +1,7 @@
 ---
 id: subject/strength
 ---
-# 強度——変容量で測る（累積の結合則を含む・本書の芯）
+# 強度
 <!-- machinery-def: IDION 強度の成分 -->
 <!-- machinery-def: IDION の層 -->
 

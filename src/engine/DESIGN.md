@@ -1,6 +1,6 @@
 # シサク原典管理スクリプト設計書
 
-**Version:** v0.1.4
+**Version:** v0.1.5
 **Date:** 2026/09/15
 **性格：** `src/` に置く文書ビルド（モジュール群から公開文書を組み立てるスクリプト）の設計仕様。実装する者が、この文書だけを読んで着手できることを合格条件とする。
 
@@ -444,13 +444,14 @@ groups     = [["tree"], ["colophon"]]
 
 | 種類 | 例 | 解決結果 |
 | :-- | :-- | :-- |
-| `sec` | `{{sec:strength}}` | `第4節`（そのブロックの `render.sec` の書式） |
+| `sec` | `{{sec:strength}}` | `第4節 強度`（そのブロックの `render.sec` の書式。`{n}`＝番号・`{t}`＝題） |
 | `num` | `{{num:strength/combination-rule}}` | `4.1` |
 | `title` | `{{title:disguise}}` | そのモジュールの題（番号を含まない） |
 | `path` | `{{path:shisaku-human-idion-structure}}` | `concepts/shisaku-human-idion-structure/`（リポジトリのルート基準） |
 | `url` | `{{url:shisaku-human-idion-structure}}` | `https://…/tree/main/concepts/shisaku-human-idion-structure` |
 | `meta` | `{{meta:version}}` | インデックスの `[meta]` の値 |
 
+- **`render.sec` に `{t}`（題）を置けるのは、節名が参照の宛先だからである**（`shtt-authoring-policy.md`「相互リンク規約」の節）。番号だけでは、跳ばないと何の節か分からない。番号を先に置くのは、**出力の 7 割が著者の括弧の中にあり**、題を括弧付きで出すと入れ子になるためである。
 - リテラルの `{{` を書きたいときは `\{{` と書く（出力は `{{`）。対象文書での `{{` の出現は 0 件。
 - 解決はコードフェンス・コードスパンの内側でも行う。README のパス言及はバッククォートの中にあるため。
 - 解決の順序：モジュール読み取り → 構造の確定（深さ・番号） → トークン解決 → 連結。番号が確定してからでないと `sec` / `num` が解けない。

@@ -1,7 +1,7 @@
 ---
 id: document/novelty
 ---
-# 新規性：要素でなく圧縮
+# 新規性
 <!-- machinery-def: IDION の圧縮項 -->
 <!-- machinery-def: IDION の置換に耐える核 -->
 

@@ -1,7 +1,7 @@
 ---
 id: subject/disguise
 ---
-# 偽装——自分の IDION に無いものを、自分の IDION から出たものとして表現すること
+# 偽装
 <!-- machinery-def: 表現の不一致の源 -->
 <!-- machinery-def: IDION 表現の層 -->
 

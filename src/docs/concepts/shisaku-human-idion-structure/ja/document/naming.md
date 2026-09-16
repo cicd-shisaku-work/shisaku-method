@@ -3,7 +3,7 @@ id: document/naming
 maturity: pending
 numbered: false
 ---
-# 命名（候補の列挙・裁定は提唱者）
+# 命名
 <!-- machinery-def: IDION の命名候補 -->
 
 SHTT の略号規則（上位＝SHTT／成分＝SH＋頭字＋ST）を IDION に機械適用すると `SHIST` になるが、英語の卑語に近接し、IDION の命名で剥がした「輸入された含意」を略号で再侵入させる。ゆえに既定候補にしない。候補——
