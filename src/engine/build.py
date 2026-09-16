@@ -36,12 +36,18 @@ DOCS = os.path.join(SRC, "docs")
 
 
 def documents():
-    """src/docs/ 以下の index.toml を持つディレクトリが 1 文書。名は出力の語幹と同じ。"""
+    """src/docs/ 以下の index.toml を持つディレクトリが 1 文書。名は出力の語幹と同じ。
+
+    文書の中身は、その文書のインデックスが言語ブロックとして挙げたディレクトリにある。
+    そこへは降りない。それ以外の下位ディレクトリは**別の文書でありうる**——
+    補足は、仕える原典のディレクトリの下に住む（DESIGN §6）。
+    """
     out = []
     for root, dirs, files in os.walk(DOCS):
         if "index.toml" in files:
             out.append((os.path.basename(root), root))
-            dirs[:] = []
+            own = {b.lang for b in Index(os.path.join(root, "index.toml")).blocks}
+            dirs[:] = [d for d in dirs if d not in own]
     return sorted(out)
 
 
