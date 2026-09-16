@@ -94,34 +94,37 @@ def scan_marks():
     """(名, ファイル, 節の見出し, 節の本文) を集める。生成物は除く。"""
     skip = generated_outputs()
     hits = []
+    paths = []
     for sub in ("concepts", "src/docs"):
         for base, _d, files in os.walk(os.path.join(ROOT, sub)):
             for fn in files:
-                if not fn.endswith(".md"):
-                    continue
-                p = os.path.join(base, fn)
-                if os.path.normpath(p) in skip:
-                    continue
-                lines = open(p, encoding="utf-8").read().split("\n")
-                for i, line in enumerate(lines):
-                    m = MARK.search(line)
-                    if not m:
-                        continue
-                    lvl, head = 0, ""
-                    for j in range(i, -1, -1):
-                        hm = HEAD.match(lines[j])
-                        if hm:
-                            lvl, head = len(hm.group(1)), hm.group(2)
-                            start = j
-                            break
-                    end = len(lines)
-                    for j in range(start + 1, len(lines)):
-                        hm = HEAD.match(lines[j])
-                        if hm and len(hm.group(1)) <= lvl:
-                            end = j
-                            break
-                    hits.append((m.group(1), os.path.relpath(p, ROOT), head,
-                                 "\n".join(lines[start:end])))
+                if fn.endswith(".md"):
+                    paths.append(os.path.join(base, fn))
+    # 直下の規約（未モジュール化・生成物でない）も目印を持ちうる
+    paths += [os.path.join(ROOT, "authoring-policy.md")]
+    for p in paths:
+        if not os.path.exists(p) or os.path.normpath(p) in skip:
+            continue
+        lines = open(p, encoding="utf-8").read().split("\n")
+        for i, line in enumerate(lines):
+            m = MARK.search(line)
+            if not m:
+                continue
+            lvl, head = 0, ""
+            for j in range(i, -1, -1):
+                hm = HEAD.match(lines[j])
+                if hm:
+                    lvl, head = len(hm.group(1)), hm.group(2)
+                    start = j
+                    break
+            end = len(lines)
+            for j in range(start + 1, len(lines)):
+                hm = HEAD.match(lines[j])
+                if hm and len(hm.group(1)) <= lvl:
+                    end = j
+                    break
+            hits.append((m.group(1), os.path.relpath(p, ROOT), head,
+                         "\n".join(lines[start:end])))
     return hits
 
 
@@ -182,7 +185,7 @@ def detect(bundles):
     heads = set()
     srcs = [p for p, _d, _s in files] + [
         os.path.join(ROOT, x) for x in
-        ("README.md", "CONTRIBUTING.md", "terminology-policy.md", "terminology-ledger.md")
+        ("README.md", "CONTRIBUTING.md", "authoring-policy.md", "terminology-policy.md", "terminology-ledger.md")
     ]
     for p in srcs:
         if not os.path.exists(p):
