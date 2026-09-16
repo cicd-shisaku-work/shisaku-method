@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.3  
-**Date:** 2026/09/16
+**Version:** v0.3.1  
+**Date:** 2026/09/17
 
 ---
 
@@ -44,7 +44,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 | 読み手 | 読む面 | その面だけでできること |
 | :-- | :-- | :-- |
 | **一般読者** | 原典の本文（`concepts/` の各文書） | **原典だけで理論が読める。** 定義・適用範囲・参照先が本文で辿れ、仕組みを見なくても済む |
-| **評価読者** | ＋ 仕組みの文書（`src/engine/`・`CONTRIBUTING.md`・`terminology-policy.md`・`terminology-ledger.md`）と、文書ビルドに載っている文書のモジュール・インデックス | **作りが辿れる。** なぜこの構造か、何を検査しているか、どこが正本かが読める |
+| **評価読者** | ＋ 仕組みの文書（`src/engine/`・`CONTRIBUTING.md`・`authoring-policy.md`・`terminology-policy.md`・`terminology-ledger.md`）と、文書ビルドに載っている文書のモジュール・インデックス | **作りが辿れる。** なぜこの構造か、何を検査しているか、どこが正本かが読める |
 | **著者** | すべて | — |
 
 **適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。
@@ -167,7 +167,7 @@ This repository assumes three kinds of readers. Because the range each needs to 
 | Reader | Surface | What that surface alone lets you do |
 | :-- | :-- | :-- |
 | **General reader** | The canonical texts (`concepts/`) | **Read the theory from the canon alone.** Definitions, scope and references are traceable within the text, without looking at the machinery |
-| **Repository reviewer** | ＋ The machinery documents (`src/engine/`, `CONTRIBUTING.md`, `terminology-policy.md`, `terminology-ledger.md`), and the modules and index of documents carried by the document build | **The construction is legible.** Why this structure, what is checked, and where the source of truth sits |
+| **Repository reviewer** | ＋ The machinery documents (`src/engine/`, `CONTRIBUTING.md`, `authoring-policy.md`, `terminology-policy.md`, `terminology-ledger.md`), and the modules and index of documents carried by the document build | **The construction is legible.** Why this structure, what is checked, and where the source of truth sits |
 | **Author** | Everything | — |
 
 **Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's.
@@ -254,5 +254,5 @@ This repository is not a finished product. It is a prototype in progress.
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
 * **Friction & Proof:** Human KOSEI vs Artificial Logos
-* **Version:** v0.3
-* **Date:** 2026/09/16
+* **Version:** v0.3.1
+* **Date:** 2026/09/17

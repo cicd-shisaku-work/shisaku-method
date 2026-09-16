@@ -1,13 +1,13 @@
-# SHTT 資料作成オペレーションルール ― 原典と補足の境界
-## Authoring Policy: the Origin/Supplement Boundary (SHTT family)
+# 資料作成オペレーションルール ― 原典と補足の境界
+## Authoring Policy: the Origin/Supplement Boundary
 
-**関連：シサク・ヒト変容理論（SHTT）とその四成分（SHTST・SHEST・SHDST・SHKST）**
+**関連：shisaku-method 系列のすべての原典と補足（README「含まれる概念」）**
 
 ---
 
 ## この文書は何か
 
-これは変容理論（SHTT）の**内容**ではなく、その系列（SHTT と四成分）の**資料をどこに置くかの統治**である。原典（一般理論）・補足（応用層の地図）・プロファイル（実装が埋める具体）の三層の境界を明示し、資料作成のたびに「どこに置くべきか」を再議論しないためのオペレーションルールとして置く。あわせて、原典をどの物差しで読むかの規則（§7）を持つ——原典本文に置くと衣になる規則の置き場も、置き場の統治に属する。理論でなく規則なので、命令でなく**機構と失敗機構**で書く（「重要」の語を消しても拘束が残る形）。
+これは各理論の**内容**ではなく、shisaku-method 系列の**資料をどこに置くかの統治**である。原典（一般理論）・補足（応用層の地図）・プロファイル（実装が埋める具体）の三層の境界を明示し、資料作成のたびに「どこに置くべきか」を再議論しないためのオペレーションルールとして置く。あわせて、原典をどの物差しで読むかの規則（§7）を持つ——原典本文に置くと衣になる規則の置き場も、置き場の統治に属する。理論でなく規則なので、命令でなく**機構と失敗機構**で書く（「重要」の語を消しても拘束が残る形）。
 
 **なぜ要るか（頂点接続）:** 置き場を毎回議論すると、別セッションは前提を復元できず再導出する——会話ログは復元されない（疑似共有の空振り）。ルールを成果物にすれば、再導出のコストと、置き違いによる過剰完成（＝元手のない作り込み＝偽札）を同時に防ぐ。
 
@@ -114,20 +114,20 @@
 
 ## 8. 一般化の余地（フィードバック候補）
 
-本ルールは変容系（SHTT 四成分）で確立したが、原典／補足／プロファイルの三層と判別子は、shisaku method 系列一般に効きうる。道具非依存であれば、系列のより上位の層へ上げる候補。ただし今は変容系に置き、一般化は後輪裁定に委ねる（本ルール自体が、§5 のフィードバックループの対象である）。§7 の物差しも同じ——変容系に限らない規則だが、今は本文書に置く。
+本ルールは変容系（SHTT 四成分）で確立し、2026/09/17 に系列全体へ上げた——三層と判別子は道具非依存で、節名規則には既に全文書が従っていた（本ルール自体が、§5 のフィードバックループの対象である）。§7 の物差しも同じ——変容系に限らない規則だが、今は本文書に置く。
 
 ---
 
-**SHTT 資料作成オペレーションルール ― 原典と補足の境界**
+**資料作成オペレーションルール ― 原典と補足の境界**
 * **Author / Explorer:** shisaku
-* **Version:** v0.1.5
-* **Date:** 2026/09/15
+* **Version:** v0.1.6
+* **Date:** 2026/09/17
 
 ---
 
 ## License
 
-This document is the authoring policy for the Shisaku Human Transformation Theory (SHTT) family — it fixes the boundary between origin (general theory), supplement (application-layer map), and profile (implementation), so that placement need not be re-derived each time. Authored by shisaku. It is released for others to study, adapt, and implement.
+This document is the authoring policy for the shisaku-method series — it fixes the boundary between origin (general theory), supplement (application-layer map), and profile (implementation), so that placement need not be re-derived each time. Authored by shisaku. It is released for others to study, adapt, and implement.
 
 Copyright (c) 2026 shisaku
 
@@ -135,5 +135,4 @@ Licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0).
 
 License: https://creativecommons.org/licenses/by/4.0/
 Author: https://note.com/abstraction
-Canonical repository:
-https://github.com/cicd-shisaku-work/shisaku-method/tree/main/concepts/shisaku-human-transformation
+Canonical repository: https://github.com/cicd-shisaku-work/shisaku-method
