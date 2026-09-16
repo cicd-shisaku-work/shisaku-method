@@ -1,6 +1,6 @@
 # シサク原典管理スクリプト設計書
 
-**Version:** v0.1.7
+**Version:** v0.1.8
 **Date:** 2026/09/16
 **性格：** `src/` に置く文書ビルド（モジュール群から公開文書を組み立てるスクリプト）の設計仕様。実装する者が、この文書だけを読んで着手できることを合格条件とする。
 
@@ -14,7 +14,7 @@
 
 対象の第一陣は二つ。
 
-- `README.md`（日英併記・構造ツリーを持つ）
+- `README.md`（日英併記）
 - `concepts/shisaku-human-idion-structure/ja/shisaku-human-idion-structure.md`（節番号と本文中の節参照を持つ）
 
 この二つは性質が違うので、両方が通れば仕組みの汎用性が一通り試される。以後の文書は、インデックスを一つ足すだけで載る。
@@ -421,7 +421,7 @@ allow_unpaired = ["banner"]      # 対になる相手を持たないことを許
 [[block]]
 lang       = "common"
 base_depth = 1
-groups     = [["tree"], ["colophon"]]
+groups     = [["colophon"]]
 ```
 
 - **文書のメタはインデックスが持つ（`[meta]`）。** モジュールの本文には書かない。ヘッダーと奥付は共有テンプレート（§7.5）が差し込む。版の書式と、版が `v0.x.y` を出ない規約は CONTRIBUTING が持つ。
@@ -494,7 +494,7 @@ kosei-mining                  = "concepts/kosei-mining/"
 - `url` は `base.url` ＋ `/` ＋ パス（末尾のスラッシュを落とす）。
 - インデックスの `output` もこの表を参照する。**配置が変わったとき、書き換えるのは対応表の 1 行だけになる。**
 - lint が、表に載る各パスの実在を検査する。
-- **トークンにできないものが二つ残る。** ①構造ツリーの木（ディレクトリの入れ子の絵であり、置換では表せない）②`-trajectory-structure/` のような略記。どちらも配置換えのときに手で直す。ツリーは 1 モジュールに閉じているので、手当ては 1 か所で済む。
+- **トークンにできないものが一つ残る。** `-trajectory-structure/` のような略記。配置換えのときに手で直す。
 
 ---
 
@@ -615,18 +615,18 @@ python3 src/engine/build.py --impact                       # 変更したモジ�
 
 ### 16.1 README
 
-言語を持たないモジュール（`common/`）：`header`（題と版のブロック）、`tree`（構造ツリー）、`colophon`（末尾のメタ）。値は `[meta]` から差し込むが、README 固有の項目を持つためテンプレートは共有しない。
+言語を持たないモジュール（`common/`）：`header`（題と版のブロック）、`colophon`（末尾のメタ）。値は `[meta]` から差し込むが、README 固有の項目を持つためテンプレートは共有しない。
 
 日英で対になるモジュール（id は共通）：
 
-`what-is` / `what-is/name` / `repository` / `how-to-read` / `concepts` / `concepts/kosei-mining` / `concepts/personal-llmo` / `concepts/shisaku-persona-architecture` / `concepts/shisaku-world-interpretation` / `concepts/premise-primacy` / `concepts/shisaku-cognitive-frame` / `concepts/trust-signal-frame` / `concepts/shisaku-human-transformation` / `concepts/shisaku-human-idion-structure` / `who`
+`what-is` / `what-is/name` / `repository` / `readers` / `how-to-read` / `concepts` / `concepts/shisaku-world-interpretation` / `concepts/premise-primacy` / `concepts/shisaku-cognitive-frame` / `concepts/shisaku-human-transformation` / `concepts/shisaku-human-idion-structure` / `concepts/kosei-mining` / `not-included` / `who`
 
 英語のみ：`banner`（`# shisaku-method (English)`・`level = 1`）。`allow_unpaired` に登録する。
 
 - 概念を指すモジュールの名は、その概念のディレクトリ名と同じにする（`paths.toml` のキーとも一致する）。短縮名を作らない。
 - 概念の項目を 1 モジュールにするのは、概念の追加がこの文書で最も頻繁に起きる更新であり、追加がファイル 1 つとインデックス 1 行で済むようにするため。
+- **README は索引であって網羅ではない。** 載せるのは主要な概念だけで、`concepts/` の全件ではない。並びは**上流から下流へ**——各文書が自分で書いている上流依存で決まる。全件を載せると、概念が増えるたびに入口が長くなり、どれから読むかが読めなくなる。
 - `concepts` は見出しだけを持つモジュール（本文は無い）。
-- 構造ツリーは言語ブロックの外に置き、日英の後ろに来る。ツリー内の注記は日本語のまま。
 - README は現在ライセンス表示を持たない。持たせるかどうかは本書の管轄外。
 
 ### 16.2 IDION 原典
@@ -700,9 +700,7 @@ idion-supplements/
 - **横断の検査。** 骨格の埋まっていない枡（種別ごとの様式に依存）／用語の軸の衝突／二重定義。
 - 文書をまたぐ参照（`{{sec:<文書id>/<id>}}`）。他の原典が載ってから。
 - 出力位置基準の相対パス（`{{rel:…}}`）。同一ディレクトリ内の参照しか無い間は要らない。
-- 構造ツリーをファイルシステムから生成すること。今は各行の注記が手書きであり、機械が持てない。
 - 「弁別子」を各節から生成すること。
-- ツリー内の注記の英語併記。
 - 全文書の `[meta]` を一覧に出す（`build.py --meta`）。どの文書が今どの版か、更新日はいつかを、ファイルを開かずに引けるようにする。メタの置き場が決まっていれば後から足せる。
 
 ---

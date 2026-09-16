@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.2.2  
-**Date:** 2026/09/14
+**Version:** v0.3  
+**Date:** 2026/09/16
 
 ---
 
@@ -30,6 +30,7 @@
 concepts/      — 定義書・プロトコル・造語の設計概念
 publications/  — メディア（note/Medium/Kindle）から参照されるサンプル・成果物
 logs/          — 概念構築の過程としてのAI対話ログ
+src/           — 文書ビルド。モジュールが正本で、README はここから生成される
 ```
 
 エゴ・マイニングによって生まれた概念がここに格納される。同時に、エゴ・マイニングそのものの記録もここに格納される。器と内容物が同一の場所に存在する。
@@ -43,7 +44,7 @@ logs/          — 概念構築の過程としてのAI対話ログ
 | 読み手 | 読む面 | その面だけでできること |
 | :-- | :-- | :-- |
 | **一般読者** | 原典の本文（`concepts/` の各文書） | **原典だけで理論が読める。** 定義・適用範囲・参照先が本文で辿れ、仕組みを見なくても済む |
-| **評価読者** | ＋ 仕組みの文書（`src/engine/`・`CONTRIBUTING.md`・`terminology-policy.md`）と、文書ビルドに載っている文書のモジュール・インデックス | **作りが辿れる。** なぜこの構造か、何を検査しているか、どこが正本かが読める |
+| **評価読者** | ＋ 仕組みの文書（`src/engine/`・`CONTRIBUTING.md`・`terminology-policy.md`・`terminology-ledger.md`）と、文書ビルドに載っている文書のモジュール・インデックス | **作りが辿れる。** なぜこの構造か、何を検査しているか、どこが正本かが読める |
 | **著者** | すべて | — |
 
 **適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。
@@ -71,21 +72,6 @@ logs/          — 概念構築の過程としてのAI対話ログ
 
 ## 含まれる概念
 
-### KOSEI Mining（エゴ・マイニング）
-AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、自我の核（KOSEI / 個性）を掘り出す遅延評価型の自己修正プロトコル。
-
-詳細 → `concepts/kosei-mining/`
-
-### パーソナルLLMO
-個人の多面的な人格・技術・ストーリーが、AIのナレッジグラフに誤解なくマッピングされるよう、Web上の自身のデータ記述を最適化することを試みる概念。AI時代の自己ブランディングへのアプローチ。
-
-詳細 → `concepts/personal-llmo/`
-
-### Shisaku Persona Architecture from Human Class Model
-人間の認知・認識・判断・実行フローをオブジェクト指向でクラス図化し（Human Class Model）、その構造をAIペルソナのプロンプト設計に当てはめる試み。2025年10月から始まるロゴス号ペルソナ群（カイ・ジェミ・ロジ・クロガネ・シロガネ等）の実装経験を経て、レンズ・コンダクター・オネスト（Ver 6.0）として具現化した。プロンプト実装物は別リポジトリに委ねる。
-
-詳細 → `concepts/shisaku-persona-architecture/`
-
 ### シサク・世界解釈（Shisaku World-Interpretation）
 シサクメソッド以前の**起点**であり、系列の最上流に立つ観方。人間を、生の衝動（BIOS）と、物語で書かれる圧縮概念（OS）のハイブリッドとして観るレンズである。加速する環境との不整合から現代の課題を読み、生存の渇望（安全・序列・新奇）の上に、OS層の渇望「自分らしく在りたい」を置く。真偽ではなく効きで測る、一表現者の解釈。**前提優位理論が「力学の最上流」なら、本書は「観方の最上流」**——二軸で系列を支える。シサクメソッドとは、この解釈が指す課題へ、自分の物語（＝前提）を書いていく活動にほかならない。
 
@@ -101,11 +87,6 @@ KOSEI Mining（採掘）と対をなす概念。掘り出した認知フレー�
 
 詳細 → `concepts/shisaku-cognitive-frame/`
 
-### 信頼signalフレーム（Trust-Signal Frame）
-文章の「入口」——タイトル・冒頭・シェアされる一文——を見るときの着眼を定める認知フレーム。読者の内圧を決めつけず（余白）、書き手の立場を隠さず（向きの真正性）、気後れさせず（敷居）、読者の獲得物を指し（土産）、本文が支払える約束だけをする（手形）入口を問う。シサク認知フレーム理論のモード(I)で生成された適用例であり、前提優位理論・認知フレーム理論を上流に持つ。
-
-詳細 → `concepts/trust-signal-frame/`
-
 ### シサク・ヒト変容理論（SHTT）と四成分
 前提優位理論をヒト種の「表現による変容」へ展開した系。**二相**——入口（表現者の核＝IDION）と出口（受け手の変容＝四成分）——に同じ変容が立ち、帰趨（残存／変容の二値・成分ごと）を通し軸に、両端共通の過程（接触→気づき→再演段→照合段→承認段→書き換え段→定常化段→折り返し段）と深度語彙（変容深度・変容広さ・自己距離／共鳴深度・共鳴距離・共鳴強度・共鳴負荷）の区別を置き、四つの構造理論——**軌跡（SHTST：何を体験させ何を変容させるか）／表現（SHEST：どう実装するか）／距離（SHDST：何が届き何が届かないか）／共鳴（SHKST：実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・深度語彙・変容の過程の八段・距離軸の全域スキャン・共鳴の入口・共鳴事例の分解表・クオリア欲求の類型・媒体の四層マップ）を持つ。上流は二軸——**前提優位理論（力学の最上流）とシサク・世界解釈（目的・観方の最上流＝なぜ表現するか・人間はシステムという世界解釈）**。
 
@@ -115,6 +96,22 @@ KOSEI Mining（採掘）と対をなす概念。掘り出した認知フレー�
 SHTT の**入口側**——表現が湧き出す基体＝**表現者自身の変容の集合が形作った固有の核（IDION）**の構造理論（成分でなく、主体の核の側に立つ・略号を持たず把手 IDION で参照）。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、核の書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、強度を変容量（縦＝変容深度〔たどりの長さ〕・変容広さ〔本数〕／横＝結合則）で測り、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを自分のものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は IDION の日本語グロス。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）。
 
 詳細 → `concepts/shisaku-human-idion-structure/`
+
+### KOSEI Mining（エゴ・マイニング）
+AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、自我の核（KOSEI / 個性）を掘り出す遅延評価型の自己修正プロトコル。
+
+詳細 → `concepts/kosei-mining/`
+
+---
+
+## 含まないもの
+
+本リポジトリは、**事業に用いるものを置かない。** ここに置くのは思想の原典と証跡だけである。
+
+事業のために別に持っているのは、次の二つである。
+
+- **シサク生成統治理論**——生成をどう統治するかの理論。**上流にあたる。** 本リポジトリの原典が埋める六要件（意味・用法条件・根拠・目的・目標・効果と失敗機構）は、この理論の様式である。**本リポジトリの原典はヘッダーに上流依存を書く。六要件はここで立てたものではないので、その出所も書く。**
+- **シサク IDION 共鳴ライティング**——IDION を、受け手が共鳴する形へ着地させる制作規律。**下流にあたる。** 本リポジトリの変容理論群を参照するだけで、上流に何も足さない。
 
 ---
 
@@ -156,6 +153,7 @@ This repository stores concept definitions and evidence logs produced through th
 concepts/      — definitions, protocols, coined terms
 publications/  — sample artifacts referenced from media (note/Medium/Kindle)
 logs/          — AI dialogue records as proof of process
+src/           — the document build; modules are the source, and the README is generated from them
 ```
 
 The concepts here were born through ego-mining (KOSEI Mining). The records of that process are also stored here. The container and its contents share the same origin.
@@ -169,7 +167,7 @@ This repository assumes three kinds of readers. Because the range each needs to 
 | Reader | Surface | What that surface alone lets you do |
 | :-- | :-- | :-- |
 | **General reader** | The canonical texts (`concepts/`) | **Read the theory from the canon alone.** Definitions, scope and references are traceable within the text, without looking at the machinery |
-| **Repository reviewer** | ＋ The machinery documents (`src/engine/`, `CONTRIBUTING.md`, `terminology-policy.md`), and the modules and index of documents carried by the document build | **The construction is legible.** Why this structure, what is checked, and where the source of truth sits |
+| **Repository reviewer** | ＋ The machinery documents (`src/engine/`, `CONTRIBUTING.md`, `terminology-policy.md`, `terminology-ledger.md`), and the modules and index of documents carried by the document build | **The construction is legible.** Why this structure, what is checked, and where the source of truth sits |
 | **Author** | Everything | — |
 
 **Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's.
@@ -196,23 +194,6 @@ Every concept here is a **hypothesis and an axiomatic system for design**, not a
 
 ## Concepts
 
-### KOSEI Mining (Ego-Mining / エゴ・マイニング)
-A delayed-evaluation self-correction protocol. Rather than treating AI as a perfect mirror, it uses AI as an imperfect "hand mirror" — generating friction that excavates the irreducible core of the self (KOSEI / 個性).
-
-The cycle: inner pressure (内圧) → friction with AI → falsification spiral → stripping of imprinted goals → emergence of the unexcavated self.
-
-→ `concepts/kosei-mining/`
-
-### Personal LLMO
-An attempt to optimize one's web-published data so that a person's multi-faceted identity is mapped correctly onto AI knowledge graphs — without distortion or over-simplification. An approach to personal branding in the age of LLMs.
-
-→ `concepts/personal-llmo/`
-
-### Shisaku Persona Architecture from Human Class Model
-An ongoing attempt to design AI personas modeled on human cognitive structure. Starting from an object-oriented class model of human cognition (Human Class Model) — covering the flow from perception through judgment to execution — the architecture maps that structure onto prompt design. Evolved through the Logos-go persona series (Kai, Jemi, Roji, Kurogane, Shirogane, et al.) from 2025, and concretized as Lens-Conductor-Honest (Ver 6.0). Prompt implementations live in a separate repository.
-
-→ `concepts/shisaku-persona-architecture/`
-
 ### Shisaku World-Interpretation
 The **starting point** that precedes the shisaku-method, and the most upstream *way of seeing* in the series: a lens that views the human as a hybrid of raw drives (BIOS) and compressed concepts written as stories (OS). It reads the troubles of the present from the mismatch with an accelerating environment, and places — above the survival cravings (safety, status, novelty) — an OS-layer craving: *to be oneself*. One person's interpretation, measured by whether it works, not by whether it is true. **If Premise Primacy is "the upstream of mechanism," this is "the upstream of seeing"** — the two axes on which the series stands. The shisaku-method is, in the end, the activity of writing one's own story (= premise) toward the problem this interpretation names.
 
@@ -228,11 +209,6 @@ The counterpart to KOSEI Mining (excavation): a theory for casting and inheritin
 
 → `concepts/shisaku-cognitive-frame/`
 
-### Trust-Signal Frame (TSF)
-A cognitive frame for the *entrance* of a piece of writing — its title, opening lines, and the sentence shared on social media. It asks whether the entrance withholds assumptions about the reader's inner pressure (room to decide), keeps the writer's position visible (authentic orientation), avoids intimidating the reader (threshold), points to what the reader takes home (takeaway), and promises only what the body of the text can pay (promissory integrity). A Mode (I) application generated under the Shisaku Cognitive Frame Theory, standing on Premise Primacy and the Canon.
-
-→ `concepts/trust-signal-frame/`
-
 ### Shisaku Human Transformation Theory (SHTT) and its four components
 An extension of Premise Primacy to human transformation through expression. Two ends of one transformation — the entry (the expresser's core, IDION) and the exit (the receiver's transformation, the four components) — with the *outcome* (residue / transformation, read per component) as the through-axis, an eight-stage process common to both ends, and a typed depth vocabulary. It binds four structure-theories: **Trajectory (SHTST — what experience to induce and what to transform) / Expression (SHEST — how to implement it) / Distance (SHDST — what does and does not reach) / Kyōmei·Resonance (SHKST — what actually resonated and remained)**. Each component carries application-layer supplements (transformation object-layers, depth vocabulary, the eight stages of transformation, a distance-axis survey, resonance entry-points, an instance-decomposition table, qualia-desire types, and a media four-layer map). Two upstreams: **Premise Primacy (the upstream of mechanism) and the Shisaku World-Interpretation (the upstream of purpose and seeing — why we express; humans as systems).**
 
@@ -242,6 +218,24 @@ An extension of Premise Primacy to human transformation through expression. Two 
 The *entry side* of SHTT — the structure of the expresser's own core, **IDION**: the core formed by the set of one's own transformations (not a component; it stands on the subject's side, referred to by the handle IDION without an acronym). Where the four components carry the exit side (the receiver's transformation), IDION stands at the entry end of the same transformation. It distinguishes IDION not by origin but by the traceable history of a core rewrite (transformation cost — struggle is one form, integration another) and by non-transferability; measures strength as transformation quantity (vertical = transformation depth and breadth / horizontal = the combination rule); splits judgment asymmetrically between the person and the receiver; defines disguise as "expressing what is not in one's IDION as one's own" by mechanics rather than morality; and calibrates dignity as honesty + gaze. KOSEI (個性) is the Japanese gloss of IDION. Supplements — worked cases and separation detection / a map of transformation-cost forms / a map of layers and axes / system isomorphism (a design check tool).
 
 → `concepts/shisaku-human-idion-structure/`
+
+### KOSEI Mining (Ego-Mining / エゴ・マイニング)
+A delayed-evaluation self-correction protocol. Rather than treating AI as a perfect mirror, it uses AI as an imperfect "hand mirror" — generating friction that excavates the irreducible core of the self (KOSEI / 個性).
+
+The cycle: inner pressure (内圧) → friction with AI → falsification spiral → stripping of imprinted goals → emergence of the unexcavated self.
+
+→ `concepts/kosei-mining/`
+
+---
+
+## What this repository does not hold
+
+This repository **does not hold what is used for business.** What it holds is the canonical texts of the thought, and the record of it.
+
+Two things are kept elsewhere, for business.
+
+- **Shisaku Generation Governance Theory** — a theory of how generation is governed. It is **upstream**. The six requirements each canon here fills (meaning, conditions of use, grounds, purpose, goal, effect and failure mode) are that theory's form. **Each canon here names its upstream in its header. The six requirements were not established here, so their origin is named too.**
+- **Shisaku IDION-Kyōmei Writing** — a discipline for landing an IDION in a form its receiver resonates with. It is **downstream**. It refers to the transformation theories here and adds nothing to them.
 
 ---
 
@@ -257,28 +251,8 @@ This repository is not a finished product. It is a prototype in progress.
 
 ---
 
-## リポジトリ構造
-
-```
-shisaku-method/
-├── README.md
-├── CONTRIBUTING.md          # git運用規約（ブランチ・PR・コミット規約・バージョニング）
-├── terminology-policy.md    # 用語規約（系列横断・一語一軸）
-├── terminology-ledger.md    # 用語台帳（語・軸・対象・定義位置）
-├── LICENSE
-│
-├── concepts/                # 概念定義。概念ごとに原典と補足を持ち、各々 ja/ と en/ に分かれる
-├── publications/            # メディアから参照される成果物（published/ ＝安定・tmp/ ＝仮置き）
-├── logs/                    # AI対話ログ（証跡）
-└── src/                     # 文書ビルド。モジュールが正本で、README などはここから生成される
-```
-
-各概念の中身と置き場は「含まれる概念」を参照。
-
----
-
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
 * **Friction & Proof:** Human KOSEI vs Artificial Logos
-* **Version:** v0.2.2
-* **Date:** 2026/09/14
+* **Version:** v0.3
+* **Date:** 2026/09/16
