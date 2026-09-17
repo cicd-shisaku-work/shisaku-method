@@ -8,8 +8,8 @@ title    = "shisaku-method"
 author   = "shisaku"
 status   = "継続的インテグレーション中 / Continuously Integrating"
 friction = "Human KOSEI vs Artificial Logos"
-version  = "v0.3"
-date     = "2026/09/16"
+version  = "v0.4"
+date     = "2026/09/17"
 
 [numbering]
 enabled = false
