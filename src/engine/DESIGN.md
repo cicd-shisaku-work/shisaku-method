@@ -1,6 +1,6 @@
 # シサク原典管理スクリプト設計書
 
-**Version:** v0.1.9
+**Version:** v0.1.10
 **Date:** 2026/09/17
 **性格：** `src/` に置く文書ビルド（モジュール群から公開文書を組み立てるスクリプト）の設計仕様。実装する者が、この文書だけを読んで着手できることを合格条件とする。
 
@@ -621,7 +621,7 @@ python3 src/engine/build.py --impact                       # 変更したモジ�
 
 日英で対になるモジュール（id は共通）：
 
-`what-is` / `what-is/name` / `repository` / `readers` / `how-to-read` / `concepts` / `concepts/shisaku-world-interpretation` / `concepts/premise-primacy` / `concepts/shisaku-cognitive-frame` / `concepts/shisaku-human-transformation` / `concepts/shisaku-human-idion-structure` / `concepts/kosei-mining` / `not-included` / `who`
+`repository` / `what-is` / `what-is/name` / `what-is/failure-analysis` / `what-is/origin` / `readers` / `how-to-read` / `concepts` / `concepts/shisaku-world-interpretation` / `concepts/premise-primacy` / `concepts/shisaku-cognitive-frame` / `concepts/shisaku-human-transformation` / `concepts/shisaku-human-idion-structure` / `concepts/kosei-mining` / `not-included` / `participation`
 
 英語のみ：`banner`（`# shisaku-method (English)`・`level = 1`）。`allow_unpaired` に登録する。
 
