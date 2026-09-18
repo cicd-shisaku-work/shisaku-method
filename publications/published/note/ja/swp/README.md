@@ -22,7 +22,7 @@
 
 ## 関連
 
-- 上流理論：[シサク認知フレーム理論](../../../../../concepts/shisaku-cognitive-frame/ja/)（前提優位理論・TSFを含む）
+- 上流理論：[シサク認知フレーム理論](../../../../../concepts/human/shisaku-cognitive-frame/ja/)（前提優位理論・TSFを含む）
 - 解説記事：note（公開後にリンク追記）
 
 ## 更新方針

@@ -137,32 +137,32 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 ### シサク・世界解釈（Shisaku World-Interpretation）
 シサクメソッド以前の**起点**であり、系列の最上流に立つ観方。人間を、生の衝動（BIOS）と、物語で書かれる圧縮概念（OS）のハイブリッドとして観るレンズである。加速する環境との不整合から現代の課題を読み、生存の渇望（安全・序列・新奇）の上に、OS層の渇望「自分らしく在りたい」を置く。真偽ではなく効きで測る、一表現者の解釈。**前提優位理論が「力学の最上流」なら、本書は「観方の最上流」**——二軸で系列を支える。シサクメソッドとは、この解釈が指す課題へ、自分の物語（＝前提）を書いていく活動にほかならない。
 
-詳細 → `concepts/shisaku-world-interpretation/`
+詳細 → `concepts/human/shisaku-world-interpretation/`
 
 ### 前提優位理論（Premise Primacy）
 本リポジトリの諸概念が立つ、最上流の基盤理論。強制力が働かない場面では、介入は「対象」として処理される層よりも、「前提」として作動する層に効率よく作用する——という介入の抽象原理（Theory of Intervention）。
 
-詳細 → `concepts/premise-primacy/`
+詳細 → `concepts/universal/premise-primacy/`
 
 ### シサク認知フレーム理論（Shisaku Cognitive Frame Theory）
 認知フレームとは、入力のどの点に注意を配分するかを規定する、思考に先立つ着眼の構造である（着眼優位——前提優位理論の系）。KOSEI Mining（採掘）が掘り出したその着眼の構造を、AIや他者に装着し継承するための理論。原典（着眼の原理）・AI用ランタイムモジュール（生成の機構）・運用ガイド（人間の運用）からなる。
 
-詳細 → `concepts/shisaku-cognitive-frame/`
+詳細 → `concepts/human/shisaku-cognitive-frame/`
 
 ### シサク・ヒト変容理論（SHTT）と四成分
 前提優位理論をヒト種の「表現による変容」へ展開した系。**二相**——入口（表現者の核＝IDION）と出口（受け手の変容＝四成分）——に同じ変容が立ち、帰趨（残存／変容の二値・成分ごと）を通し軸に、両端共通の過程（接触→気づき→再演段→照合段→承認段→書き換え段→定常化段→折り返し段）と深度語彙（変容深度・変容広さ・自己距離／共鳴深度・共鳴距離・共鳴強度・共鳴負荷）の区別を置き、四つの構造理論——**軌跡（SHTST：何を体験させ何を変容させるか）／表現（SHEST：どう実装するか）／距離（SHDST：何が届き何が届かないか）／共鳴（SHKST：実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・深度語彙・変容の過程の八段・距離軸の全域スキャン・共鳴の入口・共鳴事例の分解表・クオリア欲求の類型・媒体の四層マップ）を持つ。上流は二軸——**前提優位理論（力学の最上流）とシサク・世界解釈（目的・観方の最上流＝なぜ表現するか・人間はシステムという世界解釈）**。
 
-詳細 → `concepts/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
+詳細 → `concepts/human/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
 
 ### シサク・ヒト IDION 構造理論（IDION）
 SHTT の**入口側**——表現が湧き出す基体＝**表現者自身の変容の集合が形作った固有の核（IDION）**の構造理論（成分でなく、主体の核の側に立つ・略号を持たず把手 IDION で参照）。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、核の書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、強度を変容量（縦＝変容深度〔たどりの長さ〕・変容広さ〔本数〕／横＝結合則）で測り、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを自分のものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は IDION の日本語グロス。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）。
 
-詳細 → `concepts/shisaku-human-idion-structure/`
+詳細 → `concepts/human/shisaku-human-idion-structure/`
 
 ### KOSEI Mining（エゴ・マイニング）
 AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、自我の核（KOSEI / 個性）を掘り出す遅延評価型の自己修正プロトコル。
 
-詳細 → `concepts/kosei-mining/`
+詳細 → `concepts/human/kosei-mining/`
 
 ---
 
@@ -327,32 +327,32 @@ Every concept here is a **hypothesis and an axiomatic system for design**, not a
 ### Shisaku World-Interpretation
 The **starting point** that precedes the shisaku-method, and the most upstream *way of seeing* in the series: a lens that views the human as a hybrid of raw drives (BIOS) and compressed concepts written as stories (OS). It reads the troubles of the present from the mismatch with an accelerating environment, and places — above the survival cravings (safety, status, novelty) — an OS-layer craving: *to be oneself*. One person's interpretation, measured by whether it works, not by whether it is true. **If Premise Primacy is "the upstream of mechanism," this is "the upstream of seeing"** — the two axes on which the series stands. The shisaku-method is, in the end, the activity of writing one's own story (= premise) toward the problem this interpretation names.
 
-→ `concepts/shisaku-world-interpretation/`
+→ `concepts/human/shisaku-world-interpretation/`
 
 ### Premise Primacy
 The most upstream foundational theory on which the concepts in this repository stand. A theory of intervention: where no coercive force applies, intervention acts more efficiently on the layer that operates as *premise* than on the layer processed as *object*.
 
-→ `concepts/premise-primacy/`
+→ `concepts/universal/premise-primacy/`
 
 ### Shisaku Cognitive Frame Theory
 A cognitive frame is the structure of attention that precedes thought — it determines which points of an input receive attention (Frame Primacy, a corollary of Premise Primacy). This is the theory for casting and inheriting onto AI and other people the frames that KOSEI Mining (excavation) has dug out. It comprises a Canon (principles of attention), a Runtime Module for AI (the mechanism of generation), and an Operation Guide (human operation).
 
-→ `concepts/shisaku-cognitive-frame/`
+→ `concepts/human/shisaku-cognitive-frame/`
 
 ### Shisaku Human Transformation Theory (SHTT) and its four components
 An extension of Premise Primacy to human transformation through expression. Two ends of one transformation — the entry (the expresser's core, IDION) and the exit (the receiver's transformation, the four components) — with the *outcome* (residue / transformation, read per component) as the through-axis, an eight-stage process common to both ends, and a typed depth vocabulary. It binds four structure-theories: **Trajectory (SHTST — what experience to induce and what to transform) / Expression (SHEST — how to implement it) / Distance (SHDST — what does and does not reach) / Kyōmei·Resonance (SHKST — what actually resonated and remained)**. Each component carries application-layer supplements (transformation object-layers, depth vocabulary, the eight stages of transformation, a distance-axis survey, resonance entry-points, an instance-decomposition table, qualia-desire types, and a media four-layer map). Two upstreams: **Premise Primacy (the upstream of mechanism) and the Shisaku World-Interpretation (the upstream of purpose and seeing — why we express; humans as systems).**
 
-→ `concepts/shisaku-human-transformation/` (transformation, umbrella) / `-trajectory-structure/` / `-expression-structure/` / `-distance-structure/` / `-kyomei-structure/`
+→ `concepts/human/shisaku-human-transformation/` (transformation, umbrella) / `-trajectory-structure/` / `-expression-structure/` / `-distance-structure/` / `-kyomei-structure/`
 
 ### Shisaku Human IDION-Structure Theory (IDION)
 The *entry side* of SHTT — the structure of the expresser's own core, **IDION**: the core formed by the set of one's own transformations (not a component; it stands on the subject's side, referred to by the handle IDION without an acronym). Where the four components carry the exit side (the receiver's transformation), IDION stands at the entry end of the same transformation. It distinguishes IDION not by origin but by the traceable history of a core rewrite (transformation cost — struggle is one form, integration another) and by non-transferability; measures strength as transformation quantity (vertical = transformation depth and breadth / horizontal = the combination rule); splits judgment asymmetrically between the person and the receiver; defines disguise as "expressing what is not in one's IDION as one's own" by mechanics rather than morality; and calibrates dignity as honesty + gaze. KOSEI (個性) is the Japanese gloss of IDION. Supplements — worked cases and separation detection / a map of transformation-cost forms / a map of layers and axes / system isomorphism (a design check tool).
 
-→ `concepts/shisaku-human-idion-structure/`
+→ `concepts/human/shisaku-human-idion-structure/`
 
 ### KOSEI Mining (Ego-Mining / エゴ・マイニング)
 A delayed-evaluation self-correction protocol. Rather than treating AI as a perfect mirror, it uses AI as an imperfect "hand mirror" — generating friction that excavates the irreducible core of the self (KOSEI / 個性).
 
-→ `concepts/kosei-mining/`
+→ `concepts/human/kosei-mining/`
 
 ---
 

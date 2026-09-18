@@ -15,7 +15,7 @@
 対象の第一陣は二つ。
 
 - `README.md`（日英併記）
-- `concepts/shisaku-human-idion-structure/ja/shisaku-human-idion-structure.md`（節番号と本文中の節参照を持つ）
+- `concepts/human/shisaku-human-idion-structure/ja/shisaku-human-idion-structure.md`（節番号と本文中の節参照を持つ）
 
 この二つは性質が違うので、両方が通れば仕組みの汎用性が一通り試される。以後の文書は、インデックスを一つ足すだけで載る。
 
@@ -459,8 +459,8 @@ groups     = [["colophon"]]
 | `sec` | `{{sec:strength}}` | `第4節 強度`（そのブロックの `render.sec` の書式。`{n}`＝番号・`{t}`＝題） |
 | `num` | `{{num:strength/combination-rule}}` | `4.1` |
 | `title` | `{{title:disguise}}` | そのモジュールの題（番号を含まない） |
-| `path` | `{{path:shisaku-human-idion-structure}}` | `concepts/shisaku-human-idion-structure/`（リポジトリのルート基準） |
-| `url` | `{{url:shisaku-human-idion-structure}}` | `https://…/tree/main/concepts/shisaku-human-idion-structure` |
+| `path` | `{{path:shisaku-human-idion-structure}}` | `concepts/human/shisaku-human-idion-structure/`（リポジトリのルート基準） |
+| `url` | `{{url:shisaku-human-idion-structure}}` | `https://…/tree/main/concepts/human/shisaku-human-idion-structure` |
 | `meta` | `{{meta:version}}` | インデックスの `[meta]` の値 |
 
 - **`render.sec` に `{t}`（題）を置けるのは、節名が参照の宛先だからである**（`authoring-policy.md`「相互リンク規約」の節）。番号だけでは、跳ばないと何の節か分からない。番号を先に置くのは、**出力の 7 割が著者の括弧の中にあり**、題を括弧付きで出すと入れ子になるためである。
@@ -484,8 +484,8 @@ groups     = [["colophon"]]
 url = "https://github.com/cicd-shisaku-work/shisaku-method/tree/main"
 
 [paths]
-shisaku-human-idion-structure = "concepts/shisaku-human-idion-structure/"
-kosei-mining                  = "concepts/kosei-mining/"
+shisaku-human-idion-structure = "concepts/human/shisaku-human-idion-structure/"
+kosei-mining                  = "concepts/human/kosei-mining/"
 # …
 ```
 

@@ -10,7 +10,7 @@
 
 **仕組みの語も射程に入る。** 文書ビルド・監査・規約が使う語（所属・粒度・正本・マーク・バンドルなど）は原典の語と別の語彙だが、**同じ語を別の概念に使わない**という一点だけ本規約が掛ける（第12条）。
 
-**関連規約：** `authoring-policy.md`「相互リンク規約」（資料の置き場・節名参照）／`CONTRIBUTING.md`「バージョニング」（版番号）／`src/engine/DESIGN.md`（仕組みの語の正本）／`concepts/shisaku-human-idion-structure/ja/idion-cases.md`「分離検出」（一語二機構の検出）。
+**関連規約：** `authoring-policy.md`「相互リンク規約」（資料の置き場・節名参照）／`CONTRIBUTING.md`「バージョニング」（版番号）／`src/engine/DESIGN.md`（仕組みの語の正本）／`concepts/human/shisaku-human-idion-structure/ja/idion-cases.md`「分離検出」（一語二機構の検出）。
 
 ---
 
