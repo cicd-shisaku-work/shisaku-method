@@ -1,0 +1,37 @@
+# シサク・クオリア解釈 補足 ― 表出の地図 のインデックス（並び・出力先）。正本はモジュール群。
+[doc]
+id     = "shisaku-qualia-interpretation-expression-map"
+output = "{{path:shisaku-qualia-interpretation}}ja/shisaku-qualia-interpretation-expression-map.md"
+
+[meta]
+title    = 'シサク・クオリア解釈 補足 ― 表出の地図（形の候補と検査手続き）'
+subtitle = 'Supplement: A Map of Manifestation (candidates & the reduction test)'
+related  = 'シサク・クオリア解釈（原典）／シサク・予測モデル解釈（上流）'
+author   = 'shisaku'
+version  = 'v0.1'
+header_version = 'v0.1'
+date     = '2026/09/20'
+canonical      = "{{url:shisaku-qualia-interpretation}}"
+copyright_year = "2026"
+license_intro  = '''This document is a supplement to Shisaku Qualia-Interpretation — a map of the candidate forms that manifestation takes, the test that sifts those candidates (has it passed through collation; has it lost dimensions; is it independent), the cases the interpretation does not cover, and the external findings that stand beside it as corroboration rather than proof — authored by shisaku. It is released for others to study, adapt, and build upon as they see fit.'''
+
+[numbering]
+enabled = true
+start   = 0
+format  = ["{n}. ", "{n} "]
+
+[[block]]
+lang       = "ja"
+base_depth = 1
+groups = [
+  ["shared:meta/supplement-header"],
+  ["placement"],
+  ["test", "test/condition-a", "test/condition-b", "test/condition-c", "test/verdict"],
+  ["forms", "forms/reflex", "forms/meaning", "forms/non-fixed"],
+  ["examples", "examples/one-to-many", "examples/loop"],
+  ["out-of-scope"],
+  ["grounding"],
+  ["feedback"],
+  ["shared:meta/supplement-colophon"],
+  ["shared:license/supplement-cc-by-4.0"],
+]

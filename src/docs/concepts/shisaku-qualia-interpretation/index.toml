@@ -1,0 +1,37 @@
+# シサク・クオリア解釈のインデックス（並び・出力先）。正本はモジュール群。
+[doc]
+id     = "shisaku-qualia-interpretation"
+output = "{{path:shisaku-qualia-interpretation}}ja/shisaku-qualia-interpretation.md"
+
+[meta]
+title    = "シサク・クオリア解釈"
+subtitle = "Shisaku Qualia-Interpretation"
+author   = "shisaku"
+upstream = "シサク・予測モデル解釈"
+version  = "v0.1"
+date     = "2026/09/20"
+canonical      = "{{url:shisaku-qualia-interpretation}}"
+copyright_year = "2026"
+license_intro  = "This document (Shisaku Qualia-Interpretation — Shisaku's reading of what appears in the body alongside the collation of prediction model and contact) is authored by shisaku. It is offered — as one interpretation among many, not a prescription — for others to study, adapt, and build upon as they see fit."
+
+[numbering]
+enabled = true
+start   = 0                      # 最初の番号付き節の番号
+format  = ["{n}. ", "{n} "]      # 深さごとの番号の書式
+
+[[block]]
+lang       = "ja"
+base_depth = 1
+render     = { sec = "第{n}節 {t}" }
+groups = [
+  ["shared:meta/header"],
+  ["preface"],
+  ["general-definition"],
+  ["interpretation", "interpretation/signal", "interpretation/dimensions",
+   "interpretation/reduction", "interpretation/recursion",
+   "interpretation/example-music", "interpretation/human-side"],
+  ["naming"],
+  ["substitution-test"],
+  ["shared:meta/colophon"],
+  ["shared:license/cc-by-4.0"],
+]
