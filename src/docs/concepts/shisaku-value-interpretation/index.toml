@@ -1,0 +1,38 @@
+# シサク・価値解釈のインデックス（並び・出力先）。正本はモジュール群。
+[doc]
+id     = "shisaku-value-interpretation"
+output = "{{path:shisaku-value-interpretation}}ja/shisaku-value-interpretation.md"
+
+[meta]
+title    = "シサク・価値解釈"
+subtitle = "Shisaku Value-Interpretation"
+author   = "shisaku"
+upstream = "シサク・クオリア解釈 → シサク・予測モデル解釈"
+version  = "v0.1"
+date     = "2026/09/20"
+canonical      = "{{url:shisaku-value-interpretation}}"
+copyright_year = "2026"
+license_intro  = "This document (Shisaku Value-Interpretation — Shisaku's reading of where value arises, and of how a price differs from it) is authored by shisaku. It is offered — as one interpretation among many, not a prescription — for others to study, adapt, and build upon as they see fit."
+
+[numbering]
+enabled = true
+start   = 0                      # 最初の番号付き節の番号
+format  = ["{n}. ", "{n} "]      # 深さごとの番号の書式
+
+[[block]]
+lang       = "ja"
+base_depth = 1
+render     = { sec = "第{n}節 {t}" }
+groups = [
+  ["shared:meta/header"],
+  ["preface"],
+  ["general-definition"],
+  ["interpretation", "interpretation/arises-at-contact", "interpretation/two-sides",
+   "interpretation/price", "interpretation/price-as-contact", "interpretation/value-is-high",
+   "interpretation/absolute-value", "interpretation/example-fuji",
+   "interpretation/sender-as-organisation"],
+  ["naming"],
+  ["substitution-test"],
+  ["shared:meta/colophon"],
+  ["shared:license/cc-by-4.0"],
+]

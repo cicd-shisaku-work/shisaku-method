@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.5  
-**Date:** 2026/09/17
+**Version:** v0.5.1  
+**Date:** 2026/09/20
 
 ---
 
@@ -143,6 +143,21 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 本リポジトリの諸概念が立つ、最上流の基盤理論。強制力が働かない場面では、介入は「対象」として処理される層よりも、「前提」として作動する層に効率よく作用する——という介入の抽象原理（Theory of Intervention）。
 
 詳細 → `concepts/universal/premise-primacy/`
+
+### シサク・予測モデル解釈（Shisaku Prediction-Model Interpretation）
+前提優位理論の下で、**期待を先に出す側**をどう読むかの解釈。予測モデルを**実体**として、前提を**それが検討されずに働いている状態**として分ける。言葉にしても実体は出ていかず、出ていくのは言葉にしたものだけである——そこで**次元が減る**（独立に変わりうるものの数が減る）。解釈であるため反証条件を持たず、置換の検査を持つ。
+
+詳細 → `concepts/universal/shisaku-prediction-model-interpretation/`
+
+### シサク・クオリア解釈（Shisaku Qualia-Interpretation）
+予測モデルと接触の**照合に伴って身体に現れる信号**を、クオリアと読む解釈。一致にも不一致にも現れ、そのあいだは連続する。**出ることは、次元が減ること**——鳥肌も、語も、理解も、元より少ない。発生は扱わず、どこに現れるものをそう呼ぶかだけを定める。補足資料——表出の地図（形の候補と検査手続き）。
+
+詳細 → `concepts/human/shisaku-qualia-interpretation/`
+
+### シサク・価値解釈（Shisaku Value-Interpretation）
+価値を、接触に伴って**受け手の側に立つもの**として読む解釈。価値はクオリアと別の実体ではなく、その信号をこの語で読んだものである。**値段と「価値が高い」は、同じ減少の、方向の違う二つ**——送り手の予測が数に減ったものと、受け手の信号が語に減ったもの。価値・値打ち・値段の三語の線を引く。補足資料——三語の地図（切り分けの手続きと候補）。
+
+詳細 → `concepts/human/shisaku-value-interpretation/`
 
 ### シサク認知フレーム理論（Shisaku Cognitive Frame Theory）
 認知フレームとは、入力のどの点に注意を配分するかを規定する、思考に先立つ着眼の構造である（着眼優位——前提優位理論の系）。KOSEI Mining（採掘）が掘り出したその着眼の構造を、AIや他者に装着し継承するための理論。原典（着眼の原理）・AI用ランタイムモジュール（生成の機構）・運用ガイド（人間の運用）からなる。
@@ -334,6 +349,21 @@ The most upstream foundational theory on which the concepts in this repository s
 
 → `concepts/universal/premise-primacy/`
 
+### Shisaku Prediction-Model Interpretation
+Under Premise Primacy, a reading of what stands on the expectation-first side. It separates the prediction model, an entity, from the premise, which is the state of that entity operating without being examined. Putting something into words does not move the entity out: what leaves is only what was put into words, and there the dimensions are fewer — fewer things that can vary independently. Being an interpretation, it carries no falsification clause, and carries a substitution test in its place.
+
+→ `concepts/universal/shisaku-prediction-model-interpretation/`
+
+### Shisaku Qualia-Interpretation
+A reading of qualia as the signal that appears in the body alongside the collation of prediction model and contact. It appears on a match as well as a mismatch, and runs continuously between them. To come out is for dimensions to be lost: gooseflesh, a word, an understanding — each is fewer than what it came from. Genesis is left alone; only what is called by the name is settled. Supplement — a map of manifestation (candidate forms and the sorting test).
+
+→ `concepts/human/shisaku-qualia-interpretation/`
+
+### Shisaku Value-Interpretation
+A reading of value as what stands on the receiver's side at a contact. Value is not an entity separate from qualia: it is that signal, read under this word. A price and the words "worth a lot" are the same reduction running in opposite directions — a sender's prediction reduced to a number, and a receiver's signal reduced to words. It draws the line between value, worth and price. Supplement — a map of value, worth and price (the sorting test and candidates).
+
+→ `concepts/human/shisaku-value-interpretation/`
+
 ### Shisaku Cognitive Frame Theory
 A cognitive frame is the structure of attention that precedes thought — it determines which points of an input receive attention (Frame Primacy, a corollary of Premise Primacy). This is the theory for casting and inheriting onto AI and other people the frames that KOSEI Mining (excavation) has dug out. It comprises a Canon (principles of attention), a Runtime Module for AI (the mechanism of generation), and an Operation Guide (human operation).
 
@@ -386,5 +416,5 @@ Issues are accepted. A suggestion of the form "what shisaku is sensing may in fa
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
 * **Friction & Proof:** Human KOSEI vs Artificial Logos
-* **Version:** v0.5
-* **Date:** 2026/09/17
+* **Version:** v0.5.1
+* **Date:** 2026/09/20

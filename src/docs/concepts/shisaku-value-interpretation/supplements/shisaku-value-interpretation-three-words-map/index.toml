@@ -1,0 +1,36 @@
+# シサク・価値解釈 補足 ― 三語の地図 のインデックス（並び・出力先）。正本はモジュール群。
+[doc]
+id     = "shisaku-value-interpretation-three-words-map"
+output = "{{path:shisaku-value-interpretation}}ja/shisaku-value-interpretation-three-words-map.md"
+
+[meta]
+title    = 'シサク・価値解釈 補足 ― 三語の地図（切り分けの手続きと候補）'
+subtitle = 'Supplement: A Map of Value, Worth and Price (the sorting test & candidates)'
+related  = 'シサク・価値解釈（原典）／シサク・クオリア解釈・シサク・予測モデル解釈（上流）'
+author   = 'shisaku'
+version  = 'v0.1'
+header_version = 'v0.1'
+date     = '2026/09/20'
+canonical      = "{{url:shisaku-value-interpretation}}"
+copyright_year = "2026"
+license_intro  = '''This document is a supplement to Shisaku Value-Interpretation — a map that sorts value, worth and price by a three-step test, lists what candidates go into a price, lists the occasions on which value does not stand, and sets out the external findings that stand beside the reading as corroboration rather than proof — authored by shisaku. It is released for others to study, adapt, and build upon as they see fit.'''
+
+[numbering]
+enabled = true
+start   = 0
+format  = ["{n}. ", "{n} "]
+
+[[block]]
+lang       = "ja"
+base_depth = 1
+groups = [
+  ["shared:meta/supplement-header"],
+  ["placement"],
+  ["test", "test/same-number", "test/external-yardstick", "test/stands-and-cannot-move", "test/verdict"],
+  ["price-candidates"],
+  ["no-value", "no-value/state-side", "no-value/staying-side", "no-value/same-from-outside"],
+  ["grounding"],
+  ["feedback"],
+  ["shared:meta/supplement-colophon"],
+  ["shared:license/supplement-cc-by-4.0"],
+]

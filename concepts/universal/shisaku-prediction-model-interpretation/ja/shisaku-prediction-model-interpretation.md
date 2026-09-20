@@ -1,7 +1,8 @@
 # シサク・予測モデル解釈
 ## Shisaku Prediction-Model Interpretation
 
-**Version:** v0.2  
+**上流依存：前提優位理論**  
+**Version:** v0.2.1  
 **Date:** 2026/09/20
 
 ---
@@ -107,8 +108,9 @@
 ---
 
 **Shisaku Prediction-Model Interpretation**
+**上流依存：前提優位理論**
 * **Author / Explorer:** shisaku
-* **Version:** v0.2
+* **Version:** v0.2.1
 * **Date:** 2026/09/20
 
 ---
