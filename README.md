@@ -2,7 +2,7 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.6  
+**Version:** v0.6.1  
 **Date:** 2026/09/20
 
 ---
@@ -31,11 +31,16 @@
 本リポジトリは、シサクが定義・概念化を試みた思想の**原典**と**証跡**を格納する場所である。
 
 ```
-concepts/      — 定義書・プロトコル・造語の設計概念
+concepts/      — 原典・解釈・補足を、射程で三つに分けて置く
+  universal/   — 射程を限定しない系一般（ヒト・AI・組織）
+  human/       — ヒト種へ降りた系
+  artificial/  — 人工物（AI・情報環境）を対象にする系
 publications/  — メディア（note/Medium/Kindle）から参照されるサンプル・成果物
 logs/          — 概念構築の過程としてのAI対話ログ
 src/           — 文書ビルド。モジュールが正本で、README はここから生成される
 ```
+
+**どこに入るかは、その文書が自分で宣言している射程で決まる。宣言が変われば、置き場も動く。**
 
 エゴ・マイニングによって生まれた概念がここに格納される。同時に、エゴ・マイニングそのものの記録もここに格納される。器と内容物が同一の場所に存在する。
 
@@ -215,7 +220,7 @@ AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、
 
 **使うのは、装着する前である。** 読むだけなら要らない。だが**前提として装着する**なら——認知フレームを継承・fork して自分の Book of Knowledge にするなら——装着したあとは、それが前提として見えなくなる。**検査の機会は装着前にしかない。** そして**見つけた境界は、issue の形になる**——「シサクが感じているのは、実はこういうことではないか」。「参加のしかた」の節が言う**差分を取る**とは、真偽を当てることではなく、この境界を見つけることである。
 
-**価値の在り処。** 本リポジトリが値打ちとして数えるのは、人間の読者の中に起きたものだけである。その価値には個人差がある——強く立つ人、弱く立つ人、立たない人がいる。「私は全くそう思わない」「私と同じ考えだ」「私の中にある言語化できていないことが言語化できた」「内容はわかるが、いまひとつ腑に落ちない」——これらは個人によってのみ判別され、**著者にも評価者にも代わりに判別することはできない。**
+**価値の在り処**〔三語の線は〔シサク・価値解釈〕が持つ〕**。** 本リポジトリが値打ちとして数えるのは、人間の読者の中に起きたものだけである。その価値には個人差がある——強く立つ人、弱く立つ人、立たない人がいる。「私は全くそう思わない」「私と同じ考えだ」「私の中にある言語化できていないことが言語化できた」「内容はわかるが、いまひとつ腑に落ちない」——これらは個人によってのみ判別され、**著者にも評価者にも代わりに判別することはできない。**
 
 ---
 
@@ -255,11 +260,16 @@ What is held here is shisaku's interpretations of inside and outside, as held wi
 This repository stores the **canonical texts** of the thought shisaku has tried to define and conceptualise, and the **record** of that work.
 
 ```
-concepts/      — definitions, protocols, coined terms
+concepts/      — canons, interpretations and supplements, sorted by declared scope
+  universal/   — systems at large, with no limit of scope (people, AI, organisations)
+  human/       — systems brought down to the human species
+  artificial/  — systems whose object is the artificial (AI, information environments)
 publications/  — sample artifacts referenced from media (note/Medium/Kindle)
 logs/          — AI dialogue records as proof of process
 src/           — the document build; modules are the source, and the README is generated from them
 ```
+
+**Where a document sits is decided by the scope it declares for itself. Change the declaration and the placement moves.**
 
 The concepts here were born through ego-mining (KOSEI Mining). The records of that process are also stored here. The container and its contents exist in the same place.
 
@@ -439,7 +449,7 @@ Two things are kept elsewhere, for business.
 
 **The time to use this is before you put it on.** To read needs none of it. But **to wear it as a premise** — to inherit or fork the cognitive frame into your own Book of Knowledge — is to have it stop being visible as a premise. **The occasion to inspect it exists only beforehand.** And **a boundary you find takes the form of an issue** — "what shisaku is sensing may in fact be this". To take the difference, in the sense the section on taking part means, is not to put the text to true or false: it is to find that boundary.
 
-**Where value arises.** What this repository counts as worth is only what arises in a human reader. That value differs from person to person — for some it stands strongly, for some weakly, for some not at all. "I do not think so at all"; "that is what I think too"; "something in me that I could not put into words has been put into words"; "I follow it, but it does not quite settle" — these are told apart by the individual alone, and **neither the author nor an evaluator can tell them apart on that person's behalf.**
+**Where value arises** (the line between the three words is drawn by the Shisaku Value-Interpretation)**.** What this repository counts as worth is only what arises in a human reader. That value differs from person to person — for some it stands strongly, for some weakly, for some not at all. "I do not think so at all"; "that is what I think too"; "something in me that I could not put into words has been put into words"; "I follow it, but it does not quite settle" — these are told apart by the individual alone, and **neither the author nor an evaluator can tell them apart on that person's behalf.**
 
 ---
 
@@ -454,5 +464,5 @@ Issues are accepted. A suggestion of the form "what shisaku is sensing may in fa
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
 * **Friction & Proof:** Human KOSEI vs Artificial Logos
-* **Version:** v0.6
+* **Version:** v0.6.1
 * **Date:** 2026/09/20

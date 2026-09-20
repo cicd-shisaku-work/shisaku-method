@@ -25,10 +25,15 @@ What is held here is shisaku's interpretations of inside and outside, as held wi
 This repository stores the **canonical texts** of the thought shisaku has tried to define and conceptualise, and the **record** of that work.
 
 ```
-concepts/      — definitions, protocols, coined terms
+concepts/      — canons, interpretations and supplements, sorted by declared scope
+  universal/   — systems at large, with no limit of scope (people, AI, organisations)
+  human/       — systems brought down to the human species
+  artificial/  — systems whose object is the artificial (AI, information environments)
 publications/  — sample artifacts referenced from media (note/Medium/Kindle)
 logs/          — AI dialogue records as proof of process
 src/           — the document build; modules are the source, and the README is generated from them
 ```
+
+**Where a document sits is decided by the scope it declares for itself. Change the declaration and the placement moves.**
 
 The concepts here were born through ego-mining (KOSEI Mining). The records of that process are also stored here. The container and its contents exist in the same place.
