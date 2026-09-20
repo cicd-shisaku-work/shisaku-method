@@ -8,8 +8,8 @@ title    = "shisaku-method"
 author   = "shisaku"
 status   = "継続的インテグレーション中 / Continuously Integrating"
 friction = "Human KOSEI vs Artificial Logos"
-version  = "v0.5"
-date     = "2026/09/17"
+version  = "v0.6.1"
+date     = "2026/09/20"
 
 [numbering]
 enabled = false
@@ -28,9 +28,13 @@ groups = [
   ["readers"],
   ["how-to-read"],
   ["concepts", "concepts/shisaku-world-interpretation", "concepts/premise-primacy",
+   "concepts/shisaku-prediction-model-interpretation",
+   "concepts/shisaku-qualia-interpretation",
+   "concepts/shisaku-value-interpretation",
    "concepts/shisaku-cognitive-frame", "concepts/shisaku-human-transformation",
    "concepts/shisaku-human-idion-structure", "concepts/kosei-mining"],
   ["not-included"],
+  ["how-to-test"],
   ["participation"],
 ]
 
@@ -45,9 +49,13 @@ groups = [
   ["readers"],
   ["how-to-read"],
   ["concepts", "concepts/shisaku-world-interpretation", "concepts/premise-primacy",
+   "concepts/shisaku-prediction-model-interpretation",
+   "concepts/shisaku-qualia-interpretation",
+   "concepts/shisaku-value-interpretation",
    "concepts/shisaku-cognitive-frame", "concepts/shisaku-human-transformation",
    "concepts/shisaku-human-idion-structure", "concepts/kosei-mining"],
   ["not-included"],
+  ["how-to-test"],
   ["participation"],
 ]
 

@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.5  
-**Date:** 2026/09/17
+**Version:** v0.6.1  
+**Date:** 2026/09/20
 
 ---
 
@@ -31,11 +31,16 @@
 本リポジトリは、シサクが定義・概念化を試みた思想の**原典**と**証跡**を格納する場所である。
 
 ```
-concepts/      — 定義書・プロトコル・造語の設計概念
+concepts/      — 原典・解釈・補足を、射程で三つに分けて置く
+  universal/   — 射程を限定しない系一般（ヒト・AI・組織）
+  human/       — ヒト種へ降りた系
+  artificial/  — 人工物（AI・情報環境）を対象にする系
 publications/  — メディア（note/Medium/Kindle）から参照されるサンプル・成果物
 logs/          — 概念構築の過程としてのAI対話ログ
 src/           — 文書ビルド。モジュールが正本で、README はここから生成される
 ```
+
+**どこに入るかは、その文書が自分で宣言している射程で決まる。宣言が変われば、置き場も動く。**
 
 エゴ・マイニングによって生まれた概念がここに格納される。同時に、エゴ・マイニングそのものの記録もここに格納される。器と内容物が同一の場所に存在する。
 
@@ -108,6 +113,8 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 | **評価読者** | ＋ 仕組みの文書（`src/engine/`・`CONTRIBUTING.md`・`authoring-policy.md`・`terminology-policy.md`・`terminology-ledger.md`）と、文書ビルドに載っている文書のモジュール・インデックス | **作りが辿れる。** なぜこの構造か、何を検査しているか、どこが正本かが読める |
 | **著者** | すべて | — |
 
+**語の規約は、この二段目にある。**——同じ語を別の座標軸の概念名に使わない、という規約と、その所在表をリポジトリ直下に置く：`terminology-policy.md`（規約・一語一軸・型付け・単独語のスコープ）と `terminology-ledger.md`（語・軸・対象・定義位置の薄い一枚）。新しい語を立てるとき、また他文書から語を参照するときは、ここを引く。
+
 **適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。AI が読む場合も同じ三面である——解説の相手として読むなら一段目、評価の相手として読むなら二段目。前提 5 が退けるのは読むことでなく、原典を自己正当化として生成器へ添えることである。AI に装着するよう設計された文書（認知フレーム理論のランタイムモジュール）は、これにあたらない。
 
 **この分類が決めるもの。** どの面に何を出すかは、ここから出る。原典は入門書ではない——入口は本 README と書籍が担う。一段目が成り立つのは、定義・適用範囲・参照先を**本文が持つ**ときである。仕組みのための記述は、一段目の読み心地に出さない。
@@ -126,9 +133,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 5. **設計・監査のための文書であり、生成の現場へ添付しない**——機構の記述は作り手の設計・監査を助けるもので、生成器へ注入する自己正当化ではない。
 6. **新規性は要素でなく圧縮**——構成要素はいずれも既知である。新しいのは関係構造への圧縮であり、置換検査（外部の既存概念に置き換えて主張が成立するなら新規でない）に耐える核を持つ。
 7. **原典／補足／プロファイルの三層**——原典（一般理論）は不変の骨組み、補足は応用層の地図（候補＋独立性検査であって固定分類でない）、具体は各実装が埋める。倫理条項は理論の不可分の一部として扱う。
-8. **値打ちは生成力・弁別力・転移力で測る**——これらの理論の値打ちは、対象を設計・監査の対象として扱え（生成力）、その有無・程度・見せかけを切り分けて見せ（弁別力）、媒体をまたいで運べる（転移力）ことにある。価値の判定もまた自己申告でなく、下流で受け手に残ったもので弱く判定される（前提 2 の、値打ち判定への適用）。反証条件の節は、その値打ちの一部を裏づける副次であって本体ではない——「予測が少ない」で測るのは物差し違いである。ただし副次だからといって削る方向へは働かせない——反証条件は、理論が自らの誤りから学ぶ入力口として前面に残す。そしてこれは測り方の固定ではない。将来その理論が反証可能な形へ鍛え直されるなら、その更新を妨げない。
-
-**語の規約（系列横断）**——同じ語を別の座標軸の概念名に使わない、という規約と、その所在表をリポジトリ直下に置く：`terminology-policy.md`（規約・一語一軸・型付け・単独語のスコープ）と `terminology-ledger.md`（語・軸・対象・定義位置の薄い一枚）。新しい語を立てるとき、また他文書から語を参照するときは、ここを引く。
+8. **値打ちは生成力・弁別力・転移力で測る**——これらの理論の値打ちは、対象を設計・監査の対象として扱え（生成力）、その有無・程度・見せかけを切り分けて見せ（弁別力）、媒体をまたいで運べる（転移力）ことにある。値打ちの判定もまた自己申告でなく、下流で受け手に残ったもので弱く判定される（前提 2 の、値打ち判定への適用）。反証条件の節は、その値打ちの一部を裏づける副次であって本体ではない——「予測が少ない」で測るのは物差し違いである。ただし副次だからといって削る方向へは働かせない——反証条件は、理論が自らの誤りから学ぶ入力口として前面に残す。そしてこれは測り方の固定ではない。将来その理論が反証可能な形へ鍛え直されるなら、その更新を妨げない。
 
 ---
 
@@ -137,32 +142,47 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 ### シサク・世界解釈（Shisaku World-Interpretation）
 シサクメソッド以前の**起点**であり、系列の最上流に立つ観方。人間を、生の衝動（BIOS）と、物語で書かれる圧縮概念（OS）のハイブリッドとして観るレンズである。加速する環境との不整合から現代の課題を読み、生存の渇望（安全・序列・新奇）の上に、OS層の渇望「自分らしく在りたい」を置く。真偽ではなく効きで測る、一表現者の解釈。**前提優位理論が「力学の最上流」なら、本書は「観方の最上流」**——二軸で系列を支える。シサクメソッドとは、この解釈が指す課題へ、自分の物語（＝前提）を書いていく活動にほかならない。
 
-詳細 → `concepts/shisaku-world-interpretation/`
+詳細 → `concepts/human/shisaku-world-interpretation/`
 
 ### 前提優位理論（Premise Primacy）
 本リポジトリの諸概念が立つ、最上流の基盤理論。強制力が働かない場面では、介入は「対象」として処理される層よりも、「前提」として作動する層に効率よく作用する——という介入の抽象原理（Theory of Intervention）。
 
-詳細 → `concepts/premise-primacy/`
+詳細 → `concepts/universal/premise-primacy/`
+
+### シサク・予測モデル解釈（Shisaku Prediction-Model Interpretation）
+前提優位理論の下で、**期待を先に出す側**をどう読むかの解釈。予測モデルを**実体**として、前提を**それが検討されずに働いている状態**として分ける。言葉にしても実体は出ていかず、出ていくのは言葉にしたものだけである——そこで**次元が減る**（独立に変わりうるものの数が減る）。解釈であるため反証条件を持たず、置換の検査を持つ。
+
+詳細 → `concepts/universal/shisaku-prediction-model-interpretation/`
+
+### シサク・クオリア解釈（Shisaku Qualia-Interpretation）
+予測モデルと接触の**照合に伴って身体に現れる信号**を、クオリアと読む解釈。一致にも不一致にも現れ、そのあいだは連続する。**出ることは、次元が減ること**——鳥肌も、語も、理解も、元より少ない。発生は扱わず、どこに現れるものをそう呼ぶかだけを定める。補足資料——表出の地図（形の候補と検査手続き）。
+
+詳細 → `concepts/human/shisaku-qualia-interpretation/`
+
+### シサク・価値解釈（Shisaku Value-Interpretation）
+価値を、接触に伴って**受け手の側に立つもの**として読む解釈。価値はクオリアと別の実体ではなく、その信号をこの語で読んだものである。**値段と「価値が高い」は、同じ減少の、方向の違う二つ**——送り手の予測が数に減ったものと、受け手の信号が語に減ったもの。価値・値打ち・値段の三語の線を引く。補足資料——三語の地図（切り分けの手続きと候補）。
+
+詳細 → `concepts/human/shisaku-value-interpretation/`
 
 ### シサク認知フレーム理論（Shisaku Cognitive Frame Theory）
 認知フレームとは、入力のどの点に注意を配分するかを規定する、思考に先立つ着眼の構造である（着眼優位——前提優位理論の系）。KOSEI Mining（採掘）が掘り出したその着眼の構造を、AIや他者に装着し継承するための理論。原典（着眼の原理）・AI用ランタイムモジュール（生成の機構）・運用ガイド（人間の運用）からなる。
 
-詳細 → `concepts/shisaku-cognitive-frame/`
+詳細 → `concepts/human/shisaku-cognitive-frame/`
 
 ### シサク・ヒト変容理論（SHTT）と四成分
 前提優位理論をヒト種の「表現による変容」へ展開した系。**二相**——入口（表現者の核＝IDION）と出口（受け手の変容＝四成分）——に同じ変容が立ち、帰趨（残存／変容の二値・成分ごと）を通し軸に、両端共通の過程（接触→気づき→再演段→照合段→承認段→書き換え段→定常化段→折り返し段）と深度語彙（変容深度・変容広さ・自己距離／共鳴深度・共鳴距離・共鳴強度・共鳴負荷）の区別を置き、四つの構造理論——**軌跡（SHTST：何を体験させ何を変容させるか）／表現（SHEST：どう実装するか）／距離（SHDST：何が届き何が届かないか）／共鳴（SHKST：実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・深度語彙・変容の過程の八段・距離軸の全域スキャン・共鳴の入口・共鳴事例の分解表・クオリア欲求の類型・媒体の四層マップ）を持つ。上流は二軸——**前提優位理論（力学の最上流）とシサク・世界解釈（目的・観方の最上流＝なぜ表現するか・人間はシステムという世界解釈）**。
 
-詳細 → `concepts/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
+詳細 → `concepts/human/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
 
 ### シサク・ヒト IDION 構造理論（IDION）
 SHTT の**入口側**——表現が湧き出す基体＝**表現者自身の変容の集合が形作った固有の核（IDION）**の構造理論（成分でなく、主体の核の側に立つ・略号を持たず把手 IDION で参照）。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、核の書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、強度を変容量（縦＝変容深度〔たどりの長さ〕・変容広さ〔本数〕／横＝結合則）で測り、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを自分のものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は IDION の日本語グロス。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）。
 
-詳細 → `concepts/shisaku-human-idion-structure/`
+詳細 → `concepts/human/shisaku-human-idion-structure/`
 
 ### KOSEI Mining（エゴ・マイニング）
 AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、自我の核（KOSEI / 個性）を掘り出す遅延評価型の自己修正プロトコル。
 
-詳細 → `concepts/kosei-mining/`
+詳細 → `concepts/human/kosei-mining/`
 
 ---
 
@@ -182,6 +202,25 @@ AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、
 **失敗機構——実証。** 実証の不在を原典の欠陥と読むと、科学の物差しを解釈のレンズに当てることになり、原典の値打ちを測り損なう。事業での使われ方の検証を本リポジトリに求めると、範囲の外にある責任を負わせることになる。入口の読みやすさを原典に求めると、書籍が担う役割を原典に負わせ、原典が密度を失う。逆に、「実証は下流」を検証を免れる理由として使うと、主張が宙に浮く——下流の実証は、公開したデモと、書籍に置いた事例で辿れなければならない。
 
 **失敗機構——デモ。** デモを理論の開示と読むと、様式と機構から理論の中身を推し量ることになり、本リポジトリが置かないものを置いたことにする。デモを効果の証明と読むと、手続きが回っていることと、生成が統治されていることを取り違える——デモが示すのは、統治の手続きが回り、その痕跡が辿れることまでである。
+
+---
+
+## これらをどう試すか（反証の境界と価値の在り処）
+
+**何が反証の対象でないか。** 記述は、何を主張しているかで三つに割れる。**内的状態の報告**（「信じている」「支えられている」）——真偽を当てるのは物差し違いで、できるのは誠実さを疑うことだけである。**世界へ張り出した主張**（祈れば治る）——これは反証でき、他人を縛る場面では反証に意味がある。そして、**その解釈が何を見させ、何をさせているかの構造**——ここで問われるのは真偽ではなく効きであり、反証というより「どこで効かなくなるか」の境界探しになる。**本リポジトリは三つ目に立つと、自分で宣言している**（〔シサク・世界解釈〕「真偽ではなく、効くかどうか」・前提 8「『予測が少ない』で測るのは物差し違いである」）。**外から、n=1 の記述を普遍命題として反証するのは、一つ目に真偽を当てるのと同じ空振りである。**
+
+**では何が反証できるか。四つある。**
+
+1. **原典が反証条件で先に宣言した場所**——「ここで前提が対象に転じる」と書き手が自分で置いた線。前提は作動しているあいだ検討の対象にならないので、先に書いておかなければ書き換えの機会そのものが無い。
+2. **置換の検査**——既存の概念に置き換えて主張がそのまま成立するなら、新規性はそこに無い（前提 6）。解釈の文書は反証条件を置かず、代わりにこの検査を置く。
+3. **内的整合**——文書どうし、節どうしが食い違っていないか。
+4. **予測の代理**——記述が言外に含んでいる見込みに、外れる場面があるか。
+
+**四つとも、記述の内側か、記述が自分で張り出した縁にある。** 外から普遍命題を要求するのではなく、**書き手が先に引いた線の上でだけ、反証は働く。** どんな事実にも触れられない前提は安定するが、育たない。本リポジトリはその安定を選んでいない——**信仰の記述との差は、内容ではなく構造にある。**
+
+**使うのは、装着する前である。** 読むだけなら要らない。だが**前提として装着する**なら——認知フレームを継承・fork して自分の Book of Knowledge にするなら——装着したあとは、それが前提として見えなくなる。**検査の機会は装着前にしかない。** そして**見つけた境界は、issue の形になる**——「シサクが感じているのは、実はこういうことではないか」。「参加のしかた」の節が言う**差分を取る**とは、真偽を当てることではなく、この境界を見つけることである。
+
+**価値の在り処**〔三語の線は〔シサク・価値解釈〕が持つ〕**。** 本リポジトリが値打ちとして数えるのは、人間の読者の中に起きたものだけである。その価値には個人差がある——強く立つ人、弱く立つ人、立たない人がいる。「私は全くそう思わない」「私と同じ考えだ」「私の中にある言語化できていないことが言語化できた」「内容はわかるが、いまひとつ腑に落ちない」——これらは個人によってのみ判別され、**著者にも評価者にも代わりに判別することはできない。**
 
 ---
 
@@ -221,11 +260,16 @@ What is held here is shisaku's interpretations of inside and outside, as held wi
 This repository stores the **canonical texts** of the thought shisaku has tried to define and conceptualise, and the **record** of that work.
 
 ```
-concepts/      — definitions, protocols, coined terms
+concepts/      — canons, interpretations and supplements, sorted by declared scope
+  universal/   — systems at large, with no limit of scope (people, AI, organisations)
+  human/       — systems brought down to the human species
+  artificial/  — systems whose object is the artificial (AI, information environments)
 publications/  — sample artifacts referenced from media (note/Medium/Kindle)
 logs/          — AI dialogue records as proof of process
 src/           — the document build; modules are the source, and the README is generated from them
 ```
+
+**Where a document sits is decided by the scope it declares for itself. Change the declaration and the placement moves.**
 
 The concepts here were born through ego-mining (KOSEI Mining). The records of that process are also stored here. The container and its contents exist in the same place.
 
@@ -299,6 +343,8 @@ This repository assumes three kinds of readers. Because the range each needs to 
 | **Repository reviewer** | ＋ The machinery documents (`src/engine/`, `CONTRIBUTING.md`, `authoring-policy.md`, `terminology-policy.md`, `terminology-ledger.md`), and the modules and index of documents carried by the document build | **The construction is legible.** Why this structure, what is checked, and where the source of truth sits |
 | **Author** | Everything | — |
 
+**The terminology policy sits in this second tier.** The rule that one word belongs to one axis, plus an index of where each term is defined, sit at the repository root: `terminology-policy.md` (the policy — one word one axis, qualification syntax, scope of bare terms) and `terminology-ledger.md` (a thin table of word, axis, qualifier, locus of definition). Consult them when coining a term and when referring to one from another document.
+
 **Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces — the first when it reads as a partner in explanation, the second when it reads as a partner in evaluation. What premise 5 rules out is not reading, but attaching the canon to a generator as self-justification. Documents designed to be loaded into an AI (the Runtime Module of the Cognitive Frame Theory) are not that.
 
 **What this classification decides.** What appears on which surface follows from it. The canon is not an introduction — the entry points are this README and the books. The first surface holds when definitions, scope and references live **in the text itself**. Descriptions written for the machinery do not appear in the first surface's reading experience.
@@ -318,8 +364,6 @@ Every concept here is a **hypothesis and an axiomatic system for design**, not a
 7. **Three layers (origin / supplement / profile)** — origin (general theory) is the invariant skeleton; supplements are application-layer maps (candidates with independence tests, not fixed taxonomies); specifics are filled by each implementation. The ethics clause is inseparable from each theory.
 8. **Worth is measured by generative, discriminative and transferable power** — what these theories are worth lies in whether they let an object be designed and audited (generative), whether they tell its presence, degree and imitation apart (discriminative), and whether they carry across media (transferable). That judgment, too, is not self-report: it is made weakly, from what remains in the receiver downstream (premise 2 applied to worth). The section on falsification conditions is a secondary support for part of that worth, not the worth itself — to measure by "few predictions" is the wrong ruler. Being secondary is no reason to cut it: the falsification conditions stay in front, as the theory's intake for learning from its own errors. Nor is this a fixed way of measuring. If a theory is later reforged into a falsifiable form, nothing here stands in the way.
 
-**Terminology policy (series-wide)** — the rule that one word belongs to one axis, plus an index of where each term is defined, sit at the repository root: `terminology-policy.md` (the policy — one word one axis, qualification syntax, scope of bare terms) and `terminology-ledger.md` (a thin table of word, axis, qualifier, locus of definition). Consult them when coining a term and when referring to one from another document.
-
 ---
 
 ## Concepts
@@ -327,32 +371,47 @@ Every concept here is a **hypothesis and an axiomatic system for design**, not a
 ### Shisaku World-Interpretation
 The **starting point** that precedes the shisaku-method, and the most upstream *way of seeing* in the series: a lens that views the human as a hybrid of raw drives (BIOS) and compressed concepts written as stories (OS). It reads the troubles of the present from the mismatch with an accelerating environment, and places — above the survival cravings (safety, status, novelty) — an OS-layer craving: *to be oneself*. One person's interpretation, measured by whether it works, not by whether it is true. **If Premise Primacy is "the upstream of mechanism," this is "the upstream of seeing"** — the two axes on which the series stands. The shisaku-method is, in the end, the activity of writing one's own story (= premise) toward the problem this interpretation names.
 
-→ `concepts/shisaku-world-interpretation/`
+→ `concepts/human/shisaku-world-interpretation/`
 
 ### Premise Primacy
 The most upstream foundational theory on which the concepts in this repository stand. A theory of intervention: where no coercive force applies, intervention acts more efficiently on the layer that operates as *premise* than on the layer processed as *object*.
 
-→ `concepts/premise-primacy/`
+→ `concepts/universal/premise-primacy/`
+
+### Shisaku Prediction-Model Interpretation
+Under Premise Primacy, a reading of what stands on the expectation-first side. It separates the prediction model, an entity, from the premise, which is the state of that entity operating without being examined. Putting something into words does not move the entity out: what leaves is only what was put into words, and there the dimensions are fewer — fewer things that can vary independently. Being an interpretation, it carries no falsification clause, and carries a substitution test in its place.
+
+→ `concepts/universal/shisaku-prediction-model-interpretation/`
+
+### Shisaku Qualia-Interpretation
+A reading of qualia as the signal that appears in the body alongside the collation of prediction model and contact. It appears on a match as well as a mismatch, and runs continuously between them. To come out is for dimensions to be lost: gooseflesh, a word, an understanding — each is fewer than what it came from. Genesis is left alone; only what is called by the name is settled. Supplement — a map of manifestation (candidate forms and the sorting test).
+
+→ `concepts/human/shisaku-qualia-interpretation/`
+
+### Shisaku Value-Interpretation
+A reading of value as what stands on the receiver's side at a contact. Value is not an entity separate from qualia: it is that signal, read under this word. A price and the words "worth a lot" are the same reduction running in opposite directions — a sender's prediction reduced to a number, and a receiver's signal reduced to words. It draws the line between value, worth and price. Supplement — a map of value, worth and price (the sorting test and candidates).
+
+→ `concepts/human/shisaku-value-interpretation/`
 
 ### Shisaku Cognitive Frame Theory
 A cognitive frame is the structure of attention that precedes thought — it determines which points of an input receive attention (Frame Primacy, a corollary of Premise Primacy). This is the theory for casting and inheriting onto AI and other people the frames that KOSEI Mining (excavation) has dug out. It comprises a Canon (principles of attention), a Runtime Module for AI (the mechanism of generation), and an Operation Guide (human operation).
 
-→ `concepts/shisaku-cognitive-frame/`
+→ `concepts/human/shisaku-cognitive-frame/`
 
 ### Shisaku Human Transformation Theory (SHTT) and its four components
 An extension of Premise Primacy to human transformation through expression. Two ends of one transformation — the entry (the expresser's core, IDION) and the exit (the receiver's transformation, the four components) — with the *outcome* (residue / transformation, read per component) as the through-axis, an eight-stage process common to both ends, and a typed depth vocabulary. It binds four structure-theories: **Trajectory (SHTST — what experience to induce and what to transform) / Expression (SHEST — how to implement it) / Distance (SHDST — what does and does not reach) / Kyōmei·Resonance (SHKST — what actually resonated and remained)**. Each component carries application-layer supplements (transformation object-layers, depth vocabulary, the eight stages of transformation, a distance-axis survey, resonance entry-points, an instance-decomposition table, qualia-desire types, and a media four-layer map). Two upstreams: **Premise Primacy (the upstream of mechanism) and the Shisaku World-Interpretation (the upstream of purpose and seeing — why we express; humans as systems).**
 
-→ `concepts/shisaku-human-transformation/` (transformation, umbrella) / `-trajectory-structure/` / `-expression-structure/` / `-distance-structure/` / `-kyomei-structure/`
+→ `concepts/human/shisaku-human-transformation/` (transformation, umbrella) / `-trajectory-structure/` / `-expression-structure/` / `-distance-structure/` / `-kyomei-structure/`
 
 ### Shisaku Human IDION-Structure Theory (IDION)
 The *entry side* of SHTT — the structure of the expresser's own core, **IDION**: the core formed by the set of one's own transformations (not a component; it stands on the subject's side, referred to by the handle IDION without an acronym). Where the four components carry the exit side (the receiver's transformation), IDION stands at the entry end of the same transformation. It distinguishes IDION not by origin but by the traceable history of a core rewrite (transformation cost — struggle is one form, integration another) and by non-transferability; measures strength as transformation quantity (vertical = transformation depth and breadth / horizontal = the combination rule); splits judgment asymmetrically between the person and the receiver; defines disguise as "expressing what is not in one's IDION as one's own" by mechanics rather than morality; and calibrates dignity as honesty + gaze. KOSEI (個性) is the Japanese gloss of IDION. Supplements — worked cases and separation detection / a map of transformation-cost forms / a map of layers and axes / system isomorphism (a design check tool).
 
-→ `concepts/shisaku-human-idion-structure/`
+→ `concepts/human/shisaku-human-idion-structure/`
 
 ### KOSEI Mining (Ego-Mining / エゴ・マイニング)
 A delayed-evaluation self-correction protocol. Rather than treating AI as a perfect mirror, it uses AI as an imperfect "hand mirror" — generating friction that excavates the irreducible core of the self (KOSEI / 個性).
 
-→ `concepts/kosei-mining/`
+→ `concepts/human/kosei-mining/`
 
 ---
 
@@ -375,6 +434,25 @@ Two things are kept elsewhere, for business.
 
 ---
 
+## How to test these (the boundary of falsification, and where value arises)
+
+**What is not open to falsification.** A description divides in three, by what it claims. **A report of an inner state** ("I believe", "it holds me up") — to put it to true or false is the wrong ruler; all one can do is doubt the honesty. **A claim thrown out into the world** ("prayer cures") — this can be falsified, and falsifying it matters where it binds other people. And **the structure of what an interpretation makes one see and do** — here the question is not truth but whether it works, and the work is less falsification than a search for the boundary where it stops working. **This repository declares, of itself, that it stands on the third** (Shisaku World-Interpretation, "not true or false, but whether it works"; premise 8, "to measure by 'few predictions' is the wrong ruler"). **To falsify an n=1 description from outside, as though it were a universal claim, is the same empty swing as putting an inner report to true or false.**
+
+**What, then, can be falsified? Four things.**
+
+1. **The place the canon declared in advance, in its falsification conditions** — the line the author drew to say "here a premise turns into an object". A premise is not up for examination while it runs, so unless it is written down first there is no occasion to revise it at all.
+2. **The substitution test** — if the claim still stands once an existing concept is put in its place, the novelty is not there (premise 6). An interpretation carries no falsification conditions and carries this test instead.
+3. **Internal consistency** — whether the documents, and the sections within them, contradict one another.
+4. **Predictions by proxy** — whether the expectations a description carries unstated have cases in which they fail.
+
+**All four lie inside the description, or on an edge the description put out itself.** Falsification works on the lines the author drew first, not on universal claims demanded from outside. A premise that no fact can touch is stable, but it does not grow. This repository has not chosen that stability — **what separates it from a description of faith is not its content but its structure.**
+
+**The time to use this is before you put it on.** To read needs none of it. But **to wear it as a premise** — to inherit or fork the cognitive frame into your own Book of Knowledge — is to have it stop being visible as a premise. **The occasion to inspect it exists only beforehand.** And **a boundary you find takes the form of an issue** — "what shisaku is sensing may in fact be this". To take the difference, in the sense the section on taking part means, is not to put the text to true or false: it is to find that boundary.
+
+**Where value arises** (the line between the three words is drawn by the Shisaku Value-Interpretation)**.** What this repository counts as worth is only what arises in a human reader. That value differs from person to person — for some it stands strongly, for some weakly, for some not at all. "I do not think so at all"; "that is what I think too"; "something in me that I could not put into words has been put into words"; "I follow it, but it does not quite settle" — these are told apart by the individual alone, and **neither the author nor an evaluator can tell them apart on that person's behalf.**
+
+---
+
 ## How to take part
 
 This repository assumes forking. `concepts/` is a description at n=1; a reader takes the difference against their own IDION and grows their own concepts.
@@ -386,5 +464,5 @@ Issues are accepted. A suggestion of the form "what shisaku is sensing may in fa
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
 * **Friction & Proof:** Human KOSEI vs Artificial Logos
-* **Version:** v0.5
-* **Date:** 2026/09/17
+* **Version:** v0.6.1
+* **Date:** 2026/09/20

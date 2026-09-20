@@ -15,7 +15,7 @@
 対象の第一陣は二つ。
 
 - `README.md`（日英併記）
-- `concepts/shisaku-human-idion-structure/ja/shisaku-human-idion-structure.md`（節番号と本文中の節参照を持つ）
+- `concepts/human/shisaku-human-idion-structure/ja/shisaku-human-idion-structure.md`（節番号と本文中の節参照を持つ）
 
 この二つは性質が違うので、両方が通れば仕組みの汎用性が一通り試される。以後の文書は、インデックスを一つ足すだけで載る。
 
@@ -459,8 +459,8 @@ groups     = [["colophon"]]
 | `sec` | `{{sec:strength}}` | `第4節 強度`（そのブロックの `render.sec` の書式。`{n}`＝番号・`{t}`＝題） |
 | `num` | `{{num:strength/combination-rule}}` | `4.1` |
 | `title` | `{{title:disguise}}` | そのモジュールの題（番号を含まない） |
-| `path` | `{{path:shisaku-human-idion-structure}}` | `concepts/shisaku-human-idion-structure/`（リポジトリのルート基準） |
-| `url` | `{{url:shisaku-human-idion-structure}}` | `https://…/tree/main/concepts/shisaku-human-idion-structure` |
+| `path` | `{{path:shisaku-human-idion-structure}}` | `concepts/human/shisaku-human-idion-structure/`（リポジトリのルート基準） |
+| `url` | `{{url:shisaku-human-idion-structure}}` | `https://…/tree/main/concepts/human/shisaku-human-idion-structure` |
 | `meta` | `{{meta:version}}` | インデックスの `[meta]` の値 |
 
 - **`render.sec` に `{t}`（題）を置けるのは、節名が参照の宛先だからである**（`authoring-policy.md`「相互リンク規約」の節）。番号だけでは、跳ばないと何の節か分からない。番号を先に置くのは、**出力の 7 割が著者の括弧の中にあり**、題を括弧付きで出すと入れ子になるためである。
@@ -484,8 +484,8 @@ groups     = [["colophon"]]
 url = "https://github.com/cicd-shisaku-work/shisaku-method/tree/main"
 
 [paths]
-shisaku-human-idion-structure = "concepts/shisaku-human-idion-structure/"
-kosei-mining                  = "concepts/kosei-mining/"
+shisaku-human-idion-structure = "concepts/human/shisaku-human-idion-structure/"
+kosei-mining                  = "concepts/human/kosei-mining/"
 # …
 ```
 
@@ -696,6 +696,32 @@ idion-supplements/
 - 補足の骨格（位置づけ／篩の手続き／非固定の明記／原典へのフィードバック欄）は `authoring-policy.md` が条文として持つ。**4 本はそれに従っている。**
 - **`idion-axes-map` は、見出し欄の版（v0.1）と奥付の版（v0.1.1）が食い違っている。** 字面を変えないため、インデックスは `header_version` と `version` を別に持つ。**二つの版を持つこと自体が直す対象**であり、一致させる改訂は裁定を経てから行う。
 - ヘッダー・奥付・ライセンスは補足向けの共有テンプレート（§7.5）を呼ぶ。
+
+### 16.4 シサク・予測モデル解釈
+
+**役でディレクトリを切らない。平置きにする。** 四役（`subject/` / `application/` / `document/` / `canon/`）の導出は**六要件の再帰適用**と **BOK との同型**の二経路から来ている（§3.2）。解釈は六要件を持たない種別（`authoring-policy.md`「種別」の節）なので、前者の経路が効かない。README と同じく、モジュールの名が節の名を写す平置きにする。
+
+```
+ja/
+├── preface.md                              0  はじめに
+├── general-definition.md                   1  一般にはこう定義されている
+├── interpretation.md                       2  私はこう解釈する（見出しのみ）
+├── interpretation/
+│   ├── expectation-first.md                   予測モデルは、期待を先に出す側である
+│   ├── premise-as-state.md                    前提とは、予測モデルが前提として作動している状態である
+│   ├── wording.md                             言語化は、実体を移さない
+│   ├── example-fj.md                          F と J の突起
+│   └── human-side.md                          ヒトの予測モデルは、身体を持つ
+├── naming.md                               3  系列の中で、この語をこう名指す
+└── substitution-test.md                    4  置換の検査
+```
+
+- **第2節の子は `numbered = false`。** 解釈の本論は節の数と粒度が文書に任されており（規約「解釈の必須様式」）、番号は身元にならない。
+- **`cluster_depth` を持たない**（既定の 0）。所属を表す先頭セグメントが無いため、深さは id の階層数がそのまま決める。
+- 上流依存の欄は持たない。解釈は「上流接続」の節を持たない種別で、既存の解釈（世界解釈）も奥付に上流を書いていない。
+- ヘッダー・奥付・ライセンスは共有モジュール（§7.5）を呼ぶ。
+
+---
 
 ## 17. 予約と未決
 

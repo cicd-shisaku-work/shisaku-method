@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  シサク・価値解釈 (Shisaku Value-Interpretation) v0.1 — 値段と「価値が高い」は、同じ機構の別方向
+  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
+  統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝価値（スレート）。値段が接触へ戻る矢印だけ族の固定色（橙）を借りる。
+  本図は第2節の機構だけを引き受ける。射程（§0 の役）・置換の検査は図にしない。
+  Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+  Author: https://note.com/abstraction
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 630" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic',sans-serif" font-size="14">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3f4a52"/></marker>
+    <marker id="ao" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b07a3a"/></marker>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eef1f3"/><stop offset="1" stop-color="#3f4a52"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="630" fill="#ffffff"/>
+  <text x="40" y="44" font-size="21" font-weight="700" fill="#111">シサク・価値解釈——値段と「価値が高い」は、同じ機構の別方向</text>
+  <text x="40" y="68" font-size="13" fill="#666">どちらも減っている。違うのは、減る前の側である。</text>
+
+  <rect x="40"  y="96" width="262" height="300" rx="10" fill="#f7f8f9" stroke="#d8dee2"/>
+  <rect x="334" y="96" width="326" height="300" rx="10" fill="#eef1f3" stroke="#c9d1d6"/>
+  <rect x="692" y="96" width="348" height="300" rx="10" fill="#fbfbfc" stroke="#e2e6e9"/>
+  <text x="171" y="124" font-size="15" font-weight="700" fill="#6b757c" text-anchor="middle">送り手の側</text>
+  <text x="497" y="124" font-size="15" font-weight="700" fill="#3f4a52" text-anchor="middle">接触と照合</text>
+  <text x="866" y="124" font-size="15" font-weight="700" fill="#8a949b" text-anchor="middle">受け手の側</text>
+
+  <!-- 送り手の側 -->
+  <rect x="96" y="142" width="150" height="38" rx="6" fill="#f2f4f5" stroke="#7d868d" stroke-width="1.3"/>
+  <text x="171" y="166" font-size="13" fill="#4c565d" text-anchor="middle">差し出されたもの</text>
+
+  <g>
+    <ellipse cx="171" cy="238" rx="52" ry="24" fill="#3f4a52" opacity="0.15" transform="rotate(-20 171 238)"/>
+    <ellipse cx="178" cy="244" rx="46" ry="28" fill="#3f4a52" opacity="0.13" transform="rotate(36 178 244)"/>
+    <ellipse cx="164" cy="246" rx="38" ry="32" fill="#6b757c" opacity="0.18" transform="rotate(8 164 246)"/>
+    <path d="M124,240 C148,212 196,216 216,238" fill="none" stroke="#3f4a52" stroke-width="1.1" opacity="0.45"/>
+    <path d="M128,254 C152,276 196,272 216,250" fill="none" stroke="#3f4a52" stroke-width="1.1" opacity="0.4"/>
+  </g>
+  <text x="171" y="288" font-size="12.5" fill="#5c666d" text-anchor="middle">受け手についての予測</text>
+
+  <line x1="171" y1="296" x2="171" y2="318" stroke="#3f4a52" stroke-width="1.8" marker-end="url(#a)"/>
+  <text x="183" y="312" font-size="11.5" fill="#6b757c">減る</text>
+
+  <rect x="116" y="322" width="110" height="34" rx="4" fill="#d7dcdf" stroke="#9aa3aa"/>
+  <text x="171" y="344" font-size="13.5" font-weight="700" fill="#4c565d" text-anchor="middle">値段</text>
+  <text x="171" y="374" font-size="12" fill="#6b757c" text-anchor="middle">一つの数。誰にとっても同じ。</text>
+
+  <!-- 接触と照合 -->
+  <rect x="356" y="210" width="112" height="44" rx="6" fill="#e8ecef" stroke="#3f4a52" stroke-width="1.4"/>
+  <text x="412" y="230" font-size="13.5" font-weight="700" fill="#2b343a" text-anchor="middle">接触</text>
+  <text x="412" y="247" font-size="11.5" fill="#5c666d" text-anchor="middle">入ってきたもの</text>
+
+  <text x="558" y="212" font-size="12.5" font-weight="700" fill="#3f4a52" text-anchor="middle">予測モデルとの照合</text>
+  <text x="502" y="252" font-size="10.5" fill="#6b757c" text-anchor="end">一致</text>
+  <rect x="506" y="226" width="106" height="14" rx="2" fill="url(#g)" stroke="#9aa3aa" stroke-width="0.8"/>
+  <text x="616" y="252" font-size="10.5" fill="#6b757c">不一致</text>
+
+  <line x1="472" y1="232" x2="502" y2="232" stroke="#3f4a52" stroke-width="1.6" marker-end="url(#a)"/>
+  <line x1="616" y1="233" x2="700" y2="222" stroke="#3f4a52" stroke-width="1.8" marker-end="url(#a)"/>
+
+  <line x1="250" y1="160" x2="352" y2="214" stroke="#3f4a52" stroke-width="1.6" marker-end="url(#a)"/>
+
+  <!-- 受け手の側 -->
+  <g>
+    <ellipse cx="830" cy="206" rx="58" ry="26" fill="#3f4a52" opacity="0.16" transform="rotate(-22 830 206)"/>
+    <ellipse cx="838" cy="212" rx="50" ry="32" fill="#3f4a52" opacity="0.14" transform="rotate(38 838 212)"/>
+    <ellipse cx="822" cy="216" rx="42" ry="36" fill="#6b757c" opacity="0.2" transform="rotate(6 822 216)"/>
+    <ellipse cx="846" cy="200" rx="30" ry="20" fill="#6b757c" opacity="0.22" transform="rotate(62 846 200)"/>
+    <path d="M776,210 C804,178 862,184 886,208" fill="none" stroke="#3f4a52" stroke-width="1.2" opacity="0.5"/>
+    <path d="M780,226 C810,254 862,250 888,222" fill="none" stroke="#3f4a52" stroke-width="1.2" opacity="0.45"/>
+    <path d="M806,180 C822,212 824,238 814,256" fill="none" stroke="#6b757c" stroke-width="1.1" opacity="0.5"/>
+  </g>
+  <text x="830" y="284" font-size="15" font-weight="700" fill="#2b343a" text-anchor="middle">価値</text>
+  <text x="830" y="303" font-size="12" fill="#5c666d" text-anchor="middle">照合に伴って身体に現れた信号を、こう読む。</text>
+
+  <line x1="830" y1="311" x2="830" y2="330" stroke="#3f4a52" stroke-width="1.8" marker-end="url(#a)"/>
+  <text x="842" y="325" font-size="11.5" fill="#6b757c">減る</text>
+
+  <polygon points="768,336 898,336 886,352 756,352" fill="#9aa3aa"/>
+  <text x="830" y="374" font-size="12.5" font-weight="700" fill="#4c565d" text-anchor="middle">「価値が高い」——語になった</text>
+
+  <!-- 値段そのものも接触になる -->
+  <path d="M231,360 L231,414 L412,414 L412,262" fill="none" stroke="#b07a3a" stroke-width="2" marker-end="url(#ao)"/>
+  <text x="322" y="434" font-size="12.5" font-weight="700" fill="#8a5f28" text-anchor="middle">値段そのものも、受け手にとっては接触になる</text>
+
+  <!-- 読み -->
+  <line x1="40" y1="470" x2="1040" y2="470" stroke="#e2e6e9"/>
+  <text x="40" y="498" font-size="13.5" fill="#333">両端で起きているのは、同じ減少である。<tspan font-weight="700">違うのは、減る前の側だ</tspan>——一方は送り手の予測、もう一方は受け手の信号。</text>
+  <text x="40" y="522" font-size="13.5" fill="#333">だから二つは、<tspan font-weight="700">同じ物差しに乗らない。</tspan>値段が高いことと、価値が高いことは、別のことである。</text>
+  <text x="40" y="546" font-size="13.5" fill="#333">値段に何が入っていたかは、<tspan font-weight="700">数の側からは取り出せない。</tspan>一文で言い直せるなら、それは減っていない。</text>
+
+  <text x="40" y="576" font-size="12" fill="#777">※ 価値はクオリアと別の実体ではない。照合に伴って身体に現れる信号を、この語で読んでいる。</text>
+  <text x="40" y="610" font-size="11" fill="#777">シサク・価値解釈 v0.1 ／ 設計・監査用の図（人間向け）。生成非注入。</text>
+  <text x="1040" y="610" font-size="11" fill="#777" text-anchor="end">CC BY 4.0 — shisaku</text>
+</svg>

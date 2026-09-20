@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  シサク・予測モデル解釈 (Shisaku Prediction-Model Interpretation) v0.1 — 実体はどこに在り、何が出ていくか
+  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
+  統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝予測モデル（実体・スレート）。変容の矢印だけ族の固定色（橙）を借りる。
+  本図は第2節だけを引き受ける。置換の検査・射程・相転移は図にしない。
+  Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+  Author: https://note.com/abstraction
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 662" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic',sans-serif" font-size="14">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3f4a52"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9aa3aa"/></marker>
+    <marker id="ao" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b07a3a"/></marker>
+  </defs>
+
+  <rect width="1080" height="662" fill="#ffffff"/>
+  <text x="40" y="44" font-size="21" font-weight="700" fill="#111">シサク・予測モデル解釈——実体はどこに在り、何が出ていくか</text>
+  <text x="40" y="68" font-size="13" fill="#666">内から外へ。立体は動かない。出ていくのは、その影のほうである。</text>
+
+  <!-- 三つの場所 -->
+  <rect x="40"  y="96" width="320" height="380" rx="10" fill="#eef1f3" stroke="#c9d1d6"/>
+  <rect x="392" y="96" width="292" height="380" rx="10" fill="#f7f8f9" stroke="#d8dee2" stroke-dasharray="5 4"/>
+  <rect x="716" y="96" width="324" height="380" rx="10" fill="#fbfbfc" stroke="#e2e6e9"/>
+  <text x="200" y="124" font-size="15" font-weight="700" fill="#3f4a52" text-anchor="middle">身体のうち</text>
+  <text x="538" y="124" font-size="15" font-weight="700" fill="#6b757c" text-anchor="middle">検討の中</text>
+  <text x="878" y="124" font-size="15" font-weight="700" fill="#8a949b" text-anchor="middle">言葉</text>
+
+  <!-- 予測モデル＝立体 -->
+  <polygon points="150,250 186,214 296,214 260,250" fill="#cfd8de" stroke="#3f4a52" stroke-width="1.6"/>
+  <polygon points="260,250 296,214 296,324 260,360" fill="#b9c4cc" stroke="#3f4a52" stroke-width="1.6"/>
+  <rect x="150" y="250" width="110" height="110" fill="#e8ecef" stroke="#3f4a52" stroke-width="1.6"/>
+  <text x="205" y="392" font-size="15" font-weight="700" fill="#2b343a" text-anchor="middle">予測モデル</text>
+  <text x="205" y="412" font-size="12.5" fill="#5c666d" text-anchor="middle">期待を先に出す側。ここから出ていかない。</text>
+
+  <!-- 変容＝内側で閉じる -->
+  <path d="M205,271 A34,34 0 1 1 171,305" fill="none" stroke="#b07a3a" stroke-width="2.2" marker-end="url(#ao)"/>
+  <text x="205" y="446" font-size="13" font-weight="700" fill="#8a5f28" text-anchor="middle">変容——使う中で外れたときに</text>
+  <text x="205" y="464" font-size="12.5" fill="#8a5f28" text-anchor="middle">身体の内側で閉じる。外へ出ない。</text>
+
+  <!-- 検討の中＝それについての話（薄い板） -->
+  <polygon points="454,314 590,314 590,324 454,324" fill="#d7dcdf" stroke="#7d868d" stroke-width="1.2"/>
+  <polygon points="590,314 606,284 606,294 590,324" fill="#c8cfd3" stroke="#7d868d" stroke-width="1.2"/>
+  <polygon points="470,284 606,284 590,314 454,314" fill="#eceff1" stroke="#7d868d" stroke-width="1.4"/>
+  <text x="530" y="352" font-size="13.5" font-weight="700" fill="#4c565d" text-anchor="middle">それについての話</text>
+  <text x="530" y="372" font-size="12.5" fill="#6b757c" text-anchor="middle">検討の対象になっているもの</text>
+
+  <!-- 言葉＝影（完全な平面） -->
+  <polygon points="800,292 964,292 940,312 776,312" fill="#9aa3aa" stroke="#8a949b" stroke-width="1"/>
+  <text x="870" y="348" font-size="13.5" font-weight="700" fill="#5c666d" text-anchor="middle">言葉にしたもの</text>
+  <text x="870" y="370" font-size="12.5" fill="#6b757c" text-anchor="middle">次元が落ちる。100% にならないのは、</text>
+  <text x="870" y="388" font-size="12.5" fill="#6b757c" text-anchor="middle">容器の側の事情である。</text>
+
+  <!-- 出ていく経路 -->
+  <line x1="306" y1="301" x2="446" y2="301" stroke="#3f4a52" stroke-width="1.8" marker-end="url(#a)"/>
+  <line x1="614" y1="301" x2="768" y2="301" stroke="#3f4a52" stroke-width="1.8" marker-end="url(#a)"/>
+  <text x="376" y="284" font-size="12.5" fill="#3f4a52" text-anchor="middle">検討の中に入る</text>
+  <text x="691" y="284" font-size="12.5" fill="#3f4a52" text-anchor="middle">言葉にする</text>
+
+  <!-- 戻る経路（循環） -->
+  <path d="M446,336 L306,336" fill="none" stroke="#9aa3aa" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#ag)"/>
+  <text x="376" y="360" font-size="12.5" fill="#7d868d" text-anchor="middle">また検討の外へ戻る</text>
+
+  <!-- 読み -->
+  <line x1="40" y1="508" x2="1040" y2="508" stroke="#e2e6e9"/>
+  <text x="40" y="538" font-size="13.5" fill="#333">出ていく矢印（横）と、変容の矢印（内側で閉じる）は、<tspan font-weight="700">合流しない</tspan>。言葉にすることと、予測モデルが変容することは、別に進む。</text>
+  <text x="40" y="562" font-size="13.5" fill="#333">前提として働いている＝検討の外にある状態。対象になる＝検討の中に入った状態。<tspan font-weight="700">変わるのは状態であって、実体ではない。</tspan></text>
+  <text x="40" y="586" font-size="13.5" fill="#333">影は元の立体を言い尽くさない。写真が粗いからではなく、<tspan font-weight="700">撮った時点で次元が落ちているからである。</tspan></text>
+
+  <text x="40" y="610" font-size="12" fill="#777">※「実体」は、本書が予測モデルをそう読むという位置づけである。物理的な一個の物を主張するものではない。</text>
+  <text x="40" y="642" font-size="11" fill="#777">シサク・予測モデル解釈 v0.1 ／ 設計・監査用の図（人間向け）。生成非注入。</text>
+  <text x="1040" y="642" font-size="11" fill="#777" text-anchor="end">CC BY 4.0 — shisaku</text>
+</svg>
