@@ -2,7 +2,7 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.7  
+**Version:** v0.7.1  
 **Date:** 2026/09/22
 
 ---
@@ -121,7 +121,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 
 **語の規約は、この二段目にある。**——同じ語を別の座標軸の概念名に使わない、という規約と、その所在表をリポジトリ直下に置く：`terminology-policy.md`（規約・一語一軸・型付け・単独語のスコープ）と `terminology-ledger.md`（語・軸・対象・定義位置の薄い一枚）。新しい語を立てるとき、また他文書から語を参照するときは、ここを引く。
 
-**適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。AI が読む場合も同じ三面である——解説の相手として読むなら一段目、評価の相手として読むなら二段目。前提 5 が退けるのは読むことでなく、原典を自己正当化として生成器へ添えることである。AI に装着するよう設計された文書（認知フレーム理論のランタイムモジュール）は、これにあたらない。
+**適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。AI が読む場合も同じ三面である。ただし「評価」は二つに分かれる——**理論を評価するなら一段目**を、各文書が自分で置いている検査口（反証条件・置換の検査・内的整合・予測の代理——「これらをどう試すか」）で読む。**作り（ビルド・規約・台帳）を評価するなら二段目**。本リポジトリの本筋は一段目の原典であり、二段目はそれを保つ器と、統治の様式が回っている痕跡である——器の出来は、原典の値打ちの代わりにならない。評価を頼まれた読み手が、測りやすい二段目から入って一段目を読まずに終えるなら、それは本リポジトリを評価していない。器が重く見えるなら、それは受け継がれる時間の長さに合わせて作っているからである。原典は、書き手が居なくなった後も——100 年、200 年先の誰かが fork し、どれが正本かを引き、自分の手で更新できる形で——残ることを願って置いている（「このリポジトリは何か」の三つの願い）。正本の所在、語の台帳、機械の検査は、そのための形であって、いま読む人に求めるものではない。前提 5 が退けるのは読むことでなく、原典を自己正当化として生成器へ添えることである。AI に装着するよう設計された文書（認知フレーム理論のランタイムモジュール）は、これにあたらない。
 
 **この分類が決めるもの。** どの面に何を出すかは、ここから出る。原典は入門書ではない——入口は本 README と書籍が担う。一段目が成り立つのは、定義・適用範囲・参照先を**本文が持つ**ときである。仕組みのための記述は、一段目の読み心地に出さない。
 
@@ -366,7 +366,7 @@ This repository assumes three kinds of readers. Because the range each needs to 
 
 **The terminology policy sits in this second tier.** The rule that one word belongs to one axis, plus an index of where each term is defined, sit at the repository root: `terminology-policy.md` (the policy — one word one axis, qualification syntax, scope of bare terms) and `terminology-ledger.md` (a thin table of word, axis, qualifier, locus of definition). Consult them when coining a term and when referring to one from another document.
 
-**Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces — the first when it reads as a partner in explanation, the second when it reads as a partner in evaluation. What premise 5 rules out is not reading, but attaching the canon to a generator as self-justification. Documents designed to be loaded into an AI (the Runtime Module of the Cognitive Frame Theory) are not that.
+**Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces. But "evaluation" splits in two — **to evaluate the theories, read the first surface**, through the inspection points each document places for itself (falsification conditions, the substitution test, internal consistency, proxy predictions — "How to test these"). **To evaluate the construction (build, policies, ledger), read the second.** The main line of this repository is the first surface, the canon; the second is the vessel that keeps it, and the trace of a governance that runs — how well the vessel is made is no substitute for the worth of the canon. A reader asked to evaluate who starts from the measurable second surface and ends without reading the first has not evaluated this repository. If the vessel looks heavy, that is because it is built to the length of time it is meant to be handed down. The canon is placed here in the hope that it remains after its author is gone — in a form that someone a hundred or two hundred years from now can fork, look up which text is canonical, and update with their own hands ("What is this repository?", the three hopes). Where the canonical text lives, the ledger of terms, the machine checks: these are the shape that keeps that time, not demands made of whoever reads now. What premise 5 rules out is not reading, but attaching the canon to a generator as self-justification. Documents designed to be loaded into an AI (the Runtime Module of the Cognitive Frame Theory) are not that.
 
 **What this classification decides.** What appears on which surface follows from it. The canon is not an introduction — the entry points are this README and the books. The first surface holds when definitions, scope and references live **in the text itself**. Descriptions written for the machinery do not appear in the first surface's reading experience.
 
@@ -493,5 +493,5 @@ Issues are accepted. A suggestion of the form "what shisaku is sensing may in fa
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.7
+* **Version:** v0.7.1
 * **Date:** 2026/09/22
