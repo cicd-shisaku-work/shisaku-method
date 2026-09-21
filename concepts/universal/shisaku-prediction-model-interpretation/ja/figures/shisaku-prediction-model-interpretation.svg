@@ -22,7 +22,7 @@
   <rect x="40"  y="96" width="320" height="380" rx="10" fill="#eef1f3" stroke="#c9d1d6"/>
   <rect x="392" y="96" width="292" height="380" rx="10" fill="#f7f8f9" stroke="#d8dee2" stroke-dasharray="5 4"/>
   <rect x="716" y="96" width="324" height="380" rx="10" fill="#fbfbfc" stroke="#e2e6e9"/>
-  <text x="200" y="124" font-size="15" font-weight="700" fill="#3f4a52" text-anchor="middle">身体のうち</text>
+  <text x="200" y="124" font-size="15" font-weight="700" fill="#3f4a52" text-anchor="middle">身体の内</text>
   <text x="538" y="124" font-size="15" font-weight="700" fill="#6b757c" text-anchor="middle">検討の中</text>
   <text x="878" y="124" font-size="15" font-weight="700" fill="#8a949b" text-anchor="middle">言葉</text>
 
