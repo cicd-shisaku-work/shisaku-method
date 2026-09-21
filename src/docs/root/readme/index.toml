@@ -7,7 +7,6 @@ output = "README.md"
 title    = "shisaku-method"
 author   = "shisaku"
 status   = "継続的インテグレーション中 / Continuously Integrating"
-friction = "Human KOSEI vs Artificial Logos"
 version  = "v0.7"
 date     = "2026/09/22"
 
