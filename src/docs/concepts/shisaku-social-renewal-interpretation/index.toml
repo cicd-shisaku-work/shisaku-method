@@ -1,18 +1,18 @@
-# シサク・社会最適化解釈のインデックス（並び・出力先）。正本はモジュール群。
+# シサク・社会更新解釈のインデックス（並び・出力先）。正本はモジュール群。
 [doc]
-id     = "shisaku-social-optimisation-interpretation"
-output = "{{path:shisaku-social-optimisation-interpretation}}ja/shisaku-social-optimisation-interpretation.md"
+id     = "shisaku-social-renewal-interpretation"
+output = "{{path:shisaku-social-renewal-interpretation}}ja/shisaku-social-renewal-interpretation.md"
 
 [meta]
-title    = "シサク・社会最適化解釈"
-subtitle = "Shisaku Social-Optimisation Interpretation"
+title    = "シサク・社会更新解釈"
+subtitle = "Shisaku Social-Renewal Interpretation"
 author   = "shisaku"
 upstream = "シサク・世界解釈"
 version  = "v0.1"
 date     = "2026/09/21"
-canonical      = "{{url:shisaku-social-optimisation-interpretation}}"
+canonical      = "{{url:shisaku-social-renewal-interpretation}}"
 copyright_year = "2026"
-license_intro  = "This document (Shisaku Social-Optimisation Interpretation — Shisaku's reading of where the lever lies between a society and the people who make it) is authored by shisaku. It is offered — as one interpretation among many, not a prescription — for others to study, adapt, and build upon as they see fit."
+license_intro  = "This document (Shisaku Social-Renewal Interpretation — Shisaku's reading of where the lever lies between a society and the people who make it) is authored by shisaku. It is offered — as one interpretation among many, not a prescription — for others to study, adapt, and build upon as they see fit."
 
 [numbering]
 enabled = true
