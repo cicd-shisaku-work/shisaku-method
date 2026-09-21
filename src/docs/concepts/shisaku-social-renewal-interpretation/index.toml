@@ -1,0 +1,39 @@
+# シサク・社会更新解釈のインデックス（並び・出力先）。正本はモジュール群。
+[doc]
+id     = "shisaku-social-renewal-interpretation"
+output = "{{path:shisaku-social-renewal-interpretation}}ja/shisaku-social-renewal-interpretation.md"
+
+[meta]
+title    = "シサク・社会更新解釈"
+subtitle = "Shisaku Social-Renewal Interpretation"
+author   = "shisaku"
+upstream = "シサク・世界解釈"
+version  = "v0.1"
+date     = "2026/09/21"
+canonical      = "{{url:shisaku-social-renewal-interpretation}}"
+copyright_year = "2026"
+license_intro  = "This document (Shisaku Social-Renewal Interpretation — Shisaku's reading of where the lever lies between a society and the people who make it) is authored by shisaku. It is offered — as one interpretation among many, not a prescription — for others to study, adapt, and build upon as they see fit."
+
+[numbering]
+enabled = true
+start   = 0                      # 最初の番号付き節の番号
+format  = ["{n}. ", "{n} "]      # 深さごとの番号の書式
+
+[[block]]
+lang       = "ja"
+base_depth = 1
+render     = { sec = "第{n}節 {t}" }
+groups = [
+  ["shared:meta/header"],
+  ["preface"],
+  ["general-definition"],
+  ["interpretation", "interpretation/two-sides", "interpretation/no-self-motion",
+   "interpretation/judgment-from-premise", "interpretation/upper-bound",
+   "interpretation/collapse", "interpretation/why-no-reform",
+   "interpretation/same-system", "interpretation/provisional-permanent",
+   "interpretation/lever-in-loop", "interpretation/foundation"],
+  ["naming"],
+  ["substitution-test"],
+  ["shared:meta/colophon"],
+  ["shared:license/cc-by-4.0"],
+]
