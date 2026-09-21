@@ -8,8 +8,8 @@ title    = "shisaku-method"
 author   = "shisaku"
 status   = "継続的インテグレーション中 / Continuously Integrating"
 friction = "Human KOSEI vs Artificial Logos"
-version  = "v0.6.1"
-date     = "2026/09/20"
+version  = "v0.7"
+date     = "2026/09/22"
 
 [numbering]
 enabled = false
@@ -27,7 +27,8 @@ groups = [
   ["what-is", "what-is/name", "what-is/failure-analysis", "what-is/origin"],
   ["readers"],
   ["how-to-read"],
-  ["concepts", "concepts/shisaku-world-interpretation", "concepts/premise-primacy",
+  ["concepts", "concepts/shisaku-world-interpretation",
+   "concepts/shisaku-social-renewal-interpretation", "concepts/premise-primacy",
    "concepts/shisaku-prediction-model-interpretation",
    "concepts/shisaku-qualia-interpretation",
    "concepts/shisaku-value-interpretation",
@@ -48,7 +49,8 @@ groups = [
   ["what-is", "what-is/name", "what-is/failure-analysis", "what-is/origin"],
   ["readers"],
   ["how-to-read"],
-  ["concepts", "concepts/shisaku-world-interpretation", "concepts/premise-primacy",
+  ["concepts", "concepts/shisaku-world-interpretation",
+   "concepts/shisaku-social-renewal-interpretation", "concepts/premise-primacy",
    "concepts/shisaku-prediction-model-interpretation",
    "concepts/shisaku-qualia-interpretation",
    "concepts/shisaku-value-interpretation",

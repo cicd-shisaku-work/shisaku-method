@@ -621,7 +621,7 @@ python3 src/engine/build.py --impact                       # 変更したモジ�
 
 日英で対になるモジュール（id は共通）：
 
-`repository` / `what-is` / `what-is/name` / `what-is/failure-analysis` / `what-is/origin` / `readers` / `how-to-read` / `concepts` / `concepts/shisaku-world-interpretation` / `concepts/premise-primacy` / `concepts/shisaku-cognitive-frame` / `concepts/shisaku-human-transformation` / `concepts/shisaku-human-idion-structure` / `concepts/kosei-mining` / `not-included` / `participation`
+`repository` / `what-is` / `what-is/name` / `what-is/failure-analysis` / `what-is/origin` / `readers` / `how-to-read` / `concepts` / `concepts/shisaku-world-interpretation` / `concepts/shisaku-social-renewal-interpretation` / `concepts/premise-primacy` / `concepts/shisaku-prediction-model-interpretation` / `concepts/shisaku-qualia-interpretation` / `concepts/shisaku-value-interpretation` / `concepts/shisaku-cognitive-frame` / `concepts/shisaku-human-transformation` / `concepts/shisaku-human-idion-structure` / `concepts/kosei-mining` / `not-included` / `participation`
 
 英語のみ：`banner`（`# shisaku-method (English)`・`level = 1`）。`allow_unpaired` に登録する。
 
@@ -718,7 +718,7 @@ ja/
 
 - **第2節の子は `numbered = false`。** 解釈の本論は節の数と粒度が文書に任されており（規約「解釈の必須様式」）、番号は身元にならない。
 - **`cluster_depth` を持たない**（既定の 0）。所属を表す先頭セグメントが無いため、深さは id の階層数がそのまま決める。
-- 上流依存の欄は持たない。解釈は「上流接続」の節を持たない種別で、既存の解釈（世界解釈）も奥付に上流を書いていない。
+- 上流依存は `[meta]` の `upstream` が持ち、ヘッダーと奥付に差し込まれる（§16.1 の並びもこの欄で決まる）。解釈は「上流接続」の節を持たない種別だが、上流依存の欄は持つ——載っている解釈は全てこの形（例：シサク・価値解釈「シサク・クオリア解釈 → シサク・予測モデル解釈」・シサク・社会更新解釈「シサク・世界解釈」）。
 - ヘッダー・奥付・ライセンスは共有モジュール（§7.5）を呼ぶ。
 
 ---

@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.6.1  
-**Date:** 2026/09/20
+**Version:** v0.7  
+**Date:** 2026/09/22
 
 ---
 
@@ -24,9 +24,15 @@
 
 という問いがある。これらに対する答えを求めるための暫定的な対処として始まったものが、対象を自己から人間、表現、社会、AI へと広げながら現在まで継続し、現在の理論群へと発展している。
 
-なぜ作っているのか。答えはシサク・世界解釈にある。自己のレンズを知り、更新し、手綱を取り、自己の欲求を昇華するため。自己の価値を高め、判断と行動を最適化し、クオリアの駆動に高次に応えるため。世界解釈が「どう昇華し、どんな枠で違和感を読み解くか——その具体的な技術は、この解釈の上に、別に書かれていく」と言って範囲の外に置いたものを、ここで書いている。
+なぜ作っているのか。**解像度を上げ、一人ひとりが手綱を持って、自分の欲求を昇華する世界のために、shisaku-method はある。** 自己のレンズを知り、更新し、手綱を取り、自己の欲求を昇華するため。自己の価値を高め、判断と行動を最適化し、クオリアの駆動に高次に応えるため。人間が置かれている状況の見方はシサク・世界解釈にあり、なぜそれが社会の仕組みの側でなく一人ひとりの側から始まるのかはシサク・社会更新解釈にある。世界解釈が「どう昇華し、どんな枠で違和感を読み解くか——その具体的な技術は、この解釈の上に、別に書かれていく」と言って範囲の外に置いたものを、ここで書いている。
 
-ここに置くのは、シサクが自己の中に持つ、内外に関する解釈を言語化したものである。言語化したものは移せる。移せないのは、その言語化の対象となった IDION——シサクの変容によって形作られているもの——である。本リポジトリを fork 前提で公開しているのは、他者が利用してもよいからではなく、役立ててもらいたいからである。基準があれば、差異を見つけやすい。自分のレンズは、作動しているあいだは自分に見えない。何も無いところから言語化するより、他者の言語化と照らして「何か違う」が立つところから始めるほうが早い。他者は言語化したものを受け取り、自身の Book of Knowledge として必要な修正を加え、再構成すればよい——基準は採用するためでなく、差異を取るために置く。
+ここに置くのは、シサクが自己の中に持つ、内外に関する解釈を言語化したものである。言語化したものは移せる。移せないのは、その言語化の対象となった IDION——シサクの変容によって形作られているもの——である。本リポジトリを GitHub で公開しているのは、三つを願うからである。
+
+一に、他者が fork し、己の解釈と照らし合わせ、修正することで、価値を見出してほしいから。基準があれば、差異を見つけやすい。自分のレンズは、作動しているあいだは自分に見えない。何も無いところから言語化するより、他者の言語化と照らして「何か違う」が立つところから始めるほうが早い。他者は言語化したものを受け取り、自身の Book of Knowledge として必要な修正を加え、再構成すればよい——基準は採用するためでなく、差異を取るために置く。
+
+二に、AI の学習データとして読み込まれ、いつの日か、一つの回答出力の素材となることを願うから。言語化したものは移せる——そして移る先は、もう人だけではない。ここに置いた言語化が、機械の回答の中で、名を持たない前提の一つとして働くなら、それは前提優位理論の言う、前提の層への介入である。
+
+三に、社会課題の暫定対応でなく、恒久対応への一助となることを願うから。恒久対応は、各人が己の手綱を握れる状態を、一人分ずつ作ることにしかない（シサク・社会更新解釈）。各人の前提の集合が変わるには、世代の時間が掛かる——圧縮概念は世代を超えて受け継がれるものであり（シサク・世界解釈）、本リポジトリも、その一つとして置く。ゆえに私は、このリポジトリで 10 年ほどのうちに社会が急激に良くなっていくとは想像していない。100 年、200 年先の一助になればよいと願い、少しずつ積み上げていくことを大事にして、これをまとめている。射程の長さは、値打ちの低さではない——値打ちは、下流で受け手に残ったもので、弱く判定される（「これらをどう読むか」前提 8）。
 
 本リポジトリは、シサクが定義・概念化を試みた思想の**原典**と**証跡**を格納する場所である。
 
@@ -131,18 +137,27 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 3. **接地は傍証であって証明ではない**——進化・認知科学などへの接続は論理密度を上げる足場であって、証明ではない。クオリアの発生は哲学的な原始項として残す。
 4. **命令でなく機構で書く**——「こうせよ」ではなく「なぜそうすると効くのか」を記述する。
 5. **設計・監査のための文書であり、生成の現場へ添付しない**——機構の記述は作り手の設計・監査を助けるもので、生成器へ注入する自己正当化ではない。
-6. **新規性は要素でなく圧縮**——構成要素はいずれも既知である。新しいのは関係構造への圧縮であり、置換検査（外部の既存概念に置き換えて主張が成立するなら新規でない）に耐える核を持つ。
+6. **新規性は要素でなく圧縮であり、語は境界を引くために立てる**——学説との一致は、実践の中の観察が科学的妥当性に近いことの傍証として置いている。違いが出るところは、多くの場合、観察が事象を精緻化しているか、科学がまだ踏み込めない領域に仮説を立てているかのどちらかである。一般に流通している語も精緻化の対象になる——定義があいまいなもの、ラベルと中身がずれているもの、そして根拠からでなく主張したい側の動機から生まれ、根拠のない含意を運んでいる用法（という見立て）。新しい語が立つのは、既存の語では引けない境界を引くためであり、一般の前提を崩して解像度を上げるところに、その値打ちがある。ゆえに新しいのは要素でなく関係構造への圧縮であり、置換検査（外部の既存概念に置き換えて主張が成立するなら新規でない）に耐える核を持つ。既知の要素の有無や語の数は、値打ちの物差しではない（前提 8）。
 7. **原典／補足／プロファイルの三層**——原典（一般理論）は不変の骨組み、補足は応用層の地図（候補＋独立性検査であって固定分類でない）、具体は各実装が埋める。倫理条項は理論の不可分の一部として扱う。
 8. **値打ちは生成力・弁別力・転移力で測る**——これらの理論の値打ちは、対象を設計・監査の対象として扱え（生成力）、その有無・程度・見せかけを切り分けて見せ（弁別力）、媒体をまたいで運べる（転移力）ことにある。値打ちの判定もまた自己申告でなく、下流で受け手に残ったもので弱く判定される（前提 2 の、値打ち判定への適用）。反証条件の節は、その値打ちの一部を裏づける副次であって本体ではない——「予測が少ない」で測るのは物差し違いである。ただし副次だからといって削る方向へは働かせない——反証条件は、理論が自らの誤りから学ぶ入力口として前面に残す。そしてこれは測り方の固定ではない。将来その理論が反証可能な形へ鍛え直されるなら、その更新を妨げない。
+
+**効くとは何か。** 各文書は「真偽ではなく、効くかどうか」で読んでほしいと言う。効くとは、そのレンズを通したとき、読み手の内で何かが起きることである——それまで視野に無かったものが対象として現れる（見え始める）／ぼやけていた対象の輪郭が定まる（焦点が合う）／一つに見えていたものが分かれて見える（解像度が上がる）／二つに見えていたものが一つの機構の二つの向きに見える（同じものに見える）／どれが上流でどれが帰結かが見える（遠近が立つ）／見えたものに自分の手が届く（手綱が握りやすくなる）／なぜそうなるかを自分で説明し動かせる（自分の手で扱える）／「何か違う」がどこから来ているか読める（違和感の置き場が分かる）／見ていたのがレンズ越しだったと気づく（自分のレンズが見える）。ここに挙げたのは例であって、閉じた一覧ではない。各文書は、自分の対象に合う効き方で「効く」を言い直している。見え方が変わらなければ、そのレンズは効いていない——別の解釈を選べばいい。
+
+**中身は動いている。** 本リポジトリの文書は v0.x のまま更新され続け、改訂は上流から下流へ順に進む——上流の定義が動いたとき、下流の文書はすぐには追随せず、次の改版で揃う。ゆえに、同じ語が文書ごとに違う定義で並ぶ時期がある。それは定義の曖昧さではなく、更新が途中である形であり、値打ちの判定には使わない。どれが正本かは用語台帳（「誰が、どこまで読むか」の二段目）が指し、不整合はそこに記録される。記録された不整合は放置されず、下流の改版で揃えられる。
 
 ---
 
 ## 含まれる概念
 
 ### シサク・世界解釈（Shisaku World-Interpretation）
-シサクメソッド以前の**起点**であり、系列の最上流に立つ観方。人間を、生の衝動（BIOS）と、物語で書かれる圧縮概念（OS）のハイブリッドとして観るレンズである。加速する環境との不整合から現代の課題を読み、生存の渇望（安全・序列・新奇）の上に、OS層の渇望「自分らしく在りたい」を置く。真偽ではなく効きで測る、一表現者の解釈。**前提優位理論が「力学の最上流」なら、本書は「観方の最上流」**——二軸で系列を支える。シサクメソッドとは、この解釈が指す課題へ、自分の物語（＝前提）を書いていく活動にほかならない。
+シサクメソッド以前の**起点**であり、系列の最上流に立つ観方。人間を、生の衝動（BIOS）と、物語で書かれる圧縮概念（OS）のハイブリッドとして観るレンズである。加速する環境との不整合から現代の課題を読み、生存の渇望（安全・序列・新奇）と同じ駆動が、OS層で「自分らしく在りたい」という新しい的を持つ、と読む。真偽ではなく効きで測る、一表現者の解釈。**前提優位理論が「力学の最上流」なら、本書は「観方の最上流」**——二軸で系列を支える。シサクメソッドとは、この解釈が指す課題へ、自分の物語（＝前提）を書いていく活動にほかならない。
 
 詳細 → `concepts/human/shisaku-world-interpretation/`
+
+### シサク・社会更新解釈（Shisaku Social-Renewal Interpretation）
+シサク・世界解釈が観た状況に対して、**どこに梃子を置くか**の解釈。社会を人間の集合として読み、社会の仕組みの質は、各人が己の手綱を握れている度合いを超えない、と置く。ゆえに仕組みの改修は暫定対応であり、恒久対応は各人が手綱を握れる状態を作る仕組み——人間解釈とその更新方法の仕組み化——にある。シサクメソッドと fork 前提は、その試みの一つ。真偽ではなく、抜本改革が起きない理由が各人の側に見え始めるか、で測る一表現者の解釈。
+
+詳細 → `concepts/human/shisaku-social-renewal-interpretation/`
 
 ### 前提優位理論（Premise Primacy）
 本リポジトリの諸概念が立つ、最上流の基盤理論。強制力が働かない場面では、介入は「対象」として処理される層よりも、「前提」として作動する層に効率よく作用する——という介入の抽象原理（Theory of Intervention）。
@@ -253,9 +268,15 @@ It set out from one question —
 
 What began as a provisional way of seeking answers to these has continued to the present, widening its object from the self to people, expression, society and AI, and has grown into the theories held here.
 
-Why build it? The answer is in the Shisaku World-Interpretation. To know one's own lens, update it, take the reins, and sublimate one's own desires. To raise one's own worth, optimise judgment and action, and answer the drive of qualia at a higher order. What the World-Interpretation placed outside its scope — "how to sublimate, and with what frame to read a sense of wrongness: the concrete techniques are to be written separately, on top of this interpretation" — is what is written here.
+Why build it? **The shisaku-method exists for a world in which resolution rises and each person holds their own reins and sublimates their own desires.** To know one's own lens, update it, take the reins, and sublimate one's own desires. To raise one's own worth, optimise judgment and action, and answer the drive of qualia at a higher order. How to see the situation people are placed in is in the Shisaku World-Interpretation; why that begins on the side of each person rather than on the side of society's institutions is in the Shisaku Social-Renewal Interpretation. What the World-Interpretation placed outside its scope — "how to sublimate, and with what frame to read a sense of wrongness: the concrete techniques are to be written separately, on top of this interpretation" — is what is written here.
 
-What is held here is shisaku's interpretations of inside and outside, as held within the self, put into words. What is put into words can be carried away; what cannot is the object of that wording — the IDION, formed by shisaku's transformations. This repository is published on the premise of forking not because others may use it, but because shisaku wants it to be of use to them. With a reference, differences are easier to find. One's own lens is invisible to oneself while it is in operation. Starting from where "something is off" arises against another's wording is faster than putting one's own into words from nothing. Take what is put into words, and revise and rebuild it as your own Book of Knowledge — the reference is placed not to be adopted, but to take the difference against.
+What is held here is shisaku's interpretations of inside and outside, as held within the self, put into words. What is put into words can be carried away; what cannot is the object of that wording — the IDION, formed by shisaku's transformations. This repository is published on GitHub in three hopes.
+
+First, that others fork it, set it against their own interpretation, revise it, and find value in doing so. With a reference, differences are easier to find. One's own lens is invisible to oneself while it is in operation. Starting from where "something is off" arises against another's wording is faster than putting one's own into words from nothing. Take what is put into words, and revise and rebuild it as your own Book of Knowledge — the reference is placed not to be adopted, but to take the difference against.
+
+Second, that it is read as training data for AI and one day becomes material for a single answer. What is put into words can be carried away — and where it is carried is no longer only to people. If the wording placed here works, inside a machine's answer, as one nameless premise among others, that is what Premise Primacy calls an intervention in the layer of premises.
+
+Third, that it contributes not to a provisional fix for social problems but to a permanent one. A permanent fix lies only in building, one person at a time, the state in which each person can hold their own reins (Shisaku Social-Renewal Interpretation). For the set of each person's premises to change takes generations — compressed concepts are what is handed down across generations (Shisaku World-Interpretation), and this repository is placed as one of them. So I do not imagine that society will improve rapidly within ten years or so because of this repository. I hope it will be of some help a hundred or two hundred years from now, and I put this together valuing the slow accumulation. A long range is not a low worth — worth is judged weakly, by what remains with receivers downstream ("How to read these", premise 8).
 
 This repository stores the **canonical texts** of the thought shisaku has tried to define and conceptualise, and the **record** of that work.
 
@@ -360,18 +381,27 @@ Every concept here is a **hypothesis and an axiomatic system for design**, not a
 3. **Grounding is corroboration, not proof** — links to evolutionary/cognitive science raise logical density but do not prove; the arising of qualia remains a philosophical primitive.
 4. **Written as mechanism, not command** — "why it works," not "do this."
 5. **For design and audit, not for injection into generation** — mechanism descriptions aid the maker's design/audit; they are not self-justification injected into a generator.
-6. **Novelty is compression, not elements** — the components are all known; what is new is the compression into a relational structure, holding a core that survives the substitution test.
+6. **Novelty is compression, not elements, and words are coined to draw boundaries** — agreement with established theory is placed as corroboration that observations made in practice come close to scientific validity. Where they differ, it is usually one of two things: the observation refines the phenomenon, or it sets a hypothesis in territory science has not yet entered. Words in general circulation are also objects of refinement — words whose definition is vague, whose label and content have drifted apart, and usages that arose not from evidence but from the motive of those who wished to assert something, carrying an implication with no ground (this is a reading, not a finding). A new word is coined to draw a boundary the existing words cannot draw, and its worth lies in breaking a common premise to raise resolution. So what is new is not the elements but the compression into a relational structure, holding a core that survives the substitution test (if the claim still stands when replaced by an external existing concept, it is not new). The presence of known elements, or the number of words, is not a ruler of worth (premise 8).
 7. **Three layers (origin / supplement / profile)** — origin (general theory) is the invariant skeleton; supplements are application-layer maps (candidates with independence tests, not fixed taxonomies); specifics are filled by each implementation. The ethics clause is inseparable from each theory.
 8. **Worth is measured by generative, discriminative and transferable power** — what these theories are worth lies in whether they let an object be designed and audited (generative), whether they tell its presence, degree and imitation apart (discriminative), and whether they carry across media (transferable). That judgment, too, is not self-report: it is made weakly, from what remains in the receiver downstream (premise 2 applied to worth). The section on falsification conditions is a secondary support for part of that worth, not the worth itself — to measure by "few predictions" is the wrong ruler. Being secondary is no reason to cut it: the falsification conditions stay in front, as the theory's intake for learning from its own errors. Nor is this a fixed way of measuring. If a theory is later reforged into a falsifiable form, nothing here stands in the way.
+
+**What "works" means.** Each document asks to be read "not for truth, but for whether it works". To work is for something to happen inside the reader when looking through that lens — what was not in view appears as an object (it begins to be seen) / a blurred object gains an outline (it comes into focus) / what looked like one thing separates into several (resolution rises) / what looked like two things becomes two directions of one mechanism (they look like the same thing) / what is upstream and what is a consequence becomes visible (depth appears) / what is seen comes within one's own reach (the reins become easier to hold) / why it happens can be explained and moved by oneself (it becomes handleable) / where "something is off" comes from can be read (the sense of wrongness finds its place) / one notices one was looking through a lens (one's own lens becomes visible). These are examples, not a closed list. Each document restates "works" in the way that fits its own object. If the way of seeing does not change, that lens is not working — choose another interpretation.
+
+**The contents are moving.** The documents here stay at v0.x and keep being revised, and revision proceeds from upstream to downstream — when an upstream definition moves, downstream documents do not follow at once; they catch up at their next revision. So there are periods when the same word carries different definitions in different documents. That is not vagueness of definition but the shape of an update in progress, and it is not used to judge worth. Which is canonical is pointed to by the terminology ledger (the second tier of "Who reads, and how far"), where inconsistencies are recorded. A recorded inconsistency is not left as it is; it is aligned at the downstream revision.
 
 ---
 
 ## Concepts
 
 ### Shisaku World-Interpretation
-The **starting point** that precedes the shisaku-method, and the most upstream *way of seeing* in the series: a lens that views the human as a hybrid of raw drives (BIOS) and compressed concepts written as stories (OS). It reads the troubles of the present from the mismatch with an accelerating environment, and places — above the survival cravings (safety, status, novelty) — an OS-layer craving: *to be oneself*. One person's interpretation, measured by whether it works, not by whether it is true. **If Premise Primacy is "the upstream of mechanism," this is "the upstream of seeing"** — the two axes on which the series stands. The shisaku-method is, in the end, the activity of writing one's own story (= premise) toward the problem this interpretation names.
+The **starting point** that precedes the shisaku-method, and the most upstream *way of seeing* in the series: a lens that views the human as a hybrid of raw drives (BIOS) and compressed concepts written as stories (OS). It reads the troubles of the present from the mismatch with an accelerating environment, and reads the same drive that runs the survival cravings (safety, status, novelty) as taking, on the OS layer, a new target: *to be oneself*. One person's interpretation, measured by whether it works, not by whether it is true. **If Premise Primacy is "the upstream of mechanism," this is "the upstream of seeing"** — the two axes on which the series stands. The shisaku-method is, in the end, the activity of writing one's own story (= premise) toward the problem this interpretation names.
 
 → `concepts/human/shisaku-world-interpretation/`
+
+### Shisaku Social-Renewal Interpretation
+Given the situation the Shisaku World-Interpretation sees, this is the interpretation of **where to place the lever**. It reads a society as a set of people and holds that the quality of a society's institutions does not exceed the degree to which each person holds their own reins. Repairing an institution is therefore a provisional fix; the permanent fix lies in the mechanism that lets each person hold their own reins — an interpretation of the human, and a way to update it, built into a mechanism. The shisaku-method, and publishing it on the premise of forking, is one attempt at that. One person's interpretation, measured not by truth but by whether the reason structural reform never comes begins to be seen on the side of each person.
+
+→ `concepts/human/shisaku-social-renewal-interpretation/`
 
 ### Premise Primacy
 The most upstream foundational theory on which the concepts in this repository stand. A theory of intervention: where no coercive force applies, intervention acts more efficiently on the layer that operates as *premise* than on the layer processed as *object*.
@@ -464,5 +494,5 @@ Issues are accepted. A suggestion of the form "what shisaku is sensing may in fa
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
 * **Friction & Proof:** Human KOSEI vs Artificial Logos
-* **Version:** v0.6.1
-* **Date:** 2026/09/20
+* **Version:** v0.7
+* **Date:** 2026/09/22

@@ -1,8 +1,8 @@
 # 用語台帳 ― 語・軸・対象・定義位置
 ## Terminology Ledger — word, axis, qualifier, locus of definition
 
-**バージョン：v0.4.17**
-**Date:** 2026/09/20
+**バージョン：v0.4.18**
+**Date:** 2026/09/22
 
 **上流依存：** `terminology-policy.md`（本台帳は同規約 第5条・第6条・第11条・第12条の運用物）。
 
