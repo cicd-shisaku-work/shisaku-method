@@ -23,7 +23,7 @@
   <g font-size="11" fill="#444">
     <text x="30" y="100" font-weight="700" font-size="12">読み方</text>
     <text x="30" y="117">・実線＝一回の接触の流れ。破線＝時間をまたぐ経路（保留・未説明のままの格納・表現からの戻り）。赤褐＝駆動。</text>
-    <text x="30" y="133">・IDION＝接触によって変容するその人の予測モデル（記憶を含む）と、それを用いて認知し、判定する機構。駆動は IDION の外、その下の土台の側にある。</text>
+    <text x="30" y="133">・IDION＝接触によって変容するその人の予測モデル（記憶を含む）と、それを用いて認知し、判定する機構と、それらを動かす身体駆動。主体はその人で、駆動はその人の中の力。</text>
     <text x="30" y="149">・変容＝既存の予測モデルが書き換わること。向きを問わない（良いものとは限らない）。感情が動いても、新しい記憶が加わっても、既存の予測モデルが書き換わらなければ変容でない。</text>
     <text x="30" y="165">・変容コスト（書き換えを成立させる内部の処理）≠ 変容量（予測モデルがどれだけ書き換わったか）≠ 外形の負担（時間・労力＝接触の側の性質）。</text>
     <text x="30" y="181">・変容量は、縦＝深さ（変容の距離）と、横＝結合（A＋B→C・点→線→面）。変容量 ≠ 人間的価値。</text>
@@ -31,7 +31,7 @@
 
   <!-- IDION -->
   <rect x="240" y="200" width="900" height="200" rx="10" fill="#f3e9ec" stroke="#6b2d3e" stroke-width="2"/>
-  <text x="256" y="226" font-size="17" font-weight="700" fill="#6b2d3e">IDION ＝ 予測モデル ＋ 機構</text>
+  <text x="256" y="226" font-size="17" font-weight="700" fill="#6b2d3e">IDION ＝ 予測モデル ＋ 機構 ＋ 身体駆動（下の帯）</text>
   <text x="256" y="246" font-size="11" fill="#4a1f2c">ヒト種に普遍の構造／表現が湧き出す入口の基体／固有／非移転・非交換／基準（平均）を持たない</text>
   <rect x="256" y="258" width="560" height="108" rx="6" fill="#e8d6dc" stroke="#6b2d3e" stroke-width="1"/>
   <text x="270" y="280" font-size="13" font-weight="700" fill="#4a1f2c">予測モデル——接触によって変容する</text>
@@ -44,12 +44,17 @@
   <rect x="828" y="258" width="298" height="108" rx="6" fill="#faf4f6" stroke="#6b2d3e" stroke-width="1"/>
   <text x="842" y="280" font-size="13" font-weight="700" fill="#4a1f2c">機構</text>
   <text x="842" y="300" font-size="11" fill="#4a1f2c">予測モデルを用いて、認知し、判定する</text>
+  <text x="842" y="318" font-size="11" fill="#4a1f2c">照合し、判定を下すのは機構</text>
+  <text x="842" y="336" font-size="11" fill="#4a1f2c">接触では変わらない（ヒト種に普遍）</text>
+  <text x="842" y="354" font-size="10" fill="#777">変わるのは、機構が用いる予測モデル</text>
+  <path d="M828,374 H345 V402" stroke="#6b2d3e" stroke-width="1.2" fill="none" stroke-dasharray="4 3"/>
   <text x="256" y="388" font-size="11" fill="#6b2d3e">IDION の層：着眼（何を見るか）・判定軸（何で評価するか）・自己像・世界解釈——何が書き換わったかの対象であって、深さの目盛りではない</text>
 
   <!-- 濾す（IDION → 照合） -->
   <path d="M345,402 L345,478" stroke="#6b2d3e" stroke-width="1.4" fill="none" marker-end="url(#arri)"/>
-  <text x="353" y="432" font-size="11" fill="#6b2d3e">IDION が</text>
-  <text x="353" y="446" font-size="11" fill="#6b2d3e">接触を濾す</text>
+  <text x="353" y="432" font-size="11" fill="#6b2d3e">IDION が接触を濾す</text>
+  <text x="353" y="446" font-size="11" fill="#6b2d3e">機構が予測モデルを</text>
+  <text x="353" y="460" font-size="11" fill="#6b2d3e">用いて照合し、判定する</text>
   <!-- 格納（照合 → 記憶） -->
   <path d="M300,494 L300,402" stroke="#999" stroke-width="1.2" fill="none" marker-end="url(#arrg)"/>
   <g font-size="11" fill="#666" text-anchor="end">
@@ -131,13 +136,13 @@
   <text x="350" y="827" font-size="11" fill="#666">後の接触が契機で結合する（十年後でも）</text>
 
   <!-- 駆動 -->
-  <rect x="240" y="852" width="900" height="64" rx="8" fill="#fbf1ec" stroke="#a3472a" stroke-width="1.5"/>
-  <text x="690" y="876" text-anchor="middle" font-size="13" font-weight="700" fill="#a3472a">駆動（欲求／忌避）——IDION の外、その下の土台の側。IDION の予測モデルを使う</text>
-  <text x="690" y="900" text-anchor="middle" font-size="11" fill="#7a3a22">「無視できない」と鳴らす／書き換えを押し返す（防衛）／どの書き換えを予測モデルに入れるかを選ぶ——IDION を動かす側。確信の強さは評価軸にしない</text>
+  <rect x="240" y="852" width="900" height="64" rx="8" fill="#fbf1ec" stroke="#6b2d3e" stroke-width="2"/>
+  <text x="690" y="876" text-anchor="middle" font-size="13" font-weight="700" fill="#a3472a">身体駆動（欲求／忌避）——IDION の三つ目の部分。身体の恒常性と生存から出る力。予測モデルと機構を動かす</text>
+  <text x="690" y="900" text-anchor="middle" font-size="11" fill="#7a3a22">「無視できない」と鳴らす／押し返す（防衛）／向きと強さで書き換えの行き先が決まる——閾値・強さは固有で接触では変わらない（変わるのは制御）</text>
   <path d="M650,850 L650,604 L559,604" stroke="#a3472a" stroke-width="1.4" fill="none" marker-end="url(#arrd)"/>
   <path d="M960,850 L960,655 L932,655" stroke="#a3472a" stroke-width="1.4" fill="none" marker-end="url(#arrd)"/>
   <text x="968" y="700" font-size="10.5" fill="#a3472a">防衛（押し返す）</text>
-  <text x="968" y="714" font-size="10.5" fill="#a3472a">／選ぶ</text>
+  <text x="968" y="714" font-size="10.5" fill="#a3472a">／向きと強さ</text>
   <path d="M1140,884 L1160,884 L1160,300 L1142,300" stroke="#a3472a" stroke-width="1.2" fill="none" stroke-dasharray="4 3" marker-end="url(#arrd)"/>
   <text x="1152" y="770" text-anchor="end" font-size="10.5" fill="#a3472a">予測モデルを使う</text>
 
