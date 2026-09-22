@@ -2,7 +2,7 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.7.1  
+**Version:** v0.8  
 **Date:** 2026/09/22
 
 ---
@@ -24,7 +24,7 @@
 
 という問いがある。これらに対する答えを求めるための暫定的な対処として始まったものが、対象を自己から人間、表現、社会、AI へと広げながら現在まで継続し、現在の理論群へと発展している。
 
-なぜ作っているのか。**解像度を上げ、一人ひとりが手綱を持って、自分の欲求を昇華する世界のために、shisaku-method はある。** 自己のレンズを知り、更新し、手綱を取り、自己の欲求を昇華するため。自己の価値を高め、判断と行動を最適化し、クオリアの駆動に高次に応えるため。人間が置かれている状況の見方はシサク・世界解釈にあり、なぜそれが社会の仕組みの側でなく一人ひとりの側から始まるのかはシサク・社会更新解釈にある。世界解釈が「どう昇華し、どんな枠で違和感を読み解くか——その具体的な技術は、この解釈の上に、別に書かれていく」と言って範囲の外に置いたものを、ここで書いている。
+なぜ作っているのか。**解像度を上げ、一人ひとりが手綱を持って、自分の欲求を昇華する世界のために、shisaku-method はある。** 自己のレンズを知り、更新し、手綱を握り、自己の欲求を昇華するため。自己の価値を高め、判断と行動を最適化し、クオリアの駆動に高次に応えるため。人間が置かれている状況の見方はシサク・世界解釈にあり、なぜそれが社会の仕組みの側でなく一人ひとりの側から始まるのかはシサク・社会更新解釈にある。世界解釈が「どう昇華し、どんな枠で違和感を読み解くか——その具体的な技術は、この解釈の上に、別に書かれていく」と言って範囲の外に置いたものを、ここで書いている。
 
 ここに置くのは、シサクが自己の中に持つ、内外に関する解釈を言語化したものである。言語化したものは移せる。移せないのは、その言語化の対象となった IDION——シサクの変容によって形作られているもの——である。本リポジトリを GitHub で公開しているのは、三つを願うからである。
 
@@ -185,12 +185,12 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 詳細 → `concepts/human/shisaku-cognitive-frame/`
 
 ### シサク・ヒト変容理論（SHTT）と四成分
-前提優位理論をヒト種の「表現による変容」へ展開した系。**二相**——入口（表現者の核＝IDION）と出口（受け手の変容＝四成分）——に同じ変容が立ち、帰趨（残存／変容の二値・成分ごと）を通し軸に、両端共通の過程（接触→気づき→再演段→照合段→承認段→書き換え段→定常化段→折り返し段）と深度語彙（変容深度・変容広さ・自己距離／共鳴深度・共鳴距離・共鳴強度・共鳴負荷）の区別を置き、四つの構造理論——**軌跡（SHTST：何を体験させ何を変容させるか）／表現（SHEST：どう実装するか）／距離（SHDST：何が届き何が届かないか）／共鳴（SHKST：実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・深度語彙・変容の過程の八段・距離軸の全域スキャン・共鳴の入口・共鳴事例の分解表・クオリア欲求の類型・媒体の四層マップ）を持つ。上流は二軸——**前提優位理論（力学の最上流）とシサク・世界解釈（目的・観方の最上流＝なぜ表現するか・人間はシステムという世界解釈）**。
+前提優位理論をヒト種の「表現による変容」へ展開した系。**二相**——入口（表現者の IDION）と出口（受け手の変容＝四成分）——に同じ変容が立ち、帰趨（残存／変容の二値・成分ごと）を通し軸に、両端共通の過程（接触→気づき→再演段→照合段→承認段→書き換え段→定常化段→折り返し段）と深度語彙（変容深度・変容広さ・自己距離／共鳴深度・共鳴距離・共鳴強度・共鳴負荷）の区別を置き、四つの構造理論——**軌跡（SHTST：何を体験させ何を変容させるか）／表現（SHEST：どう実装するか）／距離（SHDST：何が届き何が届かないか）／共鳴（SHKST：実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・深度語彙・変容の過程の八段・距離軸の全域スキャン・共鳴の入口・共鳴事例の分解表・クオリア欲求の類型・媒体の四層マップ）を持つ。上流は二軸——**前提優位理論（力学の最上流）とシサク・世界解釈（目的・観方の最上流＝なぜ表現するか・人間はシステムという世界解釈）**。
 
 詳細 → `concepts/human/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
 
 ### シサク・ヒト IDION 構造理論（IDION）
-SHTT の**入口側**——表現が湧き出す基体＝**表現者自身の変容の集合が形作った固有の核（IDION）**の構造理論（成分でなく、主体の核の側に立つ・略号を持たず把手 IDION で参照）。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、核の書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、強度を変容量（縦＝変容深度〔たどりの長さ〕・変容広さ〔本数〕／横＝結合則）で測り、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを自分のものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は IDION の日本語グロス。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）。
+SHTT の**入口側**——表現が湧き出す基体＝**接触によって変容するその人の予測モデルと、それを用いて認知し、判定する機構と、それらを動かす身体駆動（IDION）**の構造理論（SHTT の主体の位置に立つ・略号を持たず把手 IDION で参照）。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、予測モデルの書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、本人がどれだけ変容したかを変容量（縦＝変容深度〔たどりの長さ〕・変容広さ〔本数〕／横＝結合則）で読み、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを、自分の IDION から出たものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は IDION の日本語グロス。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）。
 
 詳細 → `concepts/human/shisaku-human-idion-structure/`
 
@@ -231,11 +231,11 @@ AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、
 3. **内的整合**——文書どうし、節どうしが食い違っていないか。
 4. **予測の代理**——記述が言外に含んでいる見込みに、外れる場面があるか。
 
-**四つとも、記述の内側か、記述が自分で張り出した縁にある。** 外から普遍命題を要求するのではなく、**書き手が先に引いた線の上でだけ、反証は働く。** どんな事実にも触れられない前提は安定するが、育たない。本リポジトリはその安定を選んでいない——**信仰の記述との差は、内容ではなく構造にある。**
+**四つとも、記述の内側か、記述が自分で張り出した縁にある。** 外から普遍命題を要求するのではなく、**書き手が先に引いた線の上でだけ、反証は働く。** どんな事実にも触れられない前提は安定するが、育たない。本リポジトリはその安定を選んでいない——**信仰の記述との差は、内容ではなく構造にある。** ここでいう信仰の記述とは、どこで崩れるかを自分で書かない記述であり、構造とは、上の四つの検査口を記述が自分で持っていることである。効いた結果の実証は下流にあり、公開したデモと書籍に置いた事例で辿れる（「含まないもの」）。
 
 **使うのは、装着する前である。** 読むだけなら要らない。だが**前提として装着する**なら——認知フレームを継承・fork して自分の Book of Knowledge にするなら——装着したあとは、それが前提として見えなくなる。**検査の機会は装着前にしかない。** そして**見つけた境界は、issue の形になる**——「シサクが感じているのは、実はこういうことではないか」。「参加のしかた」の節が言う**差分を取る**とは、真偽を当てることではなく、この境界を見つけることである。
 
-**価値の在り処**〔三語の線は〔シサク・価値解釈〕が持つ〕**。** 本リポジトリが値打ちとして数えるのは、人間の読者の中に起きたものだけである。その価値には個人差がある——強く立つ人、弱く立つ人、立たない人がいる。「私は全くそう思わない」「私と同じ考えだ」「私の中にある言語化できていないことが言語化できた」「内容はわかるが、いまひとつ腑に落ちない」——これらは個人によってのみ判別され、**著者にも評価者にも代わりに判別することはできない。**
+**価値の在り処**（三語の線は〔シサク・価値解釈〕が持つ）**。** 本リポジトリが値打ちとして数えるのは、人間の読者の中に起きたものだけである。その価値には個人差がある——強く立つ人、弱く立つ人、立たない人がいる。「私は全くそう思わない」「私と同じ考えだ」「私の中にある言語化できていないことが言語化できた」「内容はわかるが、いまひとつ腑に落ちない」——これらは個人によってのみ判別され、**著者にも評価者にも代わりに判別することはできない。**
 
 ---
 
@@ -243,7 +243,7 @@ AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、
 
 本リポジトリは fork 前提である。`concepts/` は n=1 の記述であり、読者は自分の IDION で差分を取り、自分の concepts を育てればよい。
 
-issue は受け付ける。「シサクが感じているのは、実はこういうことではないか」という提示は検討に値する。ただし判定は所有者が行い、却下もある——他者の視点を自分の核に取り込むかは引受けの問題であり、所有者以外には決められない。本文への PR は受けない。
+issue は受け付ける。「シサクが感じているのは、実はこういうことではないか」という提示は検討に値する。ただし判定は所有者が行い、却下もある——他者の視点を自分の IDION に取り込むかは引受けの問題であり、所有者以外には決められない。本文への PR は受けない。
 
 ---
 
@@ -268,7 +268,7 @@ It set out from one question —
 
 What began as a provisional way of seeking answers to these has continued to the present, widening its object from the self to people, expression, society and AI, and has grown into the theories held here.
 
-Why build it? **The shisaku-method exists for a world in which resolution rises and each person holds their own reins and sublimates their own desires.** To know one's own lens, update it, take the reins, and sublimate one's own desires. To raise one's own worth, optimise judgment and action, and answer the drive of qualia at a higher order. How to see the situation people are placed in is in the Shisaku World-Interpretation; why that begins on the side of each person rather than on the side of society's institutions is in the Shisaku Social-Renewal Interpretation. What the World-Interpretation placed outside its scope — "how to sublimate, and with what frame to read a sense of wrongness: the concrete techniques are to be written separately, on top of this interpretation" — is what is written here.
+Why build it? **The shisaku-method exists for a world in which resolution rises and each person holds their own reins and sublimates their own desires.** To know one's own lens, update it, hold the reins, and sublimate one's own desires. To raise one's own worth, optimise judgment and action, and answer the drive of qualia at a higher order. How to see the situation people are placed in is in the Shisaku World-Interpretation; why that begins on the side of each person rather than on the side of society's institutions is in the Shisaku Social-Renewal Interpretation. What the World-Interpretation placed outside its scope — "how to sublimate, and with what frame to read a sense of wrongness: the concrete techniques are to be written separately, on top of this interpretation" — is what is written here.
 
 What is held here is shisaku's interpretations of inside and outside, as held within the self, put into words. What is put into words can be carried away; what cannot is the object of that wording — the IDION, formed by shisaku's transformations. This repository is published on GitHub in three hopes.
 
@@ -429,12 +429,12 @@ A cognitive frame is the structure of attention that precedes thought — it det
 → `concepts/human/shisaku-cognitive-frame/`
 
 ### Shisaku Human Transformation Theory (SHTT) and its four components
-An extension of Premise Primacy to human transformation through expression. Two ends of one transformation — the entry (the expresser's core, IDION) and the exit (the receiver's transformation, the four components) — with the *outcome* (residue / transformation, read per component) as the through-axis, an eight-stage process common to both ends, and a typed depth vocabulary. It binds four structure-theories: **Trajectory (SHTST — what experience to induce and what to transform) / Expression (SHEST — how to implement it) / Distance (SHDST — what does and does not reach) / Kyōmei·Resonance (SHKST — what actually resonated and remained)**. Each component carries application-layer supplements (transformation object-layers, depth vocabulary, the eight stages of transformation, a distance-axis survey, resonance entry-points, an instance-decomposition table, qualia-desire types, and a media four-layer map). Two upstreams: **Premise Primacy (the upstream of mechanism) and the Shisaku World-Interpretation (the upstream of purpose and seeing — why we express; humans as systems).**
+An extension of Premise Primacy to human transformation through expression. Two ends of one transformation — the entry (the expresser's IDION) and the exit (the receiver's transformation, the four components) — with the *outcome* (residue / transformation, read per component) as the through-axis, an eight-stage process common to both ends, and a typed depth vocabulary. It binds four structure-theories: **Trajectory (SHTST — what experience to induce and what to transform) / Expression (SHEST — how to implement it) / Distance (SHDST — what does and does not reach) / Kyōmei·Resonance (SHKST — what actually resonated and remained)**. Each component carries application-layer supplements (transformation object-layers, depth vocabulary, the eight stages of transformation, a distance-axis survey, resonance entry-points, an instance-decomposition table, qualia-desire types, and a media four-layer map). Two upstreams: **Premise Primacy (the upstream of mechanism) and the Shisaku World-Interpretation (the upstream of purpose and seeing — why we express; humans as systems).**
 
 → `concepts/human/shisaku-human-transformation/` (transformation, umbrella) / `-trajectory-structure/` / `-expression-structure/` / `-distance-structure/` / `-kyomei-structure/`
 
 ### Shisaku Human IDION-Structure Theory (IDION)
-The *entry side* of SHTT — the structure of the expresser's own core, **IDION**: the core formed by the set of one's own transformations (not a component; it stands on the subject's side, referred to by the handle IDION without an acronym). Where the four components carry the exit side (the receiver's transformation), IDION stands at the entry end of the same transformation. It distinguishes IDION not by origin but by the traceable history of a core rewrite (transformation cost — struggle is one form, integration another) and by non-transferability; measures strength as transformation quantity (vertical = transformation depth and breadth / horizontal = the combination rule); splits judgment asymmetrically between the person and the receiver; defines disguise as "expressing what is not in one's IDION as one's own" by mechanics rather than morality; and calibrates dignity as honesty + gaze. KOSEI (個性) is the Japanese gloss of IDION. Supplements — worked cases and separation detection / a map of transformation-cost forms / a map of layers and axes / system isomorphism (a design check tool).
+The *entry side* of SHTT — the structure of the ground from which expression wells up: **the person's prediction models, which transform through contact, the mechanism that uses them to perceive and to judge, and the bodily drive that moves them (IDION)** (it stands at the subject's position in SHTT, referred to by the handle IDION without an acronym). Where the four components carry the exit side (the receiver's transformation), IDION stands at the entry end of the same transformation. It distinguishes IDION not by origin but by the traceable history of a rewrite of prediction models (transformation cost — struggle is one form, integration another) and by non-transferability; reads how far the person has transformed as transformation quantity (vertical = transformation depth and breadth / horizontal = the combination rule); splits judgment asymmetrically between the person and the receiver; defines disguise as "expressing what is not in one's IDION as having come from one's IDION" by mechanics rather than morality; and calibrates dignity as honesty + gaze. KOSEI (個性) is the Japanese gloss of IDION. Supplements — worked cases and separation detection / a map of transformation-cost forms / a map of layers and axes / system isomorphism (a design check tool).
 
 → `concepts/human/shisaku-human-idion-structure/`
 
@@ -475,7 +475,7 @@ Two things are kept elsewhere, for business.
 3. **Internal consistency** — whether the documents, and the sections within them, contradict one another.
 4. **Predictions by proxy** — whether the expectations a description carries unstated have cases in which they fail.
 
-**All four lie inside the description, or on an edge the description put out itself.** Falsification works on the lines the author drew first, not on universal claims demanded from outside. A premise that no fact can touch is stable, but it does not grow. This repository has not chosen that stability — **what separates it from a description of faith is not its content but its structure.**
+**All four lie inside the description, or on an edge the description put out itself.** Falsification works on the lines the author drew first, not on universal claims demanded from outside. A premise that no fact can touch is stable, but it does not grow. This repository has not chosen that stability — **what separates it from a description of faith is not its content but its structure.** A description of faith, here, is one that does not write down for itself where it breaks; the structure is that the description holds the four inspection points above as its own. The validation of what has worked lies downstream, and can be traced through the published demo and the cases placed in the books ("What this repository does not hold").
 
 **The time to use this is before you put it on.** To read needs none of it. But **to wear it as a premise** — to inherit or fork the cognitive frame into your own Book of Knowledge — is to have it stop being visible as a premise. **The occasion to inspect it exists only beforehand.** And **a boundary you find takes the form of an issue** — "what shisaku is sensing may in fact be this". To take the difference, in the sense the section on taking part means, is not to put the text to true or false: it is to find that boundary.
 
@@ -487,11 +487,11 @@ Two things are kept elsewhere, for business.
 
 This repository assumes forking. `concepts/` is a description at n=1; a reader takes the difference against their own IDION and grows their own concepts.
 
-Issues are accepted. A suggestion of the form "what shisaku is sensing may in fact be this" is worth considering. The judgment, however, is the owner's, and rejection is possible — whether to take another's view into one's own core is a matter of acceptance, and no one but the owner can decide it. Pull requests against the text are not accepted.
+Issues are accepted. A suggestion of the form "what shisaku is sensing may in fact be this" is worth considering. The judgment, however, is the owner's, and rejection is possible — whether to take another's view into one's own IDION is a matter of acceptance, and no one but the owner can decide it. Pull requests against the text are not accepted.
 
 ---
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.7.1
+* **Version:** v0.8
 * **Date:** 2026/09/22
