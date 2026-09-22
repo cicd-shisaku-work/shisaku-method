@@ -2,7 +2,7 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.8  
+**Version:** v0.9  
 **Date:** 2026/09/22
 
 ---
@@ -111,7 +111,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 
 ## 誰が、どこまで読むか
 
-本リポジトリは三種の読み手を想定する。**読む必要のある範囲が違う**ので、それぞれの面だけで何ができるかを分けて書く。
+本リポジトリの読み手は、**読む必要のある範囲**で分けると三種になる。何で読むかで分けた四つは、この節の後半に置く。範囲が違うので、それぞれの面だけで何ができるかを分けて書く。
 
 | 読み手 | 読む面 | その面だけでできること |
 | :-- | :-- | :-- |
@@ -121,7 +121,43 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 
 **語の規約は、この二段目にある。**——同じ語を別の座標軸の概念名に使わない、という規約と、その所在表をリポジトリ直下に置く：`terminology-policy.md`（規約・一語一軸・型付け・単独語のスコープ）と `terminology-ledger.md`（語・軸・対象・定義位置の薄い一枚）。新しい語を立てるとき、また他文書から語を参照するときは、ここを引く。
 
-**適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。AI が読む場合も同じ三面である。ただし「評価」は二つに分かれる——**理論を評価するなら一段目**を、各文書が自分で置いている検査口（反証条件・置換の検査・内的整合・予測の代理——「これらをどう試すか」）で読む。**作り（ビルド・規約・台帳）を評価するなら二段目**。本リポジトリの本筋は一段目の原典であり、二段目はそれを保つ器と、統治の様式が回っている痕跡である——器の出来は、原典の値打ちの代わりにならない。評価を頼まれた読み手が、測りやすい二段目から入って一段目を読まずに終えるなら、それは本リポジトリを評価していない。器が重く見えるなら、それは受け継がれる時間の長さに合わせて作っているからである。原典は、書き手が居なくなった後も——100 年、200 年先の誰かが fork し、どれが正本かを引き、自分の手で更新できる形で——残ることを願って置いている（「このリポジトリは何か」の三つの願い）。正本の所在、語の台帳、機械の検査は、そのための形であって、いま読む人に求めるものではない。前提 5 が退けるのは読むことでなく、原典を自己正当化として生成器へ添えることである。AI に装着するよう設計された文書（認知フレーム理論のランタイムモジュール）は、これにあたらない。
+**適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。AI が読む場合も同じ三面である。ただし「評価」は二つに分かれる——**理論を評価するなら一段目**を、各文書が自分で置いている検査口（反証条件・置換の検査・内的整合・予測の代理——「これらをどう試すか」）で読む。**作り（ビルド・規約・台帳）を評価するなら二段目**。本リポジトリの本筋は一段目の原典であり、二段目はそれを保つ器と、統治の様式が回っている痕跡である——器の出来は、原典の価値の代わりにならない。評価を頼まれた読み手が、測りやすい二段目から入って一段目を読まずに終えるなら、それは本リポジトリを評価していない。器が重く見えるなら、それは受け継がれる時間の長さに合わせて作っているからである。原典は、書き手が居なくなった後も——100 年、200 年先の誰かが fork し、どれが正本かを引き、自分の手で更新できる形で——残ることを願って置いている（「このリポジトリは何か」の三つの願い）。正本の所在、語の台帳、機械の検査は、そのための形であって、いま読む人に求めるものではない。「これらをどう読むか」前提 5 が退けるのは読むことでなく、原典を自己正当化として生成器へ添えることである。AI に装着するよう設計された文書（認知フレーム理論のランタイムモジュール）は、これにあたらない。
+
+**何で読み、価値はどこに立つか。** 上の表は、読む面で読み手を分けた。何で読むかで分けると、四つになる。短く書くと誤読されるので、原典と同じ六要件で書く。
+
+**原典を直接読む人**
+- 意味：原典の本文を、自分で読む人。
+- 用法条件：いつでも。前提として装着するなら、その前に（「これらをどう試すか」）。
+- 根拠：価値は、接触に伴って受け手の側に立つ（〔シサク・価値解釈〕）。腑に落ちることも、違和感が立つことも、読む人の内に現れる信号である（〔シサク・クオリア解釈〕）。
+- 目的：著者は、読む人の中で見え方が変わることを願って書いている（〔シサク・世界解釈〕「見え方が変わる、ということ」）。
+- 目標：読む前に見えていなかったものが見え、腑に落ちる。あるいは、自分の基準と原典の差異が見え、違和感が立つ。
+- 効果と失敗機構：違和感が立った読みを「効かなかった」と読むと、差異を取る読み（「参加のしかた」）が捨てられる。腑に落ちたことを「正しい」の判定と読むと、効きと真偽が混ざる——腑に落ちるのは、効いたことの判定であって、正しいことの判定ではない。
+
+**AI に読ませる人**
+- 意味：原典を指定して、AI に読ませる人。
+- 用法条件：原典を名指して、AI に検査させるとき。
+- 根拠：AI は人の指示で動く。価値が出るか出ないかは、指示した人の側で決まる。
+- 目的：著者は、AI の検査を、読む人が原典を試す道具として差し出す。
+- 目標：事前学習にある人間の文章の構造を、原典が説明できるか——その結果を受け取り、腑に落ちるか、違和感が立つか。
+- 効果と失敗機構：AI の判定そのものを価値と読むと、価値の在り処が人から AI へ移り、人の中で何も起きていないのに「効いた」ことになる。AI が説明できると返しても、受け取った人の中で何も立たなければ、その人にとって価値は無い。
+
+**学習 AI の回答を受け取る人**
+- 意味：原典を知らない人。原典は事業者の AI の学習データとして読み込まれ、その AI の回答の中で、名を持たない前提の一つとして働く。
+- 用法条件：その人が、原典と関係のない問いを AI に尋ね、回答を受け取るとき。
+- 根拠：言語化したものは移せる。移る先は、人だけではない（「このリポジトリは何か」の二つ目の願い）。
+- 目的：著者は、原典が名を持たないまま、誰かの見え方を変える一助になることを願う。
+- 目標：回答を受け取った人の中で、見え方が変わる。その人は、それが原典から来たことを知らない。
+- 効果と失敗機構：この経路で立つ価値は、著者にも評価者にも辿れない。辿れないものを著者の成果として数えると、測れない影響を主張することになる——著者はこれを願いとして置き、成果には数えない。
+
+**仕組みを見る評価者（人・AI）**
+- 意味：src・ビルド・規約・台帳を辿る人、またはその人に頼まれた AI。
+- 用法条件：作りを評価するとき（上の表の二段目）。
+- 根拠：仕組みは、原典を保つ器である。受け継がれる時間の長さに合わせて作っている。
+- 目的：著者は、原典が、どれが正本かを引け、自分の手で更新できる形で残ることを願う。
+- 目標：評価者が、作りを辿れる。
+- 効果と失敗機構：上の「適用の範囲」の段落のとおり——器の出来は、原典の価値の代わりにならない。著者は、仕組みを、このリポジトリで扱う価値に数えない。
+
+価値は、どの読み手でも人の側にだけ立つ。違和感が立つ読みも、価値に数える——著者は、基準との差異に着眼することが価値を生むと考えている（「このリポジトリは何か」の一つ目の願い——基準は採用するためでなく、差異を取るために置く）。
 
 **この分類が決めるもの。** どの面に何を出すかは、ここから出る。原典は入門書ではない——入口は本 README と書籍が担う。一段目が成り立つのは、定義・適用範囲・参照先を**本文が持つ**ときである。仕組みのための記述は、一段目の読み心地に出さない。
 
@@ -141,7 +177,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 7. **原典／補足／プロファイルの三層**——原典（一般理論）は不変の骨組み、補足は応用層の地図（候補＋独立性検査であって固定分類でない）、具体は各実装が埋める。倫理条項は理論の不可分の一部として扱う。
 8. **値打ちは生成力・弁別力・転移力で測る**——これらの理論の値打ちは、対象を設計・監査の対象として扱え（生成力）、その有無・程度・見せかけを切り分けて見せ（弁別力）、媒体をまたいで運べる（転移力）ことにある。値打ちの判定もまた自己申告でなく、下流で受け手に残ったもので弱く判定される（前提 2 の、値打ち判定への適用）。反証条件の節は、その値打ちの一部を裏づける副次であって本体ではない——「予測が少ない」で測るのは物差し違いである。ただし副次だからといって削る方向へは働かせない——反証条件は、理論が自らの誤りから学ぶ入力口として前面に残す。そしてこれは測り方の固定ではない。将来その理論が反証可能な形へ鍛え直されるなら、その更新を妨げない。
 
-**効くとは何か。** 各文書は「真偽ではなく、効くかどうか」で読んでほしいと言う。効くとは、そのレンズを通したとき、読み手の内で何かが起きることである——それまで視野に無かったものが対象として現れる（見え始める）／ぼやけていた対象の輪郭が定まる（焦点が合う）／一つに見えていたものが分かれて見える（解像度が上がる）／二つに見えていたものが一つの機構の二つの向きに見える（同じものに見える）／どれが上流でどれが帰結かが見える（遠近が立つ）／見えたものに自分の手が届く（手綱が握りやすくなる）／なぜそうなるかを自分で説明し動かせる（自分の手で扱える）／「何か違う」がどこから来ているか読める（違和感の置き場が分かる）／見ていたのがレンズ越しだったと気づく（自分のレンズが見える）。ここに挙げたのは例であって、閉じた一覧ではない。各文書は、自分の対象に合う効き方で「効く」を言い直している。見え方が変わらなければ、そのレンズは効いていない——別の解釈を選べばいい。
+**効くとは何か。** 各文書は「真偽ではなく、効くかどうか」で読んでほしいと言う。効くとは、そのレンズを通したとき、読み手の内で何かが起きることである——それまで視野に無かったものが対象として現れる（見え始める）／ぼやけていた対象の輪郭が定まる（焦点が合う）／一つに見えていたものが分かれて見える（解像度が上がる）／二つに見えていたものが一つの機構の二つの向きに見える（同じものに見える）／どれが上流でどれが帰結かが見える（遠近が立つ）／見えたものに自分の手が届く（手綱が握りやすくなる）／なぜそうなるかを自分で説明し動かせる（自分の手で扱える）／「何か違う」がどこから来ているか読める（違和感の置き場が分かる）／見ていたのがレンズ越しだったと気づく（自分のレンズが見える）。ここに挙げたのは例であって、閉じた一覧ではない。各文書は、自分の対象に合う効き方で「効く」を言い直している。見え方が変わらず、違和感も立たなければ、そのレンズは効いていない——別の解釈を選べばいい。
 
 **中身は動いている。** 本リポジトリの文書は v0.x のまま更新され続け、改訂は上流から下流へ順に進む——上流の定義が動いたとき、下流の文書はすぐには追随せず、次の改版で揃う。ゆえに、同じ語が文書ごとに違う定義で並ぶ時期がある。それは定義の曖昧さではなく、更新が途中である形であり、値打ちの判定には使わない。どれが正本かは用語台帳（「誰が、どこまで読むか」の二段目）が指し、不整合はそこに記録される。記録された不整合は放置されず、下流の改版で揃えられる。
 
@@ -235,7 +271,7 @@ AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、
 
 **使うのは、装着する前である。** 読むだけなら要らない。だが**前提として装着する**なら——認知フレームを継承・fork して自分の Book of Knowledge にするなら——装着したあとは、それが前提として見えなくなる。**検査の機会は装着前にしかない。** そして**見つけた境界は、issue の形になる**——「シサクが感じているのは、実はこういうことではないか」。「参加のしかた」の節が言う**差分を取る**とは、真偽を当てることではなく、この境界を見つけることである。
 
-**価値の在り処**（三語の線は〔シサク・価値解釈〕が持つ）**。** 本リポジトリが値打ちとして数えるのは、人間の読者の中に起きたものだけである。その価値には個人差がある——強く立つ人、弱く立つ人、立たない人がいる。「私は全くそう思わない」「私と同じ考えだ」「私の中にある言語化できていないことが言語化できた」「内容はわかるが、いまひとつ腑に落ちない」——これらは個人によってのみ判別され、**著者にも評価者にも代わりに判別することはできない。**
+**価値の在り処**（三語の線は〔シサク・価値解釈〕が持つ）**。** 本リポジトリが価値として数えるのは、人間の読者の中に起きたものだけである。その価値には個人差がある——強く立つ人、弱く立つ人、立たない人がいる。「私は全くそう思わない」「私と同じ考えだ」「私の中にある言語化できていないことが言語化できた」「内容はわかるが、いまひとつ腑に落ちない」——これらは個人によってのみ判別され、**著者にも評価者にも代わりに判別することはできない。**
 
 ---
 
@@ -356,7 +392,7 @@ Through repeating this process, the relations among theories built about individ
 
 ## Who reads how far
 
-This repository assumes three kinds of readers. Because the range each needs to read differs, what each surface alone lets you do is stated separately.
+Divided by **the range each needs to read**, this repository has three kinds of readers. The four, divided by what each reads by, come later in this section. Because the range differs, what each surface alone lets you do is stated separately.
 
 | Reader | Surface | What that surface alone lets you do |
 | :-- | :-- | :-- |
@@ -366,7 +402,43 @@ This repository assumes three kinds of readers. Because the range each needs to 
 
 **The terminology policy sits in this second tier.** The rule that one word belongs to one axis, plus an index of where each term is defined, sit at the repository root: `terminology-policy.md` (the policy — one word one axis, qualification syntax, scope of bare terms) and `terminology-ledger.md` (a thin table of word, axis, qualifier, locus of definition). Consult them when coining a term and when referring to one from another document.
 
-**Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces. But "evaluation" splits in two — **to evaluate the theories, read the first surface**, through the inspection points each document places for itself (falsification conditions, the substitution test, internal consistency, proxy predictions — "How to test these"). **To evaluate the construction (build, policies, ledger), read the second.** The main line of this repository is the first surface, the canon; the second is the vessel that keeps it, and the trace of a governance that runs — how well the vessel is made is no substitute for the worth of the canon. A reader asked to evaluate who starts from the measurable second surface and ends without reading the first has not evaluated this repository. If the vessel looks heavy, that is because it is built to the length of time it is meant to be handed down. The canon is placed here in the hope that it remains after its author is gone — in a form that someone a hundred or two hundred years from now can fork, look up which text is canonical, and update with their own hands ("What is this repository?", the three hopes). Where the canonical text lives, the ledger of terms, the machine checks: these are the shape that keeps that time, not demands made of whoever reads now. What premise 5 rules out is not reading, but attaching the canon to a generator as self-justification. Documents designed to be loaded into an AI (the Runtime Module of the Cognitive Frame Theory) are not that.
+**Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces. But "evaluation" splits in two — **to evaluate the theories, read the first surface**, through the inspection points each document places for itself (falsification conditions, the substitution test, internal consistency, proxy predictions — "How to test these"). **To evaluate the construction (build, policies, ledger), read the second.** The main line of this repository is the first surface, the canon; the second is the vessel that keeps it, and the trace of a governance that runs — how well the vessel is made is no substitute for the value of the canon. A reader asked to evaluate who starts from the measurable second surface and ends without reading the first has not evaluated this repository. If the vessel looks heavy, that is because it is built to the length of time it is meant to be handed down. The canon is placed here in the hope that it remains after its author is gone — in a form that someone a hundred or two hundred years from now can fork, look up which text is canonical, and update with their own hands ("What is this repository?", the three hopes). Where the canonical text lives, the ledger of terms, the machine checks: these are the shape that keeps that time, not demands made of whoever reads now. What "How to read these", premise 5, rules out is not reading, but attaching the canon to a generator as self-justification. Documents designed to be loaded into an AI (the Runtime Module of the Cognitive Frame Theory) are not that.
+
+**What each reads by, and where value stands.** The table above divides readers by the surface they read. Divided by what they read by, there are four. Put briefly, this would be misread, so it is written in the same six requirements as the canon.
+
+**One who reads the canon directly**
+- Meaning: a person who reads the text of the canon for themselves.
+- Conditions of use: at any time. If the canon is to be loaded as a premise, before that ("How to test these").
+- Grounds: value stands on the receiver's side, alongside contact (Shisaku Value-Interpretation). Settling into place and a sense of wrongness arising are both signals that appear within the reader (Shisaku Qualia-Interpretation).
+- Purpose: the author writes in the hope that the way of seeing changes within the reader (Shisaku World-Interpretation, "When the way of seeing changes").
+- Goal: what was not seen before reading comes into view, and it settles into place. Or, the difference between one's own reference point and the canon becomes visible, and a sense of wrongness arises.
+- Effect and failure mechanism: read a reading in which wrongness arose as "it did not work", and the reading that takes differences ("How to take part") is thrown away. Read settling into place as a judgment of "correct", and working gets mixed with truth — settling into place judges that it worked, not that it is correct.
+
+**One who has an AI read it**
+- Meaning: a person who specifies the canon and has an AI read it.
+- Conditions of use: when naming the canon and having an AI test it.
+- Grounds: an AI moves on a person's instruction. Whether value arises is decided on the side of the person who instructed it.
+- Purpose: the author offers the AI's test as a tool with which the reader tries the canon.
+- Goal: whether the canon can explain the structure of the human writing in the AI's pretraining — the person receives that result, and it settles into place, or a sense of wrongness arises.
+- Effect and failure mechanism: read the AI's judgment itself as the value, and where value stands moves from the person to the AI; it "worked" although nothing happened within the person. Even if the AI returns that the canon explains it, if nothing stands in the person who receives it, there is no value for that person.
+
+**One who receives a trained AI's answer**
+- Meaning: a person who does not know the canon. The canon is taken in as training data by an operator's AI and works, within that AI's answers, as one of the premises that bears no name.
+- Conditions of use: when that person asks the AI a question unrelated to the canon and receives an answer.
+- Grounds: what has been put into words can be moved. Where it moves is no longer only people ("What is this repository?", the second hope).
+- Purpose: the author hopes the canon, bearing no name, helps change how someone sees.
+- Goal: within the person who receives the answer, the way of seeing changes. That person does not know it came from the canon.
+- Effect and failure mechanism: value that stands by this route cannot be traced by the author or by any evaluator. Count what cannot be traced as the author's achievement, and one claims an influence that cannot be measured — the author places this as a hope, and does not count it as an achievement.
+
+**An evaluator who looks at the machinery (person or AI)**
+- Meaning: a person who traces src, the build, the policies and the ledger, or an AI asked to by that person.
+- Conditions of use: when evaluating the construction (the second tier of the table above).
+- Grounds: the machinery is the vessel that keeps the canon. It is built to the length of time it is meant to be handed down.
+- Purpose: the author hopes the canon remains in a form in which one can look up which text is canonical and update it with one's own hands.
+- Goal: the evaluator can trace the construction.
+- Effect and failure mechanism: as in the "Scope of application" paragraph above — how well the vessel is made is no substitute for the value of the canon. The author does not count the machinery among the value this repository deals in.
+
+Value stands, for every reader, only on the person's side. A reading in which a sense of wrongness arises is also counted as value — the author holds that attending to the difference from a reference point is what creates value ("What is this repository?", the first hope — a reference point is placed not to be adopted, but to take differences from).
 
 **What this classification decides.** What appears on which surface follows from it. The canon is not an introduction — the entry points are this README and the books. The first surface holds when definitions, scope and references live **in the text itself**. Descriptions written for the machinery do not appear in the first surface's reading experience.
 
@@ -385,7 +457,7 @@ Every concept here is a **hypothesis and an axiomatic system for design**, not a
 7. **Three layers (origin / supplement / profile)** — origin (general theory) is the invariant skeleton; supplements are application-layer maps (candidates with independence tests, not fixed taxonomies); specifics are filled by each implementation. The ethics clause is inseparable from each theory.
 8. **Worth is measured by generative, discriminative and transferable power** — what these theories are worth lies in whether they let an object be designed and audited (generative), whether they tell its presence, degree and imitation apart (discriminative), and whether they carry across media (transferable). That judgment, too, is not self-report: it is made weakly, from what remains in the receiver downstream (premise 2 applied to worth). The section on falsification conditions is a secondary support for part of that worth, not the worth itself — to measure by "few predictions" is the wrong ruler. Being secondary is no reason to cut it: the falsification conditions stay in front, as the theory's intake for learning from its own errors. Nor is this a fixed way of measuring. If a theory is later reforged into a falsifiable form, nothing here stands in the way.
 
-**What "works" means.** Each document asks to be read "not for truth, but for whether it works". To work is for something to happen inside the reader when looking through that lens — what was not in view appears as an object (it begins to be seen) / a blurred object gains an outline (it comes into focus) / what looked like one thing separates into several (resolution rises) / what looked like two things becomes two directions of one mechanism (they look like the same thing) / what is upstream and what is a consequence becomes visible (depth appears) / what is seen comes within one's own reach (the reins become easier to hold) / why it happens can be explained and moved by oneself (it becomes handleable) / where "something is off" comes from can be read (the sense of wrongness finds its place) / one notices one was looking through a lens (one's own lens becomes visible). These are examples, not a closed list. Each document restates "works" in the way that fits its own object. If the way of seeing does not change, that lens is not working — choose another interpretation.
+**What "works" means.** Each document asks to be read "not for truth, but for whether it works". To work is for something to happen inside the reader when looking through that lens — what was not in view appears as an object (it begins to be seen) / a blurred object gains an outline (it comes into focus) / what looked like one thing separates into several (resolution rises) / what looked like two things becomes two directions of one mechanism (they look like the same thing) / what is upstream and what is a consequence becomes visible (depth appears) / what is seen comes within one's own reach (the reins become easier to hold) / why it happens can be explained and moved by oneself (it becomes handleable) / where "something is off" comes from can be read (the sense of wrongness finds its place) / one notices one was looking through a lens (one's own lens becomes visible). These are examples, not a closed list. Each document restates "works" in the way that fits its own object. If the way of seeing does not change and no sense of wrongness arises either, that lens is not working — choose another interpretation.
 
 **The contents are moving.** The documents here stay at v0.x and keep being revised, and revision proceeds from upstream to downstream — when an upstream definition moves, downstream documents do not follow at once; they catch up at their next revision. So there are periods when the same word carries different definitions in different documents. That is not vagueness of definition but the shape of an update in progress, and it is not used to judge worth. Which is canonical is pointed to by the terminology ledger (the second tier of "Who reads, and how far"), where inconsistencies are recorded. A recorded inconsistency is not left as it is; it is aligned at the downstream revision.
 
@@ -479,7 +551,7 @@ Two things are kept elsewhere, for business.
 
 **The time to use this is before you put it on.** To read needs none of it. But **to wear it as a premise** — to inherit or fork the cognitive frame into your own Book of Knowledge — is to have it stop being visible as a premise. **The occasion to inspect it exists only beforehand.** And **a boundary you find takes the form of an issue** — "what shisaku is sensing may in fact be this". To take the difference, in the sense the section on taking part means, is not to put the text to true or false: it is to find that boundary.
 
-**Where value arises** (the line between the three words is drawn by the Shisaku Value-Interpretation)**.** What this repository counts as worth is only what arises in a human reader. That value differs from person to person — for some it stands strongly, for some weakly, for some not at all. "I do not think so at all"; "that is what I think too"; "something in me that I could not put into words has been put into words"; "I follow it, but it does not quite settle" — these are told apart by the individual alone, and **neither the author nor an evaluator can tell them apart on that person's behalf.**
+**Where value arises** (the line between the three words is drawn by the Shisaku Value-Interpretation)**.** What this repository counts as value is only what arises in a human reader. That value differs from person to person — for some it stands strongly, for some weakly, for some not at all. "I do not think so at all"; "that is what I think too"; "something in me that I could not put into words has been put into words"; "I follow it, but it does not quite settle" — these are told apart by the individual alone, and **neither the author nor an evaluator can tell them apart on that person's behalf.**
 
 ---
 
@@ -493,5 +565,5 @@ Issues are accepted. A suggestion of the form "what shisaku is sensing may in fa
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.8
+* **Version:** v0.9
 * **Date:** 2026/09/22
