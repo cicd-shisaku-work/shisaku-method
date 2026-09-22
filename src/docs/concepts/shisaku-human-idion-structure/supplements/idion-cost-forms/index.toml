@@ -8,11 +8,11 @@ title    = 'IDION 構造理論 補足 ― 変容コストの形態の地図'
 subtitle = 'Supplement: A Map of the Forms of Transformation Cost (Shisaku Human IDION-Structure Theory)'
 related  = 'シサク・ヒト IDION 構造理論（原典）／姉妹補足：具体事例集と分離検出〔idion-cases.md〕・層と軸の地図〔idion-axes-map.md〕'
 author   = 'shisaku'
-version  = 'v0.1'
+version  = 'v0.1.1'
 # header_version は本文の見出し欄の版。colophon の version と食い違っている文書があるため、
 # 一致させずに残している（裁定待ち・issue: supplement-version-mismatch）。
-header_version = 'v0.1'
-date     = '2026/09/05'
+header_version = 'v0.1.1'
+date     = '2026/09/22'
 canonical      = "{{url:shisaku-human-idion-structure}}"
 copyright_year = "2026"
 license_intro  = 'This document is a supplement to the Shisaku Human IDION-Structure Theory — a map of the candidate forms that transformation cost takes (struggle in its defensive, inertial, and norm-departing directions; integration; exploration; bodily adjustment; emotional processing; self-model update), the variables that select the form, and the three distinctions the origin fixes (cost ≠ magnitude, resistance ≠ load, pleasure/pain ≠ depth) — authored by shisaku. It is released for others to study, adapt, and implement.'
