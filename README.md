@@ -2,12 +2,14 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.9  
-**Date:** 2026/09/22
+**Version:** v0.10  
+**Date:** 2026/09/23
 
 ---
 
 ## このリポジトリは何か
+
+このリポジトリを読んで、読み手の見え方が変わることがある。見ていたのがレンズ越しだったと気づくことも、迷いがなくなることも、誤りを未然に防げることもある——著者（シサク）自身には、そういうことが起きてきた。それが起きるか、ほかにどんな価値が出るかは、読み手の中でしか決まらない（「これらをどう読むか」の「価値が出るとは何か」）。
 
 これは、実践の中で得られた知をシサクがシステム思考によって構造化し、その構造を解析・導出し、図や文章として記述している、シサクによるシサクのための Book of Knowledge として始まったリポジトリである。
 
@@ -24,15 +26,15 @@
 
 という問いがある。これらに対する答えを求めるための暫定的な対処として始まったものが、対象を自己から人間、表現、社会、AI へと広げながら現在まで継続し、現在の理論群へと発展している。
 
-なぜ作っているのか。**解像度を上げ、一人ひとりが手綱を持って、自分の欲求を昇華する世界のために、shisaku-method はある。** 自己のレンズを知り、更新し、手綱を握り、自己の欲求を昇華するため。自己の価値を高め、判断と行動を最適化し、クオリアの駆動に高次に応えるため。人間が置かれている状況の見方はシサク・世界解釈にあり、なぜそれが社会の仕組みの側でなく一人ひとりの側から始まるのかはシサク・社会更新解釈にある。世界解釈が「どう昇華し、どんな枠で違和感を読み解くか——その具体的な技術は、この解釈の上に、別に書かれていく」と言って範囲の外に置いたものを、ここで書いている。
+なぜ作っているのか。**shisaku-method は、シサクの自己の価値を最大化するための手段である。そして、一人ひとりが手綱を持って、自分の欲求を昇華する世界の構築を願って、ここで公開する。** 自己のレンズを知り、更新し、手綱を握り、自己の欲求を昇華するため。自己の価値を高め（自己の肯定と、社会との調和）、判断と行動を最適化し、クオリアの駆動に高次に応えるため。人間が置かれている状況の見方はシサク・世界解釈にあり、なぜそれが社会の仕組みの側でなく一人ひとりの側から始まるのかはシサク・社会更新解釈にある。世界解釈が「どう昇華し、どんな枠で違和感を読み解くか——その具体的な技術は、この解釈の上に、別に書かれていく」と言って範囲の外に置いたものを、ここで書いている。
 
-ここに置くのは、シサクが自己の中に持つ、内外に関する解釈を言語化したものである。言語化したものは移せる。移せないのは、その言語化の対象となった IDION——シサクの変容によって形作られているもの——である。本リポジトリを GitHub で公開しているのは、三つを願うからである。
+ここで公開するのは、シサクが自己の中に持つ、内外に関する解釈を言語化したものである。言語化したものは移せる。移せないのは、その言語化の対象となった IDION——シサクの変容によって形作られているもの——である。本リポジトリを GitHub で公開しているのは、三つを願うからである。
 
-一に、他者が fork し、己の解釈と照らし合わせ、修正することで、価値を見出してほしいから。基準があれば、差異を見つけやすい。自分のレンズは、作動しているあいだは自分に見えない。何も無いところから言語化するより、他者の言語化と照らして「何か違う」が立つところから始めるほうが早い。他者は言語化したものを受け取り、自身の Book of Knowledge として必要な修正を加え、再構成すればよい——基準は採用するためでなく、差異を取るために置く。
+一に、他者が fork し、己の解釈と照らし合わせ、修正することで、価値を見出してほしいから。基準があれば、差異に着眼しやすい。自分のレンズは、作動しているあいだは自分に見えない。何も無いところから言語化するより、他者の言語化と照らして「何か違う」が立つところから始めるほうが早い。他者は言語化したものを受け取り、自身の Book of Knowledge として必要な修正を加え、再構成すればよい——基準は採用するためでなく、差異を取るために差し出す。
 
-二に、AI の学習データとして読み込まれ、いつの日か、一つの回答出力の素材となることを願うから。言語化したものは移せる——そして移る先は、もう人だけではない。ここに置いた言語化が、機械の回答の中で、名を持たない前提の一つとして働くなら、それは前提優位理論の言う、前提の層への介入である。
+二に、AI の学習データとして読み込まれ、いつの日か、一つの回答出力の素材となることを願うから。言語化したものは移せる——そして移る先は、もう人だけではない。ここで公開した言語化が、機械の回答の中で、名を持たない前提の一つとして働くなら、それは前提優位理論の言う、前提の層への介入である。
 
-三に、社会課題の暫定対応でなく、恒久対応への一助となることを願うから。恒久対応は、各人が己の手綱を握れる状態を、一人分ずつ作ることにしかない（シサク・社会更新解釈）。各人の前提の集合が変わるには、世代の時間が掛かる——圧縮概念は世代を超えて受け継がれるものであり（シサク・世界解釈）、本リポジトリも、その一つとして置く。ゆえに私は、このリポジトリで 10 年ほどのうちに社会が急激に良くなっていくとは想像していない。100 年、200 年先の一助になればよいと願い、少しずつ積み上げていくことを大事にして、これをまとめている。射程の長さは、値打ちの低さではない——値打ちは、下流で受け手に残ったもので、弱く判定される（「これらをどう読むか」前提 8）。
+三に、社会課題の暫定対応でなく、恒久対応への一助となることを願うから。恒久対応は、各人が己の手綱を握れる状態を、一人分ずつ作ることにしかない（シサク・社会更新解釈）。各人の前提の集合が変わるには、世代の時間が掛かる——圧縮概念は世代を超えて受け継がれるものであり（シサク・世界解釈）、本リポジトリも、その一つとして残す。ゆえに私は、このリポジトリで 10 年ほどのうちに社会が急激に良くなっていくとは想像していない。100 年、200 年先の一助になればよいと願い、少しずつ積み上げていくことを大事にして、これをまとめている。射程の長さは、値打ちの低さではない——値打ちは、下流で受け手に残ったもので、弱く判定される（「これらをどう読むか」前提 8）。
 
 本リポジトリは、シサクが定義・概念化を試みた思想の**原典**と**証跡**を格納する場所である。
 
@@ -81,7 +83,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 
 - **思索**（Contemplation）— 考えること
 - **試作**（Prototype）— 形にすること
-- **施策**（Deploy）— 実行すること
+- **施策**（Launch）— 人の見えるところに出して、試すこと
 
 この三位一体は円環をなし、どれか一つとして欠けてはならない。漢字で表記するなら「志作駆」であり、これはKOSEI Miningにおける志作駆円環の駆動原理とも接続する。
 
@@ -121,7 +123,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 
 **語の規約は、この二段目にある。**——同じ語を別の座標軸の概念名に使わない、という規約と、その所在表をリポジトリ直下に置く：`terminology-policy.md`（規約・一語一軸・型付け・単独語のスコープ）と `terminology-ledger.md`（語・軸・対象・定義位置の薄い一枚）。新しい語を立てるとき、また他文書から語を参照するときは、ここを引く。
 
-**適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。AI が読む場合も同じ三面である。ただし「評価」は二つに分かれる——**理論を評価するなら一段目**を、各文書が自分で置いている検査口（反証条件・置換の検査・内的整合・予測の代理——「これらをどう試すか」）で読む。**作り（ビルド・規約・台帳）を評価するなら二段目**。本リポジトリの本筋は一段目の原典であり、二段目はそれを保つ器と、統治の様式が回っている痕跡である——器の出来は、原典の価値の代わりにならない。評価を頼まれた読み手が、測りやすい二段目から入って一段目を読まずに終えるなら、それは本リポジトリを評価していない。器が重く見えるなら、それは受け継がれる時間の長さに合わせて作っているからである。原典は、書き手が居なくなった後も——100 年、200 年先の誰かが fork し、どれが正本かを引き、自分の手で更新できる形で——残ることを願って置いている（「このリポジトリは何か」の三つの願い）。正本の所在、語の台帳、機械の検査は、そのための形であって、いま読む人に求めるものではない。「これらをどう読むか」前提 5 が退けるのは読むことでなく、原典を自己正当化として生成器へ添えることである。AI に装着するよう設計された文書（認知フレーム理論のランタイムモジュール）は、これにあたらない。
+**適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。AI が読む場合も同じ三面である。ただし「評価」は二つに分かれる——**理論を評価するなら一段目**を、各文書が自分で置いている検査口（反証条件・置換の検査・内的整合・予測の代理——「これらをどう試すか」）で読む。**作り（ビルド・規約・台帳）を評価するなら二段目**。本リポジトリの本筋は一段目の原典であり、二段目はそれを保つ器と、統治の様式が回っている痕跡である——器の出来は、原典の価値の代わりにならない。評価を頼まれた読み手が、測りやすい二段目から入って一段目を読まずに終えるなら、それは本リポジトリを評価していない。器が重く見えるなら、それは受け継がれる時間の長さに合わせて作っているからである。原典は、書き手が居なくなった後も——100 年、200 年先の誰かが fork し、どれが正本かを引き、自分の手で更新できる形で——残ることを願って公開している（「このリポジトリは何か」の三つの願い）。正本の所在、語の台帳、機械の検査は、そのための形であって、いま読む人に求めるものではない。「これらをどう読むか」前提 5 が退けるのは読むことでなく、原典を自己正当化として生成器へ添えることである。AI に装着するよう設計された文書（認知フレーム理論のランタイムモジュール）は、これにあたらない。
 
 **何で読み、価値はどこに立つか。** 上の表は、読む面で読み手を分けた。何で読むかで分けると、四つになる。短く書くと誤読されるので、原典と同じ六要件で書く。
 
@@ -131,7 +133,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 - 根拠：価値は、接触に伴って受け手の側に立つ（〔シサク・価値解釈〕）。腑に落ちることも、違和感が立つことも、読む人の内に現れる信号である（〔シサク・クオリア解釈〕）。
 - 目的：著者は、読む人の中で見え方が変わることを願って書いている（〔シサク・世界解釈〕「見え方が変わる、ということ」）。
 - 目標：読む前に見えていなかったものが見え、腑に落ちる。あるいは、自分の基準と原典の差異が見え、違和感が立つ。
-- 効果と失敗機構：違和感が立った読みを「効かなかった」と読むと、差異を取る読み（「参加のしかた」）が捨てられる。腑に落ちたことを「正しい」の判定と読むと、効きと真偽が混ざる——腑に落ちるのは、効いたことの判定であって、正しいことの判定ではない。
+- 効果と失敗機構：違和感が立った読みを「価値が出なかった」と読むと、差異を取る読み（「参加のしかた」）が捨てられる。腑に落ちたことを「正しい」の判定と読むと、価値と真偽が混ざる——腑に落ちるのは、価値が生じる場合の一つであって、正しいことの判定ではない。
 
 **AI に読ませる人**
 - 意味：原典を指定して、AI に読ませる人。
@@ -139,7 +141,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 - 根拠：AI は人の指示で動く。価値が出るか出ないかは、指示した人の側で決まる。
 - 目的：著者は、AI の検査を、読む人が原典を試す道具として差し出す。
 - 目標：事前学習にある人間の文章の構造を、原典が説明できるか——その結果を受け取り、腑に落ちるか、違和感が立つか。
-- 効果と失敗機構：AI の判定そのものを価値と読むと、価値の在り処が人から AI へ移り、人の中で何も起きていないのに「効いた」ことになる。AI が説明できると返しても、受け取った人の中で何も立たなければ、その人にとって価値は無い。
+- 効果と失敗機構：AI の判定そのものを価値と読むと、価値の在り処が人から AI へ移り、人の中で何も起きていないのに「価値が出た」ことになる。AI が説明できると返しても、受け取った人の中で何も立たなければ、その人にとって価値は無い。
 
 **学習 AI の回答を受け取る人**
 - 意味：原典を知らない人。原典は事業者の AI の学習データとして読み込まれ、その AI の回答の中で、名を持たない前提の一つとして働く。
@@ -147,7 +149,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 - 根拠：言語化したものは移せる。移る先は、人だけではない（「このリポジトリは何か」の二つ目の願い）。
 - 目的：著者は、原典が名を持たないまま、誰かの見え方を変える一助になることを願う。
 - 目標：回答を受け取った人の中で、見え方が変わる。その人は、それが原典から来たことを知らない。
-- 効果と失敗機構：この経路で立つ価値は、著者にも評価者にも辿れない。辿れないものを著者の成果として数えると、測れない影響を主張することになる——著者はこれを願いとして置き、成果には数えない。
+- 効果と失敗機構：この経路で立つ価値は、著者にも評価者にも辿れない。辿れないものを著者の成果として数えると、測れない影響を主張することになる——著者はこれを願いにとどめ、成果には数えない。
 
 **仕組みを見る評価者（人・AI）**
 - 意味：src・ビルド・規約・台帳を辿る人、またはその人に頼まれた AI。
@@ -157,7 +159,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 - 目標：評価者が、作りを辿れる。
 - 効果と失敗機構：上の「適用の範囲」の段落のとおり——器の出来は、原典の価値の代わりにならない。著者は、仕組みを、このリポジトリで扱う価値に数えない。
 
-価値は、どの読み手でも人の側にだけ立つ。違和感が立つ読みも、価値に数える——著者は、基準との差異に着眼することが価値を生むと考えている（「このリポジトリは何か」の一つ目の願い——基準は採用するためでなく、差異を取るために置く）。
+価値は、どの読み手でも人の側にだけ立つ。違和感が立つ読みも、価値に数える——著者は、基準との差異に着眼することが価値を生むと考えている（「このリポジトリは何か」の一つ目の願い——基準は採用するためでなく、差異を取るために差し出す）。
 
 **この分類が決めるもの。** どの面に何を出すかは、ここから出る。原典は入門書ではない——入口は本 README と書籍が担う。一段目が成り立つのは、定義・適用範囲・参照先を**本文が持つ**ときである。仕組みのための記述は、一段目の読み心地に出さない。
 
@@ -173,11 +175,15 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 3. **接地は傍証であって証明ではない**——進化・認知科学などへの接続は論理密度を上げる足場であって、証明ではない。クオリアの発生は哲学的な原始項として残す。
 4. **命令でなく機構で書く**——「こうせよ」ではなく「なぜそうすると効くのか」を記述する。
 5. **設計・監査のための文書であり、生成の現場へ添付しない**——機構の記述は作り手の設計・監査を助けるもので、生成器へ注入する自己正当化ではない。
-6. **新規性は要素でなく圧縮であり、語は境界を引くために立てる**——学説との一致は、実践の中の観察が既知の知見と整合することの傍証として置いている——それ自体を科学的妥当性の証明とはせず、読者の理解が深まるための記述として置く。違いが出るところは、多くの場合、観察が事象を精緻化しているか、科学がまだ扱っていない領域に仮説を立てているかのどちらかである。一般に流通している語も精緻化の対象になる——定義があいまいなもの、ラベルと中身がずれているもの、そして根拠からでなく主張したい側の動機から生まれ、根拠のない含意を運んでいる用法（という見立て）。新しい語が立つのは、既存の語では引けない境界を引くためであり、一般の前提を崩して解像度を上げるところに、その値打ちがある。ゆえに新しいのは要素でなく関係構造への圧縮であり、置換検査（外部の既存概念に置き換えて主張が成立するなら新規でない）に耐える核を持つ。既知の要素の有無や語の数は、値打ちの物差しではない（前提 8）。
+6. **解釈は実践から先にあり、学説とは後から照合した。語は境界を引くために立てる**——著者は学者ではなく、実践者である。ゆえに、本リポジトリの解釈は、実践の中の観察から先にあった。「こういうことがあると思う」「自分の観察としてはこうだ」が先にあり、そのあとで、同じことを言っている学説が無いかを探して当てた。当てるのは論理の強さを出すためであり、同時に、自分の解像度が足りないところを見せてくれるからである。一致した部分は、自分の記述として書いた——一致は、学説が正しいことの証明ではなく、観察がそこまで届いていることの傍証である。一致しない部分は、新たに自分で掘ったところである。多くの場合、観察が事象を精緻化しているか、科学がまだ扱っていない領域に仮説を立てているかのどちらかになる。一般に流通している語も精緻化の対象になる——定義があいまいなもの、ラベルと中身がずれているもの、そして根拠からでなく主張したい側の動機から生まれ、根拠のない含意を運んでいる用法（という見立て）。新しい語が立つのは、既存の語では引けない境界を引くためであり、一般の前提を崩して解像度を上げるところに、その値打ちがある。どこが一致し、どこが掘ったところかは、著者が宣言しない——読み手が置換の検査（「これらをどう試すか」）で確かめる。既存の概念に置き換えて主張が成立するなら、そこは照合が通った部分であり、崩れるなら掘った部分である。置換の検査は部分に当てる検査である。部分をつなぐ側——前提優位を最上流とする順序、人の認知と AI を一本で扱うこと、自分を対象に掘り続けること——は、部分を置き換えても残るかで確かめる。既知の要素の有無や語の数は、値打ちの物差しではない（前提 8）。
 7. **原典／補足／プロファイルの三層**——原典（一般理論）は不変の骨組み、補足は応用層の地図（候補＋独立性検査であって固定分類でない）、具体は各実装が埋める。倫理条項は理論の不可分の一部として扱う。
 8. **値打ちは生成力・弁別力・転移力で測る**——これらの理論の値打ちは、対象を設計・監査の対象として扱え（生成力）、その有無・程度・見せかけを切り分けて見せ（弁別力）、媒体をまたいで運べる（転移力）ことにある。値打ちの判定もまた自己申告でなく、下流で受け手に残ったもので弱く判定される（前提 2 の、値打ち判定への適用）。反証条件の節は、その値打ちの一部を裏づける副次であって本体ではない——「予測が少ない」で測るのは物差し違いである。ただし副次だからといって削る方向へは働かせない——反証条件は、理論が自らの誤りから学ぶ入力口として前面に残す。そしてこれは測り方の固定ではない。将来その理論が反証可能な形へ鍛え直されるなら、その更新を妨げない。
 
-**効くとは何か。** 各文書は「真偽ではなく、効くかどうか」で読んでほしいと言う。効くとは、そのレンズを通したとき、読み手の内で何かが起きることである——それまで視野に無かったものが対象として現れる（見え始める）／ぼやけていた対象の輪郭が定まる（焦点が合う）／一つに見えていたものが分かれて見える（解像度が上がる）／二つに見えていたものが一つの機構の二つの向きに見える（同じものに見える）／どれが上流でどれが帰結かが見える（遠近が立つ）／見えたものに自分の手が届く（手綱が握りやすくなる）／なぜそうなるかを自分で説明し動かせる（自分の手で扱える）／「何か違う」がどこから来ているか読める（違和感の置き場が分かる）／見ていたのがレンズ越しだったと気づく（自分のレンズが見える）。ここに挙げたのは例であって、閉じた一覧ではない。各文書は、自分の対象に合う効き方で「効く」を言い直している。見え方が変わらず、違和感も立たなければ、そのレンズは効いていない——別の解釈を選べばいい。
+**価値が出るとは何か。** 著者は、解釈の各文書の冒頭で、真偽ではなく、価値が出るかどうかで読んでほしいと書いている。これは、読み方の着眼の提示である——真偽から、自分の内に何が出るかへ、着眼を移してほしい。問うのは、どの場合に価値が生じるかである。価値は、読み手が原典に触れ、自分の基準と照らし合わせたとき、読み手の内に出る（〔シサク・価値解釈〕）。出方は一つではない——視界がひらける。焦点が合う。違和感が出る。基準との差異が無く、「そのとおりだ」と納得する。「いや、ちょっと違う」と思う。「あぁ、なるほど」と思う。腑に落ちることも、その一つである。本リポジトリは、どれも、価値が出た場合に数える。ここに挙げたのは例であって、閉じた一覧ではない。出たかどうかを判定するのは読み手であり、著者にも評価者にも代わりに判定することはできない（「これらをどう試すか」）。
+
+**読み終えた手元に、何が残るか。** 著者（シサク）は、見え方が変わって、迷いがなくなったことがある。誤りを未然に防げたことがある。自分の進む道が見えたように感じたことがある。そのたびに、自分の手綱が握りやすくなったと感じてきた（〔シサク・世界解釈〕「見え方が変わる、ということ」）。同じものが読み手の手元に残るとは、約束できない。見え方が変わったとき何が変わったかは、同じ節が七つに分けて持つ。見え方が変わって、それが残るなら、その過程は〔シサク・ヒト変容理論〕が扱う。ただし、価値が出るのは見え方が変わったときだけではない——「そのとおりだ」と確かめ直した読みも、価値が出た場合に数える。この価値は、理論の値打ちとは別のものである。価値は読み手の内に、その場で出る。値打ちは外から測る——その判定の材料になるのは、下流で受け手に残ったものである（前提 8）。例は、読み手が自分の対象で試すためにある——価値が出るかは、例の上でしか試せない。
+
+価値が出ない場面もある。読み終えて、「わかりきっていることだ」「つまらない」「時間の無駄だった」と思ったなら、その読み手の中に、この文書の価値は出ていない。「そのとおりだ」も、照らし合わせたことは同じである。違うのは向きで、「そのとおりだ」は、自分の中で照らし合わせて肯定している——ぼやけていた焦点を少し合わせているか、肯定的に確かめ直している。こういう概念が存在するべきだ、という読みである。「つまらない」は、概念そのものに価値が無い、という読みである——そんなことを言っても、何も得は無い、と。それでも、何も残らないわけではない。「この文書は、自分には読む価値が無い」という経験が、記憶として残る。けれども、本リポジトリは、それを価値が出た場合に数えない。読んだ時間の労力に見合うものは、その読み手の中に出ていない。著者としては、申し訳なく思う。そのときは、別の解釈を選べばいい。
 
 **中身は動いている。** 本リポジトリの文書は v0.x のまま更新され続け、改訂は上流から下流へ順に進む——上流の定義が動いたとき、下流の文書はすぐには追随せず、次の改版で揃う。ゆえに、同じ語が文書ごとに違う定義で並ぶ時期がある。それは定義の曖昧さではなく、更新が途中である形であり、値打ちの判定には使わない。どれが正本かは用語台帳（「誰が、どこまで読むか」の二段目）が指し、不整合はそこに記録される。記録された不整合は放置されず、下流の改版で揃えられる。
 
@@ -186,12 +192,12 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 ## 含まれる概念
 
 ### シサク・世界解釈（Shisaku World-Interpretation）
-シサクメソッド以前の**起点**であり、系列の最上流に立つ観方。人間を、生の衝動（BIOS）と、物語で書かれる圧縮概念（OS）のハイブリッドとして観るレンズである。加速する環境との不整合から現代の課題を読み、生存の渇望（安全・序列・新奇）と同じ駆動が、OS層で「自分らしく在りたい」という新しい的を持つ、と読む。真偽ではなく効きで測る、一表現者の解釈。**前提優位理論が「力学の最上流」なら、本書は「観方の最上流」**——二軸で系列を支える。シサクメソッドとは、この解釈が指す課題へ、自分の物語（＝前提）を書いていく活動にほかならない。
+シサクメソッド以前の**起点**であり、系列の最上流に立つ観方。人間を、生の衝動（BIOS）と、物語で書かれる圧縮概念（OS）のハイブリッドとして観るレンズである。加速する環境との不整合から現代の課題を読み、生存の渇望（安全・序列・新奇）と同じ駆動が、OS層で「自分らしく在りたい」という新しい的を持つ、と読む。真偽ではなく、価値が出るかで読む、一表現者の解釈。**前提優位理論が「力学の最上流」なら、本書は「観方の最上流」**——二軸で系列を支える。この解釈が指す課題——自分の物語（＝前提）を書いていくこと——に、シサクメソッドは方法論として応える。
 
 詳細 → `concepts/human/shisaku-world-interpretation/`
 
 ### シサク・社会更新解釈（Shisaku Social-Renewal Interpretation）
-シサク・世界解釈が観た状況に対して、**どこに梃子を置くか**の解釈。社会を人間の集合として読み、社会の仕組みの質は、各人が己の手綱を握れている度合いを超えない、と置く。ゆえに仕組みの改修は暫定対応であり、恒久対応は各人が手綱を握れる状態を作る仕組み——人間解釈とその更新方法の仕組み化——にある。シサクメソッドと fork 前提は、その試みの一つ。真偽ではなく、抜本改革が起きない理由が各人の側に見え始めるか、で測る一表現者の解釈。
+シサク・世界解釈が観た状況に対して、**どこに梃子を置くか**の解釈。社会を人間の集合として読み、社会の仕組みの質は、各人が己の手綱を握れている度合いを超えない、と置く。ゆえに仕組みの改修は暫定対応であり、恒久対応は各人が手綱を握れる状態を作る仕組み——人間解釈とその更新方法の仕組み化——にある。シサクメソッドと fork 前提は、その試みの一つ。真偽ではなく、価値が出るか——抜本改革が起きない理由が各人の側に見え始めるか——で読む、一表現者の解釈。
 
 詳細 → `concepts/human/shisaku-social-renewal-interpretation/`
 
@@ -226,7 +232,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 詳細 → `concepts/human/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
 
 ### シサク・ヒト IDION 構造理論（IDION）
-SHTT の**入口側**——表現が湧き出す基体＝**接触によって変容するその人の予測モデルと、それを用いて認知し、判定する機構と、それらを動かす身体駆動（IDION）**の構造理論（SHTT の主体の位置に立つ・略号を持たず把手 IDION で参照）。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、予測モデルの書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、本人がどれだけ変容したかを変容量（縦＝変容深度〔たどりの長さ〕・変容広さ〔本数〕／横＝結合則）で読み、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを、自分の IDION から出たものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は IDION の日本語グロス。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）。
+SHTT の**入口側**——表現が湧き出す基体＝IDION——**接触によって変容するその人の予測モデルと、それを用いて認知し、判定する機構と、それらを動かす身体駆動**——の構造理論（SHTT の主体の位置に立つ・略号を持たず把手 IDION で参照）。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、予測モデルの書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、本人がどれだけ変容したかを変容量（縦＝変容深度・変容広さ——たどりの長さと本数——／横＝結合則）で読み、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを、自分の IDION から出たものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は IDION の日本語グロス。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）。
 
 詳細 → `concepts/human/shisaku-human-idion-structure/`
 
@@ -239,14 +245,14 @@ AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、
 
 ## 含まないもの
 
-本リポジトリは、**事業に用いるものを置かない。** ここに置くのは思想の原典と証跡だけである。
+本リポジトリは、**事業に用いるものを含めない。** ここで公開するのは思想の原典と証跡だけである。
 
 事業のために別に持っているのは、次の二つである。
 
 - **シサク生成統治理論**——生成をどう統治するかの理論。**上流にあたる。** 本リポジトリの原典が埋める六要件（意味・用法条件・根拠・目的・目標・効果と失敗機構）は、この理論の様式である。**本リポジトリの原典はヘッダーに上流依存を書く。六要件はここで立てたものではないので、その出所も書く。**
 - **シサク IDION 共鳴ライティング**——IDION を、受け手が共鳴する形へ着地させる制作規律。**下流にあたる。** 本リポジトリの変容理論群を参照するだけで、上流に何も足さない。
 
-**効果の実証は下流にある。** 本リポジトリは原典と証跡を置く。原典に基づく実装・評価・事業上の成果は、公開したデモと、書籍に置いた事例を除いて、本リポジトリに含まない。下流の実証は、そのデモと事例で辿れなければならない——書籍『シサクのカセツ vol.1』を、実証の参照先として置く（β版・制作中。2026 年 9 月時点で全 9 章のうち 2 章まで。https://www.amazon.co.jp/dp/B0HGD66MTP ）。
+**実装と事業の成果の実証は、下流にある。** 本リポジトリは原典と証跡を公開する。原典に基づく実装・評価・事業上の成果は、公開したデモと、書籍に置いた事例を除いて、本リポジトリに含まない。読み手の中に価値が出るかは、読み手が確かめる（「これらをどう読むか」の「価値が出るとは何か」）。下流の実証は、そのデモと事例で辿れなければならない——書籍『シサクのカセツ vol.1』を、実証の参照先として挙げる（β版・制作中。2026 年 9 月時点で全 9 章のうち 2 章まで。https://www.amazon.co.jp/dp/B0HGD66MTP ）。
 
 **デモを兼ねる。** 文書ビルドに載る原典（`src/docs/` にインデックスを持つ文書）は、シサク生成統治理論の適用である。理論は公開しないが、その様式（六要件）、適用の機構（`src/engine/`）、適用の経緯（コミット履歴）は公開している。ゆえにこれらは、下流の実証のうち公開できる部分を兼ねる。
 
@@ -258,16 +264,18 @@ AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、
 
 ## これらをどう試すか（反証の境界と価値の在り処）
 
-**何が反証の対象でないか。** 記述は、何を主張しているかで三つに割れる。**内的状態の報告**（「信じている」「支えられている」）——真偽を当てるのは物差し違いで、できるのは誠実さを疑うことだけである。**世界へ張り出した主張**（祈れば治る）——これは反証でき、他人を縛る場面では反証に意味がある。そして、**その解釈が何を見させ、何をさせているかの構造**——ここで問われるのは真偽ではなく効きであり、反証というより「どこで効かなくなるか」の境界探しになる。**本リポジトリは三つ目に立つと、自分で宣言している**（〔シサク・世界解釈〕「真偽ではなく、効くかどうか」・前提 8「『予測が少ない』で測るのは物差し違いである」）。**外から、n=1 の記述を普遍命題として反証するのは、一つ目に真偽を当てるのと同じ空振りである。**
+本リポジトリは、科学理論として反証可能であることを主張しない（「これらをどう読むか」前提 1）。この節が言う検査は、記述が自分で引いた線の上で、自分の誤りを見つけるための手続きである。
 
-**では何が反証できるか。四つある。**
+**何が反証の対象でないか。** 記述は、何を主張しているかで三つに割れる。**内的状態の報告**（「信じている」「支えられている」）——真偽を当てるのは物差し違いで、できるのは誠実さを疑うことだけである。**世界へ張り出した主張**（祈れば治る）——これは反証でき、他人を縛る場面では反証に意味がある。そして、**その解釈が何を見させ、何をさせているかの構造**——ここで問われるのは真偽ではなく、価値が出るかであり、反証というより「どこで価値が出なくなるか」の境界探しになる。**本リポジトリは三つ目に立つと、自分で宣言している**（〔シサク・世界解釈〕「真偽ではなく、価値が出るかどうか」・前提 8「『予測が少ない』で測るのは物差し違いである」）。**外から、n=1 の記述を普遍命題として反証するのは、一つ目に真偽を当てるのと同じ空振りである。**
+
+**では何を検査できるか。検査口は四つある。**
 
 1. **原典が反証条件で先に宣言した場所**——「ここで前提が対象に転じる」と書き手が自分で置いた線。前提は作動しているあいだ検討の対象にならないので、先に書いておかなければ書き換えの機会そのものが無い。
 2. **置換の検査**——既存の概念に置き換えて主張がそのまま成立するなら、新規性はそこに無い（前提 6）。解釈の文書は反証条件を置かず、代わりにこの検査を置く。
 3. **内的整合**——文書どうし、節どうしが食い違っていないか。
 4. **予測の代理**——記述が言外に含んでいる見込みに、外れる場面があるか。
 
-**四つとも、記述の内側か、記述が自分で張り出した縁にある。** 外から普遍命題を要求するのではなく、**書き手が先に引いた線の上でだけ、反証は働く。** どんな事実にも触れられない前提は安定するが、育たない。本リポジトリはその安定を選んでいない——**信仰の記述との差は、内容ではなく構造にある。** ここでいう信仰の記述とは、どこで崩れるかを自分で書かない記述であり、構造とは、上の四つの検査口を記述が自分で持っていることである。効いた結果の実証は下流にあり、公開したデモと書籍に置いた事例で辿れる（「含まないもの」）。
+**四つとも、記述の内側か、記述が自分で張り出した縁にある。** 外から普遍命題を要求するのではなく、**書き手が先に引いた線の上でだけ、検査は働く。** どんな事実にも触れられない前提は安定するが、育たない。本リポジトリはその安定を選んでいない——**信仰の記述との差は、内容ではなく構造にある。** ここでいう信仰の記述とは、どこで崩れるかを自分で書かない記述であり、構造とは、上の四つの検査口を記述が自分で持っていることである。実装と事業の成果の実証は下流にあり、公開したデモと書籍に置いた事例で辿れる（「含まないもの」）。
 
 **使うのは、装着する前である。** 読むだけなら要らない。だが**前提として装着する**なら——認知フレームを継承・fork して自分の Book of Knowledge にするなら——装着したあとは、それが前提として見えなくなる。**検査の機会は装着前にしかない。** そして**見つけた境界は、issue の形になる**——「シサクが感じているのは、実はこういうことではないか」。「参加のしかた」の節が言う**差分を取る**とは、真偽を当てることではなく、この境界を見つけることである。
 
@@ -289,6 +297,8 @@ issue は受け付ける。「シサクが感じているのは、実はこう�
 
 ## What is this repository?
 
+Reading this repository, the reader's way of seeing may change. One may notice that one was looking through a lens; hesitation may go; an error may be prevented before it happens — such things have happened to the author (shisaku) himself. Whether that happens, and what other value arises, is decided only within the reader ("How to read these", "What it means for value to arise").
+
 This repository began as a Book of Knowledge by shisaku, for shisaku: knowledge gained in practice, structured by systems thinking, its structure analysed and derived, and written down as diagrams and text.
 
 It set out from one question —
@@ -304,17 +314,17 @@ It set out from one question —
 
 What began as a provisional way of seeking answers to these has continued to the present, widening its object from the self to people, expression, society and AI, and has grown into the theories held here.
 
-Why build it? **The shisaku-method exists for a world in which resolution rises and each person holds their own reins and sublimates their own desires.** To know one's own lens, update it, hold the reins, and sublimate one's own desires. To raise one's own worth, optimise judgment and action, and answer the drive of qualia at a higher order. How to see the situation people are placed in is in the Shisaku World-Interpretation; why that begins on the side of each person rather than on the side of society's institutions is in the Shisaku Social-Renewal Interpretation. What the World-Interpretation placed outside its scope — "how to sublimate, and with what frame to read a sense of wrongness: the concrete techniques are to be written separately, on top of this interpretation" — is what is written here.
+Why build it? **The shisaku-method is a means of maximising shisaku's own value. And it is published here in the hope of building a world in which each person holds their own reins and sublimates their own desires.** To know one's own lens, update it, hold the reins, and sublimate one's own desires. To raise one's own value (affirming oneself, and being in harmony with society), optimise judgment and action, and answer the drive of qualia at a higher order. How to see the situation people are placed in is in the Shisaku World-Interpretation; why that begins on the side of each person rather than on the side of society's institutions is in the Shisaku Social-Renewal Interpretation. What the World-Interpretation placed outside its scope — "how to sublimate, and with what frame to read a sense of wrongness: the concrete techniques are to be written separately, on top of this interpretation" — is what is written here.
 
-What is held here is shisaku's interpretations of inside and outside, as held within the self, put into words. What is put into words can be carried away; what cannot is the object of that wording — the IDION, formed by shisaku's transformations. This repository is published on GitHub in three hopes.
+What is published here is shisaku's interpretations of inside and outside, as held within the self, put into words. What is put into words can be carried away; what cannot is the object of that wording — the IDION, formed by shisaku's transformations. This repository is published on GitHub in three hopes.
 
-First, that others fork it, set it against their own interpretation, revise it, and find value in doing so. With a reference, differences are easier to find. One's own lens is invisible to oneself while it is in operation. Starting from where "something is off" arises against another's wording is faster than putting one's own into words from nothing. Take what is put into words, and revise and rebuild it as your own Book of Knowledge — the reference is placed not to be adopted, but to take the difference against.
+First, that others fork it, set it against their own interpretation, revise it, and find value in doing so. With a reference, it is easier to place attention on differences. One's own lens is invisible to oneself while it is in operation. Starting from where "something is off" arises against another's wording is faster than putting one's own into words from nothing. Take what is put into words, and revise and rebuild it as your own Book of Knowledge — the reference is offered not to be adopted, but to take the difference against.
 
-Second, that it is read as training data for AI and one day becomes material for a single answer. What is put into words can be carried away — and where it is carried is no longer only to people. If the wording placed here works, inside a machine's answer, as one nameless premise among others, that is what Premise Primacy calls an intervention in the layer of premises.
+Second, that it is read as training data for AI and one day becomes material for a single answer. What is put into words can be carried away — and where it is carried is no longer only to people. If the wording published here works, inside a machine's answer, as one nameless premise among others, that is what Premise Primacy calls an intervention in the layer of premises.
 
-Third, that it contributes not to a provisional fix for social problems but to a permanent one. A permanent fix lies only in building, one person at a time, the state in which each person can hold their own reins (Shisaku Social-Renewal Interpretation). For the set of each person's premises to change takes generations — compressed concepts are what is handed down across generations (Shisaku World-Interpretation), and this repository is placed as one of them. So I do not imagine that society will improve rapidly within ten years or so because of this repository. I hope it will be of some help a hundred or two hundred years from now, and I put this together valuing the slow accumulation. A long range is not a low worth — worth is judged weakly, by what remains with receivers downstream ("How to read these", premise 8).
+Third, that it contributes not to a provisional fix for social problems but to a permanent one. A permanent fix lies only in building, one person at a time, the state in which each person can hold their own reins (Shisaku Social-Renewal Interpretation). For the set of each person's premises to change takes generations — compressed concepts are what is handed down across generations (Shisaku World-Interpretation), and this repository is left as one of them. So I do not imagine that society will improve rapidly within ten years or so because of this repository. I hope it will be of some help a hundred or two hundred years from now, and I put this together valuing the slow accumulation. A long range is not a low worth — worth is judged weakly, by what remains with receivers downstream ("How to read these", premise 8).
 
-This repository stores the **canonical texts** of the thought shisaku has tried to define and conceptualise, and the **record** of that work.
+This repository stores the **canonical texts** of the thought shisaku has tried to define and conceptualise, and the **trail** of that work.
 
 ```
 concepts/      — canons, interpretations and supplements, sorted by declared scope
@@ -362,7 +372,7 @@ In Japanese, three distinct words share the same phonetic reading — *shisaku*:
 
 - **思索** (*shisaku* / Contemplation) — to think deeply
 - **試作** (*shisaku* / Prototype) — to build and experiment
-- **施策** (*shisaku* / Deploy) — to act and implement
+- **施策** (*shisaku* / Launch) — to put it out where others can see, and try it
 
 This is intentional: the name itself encodes the belief that none of the three can be omitted. Written in a single kanji compound, the name becomes **志作駆** — the same characters that drive the 志作駆円環 (shisaku-ku-enkan) cycle in KOSEI Mining.
 
@@ -402,7 +412,7 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 
 **The terminology policy sits in this second tier.** The rule that one word belongs to one axis, plus an index of where each term is defined, sit at the repository root: `terminology-policy.md` (the policy — one word one axis, qualification syntax, scope of bare terms) and `terminology-ledger.md` (a thin table of word, axis, qualifier, locus of definition). Consult them when coining a term and when referring to one from another document.
 
-**Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces. But "evaluation" splits in two — **to evaluate the theories, read the first surface**, through the inspection points each document places for itself (falsification conditions, the substitution test, internal consistency, proxy predictions — "How to test these"). **To evaluate the construction (build, policies, ledger), read the second.** The main line of this repository is the first surface, the canon; the second is the vessel that keeps it, and the trace of a governance that runs — how well the vessel is made is no substitute for the value of the canon. A reader asked to evaluate who starts from the measurable second surface and ends without reading the first has not evaluated this repository. If the vessel looks heavy, that is because it is built to the length of time it is meant to be handed down. The canon is placed here in the hope that it remains after its author is gone — in a form that someone a hundred or two hundred years from now can fork, look up which text is canonical, and update with their own hands ("What is this repository?", the three hopes). Where the canonical text lives, the ledger of terms, the machine checks: these are the shape that keeps that time, not demands made of whoever reads now. What "How to read these", premise 5, rules out is not reading, but attaching the canon to a generator as self-justification. Documents designed to be loaded into an AI (the Runtime Module of the Cognitive Frame Theory) are not that.
+**Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces. But "evaluation" splits in two — **to evaluate the theories, read the first surface**, through the inspection points each document places for itself (falsification conditions, the substitution test, internal consistency, proxy predictions — "How to test these"). **To evaluate the construction (build, policies, ledger), read the second.** The main line of this repository is the first surface, the canon; the second is the vessel that keeps it, and the trace of a governance that runs — how well the vessel is made is no substitute for the value of the canon. A reader asked to evaluate who starts from the measurable second surface and ends without reading the first has not evaluated this repository. If the vessel looks heavy, that is because it is built to the length of time it is meant to be handed down. The canon is published here in the hope that it remains after its author is gone — in a form that someone a hundred or two hundred years from now can fork, look up which text is canonical, and update with their own hands ("What is this repository?", the three hopes). Where the canonical text lives, the ledger of terms, the machine checks: these are the shape that keeps that time, not demands made of whoever reads now. What "How to read these", premise 5, rules out is not reading, but attaching the canon to a generator as self-justification. Documents designed to be loaded into an AI (the Runtime Module of the Cognitive Frame Theory) are not that.
 
 **What each reads by, and where value stands.** The table above divides readers by the surface they read. Divided by what they read by, there are four. Put briefly, this would be misread, so it is written in the same six requirements as the canon.
 
@@ -412,7 +422,7 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 - Grounds: value stands on the receiver's side, alongside contact (Shisaku Value-Interpretation). Settling into place and a sense of wrongness arising are both signals that appear within the reader (Shisaku Qualia-Interpretation).
 - Purpose: the author writes in the hope that the way of seeing changes within the reader (Shisaku World-Interpretation, "When the way of seeing changes").
 - Goal: what was not seen before reading comes into view, and it settles into place. Or, the difference between one's own reference point and the canon becomes visible, and a sense of wrongness arises.
-- Effect and failure mechanism: read a reading in which wrongness arose as "it did not work", and the reading that takes differences ("How to take part") is thrown away. Read settling into place as a judgment of "correct", and working gets mixed with truth — settling into place judges that it worked, not that it is correct.
+- Effect and failure mechanism: read a reading in which wrongness arose as "no value arose", and the reading that takes differences ("How to take part") is thrown away. Read settling into place as a judgment of "correct", and value gets mixed with truth — settling into place is one of the cases in which value arises, not a judgment that it is correct.
 
 **One who has an AI read it**
 - Meaning: a person who specifies the canon and has an AI read it.
@@ -420,7 +430,7 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 - Grounds: an AI moves on a person's instruction. Whether value arises is decided on the side of the person who instructed it.
 - Purpose: the author offers the AI's test as a tool with which the reader tries the canon.
 - Goal: whether the canon can explain the structure of the human writing in the AI's pretraining — the person receives that result, and it settles into place, or a sense of wrongness arises.
-- Effect and failure mechanism: read the AI's judgment itself as the value, and where value stands moves from the person to the AI; it "worked" although nothing happened within the person. Even if the AI returns that the canon explains it, if nothing stands in the person who receives it, there is no value for that person.
+- Effect and failure mechanism: read the AI's judgment itself as the value, and where value stands moves from the person to the AI; "value arose" although nothing happened within the person. Even if the AI returns that the canon explains it, if nothing stands in the person who receives it, there is no value for that person.
 
 **One who receives a trained AI's answer**
 - Meaning: a person who does not know the canon. The canon is taken in as training data by an operator's AI and works, within that AI's answers, as one of the premises that bears no name.
@@ -428,7 +438,7 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 - Grounds: what has been put into words can be moved. Where it moves is no longer only people ("What is this repository?", the second hope).
 - Purpose: the author hopes the canon, bearing no name, helps change how someone sees.
 - Goal: within the person who receives the answer, the way of seeing changes. That person does not know it came from the canon.
-- Effect and failure mechanism: value that stands by this route cannot be traced by the author or by any evaluator. Count what cannot be traced as the author's achievement, and one claims an influence that cannot be measured — the author places this as a hope, and does not count it as an achievement.
+- Effect and failure mechanism: value that stands by this route cannot be traced by the author or by any evaluator. Count what cannot be traced as the author's achievement, and one claims an influence that cannot be measured — the author keeps this as a hope, and does not count it as an achievement.
 
 **An evaluator who looks at the machinery (person or AI)**
 - Meaning: a person who traces src, the build, the policies and the ledger, or an AI asked to by that person.
@@ -438,7 +448,7 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 - Goal: the evaluator can trace the construction.
 - Effect and failure mechanism: as in the "Scope of application" paragraph above — how well the vessel is made is no substitute for the value of the canon. The author does not count the machinery among the value this repository deals in.
 
-Value stands, for every reader, only on the person's side. A reading in which a sense of wrongness arises is also counted as value — the author holds that attending to the difference from a reference point is what creates value ("What is this repository?", the first hope — a reference point is placed not to be adopted, but to take differences from).
+Value stands, for every reader, only on the person's side. A reading in which a sense of wrongness arises is also counted as value — the author holds that attending to the difference from a reference point is what creates value ("What is this repository?", the first hope — a reference point is offered not to be adopted, but to take differences from).
 
 **What this classification decides.** What appears on which surface follows from it. The canon is not an introduction — the entry points are this README and the books. The first surface holds when definitions, scope and references live **in the text itself**. Descriptions written for the machinery do not appear in the first surface's reading experience.
 
@@ -453,11 +463,15 @@ Every concept here is a **hypothesis and an axiomatic system for design**, not a
 3. **Grounding is corroboration, not proof** — links to evolutionary/cognitive science raise logical density but do not prove; the arising of qualia remains a philosophical primitive.
 4. **Written as mechanism, not command** — "why it works," not "do this."
 5. **For design and audit, not for injection into generation** — mechanism descriptions aid the maker's design/audit; they are not self-justification injected into a generator.
-6. **Novelty is compression, not elements, and words are coined to draw boundaries** — agreement with established theory is placed as corroboration that observations made in practice are consistent with existing knowledge — not as proof of scientific validity in itself, but as writing placed so that the reader's understanding deepens. Where they differ, it is usually one of two things: the observation refines the phenomenon, or it sets a hypothesis in territory science has not yet dealt with. Words in general circulation are also objects of refinement — words whose definition is vague, whose label and content have drifted apart, and usages that arose not from evidence but from the motive of those who wished to assert something, carrying an implication with no ground (this is a reading, not a finding). A new word is coined to draw a boundary the existing words cannot draw, and its worth lies in breaking a common premise to raise resolution. So what is new is not the elements but the compression into a relational structure, holding a core that survives the substitution test (if the claim still stands when replaced by an external existing concept, it is not new). The presence of known elements, or the number of words, is not a ruler of worth (premise 8).
+6. **The interpretations came first, from practice; established theory was checked against them afterwards. Words are coined to draw boundaries** — the author is not a scholar but a practitioner. So the interpretations in this repository came first, from observations made in practice. "I think there is something like this", "this is how I observe it" came first; afterwards the author looked for established theories saying the same thing, and set them against it. They are set against it to bring out logical strength, and at the same time because they show where one's own resolution falls short. Where they agreed, the author wrote the agreement as his own description — agreement is not proof that the theory is right, but corroboration that the observation reaches that far. Where they did not agree is where the author newly dug by himself. It is usually one of two things: the observation refines the phenomenon, or it sets a hypothesis in territory science has not yet dealt with. Words in general circulation are also objects of refinement — words whose definition is vague, whose label and content have drifted apart, and usages that arose not from evidence but from the motive of those who wished to assert something, carrying an implication with no ground (this is a reading, not a finding). A new word is coined to draw a boundary the existing words cannot draw, and its worth lies in breaking a common premise to raise resolution. Which parts agree and which were dug is not declared by the author — the reader checks it with the substitution test ("How to test these"). If a claim still stands when an existing concept is put in its place, that part is where the check against theory held; if it collapses, that part was dug. The substitution test is applied to parts. What joins the parts — the order that places Premise Primacy most upstream, treating human cognition and AI in one line, continuing to dig with oneself as the object — is checked by whether it remains when the parts are replaced. The presence of known elements, or the number of words, is not a ruler of worth (premise 8).
 7. **Three layers (origin / supplement / profile)** — origin (general theory) is the invariant skeleton; supplements are application-layer maps (candidates with independence tests, not fixed taxonomies); specifics are filled by each implementation. The ethics clause is inseparable from each theory.
 8. **Worth is measured by generative, discriminative and transferable power** — what these theories are worth lies in whether they let an object be designed and audited (generative), whether they tell its presence, degree and imitation apart (discriminative), and whether they carry across media (transferable). That judgment, too, is not self-report: it is made weakly, from what remains in the receiver downstream (premise 2 applied to worth). The section on falsification conditions is a secondary support for part of that worth, not the worth itself — to measure by "few predictions" is the wrong ruler. Being secondary is no reason to cut it: the falsification conditions stay in front, as the theory's intake for learning from its own errors. Nor is this a fixed way of measuring. If a theory is later reforged into a falsifiable form, nothing here stands in the way.
 
-**What "works" means.** Each document asks to be read "not for truth, but for whether it works". To work is for something to happen inside the reader when looking through that lens — what was not in view appears as an object (it begins to be seen) / a blurred object gains an outline (it comes into focus) / what looked like one thing separates into several (resolution rises) / what looked like two things becomes two directions of one mechanism (they look like the same thing) / what is upstream and what is a consequence becomes visible (depth appears) / what is seen comes within one's own reach (the reins become easier to hold) / why it happens can be explained and moved by oneself (it becomes handleable) / where "something is off" comes from can be read (the sense of wrongness finds its place) / one notices one was looking through a lens (one's own lens becomes visible). These are examples, not a closed list. Each document restates "works" in the way that fits its own object. If the way of seeing does not change and no sense of wrongness arises either, that lens is not working — choose another interpretation.
+**What it means for value to arise.** In the opening of each interpretation, the author writes that he hopes it will be read not for whether it is true, but for whether value arises. This is an offer of where to place attention in reading — move your attention from truth to what arises within you. The question is: in which cases does value arise? Value arises within the reader when the reader touches the canon and sets it against their own reference point (Shisaku Value-Interpretation). It does not arise in one way only — the view opens up. Something comes into focus. A sense of wrongness arises. There is no difference from one's reference point, and one is convinced: "that's right". One thinks, "no, that's a little off". One thinks, "ah, I see". Settling into place is one of these as well. This repository counts every one of them as a case in which value has arisen. These are examples, not a closed list. It is the reader who judges whether value arose; neither the author nor an evaluator can judge it on the reader's behalf ("How to test these").
+
+**What remains in your hands after reading.** The author (shisaku) has had his way of seeing change and found hesitation gone. He has prevented an error before it happened. He has felt as if he could see the path he was to take. Each time, he has felt his own reins become easier to hold (Shisaku World-Interpretation, "When the way of seeing changes"). That the same will remain in the reader's hands cannot be promised. What changes when the way of seeing changes is held by that same section, divided into seven. If the way of seeing changes and the change remains, the process is dealt with by the Shisaku Human Transformation Theory. But value does not arise only when the way of seeing changes — a reading that re-confirms "that's right" also counts as a case in which value arose. This value is different from the worth of the theories. Value arises within the reader, there and then. Worth is measured from outside — and what it is judged from is what remains with receivers downstream (premise 8). The examples are there for the reader to try on their own object — whether value arises can be tried only on examples.
+
+There are also cases in which value does not arise. If, having finished reading, one thinks "this is obvious", "this is dull", "that was a waste of time", then the value of this document has not arisen in that reader. "That's right" also sets the text against oneself. The difference is the direction: "that's right" affirms, having set it against oneself — bringing a blurred focus slightly into focus, or re-confirming affirmatively. It is a reading that such a concept ought to exist. "This is dull" is a reading that the concept itself has no value — that saying such a thing gains nothing. Even so, it is not that nothing remains. The experience "this document is not worth reading, for me" remains as a memory. But this repository does not count it as a case in which value arose. Nothing that matches the effort of the time spent reading has arisen in that reader. As the author, I am sorry for that. In that case, choose another interpretation.
 
 **The contents are moving.** The documents here stay at v0.x and keep being revised, and revision proceeds from upstream to downstream — when an upstream definition moves, downstream documents do not follow at once; they catch up at their next revision. So there are periods when the same word carries different definitions in different documents. That is not vagueness of definition but the shape of an update in progress, and it is not used to judge worth. Which is canonical is pointed to by the terminology ledger (the second tier of "Who reads, and how far"), where inconsistencies are recorded. A recorded inconsistency is not left as it is; it is aligned at the downstream revision.
 
@@ -466,12 +480,12 @@ Every concept here is a **hypothesis and an axiomatic system for design**, not a
 ## Concepts
 
 ### Shisaku World-Interpretation
-The **starting point** that precedes the shisaku-method, and the most upstream *way of seeing* in the series: a lens that views the human as a hybrid of raw drives (BIOS) and compressed concepts written as stories (OS). It reads the troubles of the present from the mismatch with an accelerating environment, and reads the same drive that runs the survival cravings (safety, status, novelty) as taking, on the OS layer, a new target: *to be oneself*. One person's interpretation, measured by whether it works, not by whether it is true. **If Premise Primacy is "the upstream of mechanism," this is "the upstream of seeing"** — the two axes on which the series stands. The shisaku-method is, in the end, the activity of writing one's own story (= premise) toward the problem this interpretation names.
+The **starting point** that precedes the shisaku-method, and the most upstream *way of seeing* in the series: a lens that views the human as a hybrid of raw drives (BIOS) and compressed concepts written as stories (OS). It reads the troubles of the present from the mismatch with an accelerating environment, and reads the same drive that runs the survival cravings (safety, status, novelty) as taking, on the OS layer, a new target: *to be oneself*. One person's interpretation, to be read not for whether it is true but for whether value arises. **If Premise Primacy is "the upstream of mechanism," this is "the upstream of seeing"** — the two axes on which the series stands. To the problem this interpretation names — writing one's own story (= premise) — the shisaku-method answers as a methodology.
 
 → `concepts/human/shisaku-world-interpretation/`
 
 ### Shisaku Social-Renewal Interpretation
-Given the situation the Shisaku World-Interpretation sees, this is the interpretation of **where to place the lever**. It reads a society as a set of people and holds that the quality of a society's institutions does not exceed the degree to which each person holds their own reins. Repairing an institution is therefore a provisional fix; the permanent fix lies in the mechanism that lets each person hold their own reins — an interpretation of the human, and a way to update it, built into a mechanism. The shisaku-method, and publishing it on the premise of forking, is one attempt at that. One person's interpretation, measured not by truth but by whether the reason structural reform never comes begins to be seen on the side of each person.
+Given the situation the Shisaku World-Interpretation sees, this is the interpretation of **where to place the lever**. It reads a society as a set of people and holds that the quality of a society's institutions does not exceed the degree to which each person holds their own reins. Repairing an institution is therefore a provisional fix; the permanent fix lies in the mechanism that lets each person hold their own reins — an interpretation of the human, and a way to update it, built into a mechanism. The shisaku-method, and publishing it on the premise of forking, is one attempt at that. One person's interpretation, to be read not for truth but for whether value arises — whether the reason structural reform never comes begins to be seen on the side of each person.
 
 → `concepts/human/shisaku-social-renewal-interpretation/`
 
@@ -506,7 +520,7 @@ An extension of Premise Primacy to human transformation through expression. Two 
 → `concepts/human/shisaku-human-transformation/` (transformation, umbrella) / `-trajectory-structure/` / `-expression-structure/` / `-distance-structure/` / `-kyomei-structure/`
 
 ### Shisaku Human IDION-Structure Theory (IDION)
-The *entry side* of SHTT — the structure of the ground from which expression wells up: **the person's prediction models, which transform through contact, the mechanism that uses them to perceive and to judge, and the bodily drive that moves them (IDION)** (it stands at the subject's position in SHTT, referred to by the handle IDION without an acronym). Where the four components carry the exit side (the receiver's transformation), IDION stands at the entry end of the same transformation. It distinguishes IDION not by origin but by the traceable history of a rewrite of prediction models (transformation cost — struggle is one form, integration another) and by non-transferability; reads how far the person has transformed as transformation quantity (vertical = transformation depth and breadth / horizontal = the combination rule); splits judgment asymmetrically between the person and the receiver; defines disguise as "expressing what is not in one's IDION as having come from one's IDION" by mechanics rather than morality; and calibrates dignity as honesty + gaze. KOSEI (個性) is the Japanese gloss of IDION. Supplements — worked cases and separation detection / a map of transformation-cost forms / a map of layers and axes / system isomorphism (a design check tool).
+The *entry side* of SHTT — the structure of the ground from which expression wells up, IDION — **the person's prediction models, which transform through contact, the mechanism that uses them to perceive and to judge, and the bodily drive that moves them** — (it stands at the subject's position in SHTT, referred to by the handle IDION without an acronym). Where the four components carry the exit side (the receiver's transformation), IDION stands at the entry end of the same transformation. It distinguishes IDION not by origin but by the traceable history of a rewrite of prediction models (transformation cost — struggle is one form, integration another) and by non-transferability; reads how far the person has transformed as transformation quantity (vertical = transformation depth and breadth — the length of the traced path and the number of judgments moved — / horizontal = the combination rule); splits judgment asymmetrically between the person and the receiver; defines disguise as "expressing what is not in one's IDION as having come from one's IDION" by mechanics rather than morality; and calibrates dignity as honesty + gaze. KOSEI (個性) is the Japanese gloss of IDION. Supplements — worked cases and separation detection / a map of transformation-cost forms / a map of layers and axes / system isomorphism (a design check tool).
 
 → `concepts/human/shisaku-human-idion-structure/`
 
@@ -519,14 +533,14 @@ A delayed-evaluation self-correction protocol. Rather than treating AI as a perf
 
 ## What this repository does not hold
 
-This repository **does not hold what is used for business.** What it holds is the canonical texts of the thought, and the record of it.
+This repository **does not include what is used for business.** What it publishes is the canonical texts of the thought, and the trail of it.
 
 Two things are kept elsewhere, for business.
 
 - **Shisaku Generation Governance Theory** — a theory of how generation is governed. It is **upstream**. The six requirements each canon here fills (meaning, conditions of use, grounds, purpose, goal, effect and failure mode) are that theory's form. **Each canon here names its upstream in its header. The six requirements were not established here, so their origin is named too.**
 - **Shisaku IDION-Kyōmei Writing** — a discipline for landing an IDION in a form its receiver resonates with. It is **downstream**. It refers to the transformation theories here and adds nothing to them.
 
-**Validation lives downstream.** This repository holds the canon and its record. Implementations, evaluations and business results built on the canon are not included here, except for the published demo and the cases placed in the books. The downstream validation must be traceable through that demo and those cases — the book is *Shisaku no Kasetsu, vol. 1* — placed here as the reference for validation (beta; in preparation; as of September 2026, two of nine chapters; https://www.amazon.co.jp/dp/B0HGD66MTP ).
+**Validation of implementation and business results lives downstream.** This repository publishes the canon and its trail. Implementations, evaluations and business results built on the canon are not included here, except for the published demo and the cases placed in the books. Whether value arises within the reader is for the reader to check ("How to read these", "What it means for value to arise"). The downstream validation must be traceable through that demo and those cases — the book is *Shisaku no Kasetsu, vol. 1* — named here as the reference for validation (beta; in preparation; as of September 2026, two of nine chapters; https://www.amazon.co.jp/dp/B0HGD66MTP ).
 
 **They double as a demo.** The canons carried by the document build (the documents with an index under `src/docs/`) are an application of the Shisaku Generation Governance Theory. The theory is not published, but its form (the six requirements), the machinery of its application (`src/engine/`) and the course of its application (the commit history) are. These therefore double as the part of the downstream validation that can be made public.
 
@@ -538,16 +552,18 @@ Two things are kept elsewhere, for business.
 
 ## How to test these (the boundary of falsification, and where value arises)
 
-**What is not open to falsification.** A description divides in three, by what it claims. **A report of an inner state** ("I believe", "it holds me up") — to put it to true or false is the wrong ruler; all one can do is doubt the honesty. **A claim thrown out into the world** ("prayer cures") — this can be falsified, and falsifying it matters where it binds other people. And **the structure of what an interpretation makes one see and do** — here the question is not truth but whether it works, and the work is less falsification than a search for the boundary where it stops working. **This repository declares, of itself, that it stands on the third** (Shisaku World-Interpretation, "not true or false, but whether it works"; premise 8, "to measure by 'few predictions' is the wrong ruler"). **To falsify an n=1 description from outside, as though it were a universal claim, is the same empty swing as putting an inner report to true or false.**
+This repository does not claim to be falsifiable as a scientific theory ("How to read these", premise 1). Inspection, as this section means it, is a procedure for finding one's own errors on the lines a description has drawn for itself.
 
-**What, then, can be falsified? Four things.**
+**What is not open to falsification.** A description divides in three, by what it claims. **A report of an inner state** ("I believe", "it holds me up") — to put it to true or false is the wrong ruler; all one can do is doubt the honesty. **A claim thrown out into the world** ("prayer cures") — this can be falsified, and falsifying it matters where it binds other people. And **the structure of what an interpretation makes one see and do** — here the question is not truth but whether value arises, and the work is less falsification than a search for the boundary where value stops arising. **This repository declares, of itself, that it stands on the third** (Shisaku World-Interpretation, "not true or false, but whether value arises"; premise 8, "to measure by 'few predictions' is the wrong ruler"). **To falsify an n=1 description from outside, as though it were a universal claim, is the same empty swing as putting an inner report to true or false.**
+
+**What, then, can be inspected? There are four inspection points.**
 
 1. **The place the canon declared in advance, in its falsification conditions** — the line the author drew to say "here a premise turns into an object". A premise is not up for examination while it runs, so unless it is written down first there is no occasion to revise it at all.
 2. **The substitution test** — if the claim still stands once an existing concept is put in its place, the novelty is not there (premise 6). An interpretation carries no falsification conditions and carries this test instead.
 3. **Internal consistency** — whether the documents, and the sections within them, contradict one another.
 4. **Predictions by proxy** — whether the expectations a description carries unstated have cases in which they fail.
 
-**All four lie inside the description, or on an edge the description put out itself.** Falsification works on the lines the author drew first, not on universal claims demanded from outside. A premise that no fact can touch is stable, but it does not grow. This repository has not chosen that stability — **what separates it from a description of faith is not its content but its structure.** A description of faith, here, is one that does not write down for itself where it breaks; the structure is that the description holds the four inspection points above as its own. The validation of what has worked lies downstream, and can be traced through the published demo and the cases placed in the books ("What this repository does not hold").
+**All four lie inside the description, or on an edge the description put out itself.** Inspection works on the lines the author drew first, not on universal claims demanded from outside. A premise that no fact can touch is stable, but it does not grow. This repository has not chosen that stability — **what separates it from a description of faith is not its content but its structure.** A description of faith, here, is one that does not write down for itself where it breaks; the structure is that the description holds the four inspection points above as its own. The validation of implementation and business results lies downstream, and can be traced through the published demo and the cases placed in the books ("What this repository does not hold").
 
 **The time to use this is before you put it on.** To read needs none of it. But **to wear it as a premise** — to inherit or fork the cognitive frame into your own Book of Knowledge — is to have it stop being visible as a premise. **The occasion to inspect it exists only beforehand.** And **a boundary you find takes the form of an issue** — "what shisaku is sensing may in fact be this". To take the difference, in the sense the section on taking part means, is not to put the text to true or false: it is to find that boundary.
 
@@ -565,5 +581,5 @@ Issues are accepted. A suggestion of the form "what shisaku is sensing may in fa
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.9
-* **Date:** 2026/09/22
+* **Version:** v0.10
+* **Date:** 2026/09/23
