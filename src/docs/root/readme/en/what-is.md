@@ -7,7 +7,7 @@ The shisaku-method is the methodology shisaku uses to perceive and interpret the
 
 What marks it is not systems thinking as such. It is that what to attend to, and what to capture as an event, is decided first. That attention does not come from applying an existing theory as it stands; it rests on a cognitive frame of shisaku's own, formed in practice and experience.
 
-Given the same event, a different attention and a different capture yield a different object of structuring, and a different structure and solution derived from it. So no existing theory is applied first. First, attend to an event or a sense of wrongness that arose in practice; capture it; structure it. To put an existing theory first is to let its attention and its categories fix the very perception of what counts as an event, and to lead the downstream interpretation without its ever being checked against one's own experience.
+Given the same event, a different attention and a different capture yield a different object of structuring, and a different structure and solution derived from it. So no existing theory is applied first. First, attend to an event or a sense of wrongness that arose in practice; capture it; structure it. To put an existing theory first is to let its attention and its categories fix the very perception of what counts as an event, and to lead the downstream interpretation without its ever being checked against one's own experience (Premise Primacy's attention primacy).
 
 On that basis the captured structure is analysed, and a structure further upstream is derived from it. The flow is —
 
