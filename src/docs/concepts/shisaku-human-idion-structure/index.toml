@@ -7,12 +7,12 @@ output = "{{path:shisaku-human-idion-structure}}ja/shisaku-human-idion-structure
 title    = "シサク・ヒト IDION 構造理論"
 subtitle = "Shisaku Human IDION-Structure Theory"
 author   = "shisaku"
-upstream = "シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈"
-version  = "v0.3.1"
-date     = "2026/09/22"
+upstream = "シサク・ヒト変容理論 → 前提優位理論／最上流：シサク・世界解釈"
+version  = "v0.3.2"
+date     = "2026/09/25"
 canonical      = "{{url:shisaku-human-idion-structure}}"
 copyright_year = "2026"
-license_intro  = "This document (Shisaku Human IDION-Structure Theory) is the entry-side component of the Shisaku Human Transformation Theory (SHTT) family — the structure of the expresser's own core (IDION) formed by the set of their transformations — authored by shisaku. It is released for others to study, adapt, and implement. Any expression built on this theory carries the transparency, opt-in, and updatability discipline set out in Premise Primacy (§7)."
+license_intro  = "This document (Shisaku Human IDION-Structure Theory) is the entry-side component of the Shisaku Human Transformation Theory family — the structure of the expresser's own core (IDION) formed by the set of their transformations — authored by shisaku. It is released for others to study, adapt, and implement. Any expression built on this theory carries the transparency, opt-in, and updatability discipline set out in Premise Primacy (§7)."
 
 [numbering]
 enabled = true
@@ -42,7 +42,7 @@ groups = [
   ["application/ethics"],
   ["document/novelty"],
   ["subject/discriminators", "document/six-requirements"],
-  ["document/naming", "document/open-items"],
+  ["document/open-items"],
   ["shared:meta/colophon"],
   ["shared:license/cc-by-4.0"],
 ]
