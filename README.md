@@ -15,6 +15,8 @@
 
 システムの世界では、こうした形の多くを、RASIS（信頼性・可用性・保守性・保全性・機密性）という概念で扱う。仕組みを安定して運用するための概念である。著者は、プロジェクトマネージャーとして組織を見たとき、これを、組織を安定して運用するためのレンズとして用いた。組織もシステムも、本質は同じ「仕組み」だと見たからである。そう見ると、組織の困りごとは、誰かの性格や努力の問題でなく、仕組みの形として説明がつき、どこに手を打てばよいかが見えてくる。
 
+著者は、20 代のころから、時に、人間を「仕組み」として見ることもできた。生物の進化を遺伝子の単位で語ったドーキンスと、意識の進化を論じたハンフリーを読んで、人文学のレンズとは別に、自然科学のレンズで自分を見ることを覚えていたからだ。その素養が失敗の構造解析と重なって、人間という仕組みの解析は深化し、RASIS と組織の同型を見てから、一気に進んだ。ここで公開しているのは、その見方を自分自身と人間へ向け、日常の実践に落とせるように構造化した理論である。
+
 このリポジトリを読んで、読み手の見え方が変わることがある。見ていたのがレンズ越しだったと気づくことも、迷いがなくなることも、誤りを未然に防げることもある——著者（シサク）自身には、そういうことが起きてきた。それが起きるか、ほかにどんな価値が出るかは、読み手の中でしか決まらない（「これらをどう読むか」の「価値が出るとは何か」）。
 
 これは、実践の中で得られた知をシサクがシステム思考によって構造化し、その構造を解析・導出し、図や文章として記述している、シサクによるシサクのための Book of Knowledge として始まったリポジトリである。
@@ -308,6 +310,8 @@ Have you, for instance, met scenes like these at work? When that one person is o
 The author (shisaku), as an infrastructure engineer, has seen the same shapes again and again in system failures. One machine stops, and the whole stops. Load piles onto a single machine. Data that lived only in memory disappears on a restart. The same data exists in several copies, and it becomes unclear which is correct. Machines with different conventions (protocols) cannot talk to each other unless something translates between them.
 
 In the world of systems, many of these shapes are handled with a concept called RASIS (reliability, availability, serviceability, integrity, security) — a concept for running a mechanism stably. When the author looked at organisations as a project manager, he used it as a lens for running an organisation stably, because he saw organisations and systems as, at bottom, the same thing: a mechanism. Seen that way, an organisation's troubles become explicable not as matters of someone's character or effort but as the shape of a mechanism, and where to act comes into view.
+
+From his twenties, the author could at times also see people as a "mechanism". Reading Dawkins, who told the evolution of living things at the level of the gene, and Humphrey, who discussed the evolution of consciousness, he had learned to look at himself through the lens of natural science, alongside the lens of the humanities. That grounding met the structural analysis of failure, the analysis of people as a mechanism deepened, and once he saw the isomorphism between RASIS and organisations, it moved forward all at once. What is published here is theory that turns that way of seeing towards oneself and towards people, structured so that it can be put into everyday practice.
 
 Reading this repository, the reader's way of seeing may change. One may notice that one was looking through a lens; hesitation may go; an error may be prevented before it happens — such things have happened to the author (shisaku) himself. Whether that happens, and what other value arises, is decided only within the reader ("How to read these", "What it means for value to arise").
 
