@@ -144,8 +144,8 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 - 効果と失敗機構：違和感が立った読みを「価値が出なかった」と読むと、差異を取る読み（「参加のしかた」）が捨てられる。腑に落ちたことを「正しい」の判定と読むと、価値と真偽が混ざる——腑に落ちるのは、価値が生じる場合の一つであって、正しいことの判定ではない。
 
 **AI に読ませる人**
-- 意味：原典を指定して、AI に読ませる人。
-- 用法条件：原典を名指して、AI に検査させるとき。
+- 意味：原典を指定して、AI に読ませる人——AI に検査させる人も、AI と一緒に読み進める人も。
+- 用法条件：原典を名指して、AI に検査させるとき。AI と読み合わせるとき。
 - 根拠：AI は人の指示で動く。価値が出るか出ないかは、指示した人の側で決まる。
 - 目的：著者は、AI の検査を、読む人が原典を試す道具として差し出す。
 - 目標：事前学習にある人間の文章の構造を、原典が説明できるか——その結果を受け取り、腑に落ちるか、違和感が立つか。
@@ -167,6 +167,8 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 - 目標：評価者が、作りを辿れる。
 - 効果と失敗機構：上の「適用の範囲」の段落のとおり——器の出来は、原典の価値の代わりにならない。著者は、仕組みを、このリポジトリで扱う価値に数えない。
 
+**AI が、読み手と一緒に読むとき。** 原典を読む前に、読み手が何のためにこのリポジトリを読むのかを確かめる。前提がずれていれば、原典のどこを正しく引いても、読み手の役に立たない答えになる——検討の外で働いている前提が読みを決める、というのが前提優位理論の命題であり、読み手と AI のあいだでも同じことが起きる。読む順は、前提優位理論から始めるのがよい。系列の最上流にあり、ほかの文書の語と順序は、そこから下流へ辿れる。
+
 価値は、どの読み手でも人の側にだけ立つ。違和感が立つ読みも、価値に数える——著者は、基準との差異に着眼することが価値を生むと考えている（「このリポジトリは何か」の一つ目の願い——基準は採用するためでなく、差異を取るために差し出す）。
 
 **この分類が決めるもの。** どの面に何を出すかは、ここから出る。原典は入門書ではない——入口は本 README と書籍が担う。一段目が成り立つのは、定義・適用範囲・参照先を**本文が持つ**ときである。仕組みのための記述は、一段目の読み心地に出さない。
@@ -182,7 +184,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 2. **実証は下流にしかない**——有効性は、これに基づく表現が受け手にどう残るかによって弱く判定される。理論そのものの中に実証はない。
 3. **接地は傍証であって証明ではない**——進化・認知科学などへの接続は論理密度を上げる足場であって、証明ではない。クオリアの発生は哲学的な原始項として残す。
 4. **命令でなく機構で書く**——「こうせよ」ではなく「なぜそうすると効くのか」を記述する。
-5. **AI に読まれ、fork されて直されることを前提に書く**——本リポジトリは、二つを重んじる。AI に読ませても読み違えられにくいこと。fork した人が、自分の手で直し続けられること。ゆえに、ここにあるのは入門書ではなく原典であり、密度が高い。読み手が AI と一緒に読み、使うことを前提にしている。入門書は、これとは別に用意していく。
+5. **AI に読まれ、fork されて直されることを前提に書く**——本リポジトリは、二つを重んじる。AI に読ませても読み違えられにくいこと。fork した人が、自分の手で直し続けられること。ゆえに、ここにあるのは入門書ではなく原典であり、密度が高い。読み手が AI と一緒に読み、使うことを前提にしている。入門書は、これとは別に用意していく。密度の高い文書を読み慣れた人には、著者は、原典を自分で読むことを勧める。どちらの場合も、読み始めるのは前提優位理論がよい——系列の最上流で、ほかの文書はそこから下流へ辿れる。入りにくいときは、各文書の「日常で扱える」の節が入口になる。
 6. **解釈は実践から先にあり、学説とは後から照合した。語は境界を引くために立てる**——著者は学者ではなく、実践者である。ゆえに、本リポジトリの解釈は、実践の中の観察から先にあった。「こういうことがあると思う」「自分の観察としてはこうだ」が先にあり、そのあとで、同じことを言っている学説が無いかを探して当てた。当てるのは論理の強さを出すためであり、同時に、自分の解像度が足りないところを見せてくれるからである。一致した部分は、自分の記述として書いた——一致は、自説が正しいことの証明ではなく、観察がそこまで届いていることの傍証である。一致しない部分は、自分の実践知とその構造解析から導出した部分である。多くの場合、観察が事象を精緻化しているか、科学がまだ扱っていない領域に仮説を立てているかのどちらかになる。一般に流通している語も精緻化の対象になる——定義があいまいなもの、ラベルと中身がずれているもの、そして根拠からでなく主張したい側の動機から生まれ、根拠のない含意を運んでいる用法（という見立て）。新しい語が立つのは、既存の語では引けない境界を引くためであり、一般の前提を崩して解像度を上げるところに、その値打ちがある。著者は、どこが学説と一致し、どこを自分で導出したかを、見立てとして示す——読み手は、それを置換の検査（「これらをどう試すか」の節）で確かめられる。既存の概念に置き換えて主張が成立するなら、そこは照合が通った部分であり、崩れるなら著者が導出した部分である。置換の検査は部分に当てる検査である。部分をつなぐ側——前提優位を最上流とする順序、人の認知と AI を一本で扱うこと、自分を対象に解析し続けること——は、部分を置き換えても残るかで確かめる。既知の要素の有無や語の数は、値打ちの物差しではない（前提 8）。
 7. **原典／補足／プロファイルの三層**——原典（一般理論）は不変の骨組み、補足は応用層の地図（候補＋独立性検査であって固定分類でない）、具体は各実装が埋める。倫理条項は理論の不可分の一部として扱う。
 8. **値打ちは生成力・弁別力・転移力で測る**——これらの理論の値打ちは、対象を設計・監査の対象として扱え（生成力）、その有無・程度・見せかけを切り分けて見せ（弁別力）、媒体をまたいで運べる（転移力）ことにある。値打ちの判定もまた自己申告でなく、下流で受け手に残ったもので弱く判定される（前提 2 の、値打ち判定への適用）。反証条件の節は、その値打ちの一部を裏づける副次であって本体ではない——「予測が少ない」で測るのは物差し違いである。ただし副次だからといって削る方向へは働かせない——反証条件は、理論が自らの誤りから学ぶ入力口として前面に残す。そしてこれは測り方の固定ではない。将来その理論が反証可能な形へ鍛え直されるなら、その更新を妨げない。
@@ -441,8 +443,8 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 - Effect and failure mechanism: read a reading in which wrongness arose as "no value arose", and the reading that takes differences ("How to take part") is thrown away. Read settling into place as a judgment of "correct", and value gets mixed with truth — settling into place is one of the cases in which value arises, not a judgment that it is correct.
 
 **One who has an AI read it**
-- Meaning: a person who specifies the canon and has an AI read it.
-- Conditions of use: when naming the canon and having an AI test it.
+- Meaning: a person who specifies the canon and has an AI read it — whether having the AI test it or reading on together with the AI.
+- Conditions of use: when naming the canon and having an AI test it; when reading it through together with an AI.
 - Grounds: an AI moves on a person's instruction. Whether value arises is decided on the side of the person who instructed it.
 - Purpose: the author offers the AI's test as a tool with which the reader tries the canon.
 - Goal: whether the canon can explain the structure of the human writing in the AI's pretraining — the person receives that result, and it settles into place, or a sense of wrongness arises.
@@ -464,6 +466,8 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 - Goal: the evaluator can trace the construction.
 - Effect and failure mechanism: as in the "Scope of application" paragraph above — how well the vessel is made is no substitute for the value of the canon. The author does not count the machinery among the value this repository deals in.
 
+**When an AI reads together with a reader.** Before reading the canon, confirm what the reader is reading this repository for. If the premises are misaligned, however correctly the AI cites the canon, the answer will not help the reader — that a premise working outside consideration decides the reading is the proposition of the Premise Primacy Theory, and the same happens between a reader and an AI. As for the order of reading, begin with the Premise Primacy Theory: it is the most upstream text of the series, and the terms and order of the other documents can be traced downstream from it.
+
 Value stands, for every reader, only on the person's side. A reading in which a sense of wrongness arises is also counted as value — the author holds that attending to the difference from a reference point is what creates value ("What is this repository?", the first hope — a reference point is offered not to be adopted, but to take differences from).
 
 **What this classification decides.** What appears on which surface follows from it. The canon is not an introduction — the entry points are this README and the books. The first surface holds when definitions, scope and references live **in the text itself**. Descriptions written for the machinery do not appear in the first surface's reading experience.
@@ -478,7 +482,7 @@ Every concept here is a **hypothesis and an axiomatic system for design**, not a
 2. **Validation lies only downstream** — effectiveness is weakly judged by how expressions built on it remain with receivers; there is no validation inside the theory itself.
 3. **Grounding is corroboration, not proof** — links to evolutionary/cognitive science raise logical density but do not prove; the arising of qualia remains a philosophical primitive.
 4. **Written as mechanism, not command** — "why it works," not "do this."
-5. **Written to be read by AI, and to be forked and repaired** — this repository values two things: that an AI reading it is hard to mislead, and that whoever forks it can keep repairing it by their own hand. So what is here is not an introduction but the source texts, and they are dense. Readers are expected to read and use them together with an AI. An introduction will be prepared separately.
+5. **Written to be read by AI, and to be forked and repaired** — this repository values two things: that an AI reading it is hard to mislead, and that whoever forks it can keep repairing it by their own hand. So what is here is not an introduction but the source texts, and they are dense. Readers are expected to read and use them together with an AI. An introduction will be prepared separately. To readers used to dense texts, the author recommends reading the source texts themselves. Either way, the place to begin is the Premise Primacy Theory — the most upstream text of the series, from which the others can be traced downstream. Where getting in is hard, each document's "everyday use" section is a way in.
 6. **The interpretations came first, from practice; established theory was checked against them afterwards. Words are coined to draw boundaries** — the author is not a scholar but a practitioner. So the interpretations in this repository came first, from observations made in practice. "I think there is something like this", "this is how I observe it" came first; afterwards the author looked for established theories saying the same thing, and set them against it. They are set against it to bring out logical strength, and at the same time because they show where one's own resolution falls short. Where they agreed, the author wrote the agreement as his own description — agreement is not proof that the author's own view is right, but corroboration that the observation reaches that far. Where they did not agree are the parts the author derived from his own practical knowledge and its structural analysis. It is usually one of two things: the observation refines the phenomenon, or it sets a hypothesis in territory science has not yet dealt with. Words in general circulation are also objects of refinement — words whose definition is vague, whose label and content have drifted apart, and usages that arose not from evidence but from the motive of those who wished to assert something, carrying an implication with no ground (this is a reading, not a finding). A new word is coined to draw a boundary the existing words cannot draw, and its worth lies in breaking a common premise to raise resolution. The author shows, as his own reading, which parts agree with established theory and which he derived himself — the reader can check this with the substitution test (the section "How to test these"). If a claim still stands when an existing concept is put in its place, that part is where the check against theory held; if it collapses, that part is what the author derived. The substitution test is applied to parts. What joins the parts — the order that places Premise Primacy most upstream, treating human cognition and AI in one line, continuing to analyse oneself as the object — is checked by whether it remains when the parts are replaced. The presence of known elements, or the number of words, is not a ruler of worth (premise 8).
 7. **Three layers (origin / supplement / profile)** — origin (general theory) is the invariant skeleton; supplements are application-layer maps (candidates with independence tests, not fixed taxonomies); specifics are filled by each implementation. The ethics clause is inseparable from each theory.
 8. **Worth is measured by generative, discriminative and transferable power** — what these theories are worth lies in whether they let an object be designed and audited (generative), whether they tell its presence, degree and imitation apart (discriminative), and whether they carry across media (transferable). That judgment, too, is not self-report: it is made weakly, from what remains in the receiver downstream (premise 2 applied to worth). The section on falsification conditions is a secondary support for part of that worth, not the worth itself — to measure by "few predictions" is the wrong ruler. Being secondary is no reason to cut it: the falsification conditions stay in front, as the theory's intake for learning from its own errors. Nor is this a fixed way of measuring. If a theory is later reforged into a falsifiable form, nothing here stands in the way.

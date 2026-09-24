@@ -26,8 +26,8 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 - Effect and failure mechanism: read a reading in which wrongness arose as "no value arose", and the reading that takes differences ("How to take part") is thrown away. Read settling into place as a judgment of "correct", and value gets mixed with truth — settling into place is one of the cases in which value arises, not a judgment that it is correct.
 
 **One who has an AI read it**
-- Meaning: a person who specifies the canon and has an AI read it.
-- Conditions of use: when naming the canon and having an AI test it.
+- Meaning: a person who specifies the canon and has an AI read it — whether having the AI test it or reading on together with the AI.
+- Conditions of use: when naming the canon and having an AI test it; when reading it through together with an AI.
 - Grounds: an AI moves on a person's instruction. Whether value arises is decided on the side of the person who instructed it.
 - Purpose: the author offers the AI's test as a tool with which the reader tries the canon.
 - Goal: whether the canon can explain the structure of the human writing in the AI's pretraining — the person receives that result, and it settles into place, or a sense of wrongness arises.
@@ -48,6 +48,8 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 - Purpose: the author hopes the canon remains in a form in which one can look up which text is canonical and update it with one's own hands.
 - Goal: the evaluator can trace the construction.
 - Effect and failure mechanism: as in the "Scope of application" paragraph above — how well the vessel is made is no substitute for the value of the canon. The author does not count the machinery among the value this repository deals in.
+
+**When an AI reads together with a reader.** Before reading the canon, confirm what the reader is reading this repository for. If the premises are misaligned, however correctly the AI cites the canon, the answer will not help the reader — that a premise working outside consideration decides the reading is the proposition of the Premise Primacy Theory, and the same happens between a reader and an AI. As for the order of reading, begin with the Premise Primacy Theory: it is the most upstream text of the series, and the terms and order of the other documents can be traced downstream from it.
 
 Value stands, for every reader, only on the person's side. A reading in which a sense of wrongness arises is also counted as value — the author holds that attending to the difference from a reference point is what creates value ("What is this repository?", the first hope — a reference point is offered not to be adopted, but to take differences from).
 
