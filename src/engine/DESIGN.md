@@ -723,9 +723,11 @@ ja/
 │   ├── premise-as-state.md                    前提とは、予測モデルが前提として作動している状態である
 │   ├── wording.md                             言語化は、実体を移さない
 │   ├── example-fj.md                          F と J の突起
-│   └── human-side.md                          ヒトの予測モデルは、身体を持つ
-├── naming.md                               3  系列の中で、この語をこう名指す
-└── substitution-test.md                    4  置換の検査
+│   ├── human-side.md                          ヒトの予測モデルは、身体を持つ
+│   └── human-structure.md                     身体の内にあるのは、その人の内で予測されたモデルである
+├── everyday.md                             3  日常で扱える
+├── naming.md                               4  系列の中で、この語をこう名指す
+└── substitution-test.md                    5  置換の検査
 ```
 
 - **第2節の子は `numbered = false`。** 解釈の本論は節の数と粒度が文書に任されており（規約「解釈の必須様式」）、番号は身元にならない。

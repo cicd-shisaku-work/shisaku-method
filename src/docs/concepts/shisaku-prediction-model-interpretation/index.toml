@@ -30,6 +30,7 @@ groups = [
   ["interpretation", "interpretation/expectation-first", "interpretation/premise-as-state",
    "interpretation/wording", "interpretation/example-fj", "interpretation/human-side",
    "interpretation/human-structure"],
+  ["everyday"],
   ["naming"],
   ["substitution-test"],
   ["shared:meta/colophon"],

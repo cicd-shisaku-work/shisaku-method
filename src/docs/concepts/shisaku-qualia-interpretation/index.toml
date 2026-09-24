@@ -30,6 +30,7 @@ groups = [
   ["interpretation", "interpretation/signal", "interpretation/dimensions",
    "interpretation/reduction", "interpretation/recursion",
    "interpretation/example-music", "interpretation/human-side"],
+  ["everyday"],
   ["naming"],
   ["substitution-test"],
   ["shared:meta/colophon"],
