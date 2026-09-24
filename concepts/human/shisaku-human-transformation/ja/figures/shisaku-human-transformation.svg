@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・ヒト変容理論 (Shisaku Human Transformation Theory — SHTT) v0.2
-  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
+  シサク・ヒト変容理論 (Shisaku Human Transformation Theory — SHTT) v0.3.1
+  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙／IDION=葡萄色／駆動=赤褐）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
   Author: https://note.com/abstraction
@@ -51,12 +51,12 @@
 
   <!-- Title -->
   <text class="title" x="540" y="38" font-size="25" text-anchor="middle">シサク・ヒト変容理論</text>
-  <text class="sub" x="540" y="60" font-size="14" text-anchor="middle">Shisaku Human Transformation Theory — SHTT（v0.2）</text>
+  <text class="sub" x="540" y="60" font-size="14" text-anchor="middle">Shisaku Human Transformation Theory — SHTT（v0.3.1）</text>
   <text class="sub" x="540" y="80" font-size="12.5" text-anchor="middle">二相＝入口（IDION）／出口（四成分）　／　同じ変容が両端に立つ　／　帰趨＝残存／変容の二値が通し軸　／　上流依存＝前提優位理論</text>
 
   <!-- naming rule (top-right) -->
-  <text class="footR" x="1040" y="104">略号：上位＝SHTT／成分＝SH＋頭字＋ST</text>
-  <text class="footR" x="1040" y="118">軌跡 SHTST・表現 SHEST・距離 SHDST・共鳴 SHKST／IDION は略号なし（把手）</text>
+  <text class="footR" x="1040" y="104">四成分＝シサク・ヒト軌跡構造理論・シサク・ヒト表現構造理論</text>
+  <text class="footR" x="1040" y="118">シサク・ヒト距離構造理論・シサク・ヒト共鳴構造理論</text>
 
   <!-- Premise Primacy -->
   <rect class="c-prem" x="44" y="96" width="176" height="40" rx="7"/>
@@ -69,31 +69,31 @@
   <text class="ann" x="1012" y="152" font-size="11" font-weight="700" fill="#2f7d7d" text-anchor="end">【出口】</text>
 
   <!-- Pipeline row -->
-  <!-- 主体 = 駆動層 + 核(IDION) + 両端点 -->
+  <!-- 主体 = IDION(予測モデル・機構・身体駆動) + 両端点 -->
   <rect class="c-idion" x="44" y="158" width="176" height="96" rx="8"/>
   <text class="nlbl" x="132" y="180" fill="#6b2d3e">主体</text>
-  <text class="nsub" x="132" y="196" fill="#6b2d3e">核＝IDION（着眼・判定軸・宛先）</text>
+  <text class="nsub" x="132" y="196" fill="#6b2d3e">IDION（着眼・判定軸・宛先）</text>
   <rect class="c-drive" x="60" y="204" width="144" height="18" rx="4"/>
-  <text class="nsub" x="132" y="217" fill="#a3472a" font-size="10">駆動層（力・欲望・核の下）</text>
+  <text class="nsub" x="132" y="217" fill="#a3472a" font-size="10">身体駆動（力・欲望）</text>
   <text class="nsub" x="132" y="240" fill="#5b6b7a" font-size="10">＋両端点（距離）・個人／集合</text>
   <!-- 軌跡 -->
   <rect class="c-traj" x="242" y="168" width="176" height="76" rx="8"/>
-  <text class="nlbl" x="330" y="192">軌跡 <tspan font-size="12" fill="#3a6a8a">SHTST</tspan></text>
+  <text class="nlbl" x="330" y="192">軌跡</text>
   <text class="nsub" x="330" y="212">何を体験させ何を変容させるか</text>
   <text class="nsub" x="330" y="228" fill="#3a6a8a">落差・予測配置</text>
   <!-- 表現 -->
   <rect class="c-expr" x="440" y="168" width="176" height="76" rx="8"/>
-  <text class="nlbl" x="528" y="192">表現 <tspan font-size="12" fill="#4a7a4a">SHEST</tspan></text>
+  <text class="nlbl" x="528" y="192">表現</text>
   <text class="nsub" x="528" y="212">どう実装するか</text>
   <text class="nsub" x="528" y="228" fill="#4a7a4a">基体×構成操作・IDION 依存</text>
   <!-- 距離 -->
   <rect class="c-dist" x="638" y="168" width="176" height="76" rx="8"/>
-  <text class="nlbl" x="726" y="192">距離 <tspan font-size="12" fill="#6a5a8a">SHDST</tspan></text>
+  <text class="nlbl" x="726" y="192">距離</text>
   <text class="nsub" x="726" y="212">何が届き何が届かないか</text>
   <text class="nsub" x="726" y="228" fill="#6a5a8a">多次元の距離・場・接触後の更新</text>
   <!-- 共鳴 -->
   <rect class="c-kyo" x="836" y="168" width="176" height="76" rx="8"/>
-  <text class="nlbl" x="924" y="192">共鳴 <tspan font-size="12" fill="#2f7d7d">SHKST</tspan></text>
+  <text class="nlbl" x="924" y="192">共鳴</text>
   <text class="nsub" x="924" y="212">実際に何が鳴ったか</text>
   <text class="nsub" x="924" y="228" fill="#2f7d7d">受容・帰趨の機構（受け手側）</text>
 
@@ -107,7 +107,7 @@
   <text class="annC" x="528" y="262" font-size="10.5" fill="#6b2d3e">IDION は共鳴の必要条件でなく、影響する上流条件（受け手の防衛を貫きやすい・偽装は弾かれやすい／入口と出口の量的対応は仮定しない）</text>
 
   <!-- Eight stages strip (両端共通) -->
-  <text class="ann" x="44" y="292" font-weight="700" fill="#3a4a55">両端共通の過程＝八段（正本 SHTT §1・詳細は補足 shtt-process-stages.md）</text>
+  <text class="ann" x="44" y="292" font-weight="700" fill="#3a4a55">両端共通の過程＝八段（正本＝原典「命題と、変容の定義」の節・詳細は補足〔shtt-process-stages.md〕）</text>
   <g>
     <rect class="c-stage" x="44" y="300" width="112" height="46" rx="6"/>
     <text class="stg" x="100" y="318">0 接触</text><text class="stgs" x="100" y="333">四成分・刺激源</text>
@@ -118,7 +118,7 @@
     <rect class="c-stage" x="410" y="300" width="112" height="46" rx="6" stroke="#2f7d7d"/>
     <text class="stg" x="466" y="318">3 照合段</text><text class="stgs" x="466" y="333">四枡・当たった水準</text>
     <rect class="c-stage" x="532" y="300" width="112" height="46" rx="6" stroke="#a3472a" stroke-width="1.8"/>
-    <text class="stg" x="588" y="318" fill="#a3472a">4 承認段＝関門</text><text class="stgs" x="588" y="333">検知→候補の核→承認</text>
+    <text class="stg" x="588" y="318" fill="#a3472a">4 承認段＝関門</text><text class="stgs" x="588" y="333" style="font-size:8px">検知→候補の予測モデル→承認</text>
     <rect class="c-stage" x="654" y="300" width="112" height="46" rx="6" stroke="#b07a3a"/>
     <text class="stg" x="710" y="318">5 書き換え段</text><text class="stgs" x="710" y="333">変容深度・変容広さ</text>
     <rect class="c-stage" x="776" y="300" width="112" height="46" rx="6" stroke="#b07a3a"/>
@@ -141,7 +141,7 @@
   <!-- loops -->
   <!-- self loop (IDION side) -->
   <path class="loopI" d="M955,346 L1052,346 L1052,136 L132,136 L132,158" marker-end="url(#arrowIdion)"/>
-  <text class="idn" x="560" y="132" font-size="10.5">自己ループ：新しい核が次の照合の基準（折り返し段・両端とも）</text>
+  <text class="idn" x="560" y="132" font-size="10.5">自己ループ：新しい予測モデルが次の照合の基準（折り返し段・両端とも）</text>
   <!-- outer loop (receiver becomes next subject) -->
   <path class="loopK" d="M1012,206 L1064,206 L1064,522 L26,522 L26,206 L44,206" marker-end="url(#arrowKyo)"/>
   <text class="ann" x="62" y="536" font-size="11" fill="#2f7d7d">外側ループ：受け手の反応 → 表現者への次の接触／受け手が次の主体になる（再拡散・独り言＝自己と同一）</text>
@@ -153,14 +153,14 @@
   <rect class="c-prem" x="44" y="576" width="480" height="70" rx="8"/>
   <text class="ann" x="58" y="596" font-weight="700" fill="#3a4a55">フィードバック系・二相</text>
   <text class="ann" x="58" y="613" font-size="11">上流依存（逆算従属）を保ちつつ、実装・受容の再知覚が上流を書き換える。</text>
-  <text class="ann" x="58" y="628" font-size="11">IDION は成分でなく入口側の構造理論。成分は四つ。主体＝駆動層＋核＋両端点。</text>
-  <text class="ann" x="58" y="643" font-size="11">KOSEI（個性）は IDION の日本語グロス（署名の層／原始項の層）。</text>
+  <text class="ann" x="58" y="628" font-size="11">IDION は成分でなく入口側の構造理論。主体＝IDION＋両端点。</text>
+  <text class="ann" x="58" y="643" font-size="11">KOSEI（個性）は、日本文化を背景とする、IDION に最も近い日本語。</text>
 
   <rect class="c-prem" x="540" y="576" width="472" height="70" rx="8"/>
   <text class="ann" x="554" y="596" font-weight="700" fill="#3a4a55">接合</text>
   <text class="ann" x="554" y="613" font-size="11">予測誤差の二役（距離＝静的な量／軌跡・表現＝動的な原理）＝接合の候補・要検証。</text>
-  <text class="ann" x="554" y="628" font-size="11">受け手側の防衛トリガ（作為の認知・視線の感知）＝信頼＝距離更新の重み → SHDST が引き取る。</text>
-  <text class="ann" x="554" y="643" font-size="11">共鳴距離＝接触後の距離更新（正本 SHDST）。</text>
+  <text class="ann" x="554" y="628" font-size="11">受け手側の防衛トリガ（作為の認知・視線の感知）は、距離更新の重みを下げる。</text>
+  <text class="ann" x="554" y="643" font-size="11">その引き取りと共鳴距離の正本＝シサク・ヒト距離構造理論。</text>
 
   <!-- Ethics band -->
   <rect class="c-eth" x="44" y="660" width="968" height="46" rx="8"/>
@@ -168,7 +168,7 @@
   <text class="ann" x="60" y="698" font-size="11.5">開示された誘導＝招待／隠して自己選択を奪う誘導＝操作。　透明性・自己選択・賞味期限・自己更新の不可侵（境界は動機でなく「開かれているか」で引く）。</text>
 
   <!-- Audit note + credit -->
-  <text class="foot" x="44" y="730">接地は進化的（動物行動学・進化心理学・コストリー・シグナリング・予測符号化・記憶の再固定化・神経可塑性…）＝傍証であって証明でない。クオリア発生は哲学的原始項。設計・監査用（生成非注入）。</text>
+  <text class="foot" x="44" y="730">接地は進化的（動物行動学・進化心理学・コストリー・シグナリング・予測符号化・記憶の再固定化・神経可塑性…）＝傍証であって証明でない。クオリア発生は哲学的原始項。設計・監査用。</text>
   <text class="foot" x="44" y="748">補足：変容の対象層 shtt-object-layers.md／深度語彙 shtt-depth-terms.md／変容の過程の八段 shtt-process-stages.md／資料の置き場 authoring-policy.md（リポジトリ直下）</text>
   <text class="footR" x="1036" y="780">© 2026 shisaku ／ CC BY 4.0</text>
 </svg>
