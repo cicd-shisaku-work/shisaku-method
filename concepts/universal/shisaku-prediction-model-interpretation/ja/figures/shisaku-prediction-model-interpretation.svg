@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・予測モデル解釈 (Shisaku Prediction-Model Interpretation) v0.1 — 実体はどこに在り、何が出ていくか
+  シサク・予測モデル解釈 (Shisaku Prediction-Model Interpretation) v0.3.3 — 実体はどこに在り、何が出ていくか
   設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝予測モデル（実体・スレート）。変容の矢印だけ族の固定色（橙）を借りる。
-  本図は第2節だけを引き受ける。置換の検査・射程・相転移は図にしない。
+  本図は第2節だけを引き受ける。v0.3.3 で描き直し——本文 v0.3 の「経路は二本で、つながり目は接触だけである」を反映（v0.1 の「合流しない」は本文と食い違っていた）。置換の検査・射程・相転移は図にしない。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
   Author: https://note.com/abstraction
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 662" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic',sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 686" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic',sans-serif" font-size="14">
   <defs>
     <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3f4a52"/></marker>
     <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9aa3aa"/></marker>
     <marker id="ao" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b07a3a"/></marker>
   </defs>
 
-  <rect width="1080" height="662" fill="#ffffff"/>
+  <rect width="1080" height="686" fill="#ffffff"/>
   <text x="40" y="44" font-size="21" font-weight="700" fill="#111">シサク・予測モデル解釈——実体はどこに在り、何が出ていくか</text>
   <text x="40" y="68" font-size="13" fill="#666">内から外へ。立体は動かない。出ていくのは、その影のほうである。</text>
 
@@ -35,8 +35,8 @@
 
   <!-- 変容＝内側で閉じる -->
   <path d="M205,271 A34,34 0 1 1 171,305" fill="none" stroke="#b07a3a" stroke-width="2.2" marker-end="url(#ao)"/>
-  <text x="205" y="446" font-size="13" font-weight="700" fill="#8a5f28" text-anchor="middle">変容——使う中で外れたときに</text>
-  <text x="205" y="464" font-size="12.5" fill="#8a5f28" text-anchor="middle">身体の内側で閉じる。外へ出ない。</text>
+  <text x="205" y="446" font-size="13" font-weight="700" fill="#8a5f28" text-anchor="middle">変容——接触と照合を経て食い違ったときに</text>
+  <text x="205" y="464" font-size="12.5" fill="#8a5f28" text-anchor="middle">身体の内側で起きる。外へ出ない。</text>
 
   <!-- 検討の中＝それについての話（薄い板） -->
   <polygon points="454,314 590,314 590,324 454,324" fill="#d7dcdf" stroke="#7d868d" stroke-width="1.2"/>
@@ -61,13 +61,18 @@
   <path d="M446,336 L306,336" fill="none" stroke="#9aa3aa" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#ag)"/>
   <text x="376" y="360" font-size="12.5" fill="#7d868d" text-anchor="middle">また検討の外へ戻る</text>
 
+  <!-- 戻る経路：言葉は接触として身体に入る（つながり目は接触だけ） -->
+  <path d="M870,286 L870,152 L240,152 L240,206" fill="none" stroke="#b07a3a" stroke-width="1.8" stroke-dasharray="7 4" marker-end="url(#ao)"/>
+  <text x="555" y="146" font-size="12.5" fill="#8a5f28" text-anchor="middle">考えて出た言葉は、身体に戻るとき接触として入り、照合される</text>
+
   <!-- 読み -->
   <line x1="40" y1="508" x2="1040" y2="508" stroke="#e2e6e9"/>
-  <text x="40" y="538" font-size="13.5" fill="#333">出ていく矢印（横）と、変容の矢印（内側で閉じる）は、<tspan font-weight="700">合流しない</tspan>。言葉にすることと、予測モデルが変容することは、別に進む。</text>
-  <text x="40" y="562" font-size="13.5" fill="#333">前提として働いている＝検討の外にある状態。対象になる＝検討の中に入った状態。<tspan font-weight="700">変わるのは状態であって、実体ではない。</tspan></text>
-  <text x="40" y="586" font-size="13.5" fill="#333">影は元の立体を言い尽くさない。写真が粗いからではなく、<tspan font-weight="700">撮った時点で次元が落ちているからである。</tspan></text>
+  <text x="40" y="538" font-size="13.5" fill="#333">論じる経路（横）と、変容の経路（身体の内）は別に進み、<tspan font-weight="700">つながり目は接触だけである</tspan>。</text>
+  <text x="40" y="562" font-size="13.5" fill="#333">言葉が予測モデルを変えるのは、接触として入り、照合で食い違ったときだけである。</text>
+  <text x="40" y="586" font-size="13.5" fill="#333">前提として働いている＝検討の外にある状態。対象になる＝検討の中に入った状態。<tspan font-weight="700">変わるのは状態であって、実体ではない。</tspan></text>
+  <text x="40" y="610" font-size="13.5" fill="#333">影は元の立体を言い尽くさない。写真が粗いからではなく、<tspan font-weight="700">撮った時点で次元が落ちているからである。</tspan></text>
 
-  <text x="40" y="610" font-size="12" fill="#777">※「実体」は、本書が予測モデルをそう読むという位置づけである。物理的な一個の物を主張するものではない。</text>
-  <text x="40" y="642" font-size="11" fill="#777">シサク・予測モデル解釈 v0.1 ／ 設計・監査用の図（人間向け）。生成非注入。</text>
-  <text x="1040" y="642" font-size="11" fill="#777" text-anchor="end">CC BY 4.0 — shisaku</text>
+  <text x="40" y="634" font-size="12" fill="#777">※「実体」は、本書が予測モデルをそう読むという位置づけである。物理的な一個の物を主張するものではない。</text>
+  <text x="40" y="666" font-size="11" fill="#777">シサク・予測モデル解釈 v0.3.3 ／ 設計・監査用の図（人間向け）。生成非注入。</text>
+  <text x="1040" y="666" font-size="11" fill="#777" text-anchor="end">CC BY 4.0 — shisaku</text>
 </svg>
