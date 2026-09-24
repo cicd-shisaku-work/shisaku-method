@@ -1,4 +1,4 @@
-# シサク認知フレーム理論 実務適用
+# シサク・認知フレーム理論 実務適用
 ## ― AI用ランタイムモジュール ―
 ### Shisaku Cognitive Frame Theory — Runtime Module for AI
 
@@ -200,7 +200,7 @@
 ---
 
 **Shisaku Cognitive Frame Theory — Runtime Module for AI**
-**上流依存：前提優位理論（Premise Primacy）／シサク認知フレーム理論（原典）v0.1**
+**上流依存：前提優位理論（Premise Primacy）／シサク・認知フレーム理論 v0.1**
 * **Author / Explorer:** shisaku
 * **Version:** v0.1
 * **Date:** 2026/06/21

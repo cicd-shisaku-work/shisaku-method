@@ -1,4 +1,4 @@
-# シサク認知フレーム理論 運用ガイド
+# シサク・認知フレーム理論 運用ガイド
 ## ― 人間のための実務手順 ―
 ### Shisaku Cognitive Frame Theory — Operation Guide
 
