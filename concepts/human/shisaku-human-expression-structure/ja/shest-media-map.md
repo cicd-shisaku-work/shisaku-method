@@ -140,7 +140,7 @@ Layer 4 は、上の三層とは別の軸である。
 
 ## License
 
-This document is a supplementary reference for the Shisaku Human Expression-Structure Theory (SHEST) — a four-layer map of expressive media (substrate / compositional operation / reception system / distance and depth) and a table showing that diverse media converge onto a finite set of receiver systems (a provisional surjection; closure not yet proven). Authored by shisaku. It is released for others to study, adapt, and implement.
+This document is a supplementary reference for the Shisaku Human Expression-Structure Theory — a four-layer map of expressive media (substrate / compositional operation / reception system / distance and depth) and a table showing that diverse media converge onto a finite set of receiver systems (a provisional surjection; closure not yet proven). Authored by shisaku. It is released for others to study, adapt, and implement.
 
 Copyright (c) 2026 shisaku
 

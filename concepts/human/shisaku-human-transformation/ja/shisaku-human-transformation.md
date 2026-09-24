@@ -13,7 +13,6 @@
 
 **二相。** 同じ「変容」が、系の両端に立つ。**入口側**＝表現者の、接触によって変容する予測モデルと、それを用いて認知し、判定する機構と、それらを動かす身体駆動（**IDION**——〔shisaku-human-idion-structure.md〕が担う）。**出口側**＝受け手の変容の 目標→実装→制約→観測（四成分が担う）。IDION は成分でなく、入口側の構造理論である——成分は四つのまま、IDION は主体の位置に立つ（第2節）。両端を別概念にすると変容が二つに割れて系の芯がぼやけ、IDION を五番目の成分に降ろすと入口の IDION と出口の受け手が同じ列に並んで両端の非対称が消える。
 
-（略号規則：上位である本書は **SHTT**。四成分は **SH＋頭字＋ST**（-Structure）で命名する——軌跡 SHTST／表現 SHEST／距離 SHDST／共鳴 SHKST。"ST"＝-Structure を持つのが成分、持たないのが上位。ゆえに SHTT と SHTST は "ST" の有無で判別する。**IDION は略号を作らず、把手 IDION 自身で参照する**——略号の役目〔像を持たない識別把手〕を IDION が既に果たしており、機械適用した `SHIST` は英語の卑語に近接して、IDION の命名で剥がした輸入された含意を略号で再侵入させるため採らない。）
 
 「シサク・ヒト」の接頭は境界の宣言——前提優位が万物の認知・解釈に及ぶのに対し、本理論はヒト種へ降りた系である（クオリア・身体・記憶・神経可塑性に依存）。媒体は一般（文章から料理・格闘技・空間・対人まで）。
 
@@ -191,7 +190,7 @@
 
 ---
 
-**Shisaku Human Transformation Theory — SHTT**
+**Shisaku Human Transformation Theory**
 **上流依存：前提優位理論**
 * **Author / Explorer:** shisaku
 * **Version:** v0.3.1
@@ -201,7 +200,7 @@
 
 ## License
 
-This document (Shisaku Human Transformation Theory — SHTT) is the umbrella theory over four component structure-theories (Trajectory, Expression, Distance, Kyōmei/Resonance) and the entry-side core theory (IDION), an extension of Premise Primacy to human transformation through expression, authored by shisaku. It is released for others to study, adapt, and implement. Any expression built on this system carries the transparency, opt-in, and updatability discipline set out in Premise Primacy (§7).
+This document (Shisaku Human Transformation Theory) is the umbrella theory over four component structure-theories (Trajectory, Expression, Distance, Kyōmei/Resonance) and the entry-side core theory (IDION), an extension of Premise Primacy to human transformation through expression, authored by shisaku. It is released for others to study, adapt, and implement. Any expression built on this system carries the transparency, opt-in, and updatability discipline set out in Premise Primacy (§7).
 
 Copyright (c) 2026 shisaku
 

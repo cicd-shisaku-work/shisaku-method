@@ -138,7 +138,7 @@
 
 ---
 
-**Shisaku Human Distance-Structure Theory — SHDST**
+**Shisaku Human Distance-Structure Theory**
 **上流依存：シサク・ヒト変容理論 → 前提優位理論／最上流：シサク・世界解釈**
 * **Author / Explorer:** shisaku
 * **Version:** v0.1.6
@@ -148,7 +148,7 @@
 
 ## License
 
-This document (Shisaku Human Distance-Structure Theory — SHDST) is a component of the Shisaku Human Transformation Theory (SHTT) — the distance structure among its four components (Trajectory, Expression, Distance, Kyōmei/Resonance) — and an extension of Premise Primacy to human transformation through expression, authored by shisaku. It is released for others to study, adapt, and implement. Any expression built on this structure carries the transparency, opt-in, and updatability discipline set out in Premise Primacy (§7).
+This document (Shisaku Human Distance-Structure Theory) is a component of the Shisaku Human Transformation Theory — the distance structure among its four components (Trajectory, Expression, Distance, Kyōmei/Resonance) — and an extension of Premise Primacy to human transformation through expression, authored by shisaku. It is released for others to study, adapt, and implement. Any expression built on this structure carries the transparency, opt-in, and updatability discipline set out in Premise Primacy (§7).
 
 Copyright (c) 2026 shisaku
 

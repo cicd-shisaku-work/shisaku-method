@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・ヒト軌跡構造理論 (Shisaku Human Trajectory-Structure Theory — SHTST)
+  シサク・ヒト軌跡構造理論 (Shisaku Human Trajectory-Structure Theory)
   設計・監査用の図（人間向け）。学説は傍証であって証明ではない。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝軌跡（青）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
@@ -44,7 +44,7 @@
 
   <!-- Title -->
   <text class="title" x="540" y="40" font-size="25" text-anchor="middle">シサク・ヒト軌跡構造理論</text>
-  <text class="sub" x="540" y="63" font-size="14" text-anchor="middle">Shisaku Human Trajectory-Structure Theory — SHTST（v0.2.1）</text>
+  <text class="sub" x="540" y="63" font-size="14" text-anchor="middle">Shisaku Human Trajectory-Structure Theory（v0.2.1）</text>
   <text class="sub" x="540" y="84" font-size="12.5" text-anchor="middle">何を体験させ何を変容させるか　／　多次元の目標体験の経路　／　落差と予測配置で駆動（シサク・ヒト変容理論の軌跡成分）</text>
 
   <!-- Plot area: time (x) × experience (y, multi-axis) -->

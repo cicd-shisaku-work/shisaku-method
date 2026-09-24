@@ -143,7 +143,7 @@
 
 ---
 
-**Shisaku Human Kyōmei-Structure Theory — SHKST**
+**Shisaku Human Kyōmei-Structure Theory**
 **上流依存：シサク・ヒト変容理論 → 前提優位理論／最上流：シサク・世界解釈**
 * **Author / Explorer:** shisaku
 * **Version:** v0.3.1
@@ -153,7 +153,7 @@
 
 ## License
 
-This document (Shisaku Human Kyōmei-Structure Theory — SHKST) is the receiver-side sister of the Shisaku Human Expression-Structure Theory (SHEST) and an extension of Premise Primacy to the axis of human reception, authored by shisaku. It is released for others to study, adapt, and implement. Any expression that uses this resonance mechanism carries the transparency, opt-in, and updatability discipline set out in Premise Primacy (§7).
+This document (Shisaku Human Kyōmei-Structure Theory) is the receiver-side sister of the Shisaku Human Expression-Structure Theory and an extension of Premise Primacy to the axis of human reception, authored by shisaku. It is released for others to study, adapt, and implement. Any expression that uses this resonance mechanism carries the transparency, opt-in, and updatability discipline set out in Premise Primacy (§7).
 
 Copyright (c) 2026 shisaku
 

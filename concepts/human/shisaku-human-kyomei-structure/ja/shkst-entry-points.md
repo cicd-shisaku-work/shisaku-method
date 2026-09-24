@@ -95,7 +95,7 @@
 
 ## License
 
-This document is a supplementary reference for the Shisaku Human Kyōmei-Structure Theory (SHKST) — a catalogue of candidate entry-points of resonance with an independence test, offered as a map for implementation and explicitly not a fixed taxonomy (independence and closure unproven). Authored by shisaku. It is released for others to study, adapt, and implement.
+This document is a supplementary reference for the Shisaku Human Kyōmei-Structure Theory — a catalogue of candidate entry-points of resonance with an independence test, offered as a map for implementation and explicitly not a fixed taxonomy (independence and closure unproven). Authored by shisaku. It is released for others to study, adapt, and implement.
 
 Copyright (c) 2026 shisaku
 

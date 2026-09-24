@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・ヒト距離構造理論 (Shisaku Human Distance-Structure Theory — SHDST)
+  シサク・ヒト距離構造理論 (Shisaku Human Distance-Structure Theory)
   設計・監査用の図（人間向け）。学説は傍証であって証明ではない。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝距離（紫）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
@@ -37,7 +37,7 @@
 
   <!-- Title -->
   <text class="title" x="540" y="40" text-anchor="middle" style="font-size:25px">シサク・ヒト距離構造理論</text>
-  <text class="sub" x="540" y="63" text-anchor="middle" style="font-size:14px">Shisaku Human Distance-Structure Theory — SHDST（v0.1.6）</text>
+  <text class="sub" x="540" y="63" text-anchor="middle" style="font-size:14px">Shisaku Human Distance-Structure Theory（v0.1.6）</text>
   <text class="sub" x="540" y="84" text-anchor="middle" style="font-size:12.5px">何が届き何が届かないか　／　表現者↔受け手の多次元の距離（関係差分）　／　点でなく場（シサク・ヒト変容理論の距離成分）</text>
 
   <!-- Endpoints -->

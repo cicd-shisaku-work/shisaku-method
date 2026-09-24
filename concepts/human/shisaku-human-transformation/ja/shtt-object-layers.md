@@ -99,7 +99,7 @@
 
 ## License
 
-This document is a supplementary reference for the Shisaku Human Transformation Theory (SHTT) — an example set of transformation object-layers (the "kind" axis, orthogonal to depth), offered as a starting point for implementation and explicitly not a fixed taxonomy. Authored by shisaku. It is released for others to study, adapt, and implement.
+This document is a supplementary reference for the Shisaku Human Transformation Theory — an example set of transformation object-layers (the "kind" axis, orthogonal to depth), offered as a starting point for implementation and explicitly not a fixed taxonomy. Authored by shisaku. It is released for others to study, adapt, and implement.
 
 Copyright (c) 2026 shisaku
 

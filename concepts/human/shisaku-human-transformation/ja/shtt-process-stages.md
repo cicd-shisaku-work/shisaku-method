@@ -146,7 +146,7 @@
 
 ## License
 
-This document is a supplementary reference for the Shisaku Human Transformation Theory (SHTT) — the details of the eight-stage process of transformation common to both the expresser's and the receiver's end (the mechanisms running across all stages, the four cells of the matching stage, the three steps and four exits of the approval stage, the two forms of the rewriting stage, and the reading of outcome and irreversibility) — offered as a map and explicitly not a fixed taxonomy. Authored by shisaku. It is released for others to study, adapt, and implement.
+This document is a supplementary reference for the Shisaku Human Transformation Theory — the details of the eight-stage process of transformation common to both the expresser's and the receiver's end (the mechanisms running across all stages, the four cells of the matching stage, the three steps and four exits of the approval stage, the two forms of the rewriting stage, and the reading of outcome and irreversibility) — offered as a map and explicitly not a fixed taxonomy. Authored by shisaku. It is released for others to study, adapt, and implement.
 
 Copyright (c) 2026 shisaku
 

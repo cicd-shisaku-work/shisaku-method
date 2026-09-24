@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・ヒト表現構造理論 (Shisaku Human Expression-Structure Theory — SHEST)
+  シサク・ヒト表現構造理論 (Shisaku Human Expression-Structure Theory)
   設計・監査用の図（人間向け）。学説は傍証であって証明ではない。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝表現（緑）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
@@ -41,7 +41,7 @@
 
   <!-- Title -->
   <text class="title" x="540" y="40" text-anchor="middle" style="font-size:25px">シサク・ヒト表現構造理論</text>
-  <text class="sub" x="540" y="63" text-anchor="middle" style="font-size:14px">Shisaku Human Expression-Structure Theory — SHEST（v0.1.6）</text>
+  <text class="sub" x="540" y="63" text-anchor="middle" style="font-size:14px">Shisaku Human Expression-Structure Theory（v0.1.6）</text>
   <text class="sub" x="540" y="84" text-anchor="middle" style="font-size:12.5px">それをどう実装するか　／　上流から逆算され下流から折り返すカスケード　／　変容という目的関数（シサク・ヒト変容理論の表現成分）</text>
 
   <!-- Cascade (center-left) -->
@@ -91,7 +91,7 @@
   <!-- 受け手 → 変容 (残存) -->
   <path class="dash" d="M723,500 L723,346" marker-end="url(#arrowAmber)"/>
   <text class="ann" x="730" y="430" style="font-size:11px;fill:#9a7a3a">接触後に残る＝残存／変容</text>
-  <!-- SHKST link -->
+  <!-- link to resonance -->
   <rect class="c-kyo" x="836" y="500" width="200" height="42" rx="7"/><text class="nlbl" x="936" y="520" style="font-size:13px">シサク・ヒト共鳴構造理論</text><text class="nsub" x="936" y="535" style="fill:#2f6a6a">受容の機構＝なぜ・どこまで残るか</text>
   <path class="flow" d="M818,521 L836,521" marker-end="url(#arrow)"/>
 

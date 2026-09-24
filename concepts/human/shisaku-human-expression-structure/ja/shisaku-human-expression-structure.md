@@ -181,7 +181,7 @@ IDION の定義・外延（体験・観測・論旨・合成）・弁別子（�
 
 ---
 
-**Shisaku Human Expression-Structure Theory — SHEST**
+**Shisaku Human Expression-Structure Theory**
 **上流依存：シサク・ヒト変容理論 → 前提優位理論／最上流：シサク・世界解釈**
 * **Author / Explorer:** shisaku
 * **Version:** v0.1.6
@@ -191,7 +191,7 @@ IDION の定義・外延（体験・観測・論旨・合成）・弁別子（�
 
 ## License
 
-This document (Shisaku Human Expression-Structure Theory — SHEST) is an extension of Premise Primacy to the axis of human expression, authored by shisaku. It is released for others to study, adapt, and implement. Any expression built on this theory carries the transparency, opt-in, and updatability discipline set out in Premise Primacy (§7).
+This document (Shisaku Human Expression-Structure Theory) is an extension of Premise Primacy to the axis of human expression, authored by shisaku. It is released for others to study, adapt, and implement. Any expression built on this theory carries the transparency, opt-in, and updatability discipline set out in Premise Primacy (§7).
 
 Copyright (c) 2026 shisaku
 

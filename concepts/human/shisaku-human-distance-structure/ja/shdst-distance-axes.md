@@ -105,7 +105,7 @@
 
 ## License
 
-This document is a supplementary reference for the Shisaku Human Distance-Structure Theory (SHDST) — a survey of candidate distance-axes with an independence test (predictivity × non-redundancy), offered as a map for implementation and explicitly not a fixed taxonomy (independence and closure unproven). Authored by shisaku. It is released for others to study, adapt, and implement.
+This document is a supplementary reference for the Shisaku Human Distance-Structure Theory — a survey of candidate distance-axes with an independence test (predictivity × non-redundancy), offered as a map for implementation and explicitly not a fixed taxonomy (independence and closure unproven). Authored by shisaku. It is released for others to study, adapt, and implement.
 
 Copyright (c) 2026 shisaku
 

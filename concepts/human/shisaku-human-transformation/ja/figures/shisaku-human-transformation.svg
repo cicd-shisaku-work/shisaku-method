@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・ヒト変容理論 (Shisaku Human Transformation Theory — SHTT) v0.3.1
+  シサク・ヒト変容理論 (Shisaku Human Transformation Theory) v0.3.1
   設計・監査用の図（人間向け）。学説は傍証であって証明ではない。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙／IDION=葡萄色／駆動=赤褐）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
@@ -51,7 +51,7 @@
 
   <!-- Title -->
   <text class="title" x="540" y="38" font-size="25" text-anchor="middle">シサク・ヒト変容理論</text>
-  <text class="sub" x="540" y="60" font-size="14" text-anchor="middle">Shisaku Human Transformation Theory — SHTT（v0.3.1）</text>
+  <text class="sub" x="540" y="60" font-size="14" text-anchor="middle">Shisaku Human Transformation Theory（v0.3.1）</text>
   <text class="sub" x="540" y="80" font-size="12.5" text-anchor="middle">二相＝入口（IDION）／出口（四成分）　／　同じ変容が両端に立つ　／　帰趨＝残存／変容の二値が通し軸　／　上流依存＝前提優位理論</text>
 
   <!-- naming rule (top-right) -->

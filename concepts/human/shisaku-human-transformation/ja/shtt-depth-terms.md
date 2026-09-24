@@ -148,7 +148,7 @@
 
 ## License
 
-This document is a supplementary reference for the Shisaku Human Transformation Theory (SHTT) — a table of the depth-related quantities on both ends of the system (transformation depth, transformation breadth, self-distance, resonance depth, resonance distance, resonance intensity, resonance load), their observation procedures, the structure of "deep" as traversal × foreboding, what is not depth, and worked boundary checks — offered as a map and explicitly not a fixed taxonomy. Authored by shisaku. It is released for others to study, adapt, and implement.
+This document is a supplementary reference for the Shisaku Human Transformation Theory — a table of the depth-related quantities on both ends of the system (transformation depth, transformation breadth, self-distance, resonance depth, resonance distance, resonance intensity, resonance load), their observation procedures, the structure of "deep" as traversal × foreboding, what is not depth, and worked boundary checks — offered as a map and explicitly not a fixed taxonomy. Authored by shisaku. It is released for others to study, adapt, and implement.
 
 Copyright (c) 2026 shisaku
 

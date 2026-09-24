@@ -156,7 +156,7 @@ IDION 原典「構造」の節は、表現者の予測モデルが書き換わ�
 
 ## License
 
-This document is a supplementary reference for the Shisaku Human Kyōmei-Structure Theory (SHKST) — a MECE decomposition of resonance instances along the SHTT pipeline (subject, expression, distance, resonance, transformation), with worked examples used to inspect the axes for gaps and overlaps. Authored by shisaku. It is released for others to study, adapt, and implement.
+This document is a supplementary reference for the Shisaku Human Kyōmei-Structure Theory — a MECE decomposition of resonance instances along the pipeline of the Shisaku Human Transformation Theory (subject, expression, distance, resonance, transformation), with worked examples used to inspect the axes for gaps and overlaps. Authored by shisaku. It is released for others to study, adapt, and implement.
 
 Copyright (c) 2026 shisaku
 

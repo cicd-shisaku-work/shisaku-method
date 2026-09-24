@@ -88,7 +88,7 @@
 
 ## License
 
-This document is a supplementary reference for the Shisaku Human Expression-Structure Theory (SHEST) — catalogues of qualia-desire types (sender side) and pseudo-sharing reconstruction types (receiver side), with an independence test, offered as a map for implementation and explicitly not a fixed taxonomy. Authored by shisaku. It is released for others to study, adapt, and implement.
+This document is a supplementary reference for the Shisaku Human Expression-Structure Theory — catalogues of qualia-desire types (sender side) and pseudo-sharing reconstruction types (receiver side), with an independence test, offered as a map for implementation and explicitly not a fixed taxonomy. Authored by shisaku. It is released for others to study, adapt, and implement.
 
 Copyright (c) 2026 shisaku
 
