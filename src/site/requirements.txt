@@ -1,0 +1,6 @@
+# Runtime dependencies of src/site, pinned exactly (DESIGN.md §16.2).
+# boto3 is provided by the AWS Lambda runtime and is not listed here.
+markdown-it-py==4.2.0
+mdit-py-plugins==0.6.1
+mdurl==0.1.2
+pillow==12.3.0
