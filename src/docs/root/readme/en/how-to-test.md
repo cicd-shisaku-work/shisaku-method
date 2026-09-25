@@ -10,7 +10,7 @@ This repository does not claim to be falsifiable as a scientific theory ("How to
 **What, then, can be inspected? There are four inspection points.**
 
 1. **The place the canon declared in advance, in its falsification conditions** — the line the author drew to say "here a premise turns into an object". A premise is not up for examination while it runs, so unless it is written down first there is no occasion to revise it at all.
-2. **The substitution test** — the author shows, as his own reading, which parts agree with established theory and which he derived himself (premise 6): an origin in its novelty section, an interpretation in its substitution-test section. The reader can put an existing concept in place of a claim and check whether it still stands (where the check against theory held) or collapses (what the author derived). An interpretation carries no falsification conditions and carries this test instead.
+2. **The substitution test** — the author shows, as his own reading, which parts agree with established theory and which he derived himself (premise 6): an origin in its novelty section, an interpretation in its substitution-test section. The reader can put an existing concept in place of a claim and check whether it still stands (where the check against theory held) or collapses (what the author derived). An interpretation carries no falsification conditions and carries this test instead. The substitution test is also a bridge that carries the reader over to established theory (premise 6).
 3. **Internal consistency** — whether the documents, and the sections within them, contradict one another.
 4. **Predictions by proxy** — whether the expectations a description carries unstated have cases in which they fail.
 
