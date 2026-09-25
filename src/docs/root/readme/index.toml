@@ -7,8 +7,8 @@ output = "README.md"
 title    = "shisaku-method"
 author   = "shisaku"
 status   = "継続的インテグレーション中 / Continuously Integrating"
-version  = "v0.10.1"
-date     = "2026/09/24"
+version  = "v0.10.2"
+date     = "2026/09/26"
 
 [numbering]
 enabled = false
