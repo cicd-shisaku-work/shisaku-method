@@ -5,14 +5,12 @@ output = "{{path:shisaku-human-idion-structure}}ja/idion-cases.md"
 
 [meta]
 title    = 'IDION 構造理論 補足 ― 具体事例集と分離検出'
-subtitle = 'Supplement: Concrete Cases and Split Detection (Shisaku Human IDION-Structure Theory)'
-related  = 'シサク・ヒト IDION 構造理論（原典）／シサク・ヒト変容理論（SHTT）／姉妹補足：変容コストの形態の地図〔idion-cost-forms.md〕・層と軸の地図〔idion-axes-map.md〕・システムとの同型〔idion-system-isomorphism.md〕'
+subtitle = 'Supplement: Concrete Cases and Split Detection'
+related  = 'シサク・ヒト IDION 構造理論（原典）／シサク・ヒト変容理論／姉妹補足：変容コストの形態の地図〔idion-cost-forms.md〕・層と軸の地図〔idion-axes-map.md〕・システムとの同型〔idion-system-isomorphism.md〕'
 author   = 'shisaku'
-version  = 'v0.1.2'
-# header_version は本文の見出し欄の版。colophon の version と食い違っている文書があるため、
-# 一致させずに残している（裁定待ち・issue: supplement-version-mismatch）。
-header_version = 'v0.1.2'
-date     = '2026/09/22'
+version  = 'v0.1.3'
+header_version = 'v0.1.3'
+date     = '2026/09/25'
 canonical      = "{{url:shisaku-human-idion-structure}}"
 copyright_year = "2026"
 license_intro  = '''This document is a supplement to the Shisaku Human IDION-Structure Theory — a record of concrete cases run through the theory's discriminators, the roughness they exposed, the resulting revisions, and a procedure for detecting where the theory is over-compressed and should be split — authored by shisaku. It is released for others to study, adapt, and implement.'''
