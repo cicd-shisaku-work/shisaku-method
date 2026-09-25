@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・クオリア解釈 (Shisaku Qualia-Interpretation) v0.1 — 現れるものは多くの次元を持ち、出るたびに減る
+  シサク・クオリア解釈 (Shisaku Qualia-Interpretation) v0.2.2 — 現れるものは多くの次元を持ち、出るたびに減る
   設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝クオリア（スレート）。再帰の矢印だけ族の固定色（橙）を借りる。
-  本図は第2節の機構だけを引き受ける。射程（§0 の役）・反応の形の一覧（補足の役）・置換の検査は図にしない。
+  本図は「私はこう解釈する」の節の機構だけを引き受ける。射程（「はじめに」の役）・表出の形の一覧（補足の役）・置換の検査は図にしない。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
   Author: https://note.com/abstraction
 -->
@@ -100,6 +100,6 @@
   <text x="40" y="546" font-size="13.5" fill="#333">出たものは、また接触になる。<tspan font-weight="700">出るときは減る。戻ったものは新しく照合され、そこで新しい信号が生まれる。</tspan></text>
 
   <text x="40" y="576" font-size="12" fill="#777">※ この図も減らしている。図に描けている時点で、実物より次元が少ない。クオリアの発生は、本書では扱わない。</text>
-  <text x="40" y="610" font-size="11" fill="#777">シサク・クオリア解釈 v0.1 ／ 設計・監査用の図（人間向け）。生成非注入。</text>
+  <text x="40" y="610" font-size="11" fill="#777">シサク・クオリア解釈 v0.2.2 ／ 設計・監査用の図（人間向け）。生成非注入。</text>
   <text x="1040" y="610" font-size="11" fill="#777" text-anchor="end">CC BY 4.0 — shisaku</text>
 </svg>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・ヒト IDION 構造理論 (Shisaku Human IDION-Structure Theory) v0.3 — IDION の形成の構造
-  設計・監査用の図（人間向け）。本文 v0.3 から描いた。学説は傍証であって証明ではない。生成非注入。
+  シサク・ヒト IDION 構造理論 (Shisaku Human IDION-Structure Theory) v0.3.2 — IDION の形成の構造
+  設計・監査用の図（人間向け）。本文 v0.3.2 から描いた。学説は傍証であって証明ではない。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝IDION（葡萄色）。駆動＝赤褐。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
   Author: https://note.com/abstraction
@@ -67,8 +67,8 @@
   <!-- 接触 -->
   <rect x="30" y="480" width="170" height="120" rx="8" fill="#fff" stroke="#444" stroke-width="1.5"/>
   <text x="115" y="506" text-anchor="middle" font-weight="700">接触</text>
-  <text x="115" y="529" text-anchor="middle" font-size="11">外部刺激（世界・他者・表現）</text>
-  <text x="115" y="547" text-anchor="middle" font-size="11">内部刺激（内省・想起・夢）</text>
+  <text x="115" y="529" text-anchor="middle" font-size="11">外から（世界・他者・表現）</text>
+  <text x="115" y="547" text-anchor="middle" font-size="11">内から（言葉・思い出・夢）</text>
   <text x="115" y="571" text-anchor="middle" font-size="10.5" fill="#666">外形の負担（時間・労力）は</text>
   <text x="115" y="586" text-anchor="middle" font-size="10.5" fill="#666">接触の側の性質＝コストでない</text>
   <path d="M200,540 L238,540" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
@@ -155,7 +155,7 @@
     <text x="1325" y="264">身体化＝手・動き</text>
     <text x="1325" y="282">合成＝自分の体験からのシミュレーション</text>
     <text x="1325" y="304" fill="#666">IDION の射影——100% は一致しない</text>
-    <text x="1325" y="322" fill="#666">他者・道具が演奏してよい</text>
+    <text x="1325" y="322" fill="#666">他者・道具が演奏することもある</text>
     <text x="1325" y="338" fill="#666">／本人が照合し、引き受ける</text>
     <text x="1325" y="362" fill="#3a6a3a">言語化は読み出しでない（右の破線で戻る）</text>
   </g>
@@ -187,12 +187,12 @@
 
   <!-- 戻り：言語化の折り返し・受け手の反応 → 接触 -->
   <path d="M1470,290 L1488,290" stroke="#4a7a4a" stroke-width="1.3" fill="none" stroke-dasharray="6 4"/>
-  <text x="1495" y="300" font-size="10" fill="#3a6a3a" transform="rotate(90 1495 300)">言語化の折り返し</text>
+  <text x="1476" y="300" font-size="10" fill="#3a6a3a" transform="rotate(90 1476 300)">言語化の戻り</text>
   <path d="M1470,492 L1488,492" stroke="#444" stroke-width="1.2" fill="none" stroke-dasharray="7 4"/>
   <path d="M1488,290 L1488,962 L115,962 L115,602" stroke="#444" stroke-width="1.2" fill="none" stroke-dasharray="7 4" marker-end="url(#arr)"/>
   <text x="800" y="954" text-anchor="middle" font-size="11" fill="#333">受け手の反応・受け手の変容と、自分が言葉にしたもの（言語化は接触として本人に戻り、予測モデルを更新しうる・自己一致）が、次の接触になる</text>
 
   <!-- footer -->
-  <text x="30" y="990" font-size="11" fill="#777">Shisaku Human IDION-Structure Theory v0.3 — 設計・監査用の図。本文 v0.3 から描いた。層の順序と語は目安であり固定しない。</text>
+  <text x="30" y="990" font-size="11" fill="#777">Shisaku Human IDION-Structure Theory v0.3.2 — 設計・監査用の図。本文 v0.3.2 から描いた。層の順序と語は目安であり固定しない。</text>
   <text x="1470" y="990" font-size="11" fill="#777" text-anchor="end">© 2026 shisaku · CC BY 4.0 · https://note.com/abstraction</text>
 </svg>

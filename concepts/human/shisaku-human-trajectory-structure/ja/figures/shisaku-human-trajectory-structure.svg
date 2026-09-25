@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・ヒト軌跡構造理論 (Shisaku Human Trajectory-Structure Theory — SHTST)
-  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
+  シサク・ヒト軌跡構造理論 (Shisaku Human Trajectory-Structure Theory)
+  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝軌跡（青）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
   Author: https://note.com/abstraction
@@ -27,7 +27,7 @@
       .transh{fill:#8a5a1a;font-size:14px;font-weight:700}
       .transb{fill:#4a3a24;font-size:12px}
       .amber{fill:#9a7a3a}
-      .axis{stroke:#99a4ad;stroke-width:1.2}
+      .axis{stroke:#99a4ad;stroke-width:1.2;fill:none}
       .axlbl{fill:#5a6670;font-size:11.5px}
       .curveMain{stroke:#2f5e7e;stroke-width:2.6;fill:none}
       .curveCtr{stroke:#4a7a4a;stroke-width:2;fill:none;stroke-dasharray:6 4}
@@ -44,15 +44,13 @@
 
   <!-- Title -->
   <text class="title" x="540" y="40" font-size="25" text-anchor="middle">シサク・ヒト軌跡構造理論</text>
-  <text class="sub" x="540" y="63" font-size="14" text-anchor="middle">Shisaku Human Trajectory-Structure Theory — SHTST</text>
-  <text class="sub" x="540" y="84" font-size="12.5" text-anchor="middle">何を体験させ何を変容させるか　／　多次元の目標体験の経路　／　落差と予測配置で駆動（SHTT の軌跡成分）</text>
-  <text class="footR" x="1040" y="112">略号：上位＝SHTT／成分＝SH＋頭字＋ST</text>
-  <text class="footR" x="1040" y="127">軌跡 SHTST・表現 SHEST・距離 SHDST・共鳴 SHKST</text>
+  <text class="sub" x="540" y="63" font-size="14" text-anchor="middle">Shisaku Human Trajectory-Structure Theory（v0.2.1）</text>
+  <text class="sub" x="540" y="84" font-size="12.5" text-anchor="middle">何を体験させ何を変容させるか　／　多次元の目標体験の経路　／　落差と予測配置で駆動（シサク・ヒト変容理論の軌跡成分）</text>
 
   <!-- Plot area: time (x) × experience (y, multi-axis) -->
   <!-- optimum band -->
   <rect class="band" x="96" y="196" width="664" height="70"/>
-  <text class="pp" x="690" y="188" text-anchor="end" fill="#7a8894">予測誤差の至適域＝「分かりそうで、まだ分からない」</text>
+  <text class="pp" x="110" y="214" text-anchor="start" style="text-anchor:start" fill="#7a8894">予測誤差の至適域＝「分かりそうで、まだ分からない」</text>
   <!-- axes -->
   <path class="axis" d="M96,160 L96,432 L760,432"/>
   <text class="axlbl" x="430" y="452" text-anchor="middle">時間 →</text>
@@ -60,7 +58,7 @@
 
   <!-- counterpoint curve (green dashed) = 別の体験軸（例：期待/没入） -->
   <polyline class="curveCtr" points="126,404 276,368 426,306 576,300 700,250"/>
-  <text class="ann" x="706" y="246" font-size="11" fill="#4a7a4a">対位軸（例：期待）</text>
+  <text class="ann" x="708" y="274" style="font-size:10.5px;fill:#4a7a4a">対位軸（例：期待）</text>
 
   <!-- main trajectory (blue) -->
   <polyline class="curveMain" points="126,372 276,322 426,252 576,182 700,342"/>
@@ -92,7 +90,7 @@
   <rect class="c-trans" x="800" y="212" width="236" height="150" rx="10"/>
   <text class="transh" x="816" y="238">目標体験軌跡 → 目標変容</text>
   <text class="transb" x="816" y="262">・軌跡は体験の経路、</text>
-  <text class="transb" x="830" y="279">　狙うのはその帰趨（残存か変容か）。</text>
+  <text class="transb" x="830" y="279">　狙うのはその帰趨（残存か変容か）</text>
   <text class="transb" x="816" y="301">・残ってほしい差分から</text>
   <text class="transb" x="830" y="318">　逆算して経路を置く（二段）。</text>
   <text class="transb" x="816" y="340" fill="#7a5a2a">・目標変容 ≠ 実際の変容</text>
@@ -115,6 +113,6 @@
   <text class="ann" x="60" y="594" font-size="11.5">予測配置＝作為の時間設計ゆえ本成分で特に重い。開示された誘導＝招待／隠して自己選択を奪う誘導＝操作。透明性・自己選択・賞味期限・自己更新の不可侵。</text>
 
   <!-- Audit note + credit -->
-  <text class="foot" x="44" y="624">接地：予測符号化・能動的推論・認知負荷・音楽の緊張と解放・物語論の予期と解決・記憶の再固定化＝傍証であって証明でない。クオリア発生は哲学的原始項。設計・監査用（生成非注入）。</text>
+  <text class="foot" x="44" y="624">接地：予測符号化・能動的推論・認知負荷・音楽の緊張と解放・物語論の予期と解決・記憶の再固定化＝傍証であって証明でない。クオリア発生は哲学的原始項。設計・監査用。</text>
   <text class="footR" x="1036" y="644">© 2026 shisaku ／ CC BY 4.0</text>
 </svg>

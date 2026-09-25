@@ -1,0 +1,37 @@
+# IDION 構造理論 補足 ― レンズとの同型（見え方の変化の検査道具） のインデックス（並び・出力先）。正本はモジュール群。
+[doc]
+id     = "idion-lens-isomorphism"
+output = "{{path:shisaku-human-idion-structure}}ja/idion-lens-isomorphism.md"
+
+[meta]
+title    = 'IDION 構造理論 補足 ― レンズとの同型（見え方の変化の検査道具）'
+subtitle = 'Supplement: The Lens Isomorphism as an Inspection Tool for Changes in Seeing'
+related  = 'シサク・ヒト IDION 構造理論（原典）／シサク・世界解釈「見え方が変わる、ということ」の節／姉妹補足：システムとの同型〔idion-system-isomorphism.md〕・具体事例集と分離検出〔idion-cases.md〕'
+author   = 'shisaku'
+version  = 'v0.1'
+header_version = 'v0.1'
+date     = '2026/09/25'
+canonical      = "{{url:shisaku-human-idion-structure}}"
+copyright_year = "2026"
+license_intro  = '''This document is a supplement to the Shisaku Human IDION-Structure Theory — an inspection tool that maps the kinds of change in seeing through a lens (field of view, gaps, haze, resolution, wavelength, depth, and the lens itself) onto the kinds of transformation, to expose gaps in the origin, together with the places where the mapping breaks — authored by shisaku. It is released for others to study, adapt, and implement.'''
+
+[numbering]
+enabled = true
+start   = 1
+format  = ["{n}. ", "{n} "]
+
+[[block]]
+lang          = "ja"
+base_depth    = 1
+cluster_depth = 1                    # 先頭 1 セグメントは所属（役）＝深さに数えない
+groups = [
+  ["shared:meta/supplement-header"],
+  ["document/placement"],
+  ["application/correspondence"],
+  ["application/change-kinds"],
+  ["subject/where-it-breaks"],
+  ["application/procedure"],
+  ["canon/feedback"],
+  ["shared:meta/supplement-colophon"],
+  ["shared:license/supplement-cc-by-4.0"],
+]

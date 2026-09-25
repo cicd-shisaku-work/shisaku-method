@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・価値解釈 (Shisaku Value-Interpretation) v0.1 — 値段と「価値が高い」は、同じ機構の別方向
+  シサク・価値解釈 (Shisaku Value-Interpretation) v0.1.3 — 値段と「価値が高い」は、同じ機構の別方向
   設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝価値（スレート）。値段が接触へ戻る矢印だけ族の固定色（橙）を借りる。
-  本図は第2節の機構だけを引き受ける。射程（§0 の役）・置換の検査は図にしない。
+  本図は「私はこう解釈する」の節の機構だけを引き受ける。射程（「はじめに」の役）・日常で扱える形・置換の検査は図にしない。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
   Author: https://note.com/abstraction
 -->
@@ -92,6 +92,6 @@
   <text x="40" y="546" font-size="13.5" fill="#333">値段に何が入っていたかは、<tspan font-weight="700">数の側からは取り出せない。</tspan>一文で言い直せるなら、それは減っていない。</text>
 
   <text x="40" y="576" font-size="12" fill="#777">※ 価値はクオリアと別の実体ではない。照合に伴って身体に現れる信号を、この語で読んでいる。</text>
-  <text x="40" y="610" font-size="11" fill="#777">シサク・価値解釈 v0.1 ／ 設計・監査用の図（人間向け）。生成非注入。</text>
+  <text x="40" y="610" font-size="11" fill="#777">シサク・価値解釈 v0.1.3 ／ 設計・監査用の図（人間向け）。生成非注入。</text>
   <text x="1040" y="610" font-size="11" fill="#777" text-anchor="end">CC BY 4.0 — shisaku</text>
 </svg>

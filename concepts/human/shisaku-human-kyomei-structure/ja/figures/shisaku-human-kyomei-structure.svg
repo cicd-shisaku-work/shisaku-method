@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・ヒト共鳴構造理論 (Shisaku Human Kyōmei-Structure Theory — SHKST)
-  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。生成非注入。
+  シサク・ヒト共鳴構造理論 (Shisaku Human Kyōmei-Structure Theory)
+  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝共鳴（teal）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
   Author: https://note.com/abstraction
@@ -33,11 +33,9 @@
   <rect class="bg" x="0" y="0" width="1080" height="660"/>
 
   <!-- Title -->
-  <text class="title" x="540" y="40" font-size="25" text-anchor="middle">シサク・ヒト共鳴構造理論</text>
-  <text class="sub" x="540" y="63" font-size="14" text-anchor="middle">Shisaku Human Kyōmei-Structure Theory — SHKST</text>
-  <text class="sub" x="540" y="84" font-size="12.5" text-anchor="middle">実際に受け手側で何が起きたか　／　再演による同調と、帰趨（残存／変容）　／　（SHTT の共鳴成分）</text>
-  <text class="footR" x="1040" y="112">略号：上位＝SHTT／成分＝SH＋頭字＋ST</text>
-  <text class="footR" x="1040" y="127">軌跡 SHTST・表現 SHEST・距離 SHDST・共鳴 SHKST</text>
+  <text class="title" x="540" y="40" text-anchor="middle" style="font-size:25px">シサク・ヒト共鳴構造理論</text>
+  <text class="sub" x="540" y="63" text-anchor="middle" style="font-size:14px">Shisaku Human Kyōmei-Structure Theory（v0.3.1）</text>
+  <text class="sub" x="540" y="84" text-anchor="middle" style="font-size:12.5px">実際に受け手側で何が起きたか　／　再演による同調と、帰趨（残存／変容）　／　（シサク・ヒト変容理論の共鳴成分）</text>
 
   <!-- 再演による同調 (top flow) -->
   <rect class="c-kyo" x="44" y="148" width="180" height="40" rx="7"/><text class="nlbl" x="134" y="166">送り手の内的運動</text><text class="nsub" x="134" y="180">IDION に辿れる記述</text>
@@ -63,45 +61,46 @@
 
   <!-- 天井 marker -->
   <path class="step" d="M64,406 L354,406" stroke-dasharray="5 4"/>
-  <text class="teal" x="64" y="424" font-size="11">一回の接触は主に ①〜②（天井）</text>
+  <text class="teal" x="64" y="424" style="font-size:11px">一回の接触は主に ①〜②（天井）</text>
   <path class="step" d="M364,406 L674,406" stroke-dasharray="5 4"/>
-  <text class="teal" x="674" y="424" font-size="11" text-anchor="end">③〜④は反復・再活性化を時間をかけて要す</text>
+  <text class="teal" x="674" y="424" text-anchor="end" style="font-size:11px">③〜④は反復・再活性化を時間をかけて要す</text>
 
   <!-- Right: 三軸 -->
   <rect class="c-prem" x="700" y="148" width="336" height="120" rx="8"/>
   <text class="panelH" x="716" y="168">三つの軸（潰さず独立に）</text>
-  <text class="ann" x="716" y="190" font-size="11.5">・入口（同調の起動点）＝どの扉から鳴るか</text>
-  <text class="ann" x="716" y="210" font-size="11.5">・深さ＝どこまで深く鳴ったか（共鳴深度≠変容深度）</text>
-  <text class="ann" x="716" y="230" font-size="11.5">・広さ＝どれだけ多くに届いたか</text>
-  <text class="ann" x="716" y="252" font-size="11" fill="#256a6a">入口⊥深さ／広さは別軸（鼻歌＝深いが広さ0）</text>
+  <text class="ann" x="716" y="190" style="font-size:11.5px">・入口（同調の起動点）＝どの扉から鳴るか</text>
+  <text class="ann" x="716" y="210" style="font-size:11.5px">・深さ＝どこまで深く鳴ったか（共鳴深度≠変容深度）</text>
+  <text class="ann" x="716" y="230" style="font-size:11.5px">・広さ＝どれだけ多くに届いたか</text>
+  <text class="ann" x="716" y="252" style="font-size:11px;fill:#256a6a">入口⊥深さ／広さは別軸（鼻歌＝深いが広さ0）</text>
 
   <!-- Right: 信念の再固定 -->
   <rect class="c-kyo" x="700" y="280" width="336" height="118" rx="8"/>
   <text class="panelH" x="716" y="300">信念の再固定（深さの時間機構）</text>
-  <text class="ann" x="716" y="322" font-size="11.5">同調（なぞって警戒を解く）→ 引っかかり</text>
-  <text class="ann" x="716" y="340" font-size="11.5">（小さな不整合）→ 転換（予測誤差）→ 着地</text>
-  <text class="ann" x="716" y="358" font-size="11.5">（自分の一次体験へ）。想起→不安定化→再固定。</text>
-  <text class="ann" x="716" y="380" font-size="11" fill="#256a6a">sweet spot＝分かりそうで分からない。作為の認知は受容経路を変える（不可視≠深さ）。</text>
+  <text class="ann" x="716" y="322" style="font-size:11.5px">同調（なぞって警戒を解く）→ 引っかかり</text>
+  <text class="ann" x="716" y="340" style="font-size:11.5px">（小さな不整合）→ 転換（予測誤差）→ 着地</text>
+  <text class="ann" x="716" y="358" style="font-size:11.5px">（自分の一次体験へ）。想起→不安定化→再固定。</text>
+  <text class="ann" x="716" y="380" style="font-size:11px;fill:#256a6a">至適域＝分かりそうで分からない。作為の認知は経路を変える。</text>
 
   <!-- notes row -->
   <rect class="c-prem" x="44" y="452" width="490" height="88" rx="8"/>
-  <text class="ann" x="58" y="472" font-weight="700" fill="#256a6a">反復と累積</text>
-  <text class="ann" x="58" y="491" font-size="11.5">深い層（③〜④）は一撃で完了しない（天井）。浅い差分が</text>
-  <text class="ann" x="58" y="507" font-size="11.5">後の接触の差分と再結合し、ある時ひとつの構造として立ち上がる。</text>
-  <text class="ann" x="58" y="525" font-size="11.5">＝表現者側 SHEST「変容は未来の変容の材料」と受容側で噛み合う。</text>
+  <text class="ann" x="58" y="472" font-weight="700" style="fill:#256a6a">反復と累積</text>
+  <text class="ann" x="58" y="491" style="font-size:11.5px">深い層（③〜④）は一撃で完了しない（天井）。浅い差分が</text>
+  <text class="ann" x="58" y="507" style="font-size:11.5px">後の接触の差分と再結合し、ある時ひとつの構造として立ち上がる。</text>
+  <text class="ann" x="58" y="525" style="font-size:11.5px">＝表現者側の「変容は未来の変容の材料」と受容側で噛み合う。</text>
 
   <rect class="c-prem" x="546" y="452" width="490" height="88" rx="8"/>
-  <text class="ann" x="560" y="472" font-weight="700" fill="#256a6a">同調の条件／深さ ≠ 広さ</text>
-  <text class="ann" x="560" y="491" font-size="11.5">一次体験（＋その合成＝シミュレーション）に接続した記述ほど防衛を貫きやすい。</text>
-  <text class="ann" x="560" y="507" font-size="11.5">接地なき借り物・捏造された情感は検知に弾かれやすい。</text>
-  <text class="ann" x="560" y="525" font-size="11.5">深さ（鳴りの深さ）と広さ（届いた受け手の数）は別軸——混同しない。</text>
+  <text class="ann" x="560" y="472" font-weight="700" style="fill:#256a6a">同調の条件／深さ ≠ 広さ</text>
+  <text class="ann" x="560" y="491" style="font-size:11.5px">一次体験（＋その合成＝シミュレーション）に接続した記述ほど防衛を貫きやすい。</text>
+  <text class="ann" x="560" y="507" style="font-size:11.5px">接地なき借り物・捏造された情感は検知に弾かれやすい。</text>
+  <text class="ann" x="560" y="525" style="font-size:11.5px">深さ（鳴りの深さ）と広さ（届いた受け手の数）は別軸——混同しない。</text>
 
   <!-- Ethics band -->
   <rect class="c-eth" x="44" y="556" width="992" height="46" rx="8"/>
-  <text class="ann" x="60" y="577" font-size="12.5" font-weight="700" fill="#7a5a3a">倫理＝操作構造の境界（四成分に共通・不可分）</text>
-  <text class="ann" x="60" y="594" font-size="11.5">作為を隠して自己選択を奪う誘導＝操作／開示された誘導＝招待。　透明性・自己選択・賞味期限・自己更新の不可侵（境界は動機でなく「開かれているか」）。</text>
+  <text class="ann" x="60" y="577" font-weight="700" style="font-size:12.5px;fill:#7a5a3a">倫理＝操作構造の境界（四成分に共通・不可分）</text>
+  <text class="ann" x="60" y="594" style="font-size:11.5px">作為を隠して自己選択を奪う誘導＝操作／開示された誘導＝招待。　透明性・自己選択・賞味期限・自己更新の不可侵（境界は動機でなく「開かれているか」）。</text>
 
   <!-- Audit note + credit -->
-  <text class="foot" x="44" y="624">接地：コストリー・シグナリング・ナラティブ移入・共同注意・身体化認知・予測符号化・記憶の再固定化・神経可塑性・動物行動学＝傍証であって証明でない。クオリア発生は哲学的原始項。設計・監査用（生成非注入）。</text>
+  <text class="foot" x="44" y="618">接地：コストリー・シグナリング・ナラティブ移入・共同注意・身体化認知・予測符号化・記憶の再固定化・神経可塑性・動物行動学＝傍証であって証明でない。</text>
+  <text class="foot" x="44" y="633">クオリア発生は哲学的原始項。設計・監査用。</text>
   <text class="footR" x="1036" y="644">© 2026 shisaku ／ CC BY 4.0</text>
 </svg>

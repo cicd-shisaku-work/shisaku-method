@@ -1,0 +1,36 @@
+# IDION 構造理論 補足 ― 語の地図（個性・KOSEI・IDION） のインデックス（並び・出力先）。正本はモジュール群。
+[doc]
+id     = "idion-word-map"
+output = "{{path:shisaku-human-idion-structure}}ja/idion-word-map.md"
+
+[meta]
+title    = 'IDION 構造理論 補足 ― 語の地図（個性・KOSEI・IDION）'
+subtitle = 'Supplement: A Map of the Words Kosei, KOSEI and IDION'
+related  = 'シサク・ヒト IDION 構造理論（原典）「定義」の節／姉妹補足：レンズとの同型〔idion-lens-isomorphism.md〕・システムとの同型〔idion-system-isomorphism.md〕'
+author   = 'shisaku'
+version  = 'v0.1'
+header_version = 'v0.1'
+date     = '2026/09/25'
+canonical      = "{{url:shisaku-human-idion-structure}}"
+copyright_year = "2026"
+license_intro  = '''This document is a supplement to the Shisaku Human IDION-Structure Theory — a map of the everyday Japanese word kosei, the English individuality and personality, KOSEI as used in KOSEI Mining, and IDION: what each word says, how to tell them apart, and where they overlap, with a figure — authored by shisaku. It is released for others to study, adapt, and implement.'''
+
+[numbering]
+enabled = true
+start   = 1
+format  = ["{n}. ", "{n} "]
+
+[[block]]
+lang          = "ja"
+base_depth    = 1
+cluster_depth = 1                    # 先頭 1 セグメントは所属（役）＝深さに数えない
+groups = [
+  ["shared:meta/supplement-header"],
+  ["document/placement"],
+  ["application/procedure"],
+  ["subject/range"],
+  ["document/grounding"],
+  ["canon/feedback"],
+  ["shared:meta/supplement-colophon"],
+  ["shared:license/supplement-cc-by-4.0"],
+]
