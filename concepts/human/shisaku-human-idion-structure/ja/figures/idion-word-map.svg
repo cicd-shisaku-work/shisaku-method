@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  IDION 構造理論 補足 ― 語の地図（個性・KOSEI・IDION） v0.1
+  本文 v0.1 から描いた。円の位置は語どうしの関係だけを表す。
+  Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+  Author: https://note.com/abstraction
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" width="900" height="760" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic',sans-serif">
+  <rect width="900" height="760" fill="#ffffff"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">「個性」とその隣の語——それぞれの資料が言っている範囲</text>
+  <text x="450" y="60" text-anchor="middle" font-size="13" fill="#666">IDION 構造理論 補足 ― 語の地図（個性・KOSEI・IDION）v0.1</text>
+
+  <!-- A: 固有なもの -->
+  <circle cx="430" cy="340" r="250" fill="#eef2f7" stroke="#8a9bb0" stroke-width="2"/>
+  <text x="430" y="116" text-anchor="middle" font-size="15" font-weight="bold" fill="#4a5a70">その人（そのもの）に固有なもの</text>
+
+  <!-- C: personality -->
+  <circle cx="185" cy="455" r="100" fill="#f3e9f7" fill-opacity="0.85" stroke="#9b7bb0" stroke-width="2"/>
+  <text x="150" y="470" text-anchor="middle" font-size="15" font-weight="bold" fill="#6b4a80">personality</text>
+  <text x="150" y="490" text-anchor="middle" font-size="12" fill="#6b4a80">振る舞いと感情の</text>
+  <text x="150" y="506" text-anchor="middle" font-size="12" fill="#6b4a80">特徴の全体</text>
+
+  <!-- B: 他から区別される -->
+  <circle cx="290" cy="280" r="140" fill="#fdf0dc" fill-opacity="0.85" stroke="#c99a4a" stroke-width="2"/>
+  <text x="260" y="196" text-anchor="middle" font-size="14" font-weight="bold" fill="#8a6420">他から区別される</text>
+  <text x="260" y="214" text-anchor="middle" font-size="12" fill="#8a6420">（他との違い）</text>
+  <text x="290" y="268" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">個性</text>
+  <text x="290" y="286" text-anchor="middle" font-size="12" fill="#333">（日本語の辞書）</text>
+  <text x="290" y="310" text-anchor="middle" font-size="14" fill="#222">≈ individuality</text>
+  <text x="290" y="328" text-anchor="middle" font-size="12" fill="#333">（英語の辞書）</text>
+
+  <!-- IDION -->
+  <circle cx="520" cy="380" r="125" fill="#e2eefa" fill-opacity="0.8" stroke="#4a7ab0" stroke-width="2"/>
+  <!-- KOSEI -->
+  <circle cx="515" cy="275" r="95" fill="#e3f2e6" fill-opacity="0.55" stroke="#5a9a68" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <text x="515" y="214" text-anchor="middle" font-size="15" font-weight="bold" fill="#2f6b3d">KOSEI</text>
+  <text x="515" y="231" text-anchor="middle" font-size="11" fill="#2f6b3d">（KOSEI Mining の KOSEI）</text>
+  <text x="515" y="249" text-anchor="middle" font-size="12" fill="#2f6b3d">掘り出され、</text>
+  <text x="515" y="264" text-anchor="middle" font-size="12" fill="#2f6b3d">言葉に上がった側</text>
+
+  <text x="518" y="316" text-anchor="middle" font-size="11" fill="#333">IDION の論旨（射影）</text>
+  <text x="518" y="332" text-anchor="middle" font-size="11" fill="#333">の位置にある</text>
+
+  <text x="520" y="400" text-anchor="middle" font-size="15" font-weight="bold" fill="#2a5080">IDION</text>
+  <text x="520" y="417" text-anchor="middle" font-size="11" fill="#2a5080">（IDION 構造理論 原典）</text>
+  <text x="520" y="437" text-anchor="middle" font-size="12" fill="#2a5080">予測モデル・機構・身体駆動</text>
+  <text x="520" y="453" text-anchor="middle" font-size="12" fill="#2a5080">＝実体。ヒト種に普遍の構造で、</text>
+  <text x="520" y="469" text-anchor="middle" font-size="12" fill="#2a5080">一人ひとりに固有</text>
+
+  <!-- 注記（右） -->
+  <text x="690" y="176" font-size="11" fill="#555">① 日常の「個性」は、他から</text>
+  <text x="690" y="192" font-size="11" fill="#555">区別される固有の性質を言い、</text>
+  <text x="690" y="208" font-size="11" fill="#555">英語にもほぼ同じ語がある</text>
+  <text x="690" y="224" font-size="11" fill="#555">（individuality）。</text>
+
+  <text x="690" y="290" font-size="11" fill="#555">② KOSEI Mining の KOSEI は、</text>
+  <text x="690" y="306" font-size="11" fill="#555">平均的でもっともらしい自己像</text>
+  <text x="690" y="322" font-size="11" fill="#555">への違和感を手がかりに</text>
+  <text x="690" y="338" font-size="11" fill="#555">掘り出され、言葉に上がった側。</text>
+
+  <text x="690" y="420" font-size="11" fill="#555">③ IDION は平均との差では</text>
+  <text x="690" y="436" font-size="11" fill="#555">立たない。KOSEI（個性）は、</text>
+  <text x="690" y="452" font-size="11" fill="#555">日本文化を背景とする、</text>
+  <text x="690" y="468" font-size="11" fill="#555">IDION に最も近い日本語。</text>
+
+  <!-- 出典 -->
+  <line x1="40" y1="612" x2="860" y2="612" stroke="#ddd"/>
+  <text x="40" y="634" font-size="11" fill="#555">個性：デジタル大辞泉「そのもの特有の性質」「パーソナリティー」／日本国語大辞典「他から区別させている固有の性質」</text>
+  <text x="40" y="650" font-size="11" fill="#555">　　　日本大百科全書（ニッポニカ）「他の個体からはっきりと区別される」</text>
+  <text x="40" y="668" font-size="11" fill="#555">individuality：Merriam-Webster 1a「total character peculiar to and distinguishing an individual from others」</text>
+  <text x="40" y="685" font-size="11" fill="#555">personality：Merriam-Webster 3a「the totality of an individual's behavioral and emotional characteristics」</text>
+  <text x="40" y="702" font-size="11" fill="#555">KOSEI（KOSEI Mining の KOSEI）・IDION：IDION 構造理論 原典「定義」の節（定義・四つの性質・KOSEI の段落）</text>
+  <text x="40" y="730" font-size="11" fill="#777">円の位置は語どうしの関係（含む・重なる・離れる）だけを表す。大きさに意味はない。</text>
+</svg>

@@ -231,7 +231,8 @@ src/
                 ├── idion-cases/
                 ├── idion-cost-forms/
                 ├── idion-lens-isomorphism/
-                └── idion-system-isomorphism/
+                ├── idion-system-isomorphism/
+                └── idion-word-map/
 ```
 
 **名前は一つ。** 文書の識別子は、出力されるファイルの語幹（＝概念ディレクトリ名）と一致させ、短縮した別名を作らない。書き方は英小文字とハイフン（リポジトリのディレクトリ命名に合わせる。`README.md` の識別子は `readme`）。モジュールのディレクトリ名・`[doc] id`・`paths.toml` のキーが、同じ一つの名を指す（`[doc] id` とディレクトリ名の一致は lint が見る）。別名を作ると、同じ文書に三つの名が付き、どれがどれかを覚える仕事が増える。
@@ -699,6 +700,7 @@ idion-supplements/
 ├── idion-cost-forms/        document/placement・failure-modes ／ subject/forms・variables ／ application/distinctions・screening ／ canon/feedback
 ├── idion-system-isomorphism/ document/placement・failure-modes ／ application/correspondence・change-kinds・procedure ／ subject/where-it-breaks ／ canon/feedback
 ├── idion-lens-isomorphism/  document/placement ／ application/correspondence・change-kinds・procedure ／ subject/where-it-breaks ／ canon/feedback
+├── idion-word-map/          document/placement・grounding ／ application/procedure ／ subject/range ／ canon/feedback
 └── idion-cases/             document/placement ／ application/procedure・split-detection ／ canon/cases・feedback・observations
 ```
 
