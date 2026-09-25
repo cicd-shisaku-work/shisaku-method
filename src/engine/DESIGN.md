@@ -230,6 +230,7 @@ src/
                 │   └── ja/
                 ├── idion-cases/
                 ├── idion-cost-forms/
+                ├── idion-lens-isomorphism/
                 └── idion-system-isomorphism/
 ```
 
@@ -697,6 +698,7 @@ idion-supplements/
 ├── idion-axes-map/          document/placement・failure-modes ／ subject/axes・objects・independence・receiver-mapping ／ canon/feedback
 ├── idion-cost-forms/        document/placement・failure-modes ／ subject/forms・variables ／ application/distinctions・screening ／ canon/feedback
 ├── idion-system-isomorphism/ document/placement・failure-modes ／ application/correspondence・change-kinds・procedure ／ subject/where-it-breaks ／ canon/feedback
+├── idion-lens-isomorphism/  document/placement ／ application/correspondence・change-kinds・procedure ／ subject/where-it-breaks ／ canon/feedback
 └── idion-cases/             document/placement ／ application/procedure・split-detection ／ canon/cases・feedback・observations
 ```
 
