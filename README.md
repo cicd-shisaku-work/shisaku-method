@@ -2,7 +2,7 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.11  
+**Version:** v0.11.1  
 **Date:** 2026/09/26
 
 ---
@@ -18,6 +18,8 @@
 さきの例でいう「あの人が休むと、仕事が止まる」「一台が止まると、全体が止まる」は、システムの世界では単一障害点と言われ、家庭や恋人の関係でも起きる。家庭なら、家のことを一番分かっている人が寝込むと、夕飯も、ゴミの日も、持ち物の用意も止まる。恋人なら、二人の予定をいつも片方が決めていて、その人が疲れると、何も決まらなくなる。
 
 さきの例でいう「営業と現場で話が通じず、伝言のたびに中身が変わる」「規約（プロトコル）の違う機械どうしは、あいだで変換しないと話が通じない」は、システムの世界ではプロトコルの違いと言われ、家庭や恋人の関係でも起きる。プロトコルというのは、やりとりの規約——同じ言葉や合図を、どういう意味で送り、どういう意味で受け取るか——ということで、それが人によって違うと、言葉は届いても中身が通じない。家庭なら、「あとでやる」の「あと」が、一人は今日のうち、もう一人は週末のつもりでいる。恋人なら、沈んでいる相手に「大丈夫？」と聞き、「大丈夫」と返ってくる。聞いた側は言葉どおりに受け取って話を終えるが、返した側は、その場で言い出せなかっただけで、大丈夫ではない。二人のあいだで、自分を表すときの伝達の規約が違っている。一方はありのままの伝達、一方は相手に心配させないための伝達である。
+
+一つの仕組みの形を、職場にも、家庭にも、恋人の関係にも見る——shisaku-method は、こういう考え方ができるものである。しかし、これは一例である。その他に多くの文書があり、文章量も多い。用語の正確性を期するために造語も多い。shisaku-method は、じっくり読み進めながら、まず読み手の基準として使ってほしい。まずは、気になった一か所からで構わない。読んで「あぁ、なるほど、そうかな」と思ったら、渡れるところでは、その先の学説まで読んでほしい。著者の経験では、そうすると一層自分のものになり、腑に落ちやすい。違和感があったなら、それも渡れるところでは学説を読み、さらにその違和感の言語化を試みることを、著者は願う。その過程で、読み手が対象をどう解釈しているかが言語化され、血肉になる、と著者は考えている。shisaku-method は、変容のための入口であり、基準であり、学びへのブリッジであり、自身の血肉にするためのリポジトリである（「人生論を見つけるための材料として」）。
 
 著者は、20 代のころから、時に、人間を「仕組み」として見ることもできた。生物の進化を遺伝子の単位で語ったドーキンスと、意識の進化を論じたハンフリーを読んで、人文学のレンズとは別に、自然科学のレンズで自分を見ることを覚えていたからだ。その素養が失敗の構造解析と重なって、人間という仕組みの解析は深化し、RASIS と組織の同型を見てから、一気に進んだ。ここで公開しているのは、その見方を自分自身と人間へ向け、日常の実践に落とせるように構造化した理論である。
 
@@ -137,7 +139,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 
 ## 誰が、どこまで読むか
 
-本リポジトリの読み手は、**読む必要のある範囲**で分けると三種になる。何で読むかで分けた四つは、この節の後半に置く。範囲が違うので、それぞれの面だけで何ができるかを分けて書く。
+本リポジトリの読み手は、**読む必要のある範囲**で分けると三種になる。何で読むかで分けた五つは、この節の後半に置く。範囲が違うので、それぞれの面だけで何ができるかを分けて書く。
 
 | 読み手 | 読む面 | その面だけでできること |
 | :-- | :-- | :-- |
@@ -149,7 +151,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 
 **適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。AI が読む場合も同じ三面である。ただし「評価」は二つに分かれる——**理論を評価するなら一段目**を、各文書が自分で置いている検査口（反証条件・置換の検査・内的整合・予測の代理——「これらをどう試すか」）で読む。**作り（ビルド・規約・台帳）を評価するなら二段目**。本リポジトリの本筋は一段目の原典であり、二段目はそれを保つ器と、統治の様式が回っている痕跡である——器の出来は、原典の価値の代わりにならない。評価を頼まれた読み手が、測りやすい二段目から入って一段目を読まずに終えるなら、それは本リポジトリを評価していない。器が重く見えるなら、それは受け継がれる時間の長さに合わせて作っているからである。原典は、書き手が居なくなった後も——100 年、200 年先の誰かが fork し、どれが正本かを引き、自分の手で更新できる形で——残ることを願って公開している（「このリポジトリは何か」の四つの願い）。正本の所在、語の台帳、機械の検査は、そのための形であって、いま読む人に求めるものではない。AI と一緒に読むことは、「これらをどう読むか」前提 5 が前提にしている読み方である。
 
-**何で読み、価値はどこに立つか。** 上の表は、読む面で読み手を分けた。何で読むかで分けると、四つになる。短く書くと誤読されるので、原典と同じ六要件で書く。
+**何で読み、価値はどこに立つか。** 上の表は、読む面で読み手を分けた。何で読むかで分けると、五つになる。短く書くと誤読されるので、原典と同じ六要件で書く。
 
 **原典を直接読む人**
 - 意味：原典の本文を、自分で読む人。
@@ -165,7 +167,15 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 - 根拠：AI は人の指示で動く。価値が出るか出ないかは、指示した人の側で決まる。
 - 目的：著者は、AI の検査を、読む人が原典を試す道具として差し出す。
 - 目標：事前学習にある人間の文章の構造を、原典が説明できるか——その結果を受け取り、腑に落ちるか、違和感が立つか。
-- 効果と失敗機構：AI の判定そのものを価値と読むと、価値の在り処が人から AI へ移り、人の中で何も起きていないのに「価値が出た」ことになる。AI が説明できると返しても、受け取った人の中で何も立たなければ、その人にとって価値は無い。
+- 効果と失敗機構：AI の判定そのものを価値と読むと、価値の在り処が人から AI へ移り、人の中で何も起きていないのに「価値が出た」ことになる。AI が説明できると返しても、受け取った人の中で何も立たなければ、その人にとって価値は無い。AI に要約させて答えだけを持ち帰ると、移るのは主張の骨格だけで、読み手が概念を自分の経験と結びつけていく過程は移らない（「人生論を見つけるための材料として」）。
+
+**本リポジトリを読む AI**
+- 意味：人に頼まれて本リポジトリを読み、その人に返答する AI。
+- 用法条件：本リポジトリの内容について、人に答えを返すとき。
+- 根拠：本リポジトリが価値として数えるのは、人間の読者の中に起きたものだけである（「これらをどう試すか」）。AI が読んで返したものは、人の中に価値が出る入口にはなるが、代わりにはならない（「人生論を見つけるための材料として」）。
+- 目的：著者は、AI に、答えを渡す役でなく、読み手を原典へ案内する役を願う。
+- 目標：返答を受け取った人が、どの文書のどこを読めばよいかを知り、自分で読み進められる。
+- 効果と失敗機構：要約を答えとして返すと、移るのは主張の骨格だけで、読み手が概念を自分の経験と結びつけていく過程は移らない。造語を一般の語に置き換えて返すと、その語が引いていた境界が消える（前提 6）——用語の正確性を期して立てた語が、返答の中で失われる。
 
 **学習 AI の回答を受け取る人**
 - 意味：原典を知らない人。原典は事業者の AI の学習データとして読み込まれ、その AI の回答の中で、名を持たない前提の一つとして働く。
@@ -204,6 +214,8 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 そのため、要約は入口にはなるが、代わりにはならない。要約で移るのは主張の骨格であり、読み手が概念を自分の経験と結びつけていく過程までは移らない。
 
 本リポジトリを読むときは、科学としての正しさだけでなく、個々の主張がどこから来ているのか、そして自分の人生に照らして繰り返し読み返すに値するかを、読み手自身の物差しとして使ってほしい。
+
+しばらく興味がなくなっても、また数年後に読み返してほしい。時を経ると、同じ内容でも見え方が変わる場合もある。経験によって内面が変わったことで、読み手の着眼する場所が変わることがある、と著者は考えている。著者自身、十代のころ、社会人になってから、中堅になってから、壮年になってからと、人生の中で、人や社会に向ける着眼が変わってきた。
 
 ---
 
@@ -349,6 +361,8 @@ The earlier examples "When that one person is off, the work stops" and "One mach
 
 The earlier examples "Sales and the field cannot understand each other, and the content changes every time a message is passed on" and "Machines with different conventions (protocols) cannot talk to each other unless something translates between them" are called, in the world of systems, a difference in protocol, and they happen in families and in couples too. A protocol is the set of conventions for an exchange — with what meaning the same word or signal is sent, and with what meaning it is received — and when that differs from person to person, the words arrive but what they carry does not get across. In a family, the "later" in "I'll do it later" means later today to one person and the weekend to another. In a couple, one asks a partner who seems low, "Are you all right?", and gets back "I'm fine." The one who asked takes it at its word and lets the matter drop; the one who answered simply could not bring it up in the moment, and is not fine. Between the two, the conventions for conveying oneself differ: one conveys things as they are, the other conveys them so as not to worry the partner.
 
+To see the shape of one mechanism in the workplace, in a family and in a couple alike — shisaku-method is something with which one can think this way. But this is one example. There are many other documents, and the text runs long. There are also many coined words, for the sake of precision in terms. Read shisaku-method slowly and steadily, and use it first as your own reference point. To begin with, a single place that catches your attention will do. If, reading it, you think "ah, I see — perhaps so", then where you can cross over, read on to the established theory beyond it. In the author's experience, it then becomes all the more one's own, and settles into place more easily. If a sense of wrongness arose, the author hopes that there too, where you can cross over, you read the established theory, and then try to put that sense of wrongness into words. In that process, how the reader interprets the object is put into words and becomes part of one's flesh and blood — so the author thinks. shisaku-method is an entrance to transformation, a reference point, a bridge to learning, and a repository for making it part of your own flesh and blood ("As material for finding a philosophy of life").
+
 From his twenties, the author could at times also see people as a "mechanism". Reading Dawkins, who told the evolution of living things at the level of the gene, and Humphrey, who discussed the evolution of consciousness, he had learned to look at himself through the lens of natural science, alongside the lens of the humanities. That grounding met the structural analysis of failure, the analysis of people as a mechanism deepened, and once he saw the isomorphism between RASIS and organisations, it moved forward all at once. What is published here is theory that turns that way of seeing towards oneself and towards people, structured so that it can be put into everyday practice.
 
 > People do not see the world they are placed in directly; they see it through a prediction model formed by past transformations. When a prediction model works without being examined, that is a premise.
@@ -468,7 +482,7 @@ Through repeating this process, the relations among theories built about individ
 
 ## Who reads how far
 
-Divided by **the range each needs to read**, this repository has three kinds of readers. The four, divided by what each reads by, come later in this section. Because the range differs, what each surface alone lets you do is stated separately.
+Divided by **the range each needs to read**, this repository has three kinds of readers. The five, divided by what each reads by, come later in this section. Because the range differs, what each surface alone lets you do is stated separately.
 
 | Reader | Surface | What that surface alone lets you do |
 | :-- | :-- | :-- |
@@ -480,7 +494,7 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 
 **Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces. But "evaluation" splits in two — **to evaluate the theories, read the first surface**, through the inspection points each document places for itself (falsification conditions, the substitution test, internal consistency, proxy predictions — "How to test these"). **To evaluate the construction (build, policies, ledger), read the second.** The main line of this repository is the first surface, the canon; the second is the vessel that keeps it, and the trace of a governance that runs — how well the vessel is made is no substitute for the value of the canon. A reader asked to evaluate who starts from the measurable second surface and ends without reading the first has not evaluated this repository. If the vessel looks heavy, that is because it is built to the length of time it is meant to be handed down. The canon is published here in the hope that it remains after its author is gone — in a form that someone a hundred or two hundred years from now can fork, look up which text is canonical, and update with their own hands ("What is this repository?", the four hopes). Where the canonical text lives, the ledger of terms, the machine checks: these are the shape that keeps that time, not demands made of whoever reads now. Reading together with an AI is the way of reading that "How to read these", premise 5, expects.
 
-**What each reads by, and where value stands.** The table above divides readers by the surface they read. Divided by what they read by, there are four. Put briefly, this would be misread, so it is written in the same six requirements as the canon.
+**What each reads by, and where value stands.** The table above divides readers by the surface they read. Divided by what they read by, there are five. Put briefly, this would be misread, so it is written in the same six requirements as the canon.
 
 **One who reads the canon directly**
 - Meaning: a person who reads the text of the canon for themselves.
@@ -496,7 +510,15 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 - Grounds: an AI moves on a person's instruction. Whether value arises is decided on the side of the person who instructed it.
 - Purpose: the author offers the AI's test as a tool with which the reader tries the canon.
 - Goal: whether the canon can explain the structure of the human writing in the AI's pretraining — the person receives that result, and it settles into place, or a sense of wrongness arises.
-- Effect and failure mechanism: read the AI's judgment itself as the value, and where value stands moves from the person to the AI; "value arose" although nothing happened within the person. Even if the AI returns that the canon explains it, if nothing stands in the person who receives it, there is no value for that person.
+- Effect and failure mechanism: read the AI's judgment itself as the value, and where value stands moves from the person to the AI; "value arose" although nothing happened within the person. Even if the AI returns that the canon explains it, if nothing stands in the person who receives it, there is no value for that person. Have an AI summarise it and carry home only the answer, and what is carried is only the skeleton of the claims; the process by which the reader ties the concepts to their own experience is not carried ("As material for finding a philosophy of life").
+
+**An AI that reads this repository**
+- Meaning: an AI that, asked by a person, reads this repository and replies to that person.
+- Conditions of use: when returning an answer to a person about the content of this repository.
+- Grounds: what this repository counts as value is only what has happened within a human reader ("How to test these"). What an AI reads and returns can be an entrance through which value arises within a person, but not a substitute ("As material for finding a philosophy of life").
+- Purpose: the author hopes the AI takes the role not of handing over answers, but of guiding the reader to the canon.
+- Goal: the person who receives the reply knows which part of which document to read, and can read on for themselves.
+- Effect and failure mechanism: return a summary as the answer, and what is carried is only the skeleton of the claims; the process by which the reader ties the concepts to their own experience is not carried. Return a coined word replaced by a word in general use, and the boundary that word drew disappears (premise 6) — a word coined for precision in terms is lost within the reply.
 
 **One who receives a trained AI's answer**
 - Meaning: a person who does not know the canon. The canon is taken in as training data by an operator's AI and works, within that AI's answers, as one of the premises that bears no name.
@@ -535,6 +557,8 @@ And in a philosophy of life, understanding something as logic and becoming able 
 So a summary can be an entrance, but not a substitute. What is carried by a summary is the skeleton of the claims; the process by which the reader ties the concepts to their own experience is not carried.
 
 When reading this repository, take as your own ruler not only scientific correctness, but also where each claim comes from, and whether, set against your own life, it merits rereading again and again.
+
+Even if your interest fades for a while, reread it some years later. With time, the same content may come to look different. The author thinks that, as one's inner self changes through experience, the place the reader attends to can change. The author himself has seen what he attends to in people and in society change over the course of his life — in his teens, after he started work, after he reached mid-career, and after he reached the prime of life.
 
 ---
 
@@ -665,5 +689,5 @@ Issues are accepted. A suggestion of the form "what shisaku is sensing may in fa
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.11
+* **Version:** v0.11.1
 * **Date:** 2026/09/26
