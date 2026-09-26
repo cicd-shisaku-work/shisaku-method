@@ -2,7 +2,7 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.10.2  
+**Version:** v0.11  
 **Date:** 2026/09/26
 
 ---
@@ -11,11 +11,25 @@
 
 たとえば、職場で、こういう場面に出会ったことはないだろうか。あの人が休むと、仕事が止まる。仕事のできる人に、仕事が集まり続ける。引き継ぎのあとで「それ、聞いてない」が起きる。同じ資料がいくつもあって、どれが最新か分からない。営業と現場で話が通じず、伝言のたびに中身が変わる。
 
-著者（シサク）は、インフラエンジニアとして、システムの障害にこれと同じ形を何度も見てきた。一台が止まると、全体が止まる。負荷が一台に偏る。メモリの中にしか無かったデータが、再起動で消える。同じデータの写しがいくつもあって、どれが正しいか分からなくなる。約束事（プロトコル）の違う機械どうしは、あいだで変換しないと話が通じない。
+著者（シサク）は、インフラエンジニアとして、システムの障害にこれと同じ形を何度も見てきた。一台が止まると、全体が止まる。負荷が一台に偏る。メモリの中にしか無かったデータが、再起動で消える。同じデータの写しがいくつもあって、どれが正しいか分からなくなる。規約（プロトコル）の違う機械どうしは、あいだで変換しないと話が通じない。
 
 システムの世界では、こうした形の多くを、RASIS（信頼性・可用性・保守性・保全性・機密性）という概念で扱う。仕組みを安定して運用するための概念である。著者は、プロジェクトマネージャーとして組織を見たとき、これを、組織を安定して運用するためのレンズとして用いた。組織もシステムも、本質は同じ「仕組み」だと見たからである。そう見ると、組織の困りごとは、誰かの性格や努力の問題でなく、仕組みの形として説明がつき、どこに手を打てばよいかが見えてくる。
 
+さきの例でいう「あの人が休むと、仕事が止まる」「一台が止まると、全体が止まる」は、システムの世界では単一障害点と言われ、家庭や恋人の関係でも起きる。家庭なら、家のことを一番分かっている人が寝込むと、夕飯も、ゴミの日も、持ち物の用意も止まる。恋人なら、二人の予定をいつも片方が決めていて、その人が疲れると、何も決まらなくなる。
+
+さきの例でいう「営業と現場で話が通じず、伝言のたびに中身が変わる」「規約（プロトコル）の違う機械どうしは、あいだで変換しないと話が通じない」は、システムの世界ではプロトコルの違いと言われ、家庭や恋人の関係でも起きる。プロトコルというのは、やりとりの規約——同じ言葉や合図を、どういう意味で送り、どういう意味で受け取るか——ということで、それが人によって違うと、言葉は届いても中身が通じない。家庭なら、「あとでやる」の「あと」が、一人は今日のうち、もう一人は週末のつもりでいる。恋人なら、沈んでいる相手に「大丈夫？」と聞き、「大丈夫」と返ってくる。聞いた側は言葉どおりに受け取って話を終えるが、返した側は、その場で言い出せなかっただけで、大丈夫ではない。二人のあいだで、自分を表すときの伝達の規約が違っている。一方はありのままの伝達、一方は相手に心配させないための伝達である。
+
 著者は、20 代のころから、時に、人間を「仕組み」として見ることもできた。生物の進化を遺伝子の単位で語ったドーキンスと、意識の進化を論じたハンフリーを読んで、人文学のレンズとは別に、自然科学のレンズで自分を見ることを覚えていたからだ。その素養が失敗の構造解析と重なって、人間という仕組みの解析は深化し、RASIS と組織の同型を見てから、一気に進んだ。ここで公開しているのは、その見方を自分自身と人間へ向け、日常の実践に落とせるように構造化した理論である。
+
+> 人間は、自分が置かれている世界を直接見ているのではなく、過去の変容によって形成された予測モデルを通して見ている。予測モデルが検討されずに働いているとき、それが前提である。
+>
+> だから、問題を変えたいなら、表面の事象だけではなく、その事象を生み出している前提・認知・構造まで遡る必要がある。
+>
+> そして、自分自身もその構造の一部なので、世界を分析するだけではなく、分析によって自分の認知フレームも更新していく。
+>
+> その更新は、接触によって起きる。接触は、他者との関わりや表現・共鳴だけでなく、思索で自分の中から出てきた言葉とのあいだにも起きる。AI は、その認知フレームを掘り出すための手鏡になり、また他者へ装着し継承するための媒介になり得る。
+
+以上は要約である。このリポジトリを読むことも、一つの接触である——読み手は、著者が書いた記述に接触し、自分の中に生まれた気づきや理解と、また接触する。要約で何が移り、何が移らないかは、「人生論を見つけるための材料として」の節に書いた。
 
 このリポジトリを読んで、読み手の見え方が変わることがある。見ていたのがレンズ越しだったと気づくことも、迷いがなくなることも、誤りを未然に防げることもある——著者（シサク）自身には、そういうことが起きてきた。それが起きるか、ほかにどんな価値が出るかは、読み手の中でしか決まらない（「これらをどう読むか」の「価値が出るとは何か」）。
 
@@ -36,7 +50,7 @@
 
 なぜ作っているのか。**shisaku-method は、シサクの自己の価値を最大化するための手段である。そして、一人ひとりが手綱を持って、自分の欲求を昇華する世界の構築を願って、ここで公開する。** 自己のレンズを知り、更新し、手綱を握り、自己の欲求を昇華するため。自己の価値を高め（自己の肯定と、社会との調和）、判断と行動を最適化し、クオリアの駆動に高次に応えるため。人間が置かれている状況の見方はシサク・世界解釈にあり、なぜそれが社会の仕組みの側でなく一人ひとりの側から始まるのかはシサク・社会更新解釈にある。世界解釈が「どう昇華し、どんな枠で違和感を読み解くか——その具体的な技術は、この解釈の上に、別に書かれていく」と言って範囲の外に置いたものを、ここで書いている。
 
-ここで公開するのは、シサクが自己の中に持つ、内外に関する解釈を言語化したものである。言語化したものは移せる。移せないのは、その言語化の対象となった IDION——シサクの変容によって形作られているもの——である。本リポジトリを GitHub で公開しているのは、四つを願うからである。
+ここで公開するのは、シサクが自己の中に持つ、内外に関する解釈を言語化したものである。言語化したものは移せる。移せないのは、その言語化の対象となった IDION——シサクの変容によって形作られているもの——である。ここで移せないと言うのは、書き手の側のものである。読み手の側で移らないものは、「人生論を見つけるための材料として」の節に書いた。本リポジトリを GitHub で公開しているのは、四つを願うからである。
 
 一に、他者が fork し、己の解釈と照らし合わせ、修正することで、価値を見出してほしいから。基準があれば、差異に着眼しやすい。自分のレンズは、掛けているあいだ、掛けていることに気づきにくい——見ていたのがレンズ越しだったと気づくのは、たいてい何かに引っかかったときである（シサク・世界解釈「見え方が変わる、ということ」）。著者の経験では、何も無いところから言語化するより、他者の言語化を読んで「ここは自分とは違う」と引っかかるところから始めるほうが早かった。たとえば、誰かの書いた仕事の選び方を読んでいて、「いや、自分はそうじゃない」と思う一行に出会うとする。その引っかかりが、自分の言葉の書き出しになる。他者は言語化したものを受け取り、自身の Book of Knowledge として必要な修正を加え、再構成すればよい——基準は採用するためでなく、差異を取るために差し出す。
 
@@ -95,7 +109,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 - **試作**（Prototype）— 形にすること
 - **施策**（Launch）— 人の見えるところに出して、試すこと
 
-この三位一体は円環をなし、どれか一つとして欠けてはならない。漢字で表記するなら「志作駆」であり、これはKOSEI Miningにおける志作駆円環の駆動原理とも接続する。
+この三位一体は円環をなし、どれか一つとして欠けてはならない。漢字で表記するなら「志作駆（しさく）」であり、これはKOSEI Miningにおける志作駆円環（しさくえんかん）の駆動原理とも接続する。
 
 ### 「失敗の構造解析」
 
@@ -177,12 +191,28 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 
 ---
 
+## 人生論を見つけるための材料として
+
+著者は、画一的な人生論を好まない。人は生まれ持った気質、育んできた嗜好、重ねてきた体験を持ち、その一人ひとりの歴史の中で、生きることへの価値観も変わっていくと考えるからである。
+
+故に本リポジトリは、完成した人生論を渡すものではない。読み手が自分自身の人生論を見つけ、組み立て、更新していくための材料と方法を差し出すものである。
+
+人生論の正しさは、自然科学の理論と同じ意味では判定できない。しかし、検討できないわけではない。ある主張がどのような経験・観察・前提・推論から導かれたのかを遡り、その根拠と構造を確かめることはできる。主要な文書が適用範囲や置換の検査を明記しているのは、そのためである。
+
+また人生論では、論理として分かることと、自分の判断や行動に使えるようになることは別である。著者の経験上、示された論理がいかに整合性が高くても、初見であったり、抽象的であったり、それまでの自己の論理と衝突したりする場合、人はその場で論理をすぐさま受け入れ、変われる存在ではないと考える。その場で受け入れて変われた人を、著者は見たことがない。自分の経験と照らし合わせ、繰り返し考え、ときに違和感を抱えたまま保留し、時間をかけて自分のものにしていく。
+
+そのため、要約は入口にはなるが、代わりにはならない。要約で移るのは主張の骨格であり、読み手が概念を自分の経験と結びつけていく過程までは移らない。
+
+本リポジトリを読むときは、科学としての正しさだけでなく、個々の主張がどこから来ているのか、そして自分の人生に照らして繰り返し読み返すに値するかを、読み手自身の物差しとして使ってほしい。
+
+---
+
 ## これらをどう読むか（仮説としての性格）
 <!-- machinery-def: README の八前提 -->
 
 本リポジトリの諸概念は、いずれも**仮説であり、設計のための公理系**である。読むときの前提を八点：
 
-1. **仮説である**——検証された科学的命題ではなく、まだ工学化されていない対象（人間の認知・表現）をシステム思考で設計図に起こす試みである。
+1. **仮説である**——検証された科学的命題ではなく、まだ工学化されていない対象（人間の認知・表現）をシステム思考で設計図に起こす試みである。「人生論を見つけるための材料として」の節が言うのは、人生論の正しさの性質である。この前提が言うのは、本リポジトリの諸概念の身分——まだ検証されていない仮説であること——であり、検査の手続きは「これらをどう試すか」が持つ。
 2. **実証は下流にしかない**——有効性は、これに基づく表現が受け手にどう残るかによって弱く判定される。理論そのものの中に実証はない。
 3. **接地は傍証であって証明ではない**——進化・認知科学などへの接続は論理密度を上げる足場であって、証明ではない。クオリアの発生は哲学的な原始項として残す。
 4. **命令でなく機構で書く**——「こうせよ」ではなく「なぜそうすると効くのか」を記述する。
@@ -193,7 +223,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 
 **価値が出るとは何か。** 著者は、解釈の各文書の冒頭で、真偽ではなく、価値が出るかどうかで読んでほしいと書いている。これは、読み方の着眼の提示である——真偽から、自分の内に何が出るかへ、着眼を移してほしい。問うのは、どの場合に価値が生じるかである。価値は、読み手が原典に触れ、自分の基準と照らし合わせたとき、読み手の内に出る（〔シサク・価値解釈〕）。出方は一つではない——視界がひらける。焦点が合う。違和感が出る。基準との差異が無く、「そのとおりだ」と納得する。「いや、ちょっと違う」と思う。「あぁ、なるほど」と思う。腑に落ちることも、その一つである。本リポジトリは、どれも、価値が出た場合に数える。ここに挙げたのは例であって、閉じた一覧ではない。出たかどうかを判定するのは読み手であり、著者にも評価者にも代わりに判定することはできない（「これらをどう試すか」）。
 
-**読み終えた手元に、何が残るか。** 著者（シサク）は、見え方が変わって、迷いがなくなったことがある。誤りを未然に防げたことがある。自分の進む道が見えたように感じたことがある。そのたびに、自分の手綱が握りやすくなったと感じてきた（〔シサク・世界解釈〕「見え方が変わる、ということ」）。同じものが読み手の手元に残るとは、約束できない。見え方が変わったとき何が変わったかは、同じ節が七つに分けて持つ。見え方が変わって、それが残るなら、その過程は〔シサク・ヒト変容理論〕が扱う。ただし、価値が出るのは見え方が変わったときだけではない——「そのとおりだ」と確かめ直した読みも、価値が出た場合に数える。この価値は、理論の値打ちとは別のものである。価値は読み手の内に、その場で出る。値打ちは外から測る——その判定の材料になるのは、下流で受け手に残ったものである（前提 8）。例は、読み手が自分の対象で試すためにある——価値が出るかは、例の上でしか試せない。
+**読み終えた手元に、何が残るか。** 著者（シサク）は、見え方が変わって、迷いがなくなったことがある。誤りを未然に防げたことがある。自分の進む道が見えたように感じたことがある。そのたびに、自分の手綱が握りやすくなったと感じてきた（〔シサク・世界解釈〕「見え方が変わる、ということ」）。同じものが読み手の手元に残るとは、約束できない。見え方が変わったとき何が変わったかは、同じ節が七つに分けて持つ。見え方が変わって、それが残るなら、その過程は〔シサク・ヒト変容理論〕が扱う。ただし、価値が出るのは見え方が変わったときだけではない——「そのとおりだ」と確かめ直した読みも、価値が出た場合に数える。この価値は、理論の値打ちとは別のものである。価値は読み手の内に、その場で出る。値打ちは外から測る——その判定の材料になるのは、下流で受け手に残ったものである（前提 8）。例は、読み手が自分の対象で試すためにある——価値が出るかは、例の上でしか試せない。「人生論を見つけるための材料として」の節が言う、繰り返し読み返すに値するかという読み手自身の物差しも、価値の側にある——値打ちの物差しではない。
 
 価値が出ない場面もある。読み終えて、「わかりきっていることだ」「つまらない」「時間の無駄だった」と思ったなら、その読み手の中に、この文書の価値は出ていない。「そのとおりだ」も、照らし合わせたことは同じである。違うのは向きで、「そのとおりだ」は、自分の中で照らし合わせて肯定している——ぼやけていた焦点を少し合わせているか、肯定的に確かめ直している。こういう概念が存在するべきだ、という読みである。「つまらない」は、概念そのものに価値が無い、という読みである——そんなことを言っても、何も得は無い、と。それでも、何も残らないわけではない。「この文書は、自分には読む価値が無い」という経験が、記憶として残る。けれども、本リポジトリは、それを価値が出た場合に数えない。読んだ時間の労力に見合うものは、その読み手の中に出ていない。著者としては、申し訳なく思う。そのときは、別の解釈を選べばいい。
 
@@ -315,7 +345,21 @@ The author (shisaku), as an infrastructure engineer, has seen the same shapes ag
 
 In the world of systems, many of these shapes are handled with a concept called RASIS (reliability, availability, serviceability, integrity, security) — a concept for running a mechanism stably. When the author looked at organisations as a project manager, he used it as a lens for running an organisation stably, because he saw organisations and systems as, at bottom, the same thing: a mechanism. Seen that way, an organisation's troubles become explicable not as matters of someone's character or effort but as the shape of a mechanism, and where to act comes into view.
 
+The earlier examples "When that one person is off, the work stops" and "One machine stops, and the whole stops" are called, in the world of systems, a single point of failure, and they happen in families and in couples too. In a family, when the person who knows the household best is laid up, dinner, rubbish day and getting things ready all stop. In a couple, when one always decides the plans for both, nothing gets decided once that person is tired.
+
+The earlier examples "Sales and the field cannot understand each other, and the content changes every time a message is passed on" and "Machines with different conventions (protocols) cannot talk to each other unless something translates between them" are called, in the world of systems, a difference in protocol, and they happen in families and in couples too. A protocol is the set of conventions for an exchange — with what meaning the same word or signal is sent, and with what meaning it is received — and when that differs from person to person, the words arrive but what they carry does not get across. In a family, the "later" in "I'll do it later" means later today to one person and the weekend to another. In a couple, one asks a partner who seems low, "Are you all right?", and gets back "I'm fine." The one who asked takes it at its word and lets the matter drop; the one who answered simply could not bring it up in the moment, and is not fine. Between the two, the conventions for conveying oneself differ: one conveys things as they are, the other conveys them so as not to worry the partner.
+
 From his twenties, the author could at times also see people as a "mechanism". Reading Dawkins, who told the evolution of living things at the level of the gene, and Humphrey, who discussed the evolution of consciousness, he had learned to look at himself through the lens of natural science, alongside the lens of the humanities. That grounding met the structural analysis of failure, the analysis of people as a mechanism deepened, and once he saw the isomorphism between RASIS and organisations, it moved forward all at once. What is published here is theory that turns that way of seeing towards oneself and towards people, structured so that it can be put into everyday practice.
+
+> People do not see the world they are placed in directly; they see it through a prediction model formed by past transformations. When a prediction model works without being examined, that is a premise.
+>
+> So if you want to change a problem, you need to trace back not only the surface events but the premises, cognition and structure that produce them.
+>
+> And since you yourself are part of that structure, you do not only analyse the world; through the analysis you also update your own cognitive frame.
+>
+> That update happens through contact. Contact happens not only in relations with others, and in expression and resonance, but also with words that have come out of oneself in contemplation. AI can become a hand mirror for digging out that cognitive frame, and a medium through which others can wear and inherit it.
+
+The above is a summary. Reading this repository is also a contact — the reader comes into contact with what the author has written, and then again with the noticing and understanding born within themselves. What is carried by a summary, and what is not, is written in the section "As material for finding a philosophy of life".
 
 Reading this repository, the reader's way of seeing may change. One may notice that one was looking through a lens; hesitation may go; an error may be prevented before it happens — such things have happened to the author (shisaku) himself. Whether that happens, and what other value arises, is decided only within the reader ("How to read these", "What it means for value to arise").
 
@@ -336,7 +380,7 @@ What began as a provisional way of seeking answers to these has continued to the
 
 Why build it? **The shisaku-method is a means of maximising shisaku's own value. And it is published here in the hope of building a world in which each person holds their own reins and sublimates their own desires.** To know one's own lens, update it, hold the reins, and sublimate one's own desires. To raise one's own value (affirming oneself, and being in harmony with society), optimise judgment and action, and answer the drive of qualia at a higher order. How to see the situation people are placed in is in the Shisaku World-Interpretation; why that begins on the side of each person rather than on the side of society's institutions is in the Shisaku Social-Renewal Interpretation. What the World-Interpretation placed outside its scope — "how to sublimate, and with what frame to read a sense of wrongness: the concrete techniques are to be written separately, on top of this interpretation" — is what is written here.
 
-What is published here is shisaku's interpretations of inside and outside, as held within the self, put into words. What is put into words can be carried away; what cannot is the object of that wording — the IDION, formed by shisaku's transformations. This repository is published on GitHub in four hopes.
+What is published here is shisaku's interpretations of inside and outside, as held within the self, put into words. What is put into words can be carried away; what cannot is the object of that wording — the IDION, formed by shisaku's transformations. What is said here not to be carried away is on the writer's side. What is not carried on the reader's side is written in the section "As material for finding a philosophy of life". This repository is published on GitHub in four hopes.
 
 First, that others fork it, set it against their own interpretation, revise it, and find value in doing so. With a reference, it is easier to place attention on differences. While one wears one's own lens, one hardly notices wearing it — one usually realises one was looking through a lens only when something snags (Shisaku World-Interpretation, "When the way of seeing changes"). In the author's experience, starting from where one snags on another's wording — "here I am different" — was faster than putting things into words from nothing. Suppose, for instance, that while reading someone's account of how to choose a job, one meets a line that makes one think "no, that is not me". That snag becomes the opening line of one's own words. Take what is put into words, and revise and rebuild it as your own Book of Knowledge — the reference is offered not to be adopted, but to take the difference against.
 
@@ -396,7 +440,7 @@ In Japanese, three distinct words share the same phonetic reading — *shisaku*:
 - **試作** (*shisaku* / Prototype) — to build and experiment
 - **施策** (*shisaku* / Launch) — to put it out where others can see, and try it
 
-This is intentional: the name itself encodes the belief that none of the three can be omitted. Written in a single kanji compound, the name becomes **志作駆** — the same characters that drive the 志作駆円環 (shisaku-ku-enkan) cycle in KOSEI Mining.
+This is intentional: the name itself encodes the belief that none of the three can be omitted. Written in a single kanji compound, the name becomes **志作駆** (*shisaku*) — the same characters that drive the 志作駆円環 (shisaku-enkan) cycle in KOSEI Mining.
 
 ### "Structural analysis of failure"
 
@@ -478,11 +522,27 @@ Value stands, for every reader, only on the person's side. A reading in which a 
 
 ---
 
+## As material for finding a philosophy of life
+
+The author does not care for a uniform philosophy of life, because he thinks that each person carries the temperament they were born with, the tastes they have cultivated and the experiences they have piled up, and that within each person's own history, their values about living change as well.
+
+So this repository does not hand over a finished philosophy of life. It offers materials and methods with which readers find, assemble and update a philosophy of life of their own.
+
+The correctness of a philosophy of life cannot be judged in the same sense as a theory of natural science. But that does not mean it cannot be examined. One can trace back from what experience, observation, premises and reasoning a claim was derived, and check its grounds and structure. That is why the main documents state their scope and the substitution test.
+
+And in a philosophy of life, understanding something as logic and becoming able to use it in one's own judgment and action are different things. From the author's experience, he thinks that however consistent the logic presented, when it is new to them, or abstract, or collides with the logic they held until then, people are not beings who accept that logic on the spot and change at once. The author has never seen anyone accept it on the spot and change. People set it against their own experience, think it over again and again, sometimes hold it in suspension while still carrying a sense of wrongness, and make it their own over time.
+
+So a summary can be an entrance, but not a substitute. What is carried by a summary is the skeleton of the claims; the process by which the reader ties the concepts to their own experience is not carried.
+
+When reading this repository, take as your own ruler not only scientific correctness, but also where each claim comes from, and whether, set against your own life, it merits rereading again and again.
+
+---
+
 ## How to read these (their hypothetical character)
 
 Every concept here is a **hypothesis and an axiomatic system for design**, not a verified scientific claim. Eight premises for reading:
 
-1. **Hypothesis** — an attempt to render not-yet-engineered objects (human cognition, expression) as design blueprints via systems thinking.
+1. **Hypothesis** — an attempt to render not-yet-engineered objects (human cognition, expression) as design blueprints via systems thinking. The section "As material for finding a philosophy of life" speaks of the nature of the correctness of a philosophy of life. This premise speaks of the standing of the concepts here — that they are hypotheses not yet verified — and the procedure of testing is held by "How to test these".
 2. **Validation lies only downstream** — effectiveness is weakly judged by how expressions built on it remain with receivers; there is no validation inside the theory itself.
 3. **Grounding is corroboration, not proof** — links to evolutionary/cognitive science raise logical density but do not prove; the arising of qualia remains a philosophical primitive.
 4. **Written as mechanism, not command** — "why it works," not "do this."
@@ -493,7 +553,7 @@ Every concept here is a **hypothesis and an axiomatic system for design**, not a
 
 **What it means for value to arise.** In the opening of each interpretation, the author writes that he hopes it will be read not for whether it is true, but for whether value arises. This is an offer of where to place attention in reading — move your attention from truth to what arises within you. The question is: in which cases does value arise? Value arises within the reader when the reader touches the canon and sets it against their own reference point (Shisaku Value-Interpretation). It does not arise in one way only — the view opens up. Something comes into focus. A sense of wrongness arises. There is no difference from one's reference point, and one is convinced: "that's right". One thinks, "no, that's a little off". One thinks, "ah, I see". Settling into place is one of these as well. This repository counts every one of them as a case in which value has arisen. These are examples, not a closed list. It is the reader who judges whether value arose; neither the author nor an evaluator can judge it on the reader's behalf ("How to test these").
 
-**What remains in your hands after reading.** The author (shisaku) has had his way of seeing change and found hesitation gone. He has prevented an error before it happened. He has felt as if he could see the path he was to take. Each time, he has felt his own reins become easier to hold (Shisaku World-Interpretation, "When the way of seeing changes"). That the same will remain in the reader's hands cannot be promised. What changes when the way of seeing changes is held by that same section, divided into seven. If the way of seeing changes and the change remains, the process is dealt with by the Shisaku Human Transformation Theory. But value does not arise only when the way of seeing changes — a reading that re-confirms "that's right" also counts as a case in which value arose. This value is different from the worth of the theories. Value arises within the reader, there and then. Worth is measured from outside — and what it is judged from is what remains with receivers downstream (premise 8). The examples are there for the reader to try on their own object — whether value arises can be tried only on examples.
+**What remains in your hands after reading.** The author (shisaku) has had his way of seeing change and found hesitation gone. He has prevented an error before it happened. He has felt as if he could see the path he was to take. Each time, he has felt his own reins become easier to hold (Shisaku World-Interpretation, "When the way of seeing changes"). That the same will remain in the reader's hands cannot be promised. What changes when the way of seeing changes is held by that same section, divided into seven. If the way of seeing changes and the change remains, the process is dealt with by the Shisaku Human Transformation Theory. But value does not arise only when the way of seeing changes — a reading that re-confirms "that's right" also counts as a case in which value arose. This value is different from the worth of the theories. Value arises within the reader, there and then. Worth is measured from outside — and what it is judged from is what remains with receivers downstream (premise 8). The examples are there for the reader to try on their own object — whether value arises can be tried only on examples. The reader's own ruler of which the section "As material for finding a philosophy of life" speaks — whether a text merits rereading again and again — is also on the side of value, not a ruler of worth.
 
 There are also cases in which value does not arise. If, having finished reading, one thinks "this is obvious", "this is dull", "that was a waste of time", then the value of this document has not arisen in that reader. "That's right" also sets the text against oneself. The difference is the direction: "that's right" affirms, having set it against oneself — bringing a blurred focus slightly into focus, or re-confirming affirmatively. It is a reading that such a concept ought to exist. "This is dull" is a reading that the concept itself has no value — that saying such a thing gains nothing. Even so, it is not that nothing remains. The experience "this document is not worth reading, for me" remains as a memory. But this repository does not count it as a case in which value arose. Nothing that matches the effort of the time spent reading has arisen in that reader. As the author, I am sorry for that. In that case, choose another interpretation.
 
@@ -605,5 +665,5 @@ Issues are accepted. A suggestion of the form "what shisaku is sensing may in fa
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.10.2
+* **Version:** v0.11
 * **Date:** 2026/09/26

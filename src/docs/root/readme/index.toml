@@ -7,7 +7,7 @@ output = "README.md"
 title    = "shisaku-method"
 author   = "shisaku"
 status   = "継続的インテグレーション中 / Continuously Integrating"
-version  = "v0.10.2"
+version  = "v0.11"
 date     = "2026/09/26"
 
 [numbering]
@@ -25,6 +25,7 @@ groups = [
   ["repository"],
   ["what-is", "what-is/name", "what-is/failure-analysis", "what-is/origin"],
   ["readers"],
+  ["life-theory"],
   ["how-to-read"],
   ["concepts", "concepts/shisaku-world-interpretation",
    "concepts/shisaku-social-renewal-interpretation", "concepts/premise-primacy",
@@ -47,6 +48,7 @@ groups = [
   ["banner", "repository"],
   ["what-is", "what-is/name", "what-is/failure-analysis", "what-is/origin"],
   ["readers"],
+  ["life-theory"],
   ["how-to-read"],
   ["concepts", "concepts/shisaku-world-interpretation",
    "concepts/shisaku-social-renewal-interpretation", "concepts/premise-primacy",
