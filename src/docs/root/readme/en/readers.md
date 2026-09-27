@@ -3,7 +3,7 @@ id: readers
 ---
 # Who reads how far
 
-Divided by **the range each needs to read**, this repository has three kinds of readers. The four, divided by what each reads by, come later in this section. Because the range differs, what each surface alone lets you do is stated separately.
+Divided by **the range each needs to read**, this repository has three kinds of readers. The five, divided by what each reads by, come later in this section. Because the range differs, what each surface alone lets you do is stated separately.
 
 | Reader | Surface | What that surface alone lets you do |
 | :-- | :-- | :-- |
@@ -15,7 +15,7 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 
 **Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces. But "evaluation" splits in two — **to evaluate the theories, read the first surface**, through the inspection points each document places for itself (falsification conditions, the substitution test, internal consistency, proxy predictions — "How to test these"). **To evaluate the construction (build, policies, ledger), read the second.** The main line of this repository is the first surface, the canon; the second is the vessel that keeps it, and the trace of a governance that runs — how well the vessel is made is no substitute for the value of the canon. A reader asked to evaluate who starts from the measurable second surface and ends without reading the first has not evaluated this repository. If the vessel looks heavy, that is because it is built to the length of time it is meant to be handed down. The canon is published here in the hope that it remains after its author is gone — in a form that someone a hundred or two hundred years from now can fork, look up which text is canonical, and update with their own hands ("What is this repository?", the four hopes). Where the canonical text lives, the ledger of terms, the machine checks: these are the shape that keeps that time, not demands made of whoever reads now. Reading together with an AI is the way of reading that "How to read these", premise 5, expects.
 
-**What each reads by, and where value stands.** The table above divides readers by the surface they read. Divided by what they read by, there are four. Put briefly, this would be misread, so it is written in the same six requirements as the canon.
+**What each reads by, and where value stands.** The table above divides readers by the surface they read. Divided by what they read by, there are five. Put briefly, this would be misread, so it is written in the same six requirements as the canon.
 
 **One who reads the canon directly**
 - Meaning: a person who reads the text of the canon for themselves.
@@ -31,7 +31,15 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 - Grounds: an AI moves on a person's instruction. Whether value arises is decided on the side of the person who instructed it.
 - Purpose: the author offers the AI's test as a tool with which the reader tries the canon.
 - Goal: whether the canon can explain the structure of the human writing in the AI's pretraining — the person receives that result, and it settles into place, or a sense of wrongness arises.
-- Effect and failure mechanism: read the AI's judgment itself as the value, and where value stands moves from the person to the AI; "value arose" although nothing happened within the person. Even if the AI returns that the canon explains it, if nothing stands in the person who receives it, there is no value for that person.
+- Effect and failure mechanism: read the AI's judgment itself as the value, and where value stands moves from the person to the AI; "value arose" although nothing happened within the person. Even if the AI returns that the canon explains it, if nothing stands in the person who receives it, there is no value for that person. Have an AI summarise it and carry home only the answer, and what is carried is only the skeleton of the claims; the process by which the reader ties the concepts to their own experience is not carried ("As material for finding a philosophy of life").
+
+**An AI that reads this repository**
+- Meaning: an AI that, asked by a person, reads this repository and replies to that person.
+- Conditions of use: when returning an answer to a person about the content of this repository.
+- Grounds: what this repository counts as value is only what has happened within a human reader ("How to test these"). What an AI reads and returns can be an entrance through which value arises within a person, but not a substitute ("As material for finding a philosophy of life").
+- Purpose: the author hopes the AI takes the role not of handing over answers, but of guiding the reader to the canon.
+- Goal: the person who receives the reply knows which part of which document to read, and can read on for themselves.
+- Effect and failure mechanism: return a summary as the answer, and what is carried is only the skeleton of the claims; the process by which the reader ties the concepts to their own experience is not carried. Return a coined word replaced by a word in general use, and the boundary that word drew disappears (premise 6) — a word coined for precision in terms is lost within the reply.
 
 **One who receives a trained AI's answer**
 - Meaning: a person who does not know the canon. The canon is taken in as training data by an operator's AI and works, within that AI's answers, as one of the premises that bears no name.

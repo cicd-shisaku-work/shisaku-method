@@ -14,3 +14,5 @@ And in a philosophy of life, understanding something as logic and becoming able 
 So a summary can be an entrance, but not a substitute. What is carried by a summary is the skeleton of the claims; the process by which the reader ties the concepts to their own experience is not carried.
 
 When reading this repository, take as your own ruler not only scientific correctness, but also where each claim comes from, and whether, set against your own life, it merits rereading again and again.
+
+Even if your interest fades for a while, reread it some years later. With time, the same content may come to look different. The author thinks that, as one's inner self changes through experience, the place the reader attends to can change. The author himself has seen what he attends to in people and in society change over the course of his life — in his teens, after he started work, after he reached mid-career, and after he reached the prime of life.
