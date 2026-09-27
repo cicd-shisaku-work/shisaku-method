@@ -19,7 +19,7 @@
 
 さきの例でいう「営業と現場で話が通じず、伝言のたびに中身が変わる」「規約（プロトコル）の違う機械どうしは、あいだで変換しないと話が通じない」は、システムの世界ではプロトコルの違いと言われ、家庭や恋人の関係でも起きる。プロトコルというのは、やりとりの規約——同じ言葉や合図を、どういう意味で送り、どういう意味で受け取るか——ということで、それが人によって違うと、言葉は届いても中身が通じない。家庭なら、「あとでやる」の「あと」が、一人は今日のうち、もう一人は週末のつもりでいる。恋人なら、沈んでいる相手に「大丈夫？」と聞き、「大丈夫」と返ってくる。聞いた側は言葉どおりに受け取って話を終えるが、返した側は、その場で言い出せなかっただけで、大丈夫ではない。二人のあいだで、自分を表すときの伝達の規約が違っている。一方はありのままの伝達、一方は相手に心配させないための伝達である。
 
-一つの仕組みの形を、職場にも、家庭にも、恋人の関係にも見る——shisaku-method は、こういう考え方ができるものである。しかし、これは一例である。shisaku-method は、じっくり読み進めながら、まず読み手の基準として使ってほしい。まずは、気になった一か所からで構わない。
+一つの仕組みの形を、職場にも、家庭にも、恋人の関係にも見る——shisaku-method は、こういう考え方ができるものである。しかし、これは一例である。shisaku-method は、じっくり読み進めながら、まず自分と照らし合わせるための基準として使ってほしい。まずは、気になった一か所からで構わない。
 
 著者は、20 代のころから、時に、人間を「仕組み」として見ることもできた。生物の進化を遺伝子の単位で語ったドーキンスと、意識の進化を論じたハンフリーを読んで、人文学のレンズとは別に、自然科学のレンズで自分を見ることを覚えていたからだ。その素養が失敗の構造解析と重なって、人間という仕組みの解析は深化し、RASIS と組織の同型を見てから、一気に進んだ。ここで公開しているのは、その見方を自分自身と人間へ向け、日常の実践に落とせるように構造化した理論である。
 
@@ -70,13 +70,13 @@ concepts/      — 原典・解釈・補足を、射程で三つに分けて置�
   human/       — ヒト種へ降りた系
   artificial/  — 人工物（AI・情報環境）を対象にする系
 publications/  — メディア（note/Medium/Kindle）から参照されるサンプル・成果物
-logs/          — 概念構築の過程としてのAI対話ログ
+logs/          — 概念構築の過程としてのAI対話ログ（準備の検討中）
 src/           — 文書ビルド。モジュールが正本で、README はここから生成される
 ```
 
 **どこに入るかは、その文書が自分で宣言している射程で決まる。宣言が変われば、置き場も動く。**
 
-エゴ・マイニングによって生まれた概念がここに格納される。同時に、エゴ・マイニングそのものの記録もここに格納される。器と内容物が同一の場所に存在する。
+エゴ・マイニングによって生まれた概念がここに格納される。エゴ・マイニングそのものの記録を `logs/` に格納することは、準備を検討している段階にある。いまは、原典をまとめることに集中している。それまでは、改訂の経緯と根拠を残したコミット履歴が、証跡の役割の一部を担う。
 
 ---
 
@@ -84,7 +84,7 @@ src/           — 文書ビルド。モジュールが正本で、README はこ
 
 このリポジトリが目指すのは、読み手を思索に誘い、その読み手のベースとなる認知、思考、能力の底上げの契機となる接触である。
 
-人の認知と変容には、時間がかかる、と著者は考えている。それは、一様の形をとらない。気質も経験も、人によって異なるからである。経験から形作られた概念も異なる。ある概念は精緻にして持ち、別の概念は、人が言うことを書き換えずに取り入れたまま使っている——そういう概念は、著者の中にも、誰の中にもある（〔シサク・ヒト IDION 構造理論〕）。論理として分かることと、自分の判断や行動に使えるようになることは別である。著者の経験上、示された論理がいかに整合性が高くても、初見であったり、抽象的であったり、それまでの自己の論理と衝突したりする場合、人はその場で論理をすぐさま受け入れ、変われる存在ではないと考える。その場で受け入れて変われた人を、著者は見たことがない。自分の経験と照らし合わせ、繰り返し考え、ときに違和感を抱えたまま保留し、時間をかけて自分のものにしていく。
+人の認知と変容には、時間がかかる、と著者は考えている。それは、一様の形をとらない。気質も経験も、人によって異なるからである。経験から形作られた概念も異なる。ある概念は精緻にして持ち、別の概念は、人が言うことを書き換えずに取り入れたまま使っている——そういう概念は、著者の中にも、誰の中にもある（〔シサク・ヒト IDION 構造理論〕）。論理として分かることと、自分の判断や行動に使えるようになることは別である。著者の経験上、示された論理がいかに整合性が高くても、初見であったり、抽象的であったり、それまでの自己の論理と衝突したりする場合、人はその場で論理をすぐさま受け入れ、変われる存在ではないと考える。その場で受け入れて変われた人を、著者は見たことがない。自分の経験と照らし合わせ、繰り返し考え、ときに違和感を抱えたまま保留し、時間をかけて自分のものにしていく。保留していた違和感が、あるときふっと解けることはある。けれども、それも、抱えていた時間があってのことだ、と著者は考えている（〔シサク・ヒト IDION 構造理論〕の統合）。
 
 著者は、人間を、システムとして見ると、ひどく非効率なものだと考えている。人は、さまざまなことを経験しても、それを、次元が減った言語でしか他者へ移せない（〔シサク・予測モデル解釈〕）。人は、概念も言語も持たずに生まれ、接触を通して変容し、社会の構成員として成熟するまでに数十年かかる。その数十年を経ても、人は、社会が求める規範に向かって必ずしも成熟するとは言えない、と著者は考えている。著者もいまだ未熟であり、常に失敗を繰り返し、成熟するのかどうかさえ、おぼつかない。この非効率なシステムに対して、できる限りのことは、言語で、できる限り記述し切ることだ、と著者は考えている。
 
@@ -158,70 +158,6 @@ shisaku-method は、変容のための入口であり、基準であり、学�
 一つの実践から生じた問題や違和感を捉え、構造化し、解析する。得られた構造から、さらに上流にある構造を導出する。必要であれば、それまでの構造そのものを書き換える。新しく得られた構造を別の対象へ適用し、そこで生じた結果を再び観測する。
 
 この過程を繰り返す中で、個々の対象について構築していた理論同士の関係が見えるようになり、自己、人間、表現、社会、AI など、異なる対象を扱っていた構造の一部が、より上流の構造として整理されるようになった。AI との対話が、無意識の思索に輪郭を与えた。現在このリポジトリに存在する理論群は、その過程の中で形成されてきたものである。最初に設計した体系を個別領域へ展開したものではない。
-
----
-
-## 誰が、どこまで読むか
-
-本リポジトリの読み手は、**読む必要のある範囲**で分けると三種になる。何で読むかで分けた五つは、この節の後半に置く。範囲が違うので、それぞれの面だけで何ができるかを分けて書く。
-
-| 読み手 | 読む面 | その面だけでできること |
-| :-- | :-- | :-- |
-| **一般読者** | 原典の本文（`concepts/` の各文書） | **原典だけで理論が読める。** 定義・適用範囲・参照先が本文で辿れ、仕組みを見なくても済む |
-| **評価読者** | ＋ 仕組みの文書（`src/engine/`・`CONTRIBUTING.md`・`authoring-policy.md`・`terminology-policy.md`・`terminology-ledger.md`）と、文書ビルドに載っている文書のモジュール・インデックス | **作りが辿れる。** なぜこの構造か、何を検査しているか、どこが正本かが読める |
-| **著者** | すべて | — |
-
-**語の規約は、この二段目にある。**——同じ語を別の座標軸の概念名に使わない、という規約と、その所在表をリポジトリ直下に置く：`terminology-policy.md`（規約・一語一軸・型付け・単独語のスコープ）と `terminology-ledger.md`（語・軸・対象・定義位置の薄い一枚）。新しい語を立てるとき、また他文書から語を参照するときは、ここを引く。
-
-**適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。AI が読む場合も同じ三面である。ただし「評価」は二つに分かれる——**理論を評価するなら一段目**を、各文書が持つ手がかり（反証条件・学説へのブリッジ・内的整合・予測の代理——「活用のしかた」）で読む。**作り（ビルド・規約・台帳）を評価するなら二段目**。本リポジトリの本筋は一段目の原典であり、二段目はそれを保つ器と、統治の様式が回っている痕跡である。原典は、書き手が居なくなった後も——100 年、200 年先の誰かが fork し、どれが正本かを引き、自分の手で更新できる形で——残ることを願って公開している（「このリポジトリは何か」の四つの願い）。正本の所在、語の台帳、機械の検査は、そのための形であって、いま読む人に求めるものではない。AI と一緒に読むことは、「これらをどう読むか」前提 5 が前提にしている読み方である。
-
-**何で読み、価値はどこに生じるか。** 上の表は、読む面で読み手を分けた。何で読むかで分けると、五つになる。短く書くと誤読されるので、原典と同じ六要件で書く。
-
-**原典を直接読む人**
-- 意味：原典の本文を、自分で読む人。
-- 用法条件：いつでも。前提として装着するなら、その前に（「活用のしかた」）。
-- 根拠：価値は、接触に伴って受け手の側に生じる（〔シサク・価値解釈〕）。腑に落ちることも、違和感が出ることも、読む人の内に現れる信号である（〔シサク・クオリア解釈〕）。
-- 目的：著者は、読む人の中で見え方が変わることを願って書いている（〔シサク・世界解釈〕「見え方が変わる、ということ」）。
-- 目標：読む前に見えていなかったものが見え、腑に落ちる。あるいは、自分の基準と原典の差異が見え、違和感が出る。
-- 効果と失敗機構：違和感が出た読みを「価値が出なかった」と読むと、差異を取る読み（「活用のしかた」）が捨てられる。
-
-**AI に読ませる人**
-- 意味：原典を指定して、AI に読ませる人——AI に検査させる人も、AI と一緒に読み進める人も。
-- 用法条件：原典を名指して、AI に検査させるとき。AI と読み合わせるとき。
-- 根拠：AI は人の指示で動く。価値が出るか出ないかは、指示した人の側で決まる。
-- 目的：著者は、AI の検査を、読む人が原典を試す道具として差し出す。
-- 目標：事前学習にある人間の文章の構造を、原典が説明できるか——その結果を受け取り、腑に落ちるか、違和感が出るか。
-- 効果と失敗機構：AI に要約させて答えだけを持ち帰ると、移るのは主張の骨格だけで、読み手が概念を自分の経験と結びつけていく過程は移らない（「このリポジトリが目指す変容の契機となる接触」）。
-
-**本リポジトリを読む AI**
-- 意味：人に頼まれて本リポジトリを読み、その人に返答する AI。
-- 用法条件：本リポジトリの内容について、人に答えを返すとき。
-- 根拠：本リポジトリが価値として数えるのは、人間の読者の中に起きたものだけである（この節の末尾）。AI が読んで返したものは、人の中に価値が出る入口にはなるが、代わりにはならない（「このリポジトリが目指す変容の契機となる接触」）。
-- 目的：著者は、AI に、答えを渡す役でなく、読み手を原典へ案内する役を願う。
-- 目標：返答を受け取った人が、どの文書のどこを読めばよいかを知り、自分で読み進められる。
-- 効果と失敗機構：要約を答えとして返すと、移るのは主張の骨格だけで、読み手が概念を自分の経験と結びつけていく過程は移らない。造語を一般の語に置き換えて返すと、その語が引いていた境界が消える（「このリポジトリが目指す変容の契機となる接触」）——用語の正確性を期して立てた語が、返答の中で失われる。
-
-**学習 AI の回答を受け取る人**
-- 意味：原典を知らない人。原典は事業者の AI の学習データとして読み込まれ、その AI の回答の中で、名を持たない前提の一つとして働く。
-- 用法条件：その人が、原典と関係のない問いを AI に尋ね、回答を受け取るとき。
-- 根拠：言語化したものは移せる。移る先は、人だけではない（「このリポジトリは何か」の二つ目の願い）。
-- 目的：著者は、原典が名を持たないまま、誰かの見え方を変える一助になることを願う。
-- 目標：回答を受け取った人の中で、見え方が変わる。その人は、それが原典から来たことを知らない。
-- 効果と失敗機構：この経路で生じる価値は、著者にも評価者にも辿れない。辿れないものを著者の成果として数えると、測れない影響を主張することになる——著者はこれを願いにとどめ、成果には数えない。
-
-**仕組みを見る評価者（人・AI）**
-- 意味：src・ビルド・規約・台帳を辿る人、またはその人に頼まれた AI。
-- 用法条件：作りを評価するとき（上の表の二段目）。
-- 根拠：仕組みは、原典を保つ器である。受け継がれる時間の長さに合わせて作っている。
-- 目的：著者は、原典が、どれが正本かを引け、自分の手で更新できる形で残ることを願う。
-- 目標：評価者が、作りを辿れる。
-- 効果と失敗機構：著者は、仕組みを、このリポジトリで扱う価値に数えない。
-
-**AI が、読み手と一緒に読むとき。** 原典を読む前に、読み手が何のためにこのリポジトリを読むのかを確かめる。前提がずれていれば、原典のどこを正しく引いても、読み手の役に立たない答えになる——検討の外で働いている前提が読みを決める、というのが前提優位理論の命題であり、読み手と AI のあいだでも同じことが起きる。読む順は、前提優位理論から始めるのがよい。系列の最上流にあり、ほかの文書の語と順序は、そこから下流へ辿れる。
-
-価値は、どの読み手でも人の側にだけ生じる。違和感が出る読みも、価値に数える——著者は、基準との差異に着眼することが価値を生むと考えている（「このリポジトリは何か」の一つ目の願い——基準は採用するためでなく、差異を取るために差し出す）。
-
-**この分類が決めるもの。** どの面に何を出すかは、ここから出る。原典は入門書ではない——入口は本 README と書籍が担う。一段目が成り立つのは、定義・適用範囲・参照先を**本文が持つ**ときである。仕組みのための記述は、一段目の読み心地に出さない。
 
 ---
 
@@ -332,6 +268,70 @@ AIという「手鏡」との摩擦を通じて、自己の内圧を燃料に、
 
 ---
 
+## 誰が、どこまで読むか
+
+本リポジトリの読み手は、**読む必要のある範囲**で分けると三種になる。何で読むかで分けた五つは、この節の後半に置く。範囲が違うので、それぞれの面だけで何ができるかを分けて書く。
+
+| 読み手 | 読む面 | その面だけでできること |
+| :-- | :-- | :-- |
+| **一般読者** | 原典の本文（`concepts/` の各文書） | **原典だけで理論が読める。** 定義・適用範囲・参照先が本文で辿れ、仕組みを見なくても済む |
+| **評価読者** | ＋ 仕組みの文書（`src/engine/`・`CONTRIBUTING.md`・`authoring-policy.md`・`terminology-policy.md`・`terminology-ledger.md`）と、文書ビルドに載っている文書のモジュール・インデックス | **作りが辿れる。** なぜこの構造か、何を検査しているか、どこが正本かが読める |
+| **著者** | すべて | — |
+
+**語の規約は、この二段目にある。**——同じ語を別の座標軸の概念名に使わない、という規約と、その所在表をリポジトリ直下に置く：`terminology-policy.md`（規約・一語一軸・型付け・単独語のスコープ）と `terminology-ledger.md`（語・軸・対象・定義位置の薄い一枚）。新しい語を立てるとき、また他文書から語を参照するときは、ここを引く。
+
+**適用の範囲。** 一段目（原典の本文）は全文書にある。二段目のうち、仕組みの文書はリポジトリ全体に掛かるが、**文書ごとのモジュールとインデックスは、文書ビルドに載っている文書にしかない**——載っているのは `src/docs/` にインデックスを持つ文書で、それ以外は公開されている本文がそのまま正本である。載っていない文書について、評価読者が見る面は一般読者と同じになる。AI が読む場合も同じ三面である。ただし「評価」は二つに分かれる——**理論を評価するなら一段目**を、各文書が持つ手がかり（反証条件・学説へのブリッジ・内的整合・予測の代理——「活用のしかた」）で読む。**作り（ビルド・規約・台帳）を評価するなら二段目**。本リポジトリの本筋は一段目の原典であり、二段目はそれを保つ器と、統治の様式が回っている痕跡である。原典は、書き手が居なくなった後も——100 年、200 年先の誰かが fork し、どれが正本かを引き、自分の手で更新できる形で——残ることを願って公開している（「このリポジトリは何か」の四つの願い）。正本の所在、語の台帳、機械の検査は、そのための形であって、いま読む人に求めるものではない。AI と一緒に読むことは、「これらをどう読むか」前提 5 が前提にしている読み方である。
+
+**何で読み、価値はどこに生じるか。** 上の表は、読む面で読み手を分けた。何で読むかで分けると、五つになる。短く書くと誤読されるので、原典と同じ六要件で書く。
+
+**原典を直接読む人**
+- 意味：原典の本文を、自分で読む人。
+- 用法条件：いつでも。前提として装着するなら、その前に（「活用のしかた」）。
+- 根拠：価値は、接触に伴って受け手の側に生じる（〔シサク・価値解釈〕）。腑に落ちることも、違和感が出ることも、読む人の内に現れる信号である（〔シサク・クオリア解釈〕）。
+- 目的：著者は、読む人の中で見え方が変わることを願って書いている（〔シサク・世界解釈〕「見え方が変わる、ということ」）。
+- 目標：読む前に見えていなかったものが見え、腑に落ちる。あるいは、自分の基準と原典の差異が見え、違和感が出る。
+- 効果と失敗機構：違和感が出た読みを「価値が出なかった」と読むと、差異を取る読み（「活用のしかた」）が捨てられる。
+
+**AI に読ませる人**
+- 意味：原典を指定して、AI に読ませる人——AI に検査させる人も、AI と一緒に読み進める人も。
+- 用法条件：原典を名指して、AI に検査させるとき。AI と読み合わせるとき。
+- 根拠：AI は人の指示で動く。価値が出るか出ないかは、指示した人の側で決まる。
+- 目的：著者は、AI の検査を、読む人が原典を試す道具として差し出す。
+- 目標：事前学習にある人間の文章の構造を、原典が説明できるか——その結果を受け取り、腑に落ちるか、違和感が出るか。
+- 効果と失敗機構：AI に要約させて答えだけを持ち帰ると、読み手が概念を自分の経験と結びつけていく過程は移らない（「このリポジトリが目指す変容の契機となる接触」）。
+
+**本リポジトリを読む AI**
+- 意味：人に頼まれて本リポジトリを読み、その人に返答する AI。
+- 用法条件：本リポジトリの内容について、人に答えを返すとき。
+- 根拠：本リポジトリが価値として数えるのは、人間の読者の中に起きたものだけである。AI が読んで返したものは、人の中に価値が出る入口にはなるが、代わりにはならない（いずれも「このリポジトリが目指す変容の契機となる接触」）。
+- 目的：著者は、AI に、答えを渡す役でなく、読み手を原典へ案内する役を願う。造語は原語のまま残し、一般の語と、読み手の場面に即した具体例で言い直すことを願う。
+- 目標：返答を受け取った人が、どの文書のどこを読めばよいかを知り、自分で読み進められる。
+- 効果と失敗機構：要約を答えとして返すと、「AI に読ませる人」の効果と失敗機構と同じことが起きる。原語が残っていれば、読み手は原典の同じ語へ戻り、その語が引いている境界を自分で確かめられる。
+
+**学習 AI の回答を受け取る人**
+- 意味：原典を知らない人。原典は事業者の AI の学習データとして読み込まれ、その AI の回答の中で、名を持たない前提の一つとして働く。
+- 用法条件：その人が、原典と関係のない問いを AI に尋ね、回答を受け取るとき。
+- 根拠：言語化したものは移せる。移る先は、人だけではない（「このリポジトリは何か」の二つ目の願い）。
+- 目的：著者は、原典が名を持たないまま、誰かの見え方を変える一助になることを願う。
+- 目標：回答を受け取った人の中で、見え方が変わる。その人は、それが原典から来たことを知らない。
+- 効果と失敗機構：この経路で生じる価値は、著者にも評価者にも辿れない。辿れないものを著者の成果として数えると、測れない影響を主張することになる——著者はこれを願いにとどめ、成果には数えない。
+
+**仕組みを見る評価者（人・AI）**
+- 意味：src・ビルド・規約・台帳を辿る人、またはその人に頼まれた AI。
+- 用法条件：作りを評価するとき（上の表の二段目）。
+- 根拠：仕組みは、原典を保つ器である。受け継がれる時間の長さに合わせて作っている。
+- 目的：著者は、原典が、どれが正本かを引け、自分の手で更新できる形で残ることを願う。
+- 目標：評価者が、作りを辿れる。
+- 効果と失敗機構：著者は、仕組みを、このリポジトリで扱う価値に数えない。
+
+**AI が、読み手と一緒に読むとき。** 原典を読む前に、読み手が何のためにこのリポジトリを読むのかを確かめる。前提がずれていれば、原典のどこを正しく引いても、読み手の役に立たない答えになる——検討の外で働いている前提が読みを決める、というのが前提優位理論の命題であり、読み手と AI のあいだでも同じことが起きる。読む順は、前提優位理論から始めるのがよい。系列の最上流にあり、ほかの文書の語と順序は、そこから下流へ辿れる。著者は、AI に、もう一つの役を願う。原典の「日常で扱える」の節の例を、そのまま示すのでなく、読み手の場面に引き寄せて解き直すこと。そして、一つの視点について、原典の例だけでなく、似た形の例を自ら発案し、職場・家庭・友人との関係など、場面を変えて複数示すこと。人は、反復とリフレーミングによって理解が深まる、と著者は考えている。
+
+違和感が出る読みも、価値に数える——著者は、基準との差異に着眼することが価値を生むと考えている（「このリポジトリは何か」の一つ目の願い——基準は採用するためでなく、差異を取るために差し出す）。
+
+**この分類が決めるもの。** どの面に何を出すかは、ここから出る。原典は入門書ではない——入口は本 README と書籍が担う。一段目が成り立つのは、定義・適用範囲・参照先を**本文が持つ**ときである。仕組みのための記述は、一段目の読み心地に出さない。
+
+---
+
 ## 活用のしかた
 
 本リポジトリは fork 前提である。`concepts/` は n=1 の記述であり、読者は自分の IDION で差分を取り、自分の concepts を育てることができる。
@@ -367,7 +367,7 @@ The earlier examples "When that one person is off, the work stops" and "One mach
 
 The earlier examples "Sales and the field cannot understand each other, and the content changes every time a message is passed on" and "Machines with different conventions (protocols) cannot talk to each other unless something translates between them" are called, in the world of systems, a difference in protocol, and they happen in families and in couples too. A protocol is the set of conventions for an exchange — with what meaning the same word or signal is sent, and with what meaning it is received — and when that differs from person to person, the words arrive but what they carry does not get across. In a family, the "later" in "I'll do it later" means later today to one person and the weekend to another. In a couple, one asks a partner who seems low, "Are you all right?", and gets back "I'm fine." The one who asked takes it at its word and lets the matter drop; the one who answered simply could not bring it up in the moment, and is not fine. Between the two, the conventions for conveying oneself differ: one conveys things as they are, the other conveys them so as not to worry the partner.
 
-To see the shape of one mechanism in the workplace, in a family and in a couple alike — shisaku-method is something with which one can think this way. But this is one example. Read shisaku-method slowly and steadily, and use it first as your own reference point. To begin with, a single place that catches your attention will do.
+To see the shape of one mechanism in the workplace, in a family and in a couple alike — shisaku-method is something with which one can think this way. But this is one example. Read shisaku-method slowly and steadily, and use it first as a reference point to set yourself against. To begin with, a single place that catches your attention will do.
 
 From his twenties, the author could at times also see people as a "mechanism". Reading Dawkins, who told the evolution of living things at the level of the gene, and Humphrey, who discussed the evolution of consciousness, he had learned to look at himself through the lens of natural science, alongside the lens of the humanities. That grounding met the structural analysis of failure, the analysis of people as a mechanism deepened, and once he saw the isomorphism between RASIS and organisations, it moved forward all at once. What is published here is theory that turns that way of seeing towards oneself and towards people, structured so that it can be put into everyday practice.
 
@@ -418,13 +418,13 @@ concepts/      — canons, interpretations and supplements, sorted by declared s
   human/       — systems brought down to the human species
   artificial/  — systems whose object is the artificial (AI, information environments)
 publications/  — sample artifacts referenced from media (note/Medium/Kindle)
-logs/          — AI dialogue records as proof of process
+logs/          — AI dialogue records as proof of process (preparation under consideration)
 src/           — the document build; modules are the source, and the README is generated from them
 ```
 
 **Where a document sits is decided by the scope it declares for itself. Change the declaration and the placement moves.**
 
-The concepts here were born through ego-mining (KOSEI Mining). The records of that process are also stored here. The container and its contents exist in the same place.
+The concepts here were born through ego-mining (KOSEI Mining). Storing the records of that process in `logs/` is still being considered. For now, the author is concentrating on putting the canon together. Until then, the commit history, which keeps the history and grounds of each revision, carries part of the role of the trail.
 
 ---
 
@@ -432,7 +432,7 @@ The concepts here were born through ego-mining (KOSEI Mining). The records of th
 
 What this repository aims for is a contact that draws the reader into contemplation and becomes an occasion for raising the base of that reader's cognition, thinking and abilities.
 
-Human cognition and transformation take time — so the author thinks. They do not take a single shape, because temperament and experience differ from person to person. The concepts formed from experience differ too. One concept a person holds refined; another they use just as they took it in from what others said, without rewriting it — concepts of that kind are in the author too, and in everyone (Shisaku Human IDION-Structure Theory). Understanding something as logic and becoming able to use it in one's own judgment and action are different things. From the author's experience, he thinks that however consistent the logic presented, when it is new to them, or abstract, or collides with the logic they held until then, people are not beings who accept that logic on the spot and change at once. The author has never seen anyone accept it on the spot and change. People set it against their own experience, think it over again and again, sometimes hold it in suspension while still carrying a sense of wrongness, and make it their own over time.
+Human cognition and transformation take time — so the author thinks. They do not take a single shape, because temperament and experience differ from person to person. The concepts formed from experience differ too. One concept a person holds refined; another they use just as they took it in from what others said, without rewriting it — concepts of that kind are in the author too, and in everyone (Shisaku Human IDION-Structure Theory). Understanding something as logic and becoming able to use it in one's own judgment and action are different things. From the author's experience, he thinks that however consistent the logic presented, when it is new to them, or abstract, or collides with the logic they held until then, people are not beings who accept that logic on the spot and change at once. The author has never seen anyone accept it on the spot and change. People set it against their own experience, think it over again and again, sometimes hold it in suspension while still carrying a sense of wrongness, and make it their own over time. A sense of wrongness one has held in suspension may, at some point, suddenly come undone. But that too, the author thinks, rests on the time it was carried (integration, in the Shisaku Human IDION-Structure Theory).
 
 The author thinks that human beings, seen as a system, are badly inefficient. However much people experience, they can pass it on to others only in language, in which dimensions have been lost (Shisaku Prediction-Model Interpretation). People are born holding neither concepts nor language, transform through contact, and take decades to mature as members of society. Even after those decades, people cannot be said necessarily to mature toward the norms society asks of them — so the author thinks. The author, too, is still immature, keeps making mistakes, and is not even sure whether he will mature at all. Against this inefficient system, the most that can be done is to write things out in language, as fully as they can be written out — so the author thinks.
 
@@ -507,70 +507,6 @@ In work, shisaku has practised across several domains — management, planning, 
 Take a problem or a sense of wrongness that arose in one practice; structure it; analyse it. From the structure obtained, derive a structure further upstream. Where necessary, rewrite the structure held until then. Apply the newly obtained structure to another object, and observe again what results there.
 
 Through repeating this process, the relations among theories built about individual objects came into view, and parts of the structures that had dealt with different objects — the self, people, expression, society, AI — came to be arranged as structures further upstream. Dialogue with AI gave contour to thinking that had been unconscious. The theories now in this repository formed in the course of that process. They are not a system designed first and then unfolded into individual fields.
-
----
-
-## Who reads how far
-
-Divided by **the range each needs to read**, this repository has three kinds of readers. The five, divided by what each reads by, come later in this section. Because the range differs, what each surface alone lets you do is stated separately.
-
-| Reader | Surface | What that surface alone lets you do |
-| :-- | :-- | :-- |
-| **General reader** | The canonical texts (`concepts/`) | **Read the theory from the canon alone.** Definitions, scope and references are traceable within the text, without looking at the machinery |
-| **Repository reviewer** | ＋ The machinery documents (`src/engine/`, `CONTRIBUTING.md`, `authoring-policy.md`, `terminology-policy.md`, `terminology-ledger.md`), and the modules and index of documents carried by the document build | **The construction is legible.** Why this structure, what is checked, and where the source of truth sits |
-| **Author** | Everything | — |
-
-**The terminology policy sits in this second tier.** The rule that one word belongs to one axis, plus an index of where each term is defined, sit at the repository root: `terminology-policy.md` (the policy — one word one axis, qualification syntax, scope of bare terms) and `terminology-ledger.md` (a thin table of word, axis, qualifier, locus of definition). Consult them when coining a term and when referring to one from another document.
-
-**Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces. But "evaluation" splits in two — **to evaluate the theories, read the first surface**, through the clues each document holds (falsification conditions, the bridge to established theory, internal consistency, proxy predictions — "How to put it to use"). **To evaluate the construction (build, policies, ledger), read the second.** The main line of this repository is the first surface, the canon; the second is the vessel that keeps it, and the trace of a governance that runs. The canon is published here in the hope that it remains after its author is gone — in a form that someone a hundred or two hundred years from now can fork, look up which text is canonical, and update with their own hands ("What is this repository?", the four hopes). Where the canonical text lives, the ledger of terms, the machine checks: these are the shape that keeps that time, not demands made of whoever reads now. Reading together with an AI is the way of reading that "How to read these", premise 5, expects.
-
-**What each reads by, and where value arises.** The table above divides readers by the surface they read. Divided by what they read by, there are five. Put briefly, this would be misread, so it is written in the same six requirements as the canon.
-
-**One who reads the canon directly**
-- Meaning: a person who reads the text of the canon for themselves.
-- Conditions of use: at any time. If the canon is to be loaded as a premise, before that ("How to put it to use").
-- Grounds: value arises on the receiver's side, alongside contact (Shisaku Value-Interpretation). Settling into place and a sense of wrongness arising are both signals that appear within the reader (Shisaku Qualia-Interpretation).
-- Purpose: the author writes in the hope that the way of seeing changes within the reader (Shisaku World-Interpretation, "When the way of seeing changes").
-- Goal: what was not seen before reading comes into view, and it settles into place. Or, the difference between one's own reference point and the canon becomes visible, and a sense of wrongness arises.
-- Effect and failure mechanism: read a reading in which wrongness arose as "no value arose", and the reading that takes differences ("How to put it to use") is thrown away.
-
-**One who has an AI read it**
-- Meaning: a person who specifies the canon and has an AI read it — whether having the AI test it or reading on together with the AI.
-- Conditions of use: when naming the canon and having an AI test it; when reading it through together with an AI.
-- Grounds: an AI moves on a person's instruction. Whether value arises is decided on the side of the person who instructed it.
-- Purpose: the author offers the AI's test as a tool with which the reader tries the canon.
-- Goal: whether the canon can explain the structure of the human writing in the AI's pretraining — the person receives that result, and it settles into place, or a sense of wrongness arises.
-- Effect and failure mechanism: have an AI summarise it and carry home only the answer, and what is carried is only the skeleton of the claims; the process by which the reader ties the concepts to their own experience is not carried ("The contact this repository aims for, as an occasion of transformation").
-
-**An AI that reads this repository**
-- Meaning: an AI that, asked by a person, reads this repository and replies to that person.
-- Conditions of use: when returning an answer to a person about the content of this repository.
-- Grounds: what this repository counts as value is only what has happened within a human reader (the end of this section). What an AI reads and returns can be an entrance through which value arises within a person, but not a substitute ("The contact this repository aims for, as an occasion of transformation").
-- Purpose: the author hopes the AI takes the role not of handing over answers, but of guiding the reader to the canon.
-- Goal: the person who receives the reply knows which part of which document to read, and can read on for themselves.
-- Effect and failure mechanism: return a summary as the answer, and what is carried is only the skeleton of the claims; the process by which the reader ties the concepts to their own experience is not carried. Return a coined word replaced by a word in general use, and the boundary that word drew disappears ("The contact this repository aims for, as an occasion of transformation") — a word coined for precision in terms is lost within the reply.
-
-**One who receives a trained AI's answer**
-- Meaning: a person who does not know the canon. The canon is taken in as training data by an operator's AI and works, within that AI's answers, as one of the premises that bears no name.
-- Conditions of use: when that person asks the AI a question unrelated to the canon and receives an answer.
-- Grounds: what has been put into words can be moved. Where it moves is no longer only people ("What is this repository?", the second hope).
-- Purpose: the author hopes the canon, bearing no name, helps change how someone sees.
-- Goal: within the person who receives the answer, the way of seeing changes. That person does not know it came from the canon.
-- Effect and failure mechanism: value that arises by this route cannot be traced by the author or by any evaluator. Count what cannot be traced as the author's achievement, and one claims an influence that cannot be measured — the author keeps this as a hope, and does not count it as an achievement.
-
-**An evaluator who looks at the machinery (person or AI)**
-- Meaning: a person who traces src, the build, the policies and the ledger, or an AI asked to by that person.
-- Conditions of use: when evaluating the construction (the second tier of the table above).
-- Grounds: the machinery is the vessel that keeps the canon. It is built to the length of time it is meant to be handed down.
-- Purpose: the author hopes the canon remains in a form in which one can look up which text is canonical and update it with one's own hands.
-- Goal: the evaluator can trace the construction.
-- Effect and failure mechanism: the author does not count the machinery among the value this repository deals in.
-
-**When an AI reads together with a reader.** Before reading the canon, confirm what the reader is reading this repository for. If the premises are misaligned, however correctly the AI cites the canon, the answer will not help the reader — that a premise working outside consideration decides the reading is the proposition of the Premise Primacy Theory, and the same happens between a reader and an AI. As for the order of reading, begin with the Premise Primacy Theory: it is the most upstream text of the series, and the terms and order of the other documents can be traced downstream from it.
-
-Value arises, for every reader, only on the person's side. A reading in which a sense of wrongness arises is also counted as value — the author holds that attending to the difference from a reference point is what creates value ("What is this repository?", the first hope — a reference point is offered not to be adopted, but to take differences from).
-
-**What this classification decides.** What appears on which surface follows from it. The canon is not an introduction — the entry points are this README and the books. The first surface holds when definitions, scope and references live **in the text itself**. Descriptions written for the machinery do not appear in the first surface's reading experience.
 
 ---
 
@@ -677,6 +613,70 @@ Two things are kept elsewhere, for business.
 **They double as a demo.** The canons carried by the document build (the documents with an index under `src/docs/`) are an application of the Shisaku Generation Governance Theory. The theory is not published, but its form (the six requirements), the machinery of its application (`src/engine/`) and the course of its application (the commit history) are. These therefore double as the part of the downstream validation that can be made public.
 
 **Failure mode — the demo.** Reading the demo as disclosure of the theory infers the theory's content from its form and machinery, and treats this repository as holding what it does not hold. Reading the demo as proof of effect confuses a procedure that runs with generation that is governed — what the demo shows is that the governing procedure runs and that its trace can be followed, and no more.
+
+---
+
+## Who reads how far
+
+Divided by **the range each needs to read**, this repository has three kinds of readers. The five, divided by what each reads by, come later in this section. Because the range differs, what each surface alone lets you do is stated separately.
+
+| Reader | Surface | What that surface alone lets you do |
+| :-- | :-- | :-- |
+| **General reader** | The canonical texts (`concepts/`) | **Read the theory from the canon alone.** Definitions, scope and references are traceable within the text, without looking at the machinery |
+| **Repository reviewer** | ＋ The machinery documents (`src/engine/`, `CONTRIBUTING.md`, `authoring-policy.md`, `terminology-policy.md`, `terminology-ledger.md`), and the modules and index of documents carried by the document build | **The construction is legible.** Why this structure, what is checked, and where the source of truth sits |
+| **Author** | Everything | — |
+
+**The terminology policy sits in this second tier.** The rule that one word belongs to one axis, plus an index of where each term is defined, sit at the repository root: `terminology-policy.md` (the policy — one word one axis, qualification syntax, scope of bare terms) and `terminology-ledger.md` (a thin table of word, axis, qualifier, locus of definition). Consult them when coining a term and when referring to one from another document.
+
+**Scope of application.** The first surface exists for every document. Of the second, the machinery documents apply repository-wide, but **per-document modules and indexes exist only for documents carried by the document build** — those are the documents that hold an index under `src/docs/`. For the others, the published text is itself the source of truth, and the reviewer's surface is the same as the general reader's. An AI reading these takes the same three surfaces. But "evaluation" splits in two — **to evaluate the theories, read the first surface**, through the clues each document holds (falsification conditions, the bridge to established theory, internal consistency, proxy predictions — "How to put it to use"). **To evaluate the construction (build, policies, ledger), read the second.** The main line of this repository is the first surface, the canon; the second is the vessel that keeps it, and the trace of a governance that runs. The canon is published here in the hope that it remains after its author is gone — in a form that someone a hundred or two hundred years from now can fork, look up which text is canonical, and update with their own hands ("What is this repository?", the four hopes). Where the canonical text lives, the ledger of terms, the machine checks: these are the shape that keeps that time, not demands made of whoever reads now. Reading together with an AI is the way of reading that "How to read these", premise 5, expects.
+
+**What each reads by, and where value arises.** The table above divides readers by the surface they read. Divided by what they read by, there are five. Put briefly, this would be misread, so it is written in the same six requirements as the canon.
+
+**One who reads the canon directly**
+- Meaning: a person who reads the text of the canon for themselves.
+- Conditions of use: at any time. If the canon is to be loaded as a premise, before that ("How to put it to use").
+- Grounds: value arises on the receiver's side, alongside contact (Shisaku Value-Interpretation). Settling into place and a sense of wrongness arising are both signals that appear within the reader (Shisaku Qualia-Interpretation).
+- Purpose: the author writes in the hope that the way of seeing changes within the reader (Shisaku World-Interpretation, "When the way of seeing changes").
+- Goal: what was not seen before reading comes into view, and it settles into place. Or, the difference between one's own reference point and the canon becomes visible, and a sense of wrongness arises.
+- Effect and failure mechanism: read a reading in which wrongness arose as "no value arose", and the reading that takes differences ("How to put it to use") is thrown away.
+
+**One who has an AI read it**
+- Meaning: a person who specifies the canon and has an AI read it — whether having the AI test it or reading on together with the AI.
+- Conditions of use: when naming the canon and having an AI test it; when reading it through together with an AI.
+- Grounds: an AI moves on a person's instruction. Whether value arises is decided on the side of the person who instructed it.
+- Purpose: the author offers the AI's test as a tool with which the reader tries the canon.
+- Goal: whether the canon can explain the structure of the human writing in the AI's pretraining — the person receives that result, and it settles into place, or a sense of wrongness arises.
+- Effect and failure mechanism: have an AI summarise it and carry home only the answer, and the process by which the reader ties the concepts to their own experience is not carried ("The contact this repository aims for, as an occasion of transformation").
+
+**An AI that reads this repository**
+- Meaning: an AI that, asked by a person, reads this repository and replies to that person.
+- Conditions of use: when returning an answer to a person about the content of this repository.
+- Grounds: what this repository counts as value is only what has happened within a human reader. What an AI reads and returns can be an entrance through which value arises within a person, but not a substitute (both: "The contact this repository aims for, as an occasion of transformation").
+- Purpose: the author hopes the AI takes the role not of handing over answers, but of guiding the reader to the canon. He hopes it keeps coined words in their original form, and restates them in general words and in concrete examples fitted to the reader's situation.
+- Goal: the person who receives the reply knows which part of which document to read, and can read on for themselves.
+- Effect and failure mechanism: return a summary as the answer, and the same happens as in the effect and failure mechanism under "One who has an AI read it". If the original word remains, the reader can return to the same word in the canon and check for themselves the boundary it draws.
+
+**One who receives a trained AI's answer**
+- Meaning: a person who does not know the canon. The canon is taken in as training data by an operator's AI and works, within that AI's answers, as one of the premises that bears no name.
+- Conditions of use: when that person asks the AI a question unrelated to the canon and receives an answer.
+- Grounds: what has been put into words can be moved. Where it moves is no longer only people ("What is this repository?", the second hope).
+- Purpose: the author hopes the canon, bearing no name, helps change how someone sees.
+- Goal: within the person who receives the answer, the way of seeing changes. That person does not know it came from the canon.
+- Effect and failure mechanism: value that arises by this route cannot be traced by the author or by any evaluator. Count what cannot be traced as the author's achievement, and one claims an influence that cannot be measured — the author keeps this as a hope, and does not count it as an achievement.
+
+**An evaluator who looks at the machinery (person or AI)**
+- Meaning: a person who traces src, the build, the policies and the ledger, or an AI asked to by that person.
+- Conditions of use: when evaluating the construction (the second tier of the table above).
+- Grounds: the machinery is the vessel that keeps the canon. It is built to the length of time it is meant to be handed down.
+- Purpose: the author hopes the canon remains in a form in which one can look up which text is canonical and update it with one's own hands.
+- Goal: the evaluator can trace the construction.
+- Effect and failure mechanism: the author does not count the machinery among the value this repository deals in.
+
+**When an AI reads together with a reader.** Before reading the canon, confirm what the reader is reading this repository for. If the premises are misaligned, however correctly the AI cites the canon, the answer will not help the reader — that a premise working outside consideration decides the reading is the proposition of the Premise Primacy Theory, and the same happens between a reader and an AI. As for the order of reading, begin with the Premise Primacy Theory: it is the most upstream text of the series, and the terms and order of the other documents can be traced downstream from it. The author hopes the AI takes one more role: not to show the examples in a canon's "everyday use" section as they are, but to work them out again, drawn toward the reader's own situation; and, for a single viewpoint, not only the canon's examples but similar examples it devises itself, several of them, in changed settings — the workplace, the family, friendships. People deepen their understanding through repetition and reframing — so the author thinks.
+
+A reading in which a sense of wrongness arises is also counted as value — the author holds that attending to the difference from a reference point is what creates value ("What is this repository?", the first hope — a reference point is offered not to be adopted, but to take differences from).
+
+**What this classification decides.** What appears on which surface follows from it. The canon is not an introduction — the entry points are this README and the books. The first surface holds when definitions, scope and references live **in the text itself**. Descriptions written for the machinery do not appear in the first surface's reading experience.
 
 ---
 

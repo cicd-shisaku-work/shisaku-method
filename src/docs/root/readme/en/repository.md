@@ -13,7 +13,7 @@ The earlier examples "When that one person is off, the work stops" and "One mach
 
 The earlier examples "Sales and the field cannot understand each other, and the content changes every time a message is passed on" and "Machines with different conventions (protocols) cannot talk to each other unless something translates between them" are called, in the world of systems, a difference in protocol, and they happen in families and in couples too. A protocol is the set of conventions for an exchange — with what meaning the same word or signal is sent, and with what meaning it is received — and when that differs from person to person, the words arrive but what they carry does not get across. In a family, the "later" in "I'll do it later" means later today to one person and the weekend to another. In a couple, one asks a partner who seems low, "Are you all right?", and gets back "I'm fine." The one who asked takes it at its word and lets the matter drop; the one who answered simply could not bring it up in the moment, and is not fine. Between the two, the conventions for conveying oneself differ: one conveys things as they are, the other conveys them so as not to worry the partner.
 
-To see the shape of one mechanism in the workplace, in a family and in a couple alike — shisaku-method is something with which one can think this way. But this is one example. Read shisaku-method slowly and steadily, and use it first as your own reference point. To begin with, a single place that catches your attention will do.
+To see the shape of one mechanism in the workplace, in a family and in a couple alike — shisaku-method is something with which one can think this way. But this is one example. Read shisaku-method slowly and steadily, and use it first as a reference point to set yourself against. To begin with, a single place that catches your attention will do.
 
 From his twenties, the author could at times also see people as a "mechanism". Reading Dawkins, who told the evolution of living things at the level of the gene, and Humphrey, who discussed the evolution of consciousness, he had learned to look at himself through the lens of natural science, alongside the lens of the humanities. That grounding met the structural analysis of failure, the analysis of people as a mechanism deepened, and once he saw the isomorphism between RASIS and organisations, it moved forward all at once. What is published here is theory that turns that way of seeing towards oneself and towards people, structured so that it can be put into everyday practice.
 
@@ -64,10 +64,10 @@ concepts/      — canons, interpretations and supplements, sorted by declared s
   human/       — systems brought down to the human species
   artificial/  — systems whose object is the artificial (AI, information environments)
 publications/  — sample artifacts referenced from media (note/Medium/Kindle)
-logs/          — AI dialogue records as proof of process
+logs/          — AI dialogue records as proof of process (preparation under consideration)
 src/           — the document build; modules are the source, and the README is generated from them
 ```
 
 **Where a document sits is decided by the scope it declares for itself. Change the declaration and the placement moves.**
 
-The concepts here were born through ego-mining (KOSEI Mining). The records of that process are also stored here. The container and its contents exist in the same place.
+The concepts here were born through ego-mining (KOSEI Mining). Storing the records of that process in `logs/` is still being considered. For now, the author is concentrating on putting the canon together. Until then, the commit history, which keeps the history and grounds of each revision, carries part of the role of the trail.
