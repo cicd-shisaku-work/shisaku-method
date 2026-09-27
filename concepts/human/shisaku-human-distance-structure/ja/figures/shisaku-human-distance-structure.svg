@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   シサク・ヒト距離構造理論 (Shisaku Human Distance-Structure Theory)
-  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。
+  設計・監査用の図（人間向け）。学説は傍証である。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝距離（紫）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
   Author: https://note.com/abstraction
@@ -114,6 +114,6 @@
   <text class="ann" x="60" y="594" style="font-size:11.5px">近さを装い共有を偽装する誘導＝操作／開示された誘導＝招待。　透明性・自己選択・賞味期限・自己更新の不可侵（境界は動機でなく「開かれているか」）。</text>
 
   <!-- Audit note + credit -->
-  <text class="foot" x="44" y="624">接地：共通基盤・説得知識・文化進化・記号論・社会ネットワークの伝播・予測符号化＝傍証であって証明でない。クオリア発生は哲学的原始項。設計・監査用。</text>
+  <text class="foot" x="44" y="624">接地：共通基盤・説得知識・文化進化・記号論・社会ネットワークの伝播・予測符号化＝傍証。クオリア発生は哲学的原始項。設計・監査用。</text>
   <text class="footR" x="1036" y="644">© 2026 shisaku ／ CC BY 4.0</text>
 </svg>

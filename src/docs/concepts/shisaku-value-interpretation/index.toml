@@ -8,8 +8,8 @@ title    = "シサク・価値解釈"
 subtitle = "Shisaku Value-Interpretation"
 author   = "shisaku"
 upstream = "シサク・クオリア解釈 → シサク・予測モデル解釈"
-version  = "v0.1.3"
-date     = "2026/09/24"
+version  = "v0.1.4"
+date     = "2026/09/28"
 canonical      = "{{url:shisaku-value-interpretation}}"
 copyright_year = "2026"
 license_intro  = "This document (Shisaku Value-Interpretation — Shisaku's reading of where value arises, and of how a price differs from it) is authored by shisaku. It is offered — as one interpretation among many, not a prescription — for others to study, adapt, and build upon as they see fit."
@@ -33,7 +33,7 @@ groups = [
    "interpretation/sender-as-organisation"],
   ["everyday"],
   ["naming"],
-  ["substitution-test"],
+  ["bridge-to-theory"],
   ["shared:meta/colophon"],
   ["shared:license/cc-by-4.0"],
 ]

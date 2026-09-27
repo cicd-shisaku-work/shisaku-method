@@ -8,8 +8,8 @@ title    = "シサク・予測モデル解釈"
 subtitle = "Shisaku Prediction-Model Interpretation"
 author   = "shisaku"
 upstream = "前提優位理論"
-version  = "v0.3.3"
-date     = "2026/09/24"
+version  = "v0.3.4"
+date     = "2026/09/28"
 canonical      = "{{url:shisaku-prediction-model-interpretation}}"
 copyright_year = "2026"
 license_intro  = "This document (Shisaku Prediction-Model Interpretation — Shisaku's reading of what stands on the expectation-first side) is authored by shisaku. It is offered — as one interpretation among many, not a prescription — for others to study, adapt, and build upon as they see fit."
@@ -32,7 +32,7 @@ groups = [
    "interpretation/human-structure"],
   ["everyday"],
   ["naming"],
-  ["substitution-test"],
+  ["bridge-to-theory"],
   ["shared:meta/colophon"],
   ["shared:license/cc-by-4.0"],
 ]

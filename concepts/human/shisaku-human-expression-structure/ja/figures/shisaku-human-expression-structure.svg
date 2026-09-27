@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   シサク・ヒト表現構造理論 (Shisaku Human Expression-Structure Theory)
-  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。
+  設計・監査用の図（人間向け）。学説は傍証である。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝表現（緑）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
   Author: https://note.com/abstraction
@@ -108,6 +108,6 @@
 
   <!-- Audit note + credit -->
   <text class="foot" x="44" y="618">接地：言語行為論・身体化認知・予測符号化・志向性・コストリー・シグナリング・暗黙知・シミュレーション（心の理論）・概念ブレンディング・</text>
-  <text class="foot" x="44" y="633">拡張された表現型・進化心理学・動物行動学＝傍証であって証明でない。クオリア発生は哲学的原始項。設計・監査用。</text>
+  <text class="foot" x="44" y="633">拡張された表現型・進化心理学・動物行動学＝傍証。クオリア発生は哲学的原始項。設計・監査用。</text>
   <text class="footR" x="1036" y="644">© 2026 shisaku ／ CC BY 4.0</text>
 </svg>
