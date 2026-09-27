@@ -7,7 +7,7 @@ output = "README.md"
 title    = "shisaku-method"
 author   = "shisaku"
 status   = "継続的インテグレーション中 / Continuously Integrating"
-version  = "v0.11.2"
+version  = "v0.12"
 date     = "2026/09/28"
 
 [numbering]
@@ -23,6 +23,7 @@ lang       = "ja"
 base_depth = 1
 groups = [
   ["repository"],
+  ["contact"],
   ["what-is", "what-is/name", "what-is/failure-analysis", "what-is/origin"],
   ["readers"],
   ["life-theory"],
@@ -35,7 +36,6 @@ groups = [
    "concepts/shisaku-cognitive-frame", "concepts/shisaku-human-transformation",
    "concepts/shisaku-human-idion-structure", "concepts/kosei-mining"],
   ["not-included"],
-  ["how-to-test"],
   ["participation"],
 ]
 
@@ -46,6 +46,7 @@ allow_unpaired = ["banner"]
 groups = [
   [],
   ["banner", "repository"],
+  ["contact"],
   ["what-is", "what-is/name", "what-is/failure-analysis", "what-is/origin"],
   ["readers"],
   ["life-theory"],
@@ -58,7 +59,6 @@ groups = [
    "concepts/shisaku-cognitive-frame", "concepts/shisaku-human-transformation",
    "concepts/shisaku-human-idion-structure", "concepts/kosei-mining"],
   ["not-included"],
-  ["how-to-test"],
   ["participation"],
 ]
 
