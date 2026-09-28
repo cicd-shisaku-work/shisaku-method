@@ -7,12 +7,6 @@ The author does not care for a uniform philosophy of life, because he thinks tha
 
 So this repository does not hand over a finished philosophy of life. It offers materials and methods with which readers find, assemble and update a philosophy of life of their own.
 
-The correctness of a philosophy of life cannot be judged in the same sense as a theory of natural science. But that does not mean it cannot be examined. One can trace back from what experience, observation, premises and reasoning a claim was derived, and check its grounds and structure. That is why the main documents state their scope and the substitution test.
+The author aims to write so that, for each claim, one can trace back from what experience, observation, premises and reasoning it was derived, and check its grounds and structure. That is why the main documents state their scope and the bridge to established theory. The history and grounds of each revision are also kept in the commit history.
 
-And in a philosophy of life, understanding something as logic and becoming able to use it in one's own judgment and action are different things. From the author's experience, he thinks that however consistent the logic presented, when it is new to them, or abstract, or collides with the logic they held until then, people are not beings who accept that logic on the spot and change at once. The author has never seen anyone accept it on the spot and change. People set it against their own experience, think it over again and again, sometimes hold it in suspension while still carrying a sense of wrongness, and make it their own over time.
-
-So a summary can be an entrance, but not a substitute. What is carried by a summary is the skeleton of the claims; the process by which the reader ties the concepts to their own experience is not carried.
-
-When reading this repository, take as your own ruler not only scientific correctness, but also where each claim comes from, and whether, set against your own life, it merits rereading again and again.
-
-Even if your interest fades for a while, reread it some years later. With time, the same content may come to look different. The author thinks that, as one's inner self changes through experience, the place the reader attends to can change. The author himself has seen what he attends to in people and in society change over the course of his life — in his teens, after he started work, after he reached mid-career, and after he reached the prime of life.
+When reading this repository, take as your own ruler where each claim comes from, and whether, set against your own life, it merits rereading again and again.
