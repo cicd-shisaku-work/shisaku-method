@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   シサク・ヒト変容理論 (Shisaku Human Transformation Theory) v0.3.1
-  設計・監査用の図（人間向け）。学説は傍証であって証明ではない。
+  設計・監査用の図（人間向け）。学説は傍証である。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙／IDION=葡萄色／駆動=赤褐）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
   Author: https://note.com/abstraction
@@ -168,7 +168,7 @@
   <text class="ann" x="60" y="698" font-size="11.5">開示された誘導＝招待／隠して自己選択を奪う誘導＝操作。　透明性・自己選択・賞味期限・自己更新の不可侵（境界は動機でなく「開かれているか」で引く）。</text>
 
   <!-- Audit note + credit -->
-  <text class="foot" x="44" y="730">接地は進化的（動物行動学・進化心理学・コストリー・シグナリング・予測符号化・記憶の再固定化・神経可塑性…）＝傍証であって証明でない。クオリア発生は哲学的原始項。設計・監査用。</text>
+  <text class="foot" x="44" y="730">接地は進化的（動物行動学・進化心理学・コストリー・シグナリング・予測符号化・記憶の再固定化・神経可塑性…）＝傍証。クオリア発生は哲学的原始項。設計・監査用。</text>
   <text class="foot" x="44" y="748">補足：変容の対象層 shtt-object-layers.md／深度語彙 shtt-depth-terms.md／変容の過程の八段 shtt-process-stages.md／資料の置き場 authoring-policy.md（リポジトリ直下）</text>
   <text class="footR" x="1036" y="780">© 2026 shisaku ／ CC BY 4.0</text>
 </svg>
