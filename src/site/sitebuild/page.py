@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import datetime
 from functools import lru_cache
 from html import escape
 from pathlib import Path
@@ -79,19 +78,16 @@ def share(lang: str, absolute_url: str, text: str) -> str:
     return f'<nav class="share" aria-label="{escape(labels["share"])}"><ul>{links}</ul></nav>'
 
 
-def generated_line(lang: str, fetched_at: datetime, commit_short: str, commit_url: str | None) -> str:
-    """'Fetched from GitHub and built: <time> (commit <sha>)' in the page's timezone."""
-    tz, tz_name = rules.TIMEZONES[lang]
-    local = fetched_at.astimezone(tz)
-    stamp = (
-        f'<time datetime="{local.isoformat()}">'
-        f'{local.strftime("%Y-%m-%d %H:%M")} {tz_name}</time>'
-    )
+def generated_line(lang: str, commit_short: str, commit_url: str | None) -> str:
+    """'Fetched from GitHub and built: commit <sha>'.
+
+    No time is shown, so a page changes only when the commit or its content
+    does; the commit page on GitHub carries the date (DESIGN.md §4.4).
+    """
     sha = escape(commit_short)
     commit = f'<a href="{escape(commit_url)}">{sha}</a>' if commit_url else sha
-    if lang == "ja":
-        return f'<p class="generated">{rules.LABELS[lang]["generated"]}：{stamp}（commit {commit}）</p>'
-    return f'<p class="generated">{rules.LABELS[lang]["generated"]}: {stamp} (commit {commit})</p>'
+    sep = "：" if lang == "ja" else ": "
+    return f'<p class="generated">{rules.LABELS[lang]["generated"]}{sep}commit {commit}</p>'
 
 
 def footer(lines: list[str]) -> str:

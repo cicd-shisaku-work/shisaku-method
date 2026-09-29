@@ -7,7 +7,6 @@ directory filled by fetch_fonts.py (CI does). Without it they are skipped.
 from __future__ import annotations
 
 import os
-from datetime import datetime, timezone
 from pathlib import Path
 
 from sitebuild import fonts
@@ -15,7 +14,6 @@ from sitebuild.config import from_env
 
 FIXTURE = Path(__file__).resolve().parent / "fixtures" / "repo"
 COMMIT = "0123456789abcdef0123456789abcdef01234567"
-FETCHED_AT = datetime(2026, 9, 23, 0, 30, tzinfo=timezone.utc)
 ENV = {"BASE_URL": "https://site.example", "SOURCE_REPO": "example/repo"}
 
 
@@ -25,5 +23,4 @@ NO_FONTS = "SITE_FONTS does not point at the pinned fonts"
 
 
 def config(out: Path, env: dict[str, str] | None = None, src: Path = FIXTURE, font_dir: Path | None = None):
-    return from_env(ENV if env is None else env, src=src, out=out, commit=COMMIT, fetched_at=FETCHED_AT,
-                    font_dir=font_dir)
+    return from_env(ENV if env is None else env, src=src, out=out, commit=COMMIT, font_dir=font_dir)

@@ -19,7 +19,6 @@ sys.dont_write_bytecode = True
 import argparse
 import os
 import shutil
-from datetime import datetime
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -37,8 +36,6 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--out", type=Path, default=Path("dist"), help="output directory (default: dist)")
     parser.add_argument("--clean", action="store_true", help="remove the output directory first")
     parser.add_argument("--commit", help="commit SHA shown in the footer (default: git HEAD)")
-    parser.add_argument("--fetched-at", type=datetime.fromisoformat,
-                        help="ISO 8601 time with offset shown in the footer (default: now)")
     parser.add_argument("--fonts", type=Path, help="directory holding the share-card fonts (see fetch_fonts.py)")
     parser.add_argument("--report", action="store_true", help="print a summary of the build")
     args = parser.parse_args(argv)
@@ -47,7 +44,7 @@ def main(argv: list[str] | None = None) -> int:
         shutil.rmtree(args.out)
     try:
         cfg = from_env(os.environ, src=args.src.resolve(), out=args.out.resolve(),
-                       commit=args.commit, fetched_at=args.fetched_at,
+                       commit=args.commit,
                        font_dir=args.fonts.expanduser().resolve() if args.fonts else None)
         result = build(cfg)
     except (BuildError, DiscoveryError, ValueError, OSError) as exc:

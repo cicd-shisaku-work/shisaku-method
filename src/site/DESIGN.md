@@ -1,7 +1,7 @@
 # シサクメソッド公開サイト・ビルド設計書（src/site）
 
-**Version:** v0.1
-**Date:** 2026/09/23
+**Version:** v0.2
+**Date:** 2026/09/29
 **性格：** `shisaku-method` リポジトリの `README.md` と `concepts/**` を、静的サイトとして S3 に公開する道具の設計仕様。実装する者が、この文書だけを読んで着手できることを合格条件とする。
 **範囲：** 本書は道具の設計だけを扱う。運用の手順は `OPERATIONS.md`。AWS 側の設定（バケット・IAM・EventBridge・証明書・CDN・DNS）は本書の外。
 
@@ -39,7 +39,7 @@ concepts/**/figures/*.svg ──┘        ↑
 - **配備に固有の値をリポジトリに置かない。** 取得元リポジトリ・ドメイン・GA 測定 ID・S3 バケット・CloudFront ID は、すべて**環境変数**で与える（§8）。本書とコードが持つのは変数の**名前と意味だけ**で、値はコードにも設定ファイルにも書かない。
   - 目的は秘密の保護ではない（ドメインも GA ID も公開 HTML に出る）。**フォークした人が、コードを編集せずに自分の配備で使える**ようにするためである。
   - Lambda の環境変数は秘密の置き場ではない。本当の秘密（取得元を非公開にしたときのトークン等）が生じたら、SSM Parameter Store／Secrets Manager に置く。
-- **生成は準決定的。** 本文・構造・共有画像は同入力→同出力。唯一の例外はフッタの**生成日時**で、これは毎日変わる。日次で全ページ（HTML）が再アップロードになるが、サイトは小さいので許容する。共有画像（PNG）は日時を含まないので、題が変わらなければ再アップロードされない。
+- **生成は決定的。** 本文・構造・共有画像・フッタは、同じコミット→同じ出力。フッタは時刻を持たずコミットだけを出す（§4.4）ので、取得元にコミットが無かった日は何も再アップロードされない。コミットがあった日は、フッタの SHA が変わるので全ページ（HTML）が再アップロードになるが、サイトは小さいので許容する。共有画像（PNG）はコミットを含まないので、題が変わらなければ再アップロードされない。
 
 責務分割：
 
@@ -178,17 +178,17 @@ v0.1 時点で、対象概念に en の文書は無い。**en 側は README だ�
   - README：`README | shisaku-method （シサクメソッド）`（H1 が「shisaku-method」で重複するため）。
   - トップ：`shisaku-method （シサクメソッド）`。
 - `description`／OGP：**メタ行（`上流依存`／`関連`／`Author`／`Version`／`帳簿注記` 等・`ラベル：` 行）を飛ばした最初の散文段落**から導く。先頭の箇条書き・引用の記号は除去し、インラインの装飾は平文にし、~120 字を超えるときは文末（40 字以上の最初の文）で切る。文末が無ければ 120 字で切って「…」。何も残らなければ題を使う。
-  - トップ：案内文（ja）の冒頭段落。
+  - トップ：案内文から取らず、別に持つ一文（`rules.TOP_DESCRIPTION`・ja）。案内文の冒頭段落は短い一文で、検索結果と共有の説明文にならないため。
   - 図版ページ：`(図版名)（<概念名>の図版）`（en は `(name) (Figure of <concept>)`）。
 
-### 4.4 出典・ライセンス・生成日時
+### 4.4 出典・ライセンス・版
 - **本文は単一ブロックで囲む。** md をレンダリングした本体は `<article data-origin="github">` で囲み、GitHub の原文そのままであることを構造で示す。サイトが生成する要素（パンくず・ローカルメニュー・シェア・サイトマップ・フッタ）は、このブロックの外に置く。
 - **License・GitHub URL は重ねない。** 対象文書は末尾に License（CC BY 4.0）と canonical URL を自身が持つ。ゆえにフッタは**サイトのフッタ**とし、License・URL を足さない。
-- **生成日時と版を明記する。** フッタに、GitHub から取得・生成した時刻とコミットを出す。
-  - 時刻：ja ページは **JST**、en ページは **UTC**。トップ（日英併記）は両方。`<time datetime="ISO 8601">` で機械可読にする。
+- **版を明記する。** フッタに、GitHub から取得・生成したコミットを出す。**時刻は出さない。** 時刻を出すと、中身が同じ日も全ページの HTML が変わり、日次の配置が毎日すべてを上げ直す（§8 の比較が効かない）。取得の日付は、コミットのリンク先で見える。
   - 版：コミット SHA（§8 の取り出し）。短縮形（7 桁）を表示し、GitHub のコミット URL（`SOURCE_REPO` から導出）へリンクする。`SOURCE_REPO` が無ければ短縮形だけを出す。SHA が分からなければ `unknown`。
-  - 例（ja）：`GitHub から取得・生成：2026-09-23 09:00 JST（commit abc1234）`
-  - 例（en）：`Fetched from GitHub and built: 2026-09-23 00:00 UTC (commit abc1234)`
+  - トップ（日英併記）は ja と en の二行を出す。
+  - 例（ja）：`GitHub から取得・生成：commit abc1234`
+  - 例（en）：`Fetched from GitHub and built: commit abc1234`
 
 ### 4.5 サイトマップ（HTML）
 トップと README の本文の下に、サイトが生成する `<nav class="sitemap">` を置く。`<article data-origin="github">` の外であり、原文には手を入れない。
@@ -242,7 +242,7 @@ v0.1 時点で、対象概念に en の文書は無い。**en 側は README だ�
 
 ## 7. トップページと README
 
-- **トップ `/`**：このサイトが何であるかを **ja/en 併記**で書く案内ページ。文言の正本は `content/landing.ja.md`／`landing.en.md`。`<html lang="ja">` とし、各言語を `<section lang="…">` で囲む。案内文の下にサイトマップ（§4.5）。
+- **トップ `/`**：このサイトが何であるかを **ja/en 併記**で書く案内ページ。文言の正本は `content/landing.ja.md`／`landing.en.md`。`<html lang="ja">` とし、各言語を `<section lang="…">` で囲む。案内文の下にサイトマップ（§4.5）。案内文は、見せたい一行ごとに空行で区切り、一行を一段落にする（空行の無い改行は、md では段落の中で詰まるため）。
 - **README**：日英併記で H1 が 2 つ。英語 H1（`# shisaku-method (English)`）の行で分割し、`/ja/readme.html` と `/en/readme.html` にする。境目の区切り線（`---`）は日本語側の末尾から落とす。相互に `hreflang` と言語切替を張る。本文の下にサイトマップ（§4.5）。英語 H1 が無ければ日本語側だけを出す。
 
 ---
@@ -258,15 +258,16 @@ v0.1 時点で、対象概念に en の文書は無い。**en 側は README だ�
 | `BASE_URL` | canonical・sitemap・OGP・hreflang の絶対 URL（末尾の `/` なし） | `http://localhost:8000` で生成し警告 |
 | `GA_MEASUREMENT_ID` | Google Analytics 測定 ID（`G-` で始まる英大文字・数字） | GA を出さない。形が違えば警告して出さない |
 | `S3_BUCKET` | 配置先 | Lambda：停止 |
-| `CLOUDFRONT_DISTRIBUTION_ID` | 無効化 | 無効化しない |
+| `CLOUDFRONT_DISTRIBUTION_ID` | 無効化する配信。`CLOUDFRONT_INVALIDATE` が OFF の間も設定したまま置ける | 無効化しない（`CLOUDFRONT_INVALIDATE=1` なら Lambda：停止） |
+| `CLOUDFRONT_INVALIDATE` | `1` のときだけ、配置のあと CloudFront を無効化する（`/*`）。即時の反映を要しないので既定は OFF | 無効化しない。変更が CDN から出るのは `Cache-Control`（§11）の期間が切れてから |
 | `ALLOW_SHRINK` | `1` のとき、縮小の安全弁（§16.2）を解除する | 安全弁を効かせる |
 | `GITHUB_TOKEN` | 取得元が非公開のときだけ | 無認証で取得 |
 
 - **Lambda は git を使わない。** Python ランタイムには git バイナリも `aws` CLI も無く、ファイルシステムは `/tmp` 以外読取専用。ゆえに：
   1. tarball を HTTPS で取得（`urllib`・タイムアウトと再試行つき）：`https://codeload.github.com/<SOURCE_REPO>/tar.gz/refs/heads/<SOURCE_BRANCH>`。公開リポジトリなら無認証。
   2. `/tmp` に標準ライブラリ `tarfile` で展開する。`filter="data"` でパス越え・絶対パス・デバイスファイル等を拒否し、トップディレクトリが 1 つであることと `README.md` の存在を確かめる。
-  3. **コミット SHA は tar の pax グローバルヘッダ（`comment`）から取る。** tarball のトップディレクトリ名はブランチ名（例 `shisaku-method-main`）で、SHA を含まない。取得時刻は、ダウンロードが終わった時点の UTC。
-  4. 生成 → 品質関門 → **boto3** で S3 同期 →（任意）CloudFront 無効化。
+  3. **コミット SHA は tar の pax グローバルヘッダ（`comment`）から取る。** tarball のトップディレクトリ名はブランチ名（例 `shisaku-method-main`）で、SHA を含まない。取得時刻（ダウンロードが終わった時点の UTC）は、無効化の要求を一意にする参照（`CallerReference`）にだけ使い、ページには出さない。
+  4. 生成 → 品質関門 → **boto3** で S3 同期 →（`CLOUDFRONT_INVALIDATE=1` のときだけ）CloudFront 無効化。
 - **S3 同期（deploy.py）**：出力を走査し、S3 上の ETag（md5）とサイズが一致しないものだけ `put_object`。S3 にあって出力に無いキーは `delete_objects`（`sync --delete` 相当）。**追加・更新をすべて終えてから最後に削除する。** `Content-Type` と `Cache-Control` は §11。
 - 必要な権限（AWS 側で付与）：`s3:ListBucket`・`s3:PutObject`・`s3:DeleteObject`、無効化を使うなら `cloudfront:CreateInvalidation`。
 
@@ -307,17 +308,17 @@ SNS で共有されたときに出る 1200×630 の PNG。**ビルド時に Pill
 ## 10. CLI
 
 ```bash
-python3 src/site/build_site.py --src <リポジトリのルート> --out <出力先> [--clean] [--commit <SHA>] [--fetched-at <ISO 8601>] [--fonts <フォントのディレクトリ>] [--report]
+python3 src/site/build_site.py --src <リポジトリのルート> --out <出力先> [--clean] [--commit <SHA>] [--fonts <フォントのディレクトリ>] [--report]
 python3 src/site/fetch_fonts.py --dest <フォントのディレクトリ>
 ```
 
 - `--src`：入力のルート（既定：カレント）。`--out`：出力先（既定：`dist`）。**出力先は空であること**（古いファイルの残留を防ぐ）。`--clean` は出力先を先に消す。
-- `--commit`／`--fetched-at`：フッタの版・時刻。省略時は、SHA は `git rev-parse HEAD`（使えなければ `unknown`）、時刻は現在時刻。`--fetched-at` はオフセット付き。
+- `--commit`：フッタの版。省略時は `git rev-parse HEAD`（使えなければ `unknown`）。
 - `--fonts`：共有画像用フォントのディレクトリ（§9.1）。省略時はカードを描かず警告する。
 - `--report`：要約（ページ数・ファイル数・対象外の概念・共有画像の種別・貼り替え不能なリンク・サイト外の上流名・警告・関門の違反）を出す。
 - `fetch_fonts.py`：固定したフォントと `OFL.txt` を取得し、SHA-256 を照合して置く。照合済みのファイルがあれば取り直さない。合わなければ何も残さず終了コード 1。
 - 終了コード：0＝成功。1＝`README.md` が無い、読み取り・書き出しに失敗、出力先が空でない、**品質関門（§16.1）に違反がある**。警告（環境変数の欠落等）は stderr に出して止めない。
-- `lambda_handler.handler` は、環境変数の読取 → 取得 → 生成と関門 → 配置 → 無効化の順に実行し、コミット・ページ数・put／delete 件数を返す。フォントはパッケージ内の `fonts/` から読む。関門の違反・フォントの欠落・例外は Lambda の失敗として返し、S3 には触れない。
+- `lambda_handler.handler` は、環境変数の読取 → 取得 → 生成と関門 → 配置 → 無効化（`CLOUDFRONT_INVALIDATE=1` のときだけ）の順に実行し、コミット・ページ数・put／delete 件数を返す。`CLOUDFRONT_INVALIDATE=1` で `CLOUDFRONT_DISTRIBUTION_ID` が無いときは、取得の前に止める。フォントはパッケージ内の `fonts/` から読む。関門の違反・フォントの欠落・例外は Lambda の失敗として返し、S3 には触れない。
 
 ---
 
@@ -329,7 +330,7 @@ python3 src/site/fetch_fonts.py --dest <フォントのディレクトリ>
 - 本文の可読幅を制限（44rem）。広い画面（60rem 以上）ではローカルメニューを左に固定表示、狭い画面では本文の下に回す。**JS は使わない**（GA を除く）。
 - 印刷時はヘッダ・パンくず・メニュー・シェア・サイトマップを隠す。
 - S3 の `Content-Type`：`.html` `text/html; charset=utf-8`／`.css` `text/css; charset=utf-8`／`.svg` `image/svg+xml`／`.png` `image/png`／`.xml` `application/xml`／`.txt` `text/plain; charset=utf-8`。
-- `Cache-Control`：HTML・xml・txt は `public, max-age=3600`（日次更新のため短め）、CSS・svg・png は `public, max-age=86400`。
+- `Cache-Control`：HTML・xml・txt は `public, max-age=3600`（日次更新のため短め）、CSS・svg・png は `public, max-age=86400`。CloudFront の無効化が OFF（既定・§8）のとき、配置した変更が CDN から出るまでの最大の遅れはこの期間になる。CSS はファイル名に版を持たないので、CSS を変えた日は最大 1 日、新しい HTML と古い CSS が組み合わさりうる（許容する）。
 
 ---
 
@@ -377,7 +378,7 @@ python3 src/site/fetch_fonts.py --dest <フォントのディレクトリ>
   - サイト内のリンク（`href`／`src`・スタイルシートを含む）がすべて出力内の実在ファイルに解決する。
   - 全ページに `lang`・空でない `title`・空でない `description` と、自身を指す `canonical` がある。
   - `hreflang` が双方向で対になっている。
-  - フッタに生成日時（`<time datetime>`）とコミットがある。
+  - フッタにコミットがある。
   - `sitemap.xml` が全ページを過不足なく列挙し、トップ以外の全ページがどれかの HTML サイトマップに載っている。`robots.txt` がある。
   - 全ページに `og:image` があり、サイト内の実在ファイルを指し、そのファイルが 1200×630 の PNG である（PNG のヘッダで確かめる）。
 - **回帰テスト**（`tests/`）：固定の入力（fixture リポジトリ）から生成し、ページ構成・題・本文ブロック・フッタ・日英対・サイトマップ（上流からの並び・原典の下への字下げ）・ローカルメニュー・シェアのリンク・共有画像（フォントの有無それぞれで、どのページがどの画像を指すか・カードの寸法）・図版ページ・決定性（二度の生成がバイト一致）を突き合わせる。題の折り返し（禁則・英単語・ハイフン・省略）は幅を数える関数を差し替えて、フォント無しでテストする。フォントの取得と照合（欠落・改変・取得時の不一致で何も残さないこと）もテストする。フォントを要するテストは、環境変数 `SITE_FONTS` がフォントのディレクトリを指すときだけ走る（CI は指す）。上流依存の読み取りと並び（鎖・最上流・サイト外の名前・循環）、取得（pax ヘッダの SHA・パス越えの拒否）、配置（差分・削除の順・縮小の安全弁・Content-Type）もそれぞれ単体でテストする。description 抽出は、公開文書に実在する型（上流依存行・関連行・英語メタ・太字メタ・帳簿注記・箇条書き・長文）を写した正解表で持つ。実文書そのものを正解にしない——文書の改訂のたびに CI が落ちる状態を作らないため。関門は、正常な出力を 1 か所ずつ壊して必ず違反を返すことをテストする。
@@ -396,7 +397,7 @@ python3 src/site/fetch_fonts.py --dest <フォントのディレクトリ>
 ### 16.3 保守性 ― 一人の保守者とフォークした人が、読んで直せる
 
 - 標準ライブラリを優先し、外部依存は md パーサ一式と Pillow（画像の描画）だけ。フレームワークもテンプレートエンジンも入れない。
-- **規則はデータとして一か所に置く**（`rules.py`）：対象概念の判定、原典の判定、上流依存の行の読み方と同順位の並べ方、description のメタ行パターンと字数、表示ラベル、シェアの宛先、共有画像（パス・寸法・配色・字の大きさ・禁則文字・字形の置き換え）、フォントの取得元と SHA-256、タイムゾーン、Content-Type、Cache-Control、縮小の閾値。規則を変えるときに触るのはここだけ。
+- **規則はデータとして一か所に置く**（`rules.py`）：対象概念の判定、原典の判定、上流依存の行の読み方と同順位の並べ方、description のメタ行パターンと字数、トップの説明文、表示ラベル、シェアの宛先、共有画像（パス・寸法・配色・字の大きさ・禁則文字・字形の置き換え）、フォントの取得元と SHA-256、Content-Type、Cache-Control、縮小の閾値。規則を変えるときに触るのはここだけ。
 - テンプレートは HTML ファイルとして外に出す（`templates/`）。
 - 巧妙さより明示。型ヒントを付け、1 関数 1 仕事。
 - 文書は `DESIGN.md`（何を・なぜ）と `OPERATIONS.md`（どう回す）の対で持つ（エンジンと同じ作法）。

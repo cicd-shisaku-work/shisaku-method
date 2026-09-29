@@ -1,7 +1,7 @@
 # シサクメソッド公開サイト・運用手順書（src/site）
 
-**Version:** v0.1
-**Date:** 2026/09/23
+**Version:** v0.2
+**Date:** 2026/09/29
 **性格：** `src/site/` の道具を日々どう回すかの手順。仕組みそのものの設計は `DESIGN.md`。本書は「何をどの順で叩くか」だけを扱う。
 
 ---
@@ -96,11 +96,13 @@ python3 src/site/fetch_fonts.py --dest build/lambda/fonts
 
 - 環境変数は `DESIGN.md` §8 の表のとおり。**値はコンソールで設定し、リポジトリには書かない。**
 - 権限：`s3:ListBucket`（バケット）、`s3:PutObject`・`s3:DeleteObject`（オブジェクト）、無効化を使うなら `cloudfront:CreateInvalidation`。
+- CloudFront の無効化は既定で OFF。`CLOUDFRONT_DISTRIBUTION_ID` は設定したままでよく、`CLOUDFRONT_INVALIDATE=1` を足したときだけ無効化する。OFF のとき、変更が CDN から出るのは `Cache-Control` の期間が切れてから——HTML・xml・txt は最大 1 時間、CSS・svg・png は最大 1 日。CSS を変えた日は最大 1 日、新しい HTML と古い CSS が組み合わさりうる。
 - 起動：EventBridge のスケジュールで 1 日 1 回。
 
 ### 4.3 実行結果の見方
 
-- 成功時の戻り値：`commit`・`pages`・`put`・`delete`・`unchanged`・`invalidation`。
+- 成功時の戻り値：`commit`・`pages`・`put`・`delete`・`unchanged`・`invalidation`（無効化が OFF か、変更が無かった日は `null`）。
+- フッタは時刻を持たないので、取得元にコミットが無かった日は `put` が 0 になる。
 - ログの段階：取得したコミット → 生成したページ数 → 配置の件数 → 無効化。
 
 ---
@@ -115,6 +117,7 @@ python3 src/site/fetch_fonts.py --dest build/lambda/fonts
 | `refusing to publish … below 50%` | 生成ページ数と現行ページ数 | 取得の欠損や対象判定の事故を疑う。意図した大規模削除なら、その 1 回だけ `ALLOW_SHRINK=1` を付けて実行し、終わったら外す |
 | `download failed` | 取得元・ブランチ・通信 | `SOURCE_REPO`・`SOURCE_BRANCH` の値、GitHub 側の状態 |
 | `SOURCE_REPO and S3_BUCKET must be set` | 環境変数 | コンソールで設定する |
+| `CLOUDFRONT_INVALIDATE=1 needs CLOUDFRONT_DISTRIBUTION_ID` | 環境変数 | 配信の ID を設定するか、`CLOUDFRONT_INVALIDATE` を外す |
 | `share-card fonts are missing or altered in the package` | パッケージの `fonts/` | §4.1 の `fetch_fonts.py` を入れてパッケージを作り直す |
 | `No module named 'PIL'`／`_imaging` の読み込み失敗 | パッケージの Pillow | §4.1 の `--platform`・`--python-version` を関数に合わせて作り直す |
 

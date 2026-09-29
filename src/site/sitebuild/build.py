@@ -238,21 +238,20 @@ def _finish(ctx: _Context, url: str, lang: str, title: str, description: str, og
 
 def _generated(ctx: _Context, lang: str) -> str:
     cfg = ctx.cfg
-    return page.generated_line(lang, cfg.fetched_at, cfg.commit_short, cfg.commit_url)
+    return page.generated_line(lang, cfg.commit_short, cfg.commit_url)
 
 
 def _top_page(ctx: _Context, url_set: set[str]) -> _Page:
-    sections, description = [], ""
+    sections = []
     for lang in ("ja", "en"):
-        html, first = render_plain_page(ctx.md, _read(CONTENT / f"landing.{lang}.md"))
-        description = description or first
+        html = render_plain_page(ctx.md, _read(CONTENT / f"landing.{lang}.md"))
         sections.append(f'<section class="landing" lang="{lang}">\n{html}</section>')
     extra = [(u, label) for u, label in (
         ("/ja/readme.html", "README（日本語）"),
         ("/en/readme.html", "README (English)"),
     ) if u in url_set]
     return _finish(
-        ctx, "/", "ja", rules.TOP_TITLE, description, "website", "\n".join(sections),
+        ctx, "/", "ja", rules.TOP_TITLE, rules.TOP_DESCRIPTION, "website", "\n".join(sections),
         [_generated(ctx, "ja"), _generated(ctx, "en")], url_set,
         tail=nav.sitemap("ja", ctx.ordered, ctx.titles, extra),
     )

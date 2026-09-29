@@ -52,16 +52,28 @@ class BuildTest(unittest.TestCase):
         self.assertNotIn("local-nav", article)
         self.assertNotIn("breadcrumb", article)
 
-    def test_footer_time_and_commit(self):
+    def test_footer_commit_without_time(self):
+        link = '<a href="https://github.com/example/repo/commit/0123456789abcdef0123456789abcdef01234567">0123456</a>'
         ja = self.read("ja/concepts/human/alpha/alpha.html")
-        self.assertIn("2026-09-23 09:30 JST", ja)
-        self.assertIn('https://github.com/example/repo/commit/0123456789abcdef0123456789abcdef01234567', ja)
-        self.assertIn(">0123456<", ja)
+        self.assertIn(f'<p class="generated">GitHub から取得・生成：commit {link}</p>', ja)
         en = self.read("en/readme.html")
-        self.assertIn("2026-09-23 00:30 UTC", en)
+        self.assertIn(f'<p class="generated">Fetched from GitHub and built: commit {link}</p>', en)
+        for page in self.out.rglob("*.html"):
+            with self.subTest(page.relative_to(self.out).as_posix()):
+                self.assertNotIn("<time", page.read_text(encoding="utf-8"))
+
+    def test_footer_without_source_repo_shows_the_short_sha(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / "dist"
+            build(config(out, env={"BASE_URL": "https://site.example"}))
+            html = (out / "ja/readme.html").read_text(encoding="utf-8")
+        self.assertIn('<p class="generated">GitHub から取得・生成：commit 0123456</p>', html)
+
+    def test_top_description_is_its_own_sentence(self):
         top = self.read("index.html")
-        self.assertIn("JST", top)
-        self.assertIn("UTC", top)
+        sentence = "人と世界を地続きの構造で記述し、学説へ橋を架け、異分野をまたいで語る、一人の記述者の物語。"
+        self.assertIn(f'<meta name="description" content="{sentence}">', top)
+        self.assertIn(f'<meta property="og:description" content="{sentence}">', top)
 
     def test_readme_split_and_pairing(self):
         ja, en = self.read("ja/readme.html"), self.read("en/readme.html")

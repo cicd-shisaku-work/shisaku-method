@@ -7,7 +7,6 @@ from __future__ import annotations
 
 import subprocess
 from dataclasses import dataclass
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Mapping
 
@@ -26,7 +25,6 @@ class Config:
     source_branch: str
     ga_id: str | None
     commit: str              # full SHA or "unknown"
-    fetched_at: datetime     # timezone-aware
     font_dir: Path | None = None  # share-card fonts (DESIGN.md §9); None draws the default image only
     warnings: tuple[str, ...] = ()
 
@@ -52,7 +50,6 @@ def from_env(
     src: Path,
     out: Path,
     commit: str | None = None,
-    fetched_at: datetime | None = None,
     font_dir: Path | None = None,
 ) -> Config:
     warnings: list[str] = []
@@ -71,11 +68,6 @@ def from_env(
         warnings.append("GA_MEASUREMENT_ID has an unexpected form; analytics is omitted")
         ga_id = None
 
-    if fetched_at is None:
-        fetched_at = datetime.now(timezone.utc).replace(microsecond=0)
-    elif fetched_at.tzinfo is None:
-        raise ValueError("fetched_at must be timezone-aware")
-
     return Config(
         src=src,
         out=out,
@@ -84,7 +76,6 @@ def from_env(
         source_branch=(env.get("SOURCE_BRANCH") or "").strip() or DEFAULT_BRANCH,
         ga_id=ga_id,
         commit=commit or _local_commit(src) or "unknown",
-        fetched_at=fetched_at,
         font_dir=font_dir,
         warnings=tuple(warnings),
     )
