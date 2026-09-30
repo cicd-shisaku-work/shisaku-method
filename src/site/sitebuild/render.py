@@ -64,9 +64,9 @@ def render_document(
     )
 
 
-def render_plain_page(md: MarkdownIt, text: str) -> tuple[str, str]:
-    """Render site-owned Markdown (landing copy); return (html, first paragraph)."""
-    return md.render(text), describe(md, text)
+def render_plain_page(md: MarkdownIt, text: str) -> str:
+    """Render site-owned Markdown (the landing copy)."""
+    return md.render(text)
 
 
 # --- title ---------------------------------------------------------------------

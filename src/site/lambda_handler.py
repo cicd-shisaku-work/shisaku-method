@@ -5,7 +5,8 @@ live site stays as it was. Errors are raised so the invocation fails.
 
 Environment (values are set in the Lambda console, never in the repository):
 SOURCE_REPO, SOURCE_BRANCH, BASE_URL, GA_MEASUREMENT_ID, S3_BUCKET,
-CLOUDFRONT_DISTRIBUTION_ID, ALLOW_SHRINK, GITHUB_TOKEN (only for a private source).
+CLOUDFRONT_DISTRIBUTION_ID, CLOUDFRONT_INVALIDATE, ALLOW_SHRINK,
+GITHUB_TOKEN (only for a private source).
 
 The share-card fonts travel in the package under ``fonts/`` (OPERATIONS.md);
 a package without them is refused rather than publishing plain images.
@@ -21,6 +22,7 @@ import logging
 import os
 import tempfile
 from pathlib import Path
+from typing import Mapping
 
 HERE = Path(__file__).resolve().parent
 FONT_DIR = HERE / "fonts"
@@ -40,6 +42,20 @@ class ConfigurationError(Exception):
     pass
 
 
+def invalidation_target(env: Mapping[str, str]) -> str | None:
+    """The distribution to invalidate, or None when invalidation is off.
+
+    Off unless CLOUDFRONT_INVALIDATE=1; the distribution ID may stay set while
+    it is off. Turning it on without an ID is a configuration error.
+    """
+    if env.get("CLOUDFRONT_INVALIDATE", "").strip() != "1":
+        return None
+    dist_id = env.get("CLOUDFRONT_DISTRIBUTION_ID", "").strip()
+    if not dist_id:
+        raise ConfigurationError("CLOUDFRONT_INVALIDATE=1 needs CLOUDFRONT_DISTRIBUTION_ID")
+    return dist_id
+
+
 def handler(event: dict | None = None, context: object = None) -> dict:
     env = os.environ
     repo = env.get("SOURCE_REPO", "").strip()
@@ -47,6 +63,7 @@ def handler(event: dict | None = None, context: object = None) -> dict:
     if not repo or not bucket:
         raise ConfigurationError("SOURCE_REPO and S3_BUCKET must be set")
     branch = env.get("SOURCE_BRANCH", "").strip() or DEFAULT_BRANCH
+    dist_id = invalidation_target(env)
 
     with tempfile.TemporaryDirectory() as tmp:
         work = Path(tmp)
@@ -54,7 +71,7 @@ def handler(event: dict | None = None, context: object = None) -> dict:
         log.info("fetched %s@%s commit=%s", repo, branch, source.commit)
 
         cfg = from_env(env, src=source.root, out=work / "dist",
-                       commit=source.commit, fetched_at=source.fetched_at, font_dir=FONT_DIR)
+                       commit=source.commit, font_dir=FONT_DIR)
         result = build(cfg)
         for w in result.warnings:
             log.warning(w)
@@ -73,7 +90,6 @@ def handler(event: dict | None = None, context: object = None) -> dict:
         log.info("deployed put=%d delete=%d unchanged=%d", len(plan.puts), len(plan.deletes), plan.unchanged)
 
         invalidation = None
-        dist_id = env.get("CLOUDFRONT_DISTRIBUTION_ID", "").strip()
         if dist_id and (plan.puts or plan.deletes):
             invalidation = deploy_mod.invalidate(boto3.client("cloudfront"), dist_id, source.commit + source.fetched_at.isoformat())
             log.info("invalidation %s", invalidation)

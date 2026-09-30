@@ -1,10 +1,27 @@
 # shisaku-method
 
-A public site for a set of original theories built by shisaku from a first-person (n=1) practice — on human cognition, expression, transformation and value, and on working with AI. They are written not as instructions that hand out "the right answer," but from the layer of premises: mechanism, proper use, and failure mode.
+Some concepts have been handed down since long ago.
 
-Each concept collects a canon (the theory itself) and its supplements. The GitHub repository is the source of truth; this site makes it easier for people to read and navigate.
+"Love," "courage," "happiness," "a decent life," "good and evil."
 
-- New here? Start with the [README](/en/readme.html).
-- One grouping per concept: read the canon, then the supplements if needed.
+Perhaps each of them is really a label stuck on the lid of a box.
 
-License is stated in each document (CC BY 4.0).
+shisaku-method is a way of gently opening that box, taking stock of what is inside, and trying to see whether it holds what you thought it did.
+
+Most of it is a map of people and the world, written down over time from what shisaku has seen at work and at home.
+
+It is still rough, and much is left to write. It is not something you need to brace yourself to read, but I expect many parts will be hard going. It holds, packed in tight, what shisaku has been thinking about. It is dense. These are documents that often redefine words.
+
+Starting from any one place that catches your eye is fine.
+
+If it interests you, I would be glad.
+
+There are two kinds of documents: "theories," set up to hold for anyone, and "interpretations," offered as one person's way of seeing. Each ends by building a bridge to the established theories it relates to.
+
+It aims to be a story with that kind of depth: read it again a few years later, and the places where you stop will have changed.
+
+shisaku-method is
+
+a story of one describer, who describes people and the world as one continuous structure, builds bridges to established theory, and speaks across fields.
+
+New here? Start with the [README](/en/readme.html).

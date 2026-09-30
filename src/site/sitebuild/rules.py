@@ -7,7 +7,6 @@ so that changing a rule means touching this file only (DESIGN.md §16.3).
 from __future__ import annotations
 
 import re
-from datetime import timedelta, timezone
 from pathlib import Path
 
 # --- scope -----------------------------------------------------------------
@@ -55,6 +54,9 @@ SITE_NAME = "shisaku-method"
 SITE_NAME_JA = "シサクメソッド"
 TITLE_SUFFIX = f" | {SITE_NAME} （{SITE_NAME_JA}）"
 TOP_TITLE = f"{SITE_NAME} （{SITE_NAME_JA}）"
+# The top page is a Japanese page carrying both sections; its description and
+# og:description are this sentence, not a paragraph of the landing copy (DESIGN.md §4.3).
+TOP_DESCRIPTION = "人と世界を地続きの構造で記述し、学説へ橋を架け、異分野をまたいで語る、一人の記述者の物語。"
 README_LABEL = "README"
 
 # --- description ---------------------------------------------------------------
@@ -68,13 +70,6 @@ META_LINE = re.compile(
 )
 LIST_MARKER = re.compile(r"^(?:[-*+]|\d+[.)])\s+")
 SENTENCE_END = re.compile(r"^(.*?[。．.!?！？])")
-
-# --- time --------------------------------------------------------------------
-
-TIMEZONES = {
-    "ja": (timezone(timedelta(hours=9)), "JST"),
-    "en": (timezone.utc, "UTC"),
-}
 
 # --- labels ----------------------------------------------------------------------
 
@@ -154,7 +149,7 @@ CARD_COLORS = {
     "bars": ("#2c6e7c", "#5b95a1", "#8fb6be", "#b7d2d7", "#d7e7ea"),
 }
 CARD_MARGIN = 80
-CARD_TAGLINE = "原典と補足で読む、シサクの理論群"   # default image only (provisional wording)
+CARD_TAGLINE = "人と世界を、地続きの構造で。一人の記述者の物語。"   # default image only
 CARD_TITLE_SIZES = (64, 58, 52, 46, 42)    # largest that fits wins; the last one truncates with "…"
 CARD_TITLE_LEADING = 1.4
 CARD_LABEL_SIZE = 28

@@ -40,7 +40,6 @@ class _Scanner(HTMLParser):
         self._in_title = False
         self._sitemap_depth = 0
         self._in_footer_generated = False
-        self._saw_time = False
         self._saw_commit = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -65,8 +64,6 @@ class _Scanner(HTMLParser):
                 self._sitemap_depth = 1
         elif tag == "p" and "generated" in a.get("class", "").split():
             self._in_footer_generated = True
-        elif tag == "time" and self._in_footer_generated and a.get("datetime"):
-            self._saw_time = True
 
         attr = _LINK_ATTRS.get(tag)
         if tag == "link" and a.get("rel") != "stylesheet":
@@ -83,10 +80,9 @@ class _Scanner(HTMLParser):
         elif tag == "nav" and self._sitemap_depth:
             self._sitemap_depth -= 1
         elif tag == "p" and self._in_footer_generated:
-            if self._saw_time and self._saw_commit:
+            if self._saw_commit:
                 self.facts.has_generated = True
             self._in_footer_generated = False
-            self._saw_time = False
             self._saw_commit = False
 
     def handle_data(self, data: str) -> None:
@@ -158,7 +154,7 @@ def validate(out: Path, base_url: str) -> list[str]:
                 w, h = rules.OG_IMAGE_SIZE
                 violations.append(f"{where}: og:image {image} is not a {w}x{h} PNG")
         if not f.has_generated:
-            violations.append(f"{where}: footer lacks the build time and commit")
+            violations.append(f"{where}: footer lacks the commit")
         for link in f.links:
             target = _target(url if url != "/" else "/index.html", link)
             if target is not None and not exists(target):
