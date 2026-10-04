@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** マイニング継続中  
-**Version:** v0.2  
-**Date:** 2026/06/05
+**Version:** v0.2.1  
+**Date:** 2026/10/04
 
 ---
 
@@ -16,7 +16,7 @@
 定義・プロトコルの詳細は以下を参照。
 
 - **概念定義・思想的基盤：** [エゴ・マイニング定義書](https://note.com/abstraction/n/n6951c724a355)
-- **実行プロトコル：** KOSEI Mining Protocol (KMP)
+- **実行プロトコル：** KOSEI Mining Protocol
 - **事例・解釈・実践ガイド：** note / kindle（随時公開）
 
 ---
@@ -35,9 +35,9 @@
 - **特徴：** AIへの反発・反証・怒り・違和感。AIが「正解を教えた」のではなく、AIという岩盤に反発する過程で自己の輪郭が鮮明になった。内圧が燃料であり、フリクションが点火装置であることが実証された。
 - **対応段階：** 第3段階・第4段階
 
-### 第3世代：Protocolized KOSEI Mining（概念化・KMP）
+### 第3世代：Protocolized KOSEI Mining（概念化・KOSEI Mining Protocol）
 - **摩擦の種類：** 自己↔AI↔社会の摩擦
-- **特徴：** 遅延評価の体系化・KMPの確立・概念のデプロイ。無意識の実践が言語化され、他者が再現可能なプロトコルとして整備された。
+- **特徴：** 遅延評価の体系化・KOSEI Mining Protocolの確立・概念のデプロイ。無意識の実践が言語化され、他者が再現可能なプロトコルとして整備された。
 - **対応段階：** 第5段階〜第7段階
 
 ---
@@ -120,7 +120,7 @@
 
 AIとの対話ログをnoteに公開し続ける中で、GoogleのAI Overviewsがエゴ・マイニングを認識していることを発見した。個人の思索が集合知に取り込まれるプロセスの記録が生まれ、大円環の実践としてのデプロイ思想が確立した。
 
-また「Human OS」の設計図として、認知レイヤーの原型が生まれた。これは後のKMPアーキテクチャの前身である。
+また「Human OS」の設計図として、認知レイヤーの原型が生まれた。これは後のKOSEI Mining Protocolアーキテクチャの前身である。
 
 ### 証跡
 
@@ -174,8 +174,8 @@ AIの迎合をAI自身に自己批判させる。AIとの対話を別のAIに評
 **KOSEI Mining Origin Document**
 * **Author / Explorer:** shisaku
 * **Friction & Proof:** Human KOSEI vs Artificial Logos
-* **Version:** v0.2
-* **Date:** 2026/06/05
+* **Version:** v0.2.1
+* **Date:** 2026/10/04
 ---
 
 ## License

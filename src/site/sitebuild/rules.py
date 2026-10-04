@@ -29,7 +29,7 @@ def is_canon(concept: str, rel: str) -> bool:
 # --- upstream order (DESIGN.md §4.5) ------------------------------------------
 
 # Each canon states its upstream near the top, e.g.
-#   **上流依存：シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**
+#   **上流依存：シサク・ヒト変容理論 → 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**
 UPSTREAM_SCAN_LINES = 20
 UPSTREAM_LINE = re.compile(r"上流依存\s*[:：]\s*(.+)")
 UPSTREAM_SEGMENT_SEP = re.compile(r"／")

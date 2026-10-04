@@ -21,7 +21,7 @@
 | 文書 | 内容 |
 |---|---|
 | **本定義書** | 概念定義・思想的基盤・境界公理 |
-| **KMP** | 実行プロトコル・運用手順 |
+| **KOSEI Mining Protocol** | 実行プロトコル・運用手順 |
 | **note / kindle** | 事例・体験・解釈・実践ガイド |
 
 本定義書に事例・具体的手順・感情的説明は収録しない。それらは対応文書に委ねる。
@@ -546,8 +546,8 @@ AIはクオリアを持たない
 **KOSEI Mining Definition Protocol**
 * **Author / Explorer:** shisaku
 * **Friction & Proof:** Human KOSEI vs Artificial Logos
-* **Version:** v0.7.4
-* **Date:** 2026/09/26
+* **Version:** v0.7.5
+* **Date:** 2026/10/04
 
 ---
 
