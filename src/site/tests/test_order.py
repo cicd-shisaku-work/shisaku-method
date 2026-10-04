@@ -10,7 +10,7 @@ def canon(upstream_line: str | None) -> str:
 
 class ParseTest(unittest.TestCase):
     def test_chain_and_root(self):
-        up = parse_upstream(canon("**上流依存：シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**"))
+        up = parse_upstream(canon("**上流依存：シサク・ヒト変容理論 → 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**"))
         self.assertEqual(up.chains, [["シサク・ヒト変容理論", "前提優位理論"]])
         self.assertEqual(up.root, "シサク・世界解釈")
 
@@ -41,8 +41,8 @@ class OrderTest(unittest.TestCase):
         "shisaku-qualia-interpretation": ("**上流依存：シサク・予測モデル解釈**", "シサク・クオリア解釈"),
         "shisaku-value-interpretation": ("**上流依存：シサク・クオリア解釈 → シサク・予測モデル解釈**", "シサク・価値解釈"),
         "shisaku-human-transformation": ("**上流依存：前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**", "シサク・ヒト変容理論"),
-        "shisaku-human-idion-structure": ("**上流依存：シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**", "シサク・ヒト IDION 構造理論"),
-        "shisaku-human-distance-structure": ("**上流依存：シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**", "シサク・ヒト距離構造理論"),
+        "shisaku-human-idion-structure": ("**上流依存：シサク・ヒト変容理論 → 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**", "シサク・ヒト IDION 構造理論"),
+        "shisaku-human-distance-structure": ("**上流依存：シサク・ヒト変容理論 → 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈**", "シサク・ヒト距離構造理論"),
         "trust-signal-frame": ("**上流依存：前提優位理論（Premise Primacy）／シサク認知フレーム理論（原典）v0.1**", "入口設計の認知フレーム"),
     }
 

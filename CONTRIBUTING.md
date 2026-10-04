@@ -1,7 +1,7 @@
 # CONTRIBUTING — git運用規約
 
-**Version:** v0.5.3
-**Date:** 2026/09/28
+**Version:** v0.5.4
+**Date:** 2026/10/04
 **性格：** 本リポジトリ（shisaku-method）のgit運用ルール。過去のgitログ（2026/06〜07）から実際に安定した運用を成文化したもの。本リポジトリはドキュメント中心であり、規約もそれに最適化する。
 
 ---
@@ -13,7 +13,7 @@ main ← トピックブランチ（PR経由・squash merge）
 ```
 
 - **mainへの直コミットはしない。** すべての変更はトピックブランチを切り、GitHub上のPull Requestを経由してmainへマージする。
-- PRはソロ運用でもセルフレビューの場として使う——diffを俯瞰し、一晩置いて読み直してからマージしてよい。**確定は人間の目を通す**（SEFA・PEESの「評価器は提案し、確定は人間」と同じ思想）。
+- PRはソロ運用でもセルフレビューの場として使う——diffを俯瞰し、一晩置いて読み直してからマージしてよい。**確定は人間の目を通す**。
 - マージ方式は **squash merge** とし、マージ後にトピックブランチを削除する。これにより「1トピック＝main上の1コミット」が保たれる。
 
 ### ブランチ命名
@@ -21,7 +21,7 @@ main ← トピックブランチ（PR経由・squash merge）
 | プレフィックス | 用途 | 例 |
 | :-- | :-- | :-- |
 | `add-*` | 新規ドキュメント・概念の追加 | `add-trust-signal-frame-and-publications` |
-| `update-*` | 既存ドキュメントの版上げ・構造改訂 | `update-pees-v0.2` |
+| `update-*` | 既存ドキュメントの版上げ・構造改訂 | `update-authoring-policy-v0.6-bridge-to-theory` |
 | `fix-*` | 誤記・リンク・ライセンス表記などの修正 | `fix-license-metadata` |
 
 - 名前は英小文字とハイフン。内容が推測できる具体名にする（`update-docs` のような汎用名は避ける）。
@@ -46,7 +46,7 @@ Conventional Commits の簡易形を用いる。本リポジトリはドキュ�
 ### 書式ルール
 
 - **版上げは遷移を明記する：** `docs: kosei-mining-definition v0.7.2 -> v0.7.3`
-- **新規追加は add + 対象 + 版：** `docs: add SEFA evaluator fidelity axioms v0.1`
+- **新規追加は add + 対象 + 版：** `docs: add word-map supplement v0.1`
 - 複数ファイルにまたがる1トピックは、要約に主対象を書く。
 
 ### 本文（body）の義務（コミットの自己完結性）
@@ -67,7 +67,7 @@ bodyには次を書く（英語）：**変更点の箇条書き**（ドキュメ
 **禁止例（過去ログの反省点）：**
 
 - `修正` ／ `update` ——対象も内容も分からない
-- `docs: add SEFA v0.1; pees v0.1.8 -> v0.2; add CONTRIBUTING`（bodyなし）——3トピックの構造改訂が1行に潰れ、何がどう変わったか辿れない
+- `docs: add evaluator axioms v0.1; prelim-business v0.1.8 -> v0.2; add CONTRIBUTING`（bodyなし）——3トピックの構造改訂が1行に潰れ、何がどう変わったか辿れない
 
 **参照は役割で書く（自己完結性の外延）：** メッセージは、**本リポジトリだけを読む者に意味が通る**こと。ここに無い文書・リポジトリ・作業単位の名／パス／節番号に依存しない——根拠を挙げるなら**役割**で書く（外部批評／別セッションの監査／ある文章媒体の実装／系列の統治文書）。ここに無いものの名は、読む側から辿れないため根拠として働かず、辿れない参照を履歴に残す。
 
@@ -81,7 +81,7 @@ bodyには次を書く（英語）：**変更点の箇条書き**（ドキュメ
 
 **適用範囲は項目ごとに示す。**【新規】は新規ドキュメントを収録する PR に、**【新規・格上げ】はそれに加えて、既存文書を `publications/` から `concepts/` へ格上げする PR に**、【全PR】は改訂・修正を含むすべての PR に掛かる。
 
-- [ ] 【新規】**ヘッダー**：タイトル／短縮名（あれば）／版のブロック（§4 の定型＝`**Version:** vX.Y.Z` と `**Date:**`）／上流依存（該当時）を冒頭に持つ。
+- [ ] 【新規】**ヘッダー**：タイトル／版のブロック（§4 の定型＝`**Version:** vX.Y.Z` と `**Date:**`）／上流依存（該当時）を冒頭に持つ。
 - [ ] 【新規】**ライセンス表示**：末尾に `## License` セクション（CC BY 4.0、Copyright (c) 20XX shisaku、Author URL、Canonical repository URL）。
 - [ ] 【全PR】**Canonical repository URLが配置先ディレクトリと一致**している（移動時は必ず書き換える）。
 - [ ] 【新規】**README同期**：`concepts/` 配下への追加は、**主要な概念であれば**「含まれる概念」（日英）を更新する。README は索引であって網羅ではない——概念は増え続けるので、全件を載せると入口として働かなくなる。`publications/` 配下は README を触らない。
@@ -167,14 +167,14 @@ bodyには次を書く（英語）：**変更点の箇条書き**（ドキュメ
 ```bash
 # 1. ブランチを切る
 git checkout main && git pull origin main
-git checkout -b update-pees-v0.2
+git checkout -b update-authoring-policy-v0.6-bridge-to-theory
 
 # 2. 作業・コミット
 git add <files>
-git commit -m "docs: pees-prelim-business v0.1.8 -> v0.2"
+git commit -m "docs: authoring-policy v0.5 -> v0.6"
 
 # 3. push して PR を作る
-git push -u origin update-pees-v0.2
+git push -u origin update-authoring-policy-v0.6-bridge-to-theory
 gh pr create --fill   # または GitHub UI
 
 # 4. セルフレビュー後、squash merge（GitHub UI推奨）

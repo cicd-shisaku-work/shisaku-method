@@ -107,7 +107,7 @@
   <text class="annC" x="528" y="262" font-size="10.5" fill="#6b2d3e">IDION は共鳴の必要条件でなく、影響する上流条件（受け手の防衛を貫きやすい・偽装は弾かれやすい／入口と出口の量的対応は仮定しない）</text>
 
   <!-- Eight stages strip (両端共通) -->
-  <text class="ann" x="44" y="292" font-weight="700" fill="#3a4a55">両端共通の過程＝八段（正本＝原典「命題と、変容の定義」の節・詳細は補足〔shtt-process-stages.md〕）</text>
+  <text class="ann" x="44" y="292" font-weight="700" fill="#3a4a55">両端共通の過程＝八段（正本＝原典「命題と、変容の定義」の節・詳細は補足〔shisaku-human-transformation-process-stages.md〕）</text>
   <g>
     <rect class="c-stage" x="44" y="300" width="112" height="46" rx="6"/>
     <text class="stg" x="100" y="318">0 接触</text><text class="stgs" x="100" y="333">四成分・刺激源</text>
@@ -169,6 +169,7 @@
 
   <!-- Audit note + credit -->
   <text class="foot" x="44" y="730">接地は進化的（動物行動学・進化心理学・コストリー・シグナリング・予測符号化・記憶の再固定化・神経可塑性…）＝傍証。クオリア発生は哲学的原始項。設計・監査用。</text>
-  <text class="foot" x="44" y="748">補足：変容の対象層 shtt-object-layers.md／深度語彙 shtt-depth-terms.md／変容の過程の八段 shtt-process-stages.md／資料の置き場 authoring-policy.md（リポジトリ直下）</text>
+  <text class="foot" x="44" y="748">補足：変容の対象層 shisaku-human-transformation-object-layers.md／深度語彙 shisaku-human-transformation-depth-terms.md／</text>
+  <text class="foot" x="44" y="764">変容の過程の八段 shisaku-human-transformation-process-stages.md／資料の置き場 authoring-policy.md（リポジトリ直下）</text>
   <text class="footR" x="1036" y="780">© 2026 shisaku ／ CC BY 4.0</text>
 </svg>

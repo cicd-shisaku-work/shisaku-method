@@ -1,7 +1,7 @@
 # シサク原典管理スクリプト設計書
 
-**Version:** v0.1.12
-**Date:** 2026/09/28
+**Version:** v0.1.13
+**Date:** 2026/10/04
 **性格：** `src/` に置く文書ビルド（モジュール群から公開文書を組み立てるスクリプト）の設計仕様。実装する者が、この文書だけを読んで着手できることを合格条件とする。
 
 **範囲：** 本書はモジュールとスクリプトの設計だけを扱う。日々の運用・移行の手順・コミットの作法は本書に含めない（`OPERATIONS.md`）。
@@ -120,7 +120,7 @@
 
 **実物で確認した（2026-09-23）。** IDION 補足 4 本の 27 節に当てて、24 節が 2026-09-16 の配属と一致し、二つのロールにまたがる 3 節も配属の注記と一致した。`canon/` が鳴りすぎていた 3 件（対応が切れる場所・区別・事例集）は、区別の一段を足さずに正しく落ちる。
 
-`canon/` の外れる例を三つ置く。`kosei-mining-origin.md` の「証跡」は自分の主張の出所であって、外に原典を持たない（`document/`）。`shtt-depth-terms.md`「境界検査の事例」は弁別子の当て方の見本である（`application/`）。補足の「位置づけ（原典／応用の線）」は、この文書が原典に対して持つ身分の宣言である（`document/`）。
+`canon/` の外れる例を三つ置く。`kosei-mining-origin.md` の「証跡」は自分の主張の出所であって、外に原典を持たない（`document/`）。`shisaku-human-transformation-depth-terms.md`「境界検査の事例」は弁別子の当て方の見本である（`application/`）。補足の「位置づけ（原典／応用の線）」は、この文書が原典に対して持つ身分の宣言である（`document/`）。
 
 ### 3.3 順序とネスト ← §1.1 と、ロールとの分離
 
@@ -379,7 +379,7 @@ subtitle  = "Shisaku Human IDION-Structure Theory"
 version   = "v0.1.6"
 date      = "2026/09/12"
 author    = "shisaku"
-upstream  = "シサク・ヒト変容理論（SHTT）→ 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈"
+upstream  = "シサク・ヒト変容理論 → 前提優位理論（Premise Primacy）／最上流：シサク・世界解釈"
 canonical = "{{url:shisaku-human-idion-structure}}"
 license_intro  = "This document (Shisaku Human IDION-Structure Theory) is …"
 copyright_year = "2026"

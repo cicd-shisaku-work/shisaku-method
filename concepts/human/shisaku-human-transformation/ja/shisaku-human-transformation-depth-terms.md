@@ -1,7 +1,7 @@
 # シサク・ヒト変容理論 補足 ― 深度語彙（量の語と境界検査）
 ## Supplement: Depth Vocabulary (the quantities of resonance and transformation, with boundary checks)
 
-**関連：シサク・ヒト変容理論／シサク・ヒト IDION 構造理論（入口側）／シサク・ヒト共鳴構造理論／シサク・ヒト距離構造理論／姉妹補足：変容の過程の八段〔shtt-process-stages.md〕・変容の対象層〔shtt-object-layers.md〕**
+**関連：シサク・ヒト変容理論／シサク・ヒト IDION 構造理論（入口側）／シサク・ヒト共鳴構造理論／シサク・ヒト距離構造理論／姉妹補足：変容の過程の八段〔shisaku-human-transformation-process-stages.md〕・変容の対象層〔shisaku-human-transformation-object-layers.md〕**
 
 ---
 
@@ -141,8 +141,8 @@
 
 **シサク・ヒト変容理論 補足 ― 深度語彙（量の語と境界検査）**
 * **Author / Explorer:** shisaku
-* **Version:** v0.1.1
-* **Date:** 2026/09/25
+* **Version:** v0.1.2
+* **Date:** 2026/10/04
 
 ---
 

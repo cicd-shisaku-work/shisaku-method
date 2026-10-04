@@ -1,5 +1,5 @@
 # シサク・ヒト軌跡構造理論
-## Shisaku Human Trajectory-Structure Theory — SHTST
+## Shisaku Human Trajectory-Structure Theory
 
 **上流依存：シサク・ヒト変容理論 → 前提優位理論／最上流：シサク・世界解釈**
 
@@ -154,8 +154,8 @@
 **Shisaku Human Trajectory-Structure Theory**
 **上流依存：シサク・ヒト変容理論 → 前提優位理論／最上流：シサク・世界解釈**
 * **Author / Explorer:** shisaku
-* **Version:** v0.2.2
-* **Date:** 2026/09/28
+* **Version:** v0.2.3
+* **Date:** 2026/10/04
 
 ---
 
