@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.12.1  
-**Date:** 2026/09/28
+**Version:** v0.12.2  
+**Date:** 2026/10/06
 
 ---
 
@@ -189,7 +189,7 @@ shisaku-method は、変容のための入口であり、基準であり、学�
 
 **価値が出るとは何か。** 価値は、読み手が原典に触れ、自分の基準と照らし合わせたとき、読み手の内に出る（〔シサク・価値解釈〕）。出方は一つではない——視界がひらける。焦点が合う。違和感が出る。基準との差異が無く、「そのとおりだ」と納得する。「いや、ちょっと違う」と思う。「あぁ、なるほど」と思う。腑に落ちることも、その一つである。本リポジトリは、どれも、価値が出た場合に数える。ここに挙げたのは例であって、閉じた一覧ではない。出たかどうかを判定するのは読み手である。
 
-**読み終えた手元に、何が残るか。** 著者（シサク）は、見え方が変わって、迷いがなくなったことがある。誤りを未然に防げたことがある。自分の進む道が見えたように感じたことがある。そのたびに、自分の手綱が握りやすくなったと感じてきた（〔シサク・世界解釈〕「見え方が変わる、ということ」）。同じものが読み手の手元に残るとは、約束できない。見え方が変わったとき何が変わったかは、同じ節が七つに分けて持つ。見え方が変わって、それが残るなら、その過程は〔シサク・ヒト変容理論〕が扱う。ただし、価値が出るのは見え方が変わったときだけではない——「そのとおりだ」と確かめ直した読みも、価値が出た場合に数える。この価値は、理論の値打ちとは別のものである。価値は読み手の内に、その場で出る。値打ちは外から測る——その判定の材料になるのは、下流で受け手に残ったものである（前提 8）。例は、読み手が自分の対象で試すためにある——価値が出るかは、例の上でしか試せない。「人生論を見つけるための材料として」の節が言う、繰り返し読み返すに値するかという読み手自身の物差しも、価値の側にある——値打ちの物差しではない。
+**読み終えた手元に、何が残るか。** 著者（シサク）は、見え方が変わって、迷いがなくなったことがある。誤りを未然に防げたことがある。自分の進む道が見えたように感じたことがある。そのたびに、自分の手綱が握りやすくなったと感じてきた（〔シサク・世界解釈〕「見え方が変わる、ということ」）。同じものが読み手の手元に残るとは、約束できない。見え方が変わったとき何が変わったかは、同じ節が九つに分けて持つ。見え方が変わって、それが残るなら、その過程は〔シサク・ヒト変容理論〕が扱う。ただし、価値が出るのは見え方が変わったときだけではない——「そのとおりだ」と確かめ直した読みも、価値が出た場合に数える。この価値は、理論の値打ちとは別のものである。価値は読み手の内に、その場で出る。値打ちは外から測る——その判定の材料になるのは、下流で受け手に残ったものである（前提 8）。例は、読み手が自分の対象で試すためにある——価値が出るかは、例の上でしか試せない。「人生論を見つけるための材料として」の節が言う、繰り返し読み返すに値するかという読み手自身の物差しも、価値の側にある——値打ちの物差しではない。
 
 価値が出ない場面もある。読み終えて、「わかりきっていることだ」「つまらない」「時間の無駄だった」と思ったなら、その読み手の中に、この文書の価値は出ていない。「そのとおりだ」も、照らし合わせたことは同じである。違うのは向きで、「そのとおりだ」は、自分の中で照らし合わせて肯定している——ぼやけていた焦点を少し合わせているか、肯定的に確かめ直している。こういう概念が存在するべきだ、という読みである。「つまらない」は、概念そのものに価値が無い、という読みである——そんなことを言っても、何も得は無い、と。それでも、何も残らないわけではない。「この文書は、自分には読む価値が無い」という経験が、記憶として残る。けれども、本リポジトリは、それを価値が出た場合に数えない。読んだ時間の労力に見合うものは、その読み手の中に出ていない。著者としては、申し訳なく思う。そのときは、別の解釈を選ぶことができる。
 
@@ -537,7 +537,7 @@ Every concept here is a **hypothesis and an axiomatic system for design**. Eight
 
 **What it means for value to arise.** Value arises within the reader when the reader touches the canon and sets it against their own reference point (Shisaku Value-Interpretation). It does not arise in one way only — the view opens up. Something comes into focus. A sense of wrongness arises. There is no difference from one's reference point, and one is convinced: "that's right". One thinks, "no, that's a little off". One thinks, "ah, I see". Settling into place is one of these as well. This repository counts every one of them as a case in which value has arisen. These are examples, not a closed list. It is the reader who judges whether value arose.
 
-**What remains in your hands after reading.** The author (shisaku) has had his way of seeing change and found hesitation gone. He has prevented an error before it happened. He has felt as if he could see the path he was to take. Each time, he has felt his own reins become easier to hold (Shisaku World-Interpretation, "When the way of seeing changes"). That the same will remain in the reader's hands cannot be promised. What changes when the way of seeing changes is held by that same section, divided into seven. If the way of seeing changes and the change remains, the process is dealt with by the Shisaku Human Transformation Theory. But value does not arise only when the way of seeing changes — a reading that re-confirms "that's right" also counts as a case in which value arose. This value is different from the worth of the theories. Value arises within the reader, there and then. Worth is measured from outside — and what it is judged from is what remains with receivers downstream (premise 8). The examples are there for the reader to try on their own object — whether value arises can be tried only on examples. The reader's own ruler of which the section "As material for finding a philosophy of life" speaks — whether a text merits rereading again and again — is also on the side of value, not a ruler of worth.
+**What remains in your hands after reading.** The author (shisaku) has had his way of seeing change and found hesitation gone. He has prevented an error before it happened. He has felt as if he could see the path he was to take. Each time, he has felt his own reins become easier to hold (Shisaku World-Interpretation, "When the way of seeing changes"). That the same will remain in the reader's hands cannot be promised. What changes when the way of seeing changes is held by that same section, divided into nine. If the way of seeing changes and the change remains, the process is dealt with by the Shisaku Human Transformation Theory. But value does not arise only when the way of seeing changes — a reading that re-confirms "that's right" also counts as a case in which value arose. This value is different from the worth of the theories. Value arises within the reader, there and then. Worth is measured from outside — and what it is judged from is what remains with receivers downstream (premise 8). The examples are there for the reader to try on their own object — whether value arises can be tried only on examples. The reader's own ruler of which the section "As material for finding a philosophy of life" speaks — whether a text merits rereading again and again — is also on the side of value, not a ruler of worth.
 
 There are also cases in which value does not arise. If, having finished reading, one thinks "this is obvious", "this is dull", "that was a waste of time", then the value of this document has not arisen in that reader. "That's right" also sets the text against oneself. The difference is the direction: "that's right" affirms, having set it against oneself — bringing a blurred focus slightly into focus, or re-confirming affirmatively. It is a reading that such a concept ought to exist. "This is dull" is a reading that the concept itself has no value — that saying such a thing gains nothing. Even so, it is not that nothing remains. The experience "this document is not worth reading, for me" remains as a memory. But this repository does not count it as a case in which value arose. Nothing that matches the effort of the time spent reading has arisen in that reader. As the author, I am sorry for that. In that case, the reader can choose another interpretation.
 
@@ -701,5 +701,5 @@ The clues for taking the difference lie on the boundaries a description has draw
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.12.1
-* **Date:** 2026/09/28
+* **Version:** v0.12.2
+* **Date:** 2026/10/06
