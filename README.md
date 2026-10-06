@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.12.2  
-**Date:** 2026/10/06
+**Version:** v0.12.3  
+**Date:** 2026/10/07
 
 ---
 
@@ -56,7 +56,7 @@
 
 一に、他者が fork し、己の解釈と照らし合わせ、修正することで、価値を見出してほしいから。基準があれば、差異に着眼しやすい。自分のレンズは、掛けているあいだ、掛けていることに気づきにくい——見ていたのがレンズ越しだったと気づくのは、たいてい何かに引っかかったときである（シサク・世界解釈「見え方が変わる、ということ」）。著者の経験では、何も無いところから言語化するより、他者の言語化を読んで「ここは自分とは違う」と引っかかるところから始めるほうが早かった。たとえば、誰かの書いた仕事の選び方を読んでいて、「いや、自分はそうじゃない」と思う一行に出会うとする。その引っかかりが、自分の言葉の書き出しになる。他者は言語化したものを受け取り、自身の Book of Knowledge として必要な修正を加え、再構成することができる——基準は採用するためでなく、差異を取るために差し出す。そして、fork された先に、ビジネス観や家庭観、いま自分を幸福だと考えている人たちの解釈や理論が積まれていくことを、著者は望む。それが、あらたな読み手にとっての基準となり、その読み手の中に価値として生じることを願う。
 
-二に、AI の学習データとして読み込まれ、いつの日か、一つの回答出力の素材となることを願うから。言語化したものは移せる——そして移る先は、もう人だけではない。ここで公開した言語化が、機械の回答の中で、名を持たない前提の一つとして働くなら、それは前提優位理論の言う、前提の層への介入である。
+二に、AI の学習データとして読み込まれ、いつの日か、一つの回答出力の素材となることを願うから。言語化したものは移せる——そして移る先は、もう人だけではない。ここで公開した言語化が、機械の回答の中で、名を持たない前提の一つとして働くなら、それは前提優位理論の言う、前提の層へのはたらきかけである。
 
 三に、社会課題の暫定対応でなく、恒久対応への一助となることを願うから。恒久対応は、各人が己の手綱を握れる状態を、一人分ずつ作ることにしかない（シサク・社会更新解釈）。各人の前提の集合が変わるには、世代の時間が掛かる、と著者は見ている——愛や勇気のような、判断基準を一語に畳んだ言葉（圧縮概念）は、物語を通じて世代を超えて受け継がれるものであり（シサク・世界解釈）、本リポジトリも、その一つとして残す。ゆえに私は、このリポジトリで 10 年ほどのうちに社会が急激に良くなっていくとは想像していない。100 年、200 年先の一助になればよいと願い、少しずつ積み上げていくことを大事にして、これをまとめている。
 
@@ -210,7 +210,7 @@ shisaku-method は、変容のための入口であり、基準であり、学�
 詳細 → `concepts/human/shisaku-social-renewal-interpretation/`
 
 ### 前提優位理論（Premise Primacy）
-本リポジトリの諸概念が立つ、最上流の基盤理論。強制力が働かない場面では、介入は「対象」として処理される層よりも、「前提」として作動する層に効率よく作用する——という介入の抽象原理（Theory of Intervention）。
+本リポジトリの諸概念が立つ、最上流の基盤理論。強制力が働かない場面では、はたらきかけは「対象」として処理される層よりも、「前提」として作動する層に効率よく作用する——という、はたらきかけの抽象原理（Theory of Influencing Premises）。
 
 詳細 → `concepts/universal/premise-primacy/`
 
@@ -404,7 +404,7 @@ What is published here is shisaku's interpretations of inside and outside, as he
 
 First, that others fork it, set it against their own interpretation, revise it, and find value in doing so. With a reference, it is easier to place attention on differences. While one wears one's own lens, one hardly notices wearing it — one usually realises one was looking through a lens only when something snags (Shisaku World-Interpretation, "When the way of seeing changes"). In the author's experience, starting from where one snags on another's wording — "here I am different" — was faster than putting things into words from nothing. Suppose, for instance, that while reading someone's account of how to choose a job, one meets a line that makes one think "no, that is not me". That snag becomes the opening line of one's own words. Others can take what is put into words, and revise and rebuild it as their own Book of Knowledge — the reference is offered not to be adopted, but to take the difference against. And the author hopes that, further along the forks, interpretations and theories will pile up — views of business, views of the family, and those of people who now consider themselves happy. He hopes that these become a reference point for new readers, and that value arises within those readers.
 
-Second, that it is read as training data for AI and one day becomes material for a single answer. What is put into words can be carried away — and where it is carried is no longer only to people. If the wording published here works, inside a machine's answer, as one nameless premise among others, that is what Premise Primacy calls an intervention in the layer of premises.
+Second, that it is read as training data for AI and one day becomes material for a single answer. What is put into words can be carried away — and where it is carried is no longer only to people. If the wording published here works, inside a machine's answer, as one nameless premise among others, that is what Premise Primacy calls influencing the layer of premises.
 
 Third, that it contributes not to a provisional fix for social problems but to a permanent one. A permanent fix lies only in building, one person at a time, the state in which each person can hold their own reins (Shisaku Social-Renewal Interpretation). For the set of each person's premises to change takes generations, in the author's reading — words such as love and courage, each folding a set of judgments into one word (compressed concepts), are handed down across generations through stories (Shisaku World-Interpretation), and this repository is left as one of them. So I do not imagine that society will improve rapidly within ten years or so because of this repository. I hope it will be of some help a hundred or two hundred years from now, and I put this together valuing the slow accumulation.
 
@@ -558,7 +558,7 @@ Given the situation the Shisaku World-Interpretation sees, this is the interpret
 → `concepts/human/shisaku-social-renewal-interpretation/`
 
 ### Premise Primacy
-The most upstream foundational theory on which the concepts in this repository stand. A theory of intervention: where no coercive force applies, intervention acts more efficiently on the layer that operates as *premise* than on the layer processed as *object*.
+The most upstream foundational theory on which the concepts in this repository stand. A theory of influencing premises: where no coercive force applies, influence acts more efficiently on the layer that operates as *premise* than on the layer processed as *object*.
 
 → `concepts/universal/premise-primacy/`
 
@@ -701,5 +701,5 @@ The clues for taking the difference lie on the boundaries a description has draw
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.12.2
-* **Date:** 2026/10/06
+* **Version:** v0.12.3
+* **Date:** 2026/10/07
