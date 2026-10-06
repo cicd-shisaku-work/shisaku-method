@@ -61,7 +61,7 @@
   <!-- Premise Primacy -->
   <rect class="c-prem" x="44" y="96" width="176" height="40" rx="7"/>
   <text class="nlbl" x="132" y="114" font-size="13">前提優位（上流依存）</text>
-  <text class="nsub" x="132" y="129" font-size="10">前提への介入をヒト種へ降ろした系</text>
+  <text class="nsub" x="132" y="129" font-size="8.5">前提へのはたらきかけをヒト種へ降ろした系</text>
   <path class="flow" d="M132,136 L132,158" marker-end="url(#arrow)"/>
 
   <!-- 入口 label -->
