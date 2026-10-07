@@ -2,7 +2,7 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.12.3  
+**Version:** v0.12.4  
 **Date:** 2026/10/07
 
 ---
@@ -210,7 +210,7 @@ shisaku-method は、変容のための入口であり、基準であり、学�
 詳細 → `concepts/human/shisaku-social-renewal-interpretation/`
 
 ### 前提優位理論（Premise Primacy）
-本リポジトリの諸概念が立つ、最上流の基盤理論。強制力が働かない場面では、はたらきかけは「対象」として処理される層よりも、「前提」として作動する層に効率よく作用する——という、はたらきかけの抽象原理（Theory of Influencing Premises）。
+本リポジトリの諸概念が立つ、最上流の基盤理論。強制力が働かない場面では、はたらきかけは「対象」として処理される層よりも、「前提」として作動する層に効率よく作用する——という、はたらきかけの抽象原理（Theory of Influencing Premises）。前提へのはたらきかけは、自分自身の前提にも、他者の前提にも向かうことができる。
 
 詳細 → `concepts/universal/premise-primacy/`
 
@@ -558,7 +558,7 @@ Given the situation the Shisaku World-Interpretation sees, this is the interpret
 → `concepts/human/shisaku-social-renewal-interpretation/`
 
 ### Premise Primacy
-The most upstream foundational theory on which the concepts in this repository stand. A theory of influencing premises: where no coercive force applies, influence acts more efficiently on the layer that operates as *premise* than on the layer processed as *object*.
+The most upstream foundational theory on which the concepts in this repository stand. A theory of influencing premises: where no coercive force applies, influence acts more efficiently on the layer that operates as *premise* than on the layer processed as *object*. Influencing premises can be directed both at one's own premises and at the premises of others.
 
 → `concepts/universal/premise-primacy/`
 
@@ -701,5 +701,5 @@ The clues for taking the difference lie on the boundaries a description has draw
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.12.3
+* **Version:** v0.12.4
 * **Date:** 2026/10/07
