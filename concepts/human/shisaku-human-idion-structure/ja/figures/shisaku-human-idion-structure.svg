@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・ヒト IDION 構造理論 (Shisaku Human IDION-Structure Theory) v0.3.2 — IDION の形成の構造
-  設計・監査用の図（人間向け）。本文 v0.3.2 から描いた。学説は傍証である。
+  シサク・ヒト IDION 構造理論 (Shisaku Human IDION-Structure Theory) v0.3.5 — IDION の形成の構造
+  設計・監査用の図（人間向け）。本文 v0.3.5 から描いた。学説は傍証である。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙）。本図の主役＝IDION（葡萄色）。駆動＝赤褐。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
   Author: https://note.com/abstraction
@@ -48,7 +48,7 @@
   <text x="842" y="336" font-size="11" fill="#4a1f2c">接触では変わらない（ヒト種に普遍）</text>
   <text x="842" y="354" font-size="10" fill="#777">変わるのは、機構が用いる予測モデル</text>
   <path d="M828,374 H345 V402" stroke="#6b2d3e" stroke-width="1.2" fill="none" stroke-dasharray="4 3"/>
-  <text x="256" y="388" font-size="11" fill="#6b2d3e">IDION の層：着眼（何を見るか）・判定軸（何で評価するか）・自己像・世界解釈——何が書き換わったかの対象であって、深さの目盛りではない</text>
+  <text x="256" y="388" font-size="11" fill="#6b2d3e">IDION の層：着眼の構造（目が着きやすい所・寄り引きの幅）・判定軸（何で評価するか）・自己像・世界解釈——何が書き換わったかの対象であって、深さの目盛りではない</text>
 
   <!-- 濾す（IDION → 照合） -->
   <path d="M345,402 L345,478" stroke="#6b2d3e" stroke-width="1.4" fill="none" marker-end="url(#arri)"/>
@@ -193,6 +193,6 @@
   <text x="800" y="954" text-anchor="middle" font-size="11" fill="#333">受け手の反応・受け手の変容と、自分が言葉にしたもの（言語化は接触として本人に戻り、予測モデルを更新しうる・自己一致）が、次の接触になる</text>
 
   <!-- footer -->
-  <text x="30" y="990" font-size="11" fill="#777">Shisaku Human IDION-Structure Theory v0.3.2 — 設計・監査用の図。本文 v0.3.2 から描いた。層の順序と語は目安であり固定しない。</text>
+  <text x="30" y="990" font-size="11" fill="#777">Shisaku Human IDION-Structure Theory v0.3.5 — 設計・監査用の図。本文 v0.3.5 から描いた。層の順序と語は目安であり固定しない。</text>
   <text x="1470" y="990" font-size="11" fill="#777" text-anchor="end">© 2026 shisaku · CC BY 4.0 · https://note.com/abstraction</text>
 </svg>
