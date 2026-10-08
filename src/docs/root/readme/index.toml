@@ -7,8 +7,8 @@ output = "README.md"
 title    = "shisaku-method"
 author   = "shisaku"
 status   = "継続的インテグレーション中 / Continuously Integrating"
-version  = "v0.12.4"
-date     = "2026/10/07"
+version  = "v0.12.5"
+date     = "2026/10/09"
 
 [numbering]
 enabled = false
@@ -32,6 +32,7 @@ groups = [
    "concepts/shisaku-prediction-model-interpretation",
    "concepts/shisaku-qualia-interpretation",
    "concepts/shisaku-value-interpretation",
+   "concepts/chakugan-primacy",
    "concepts/shisaku-cognitive-frame", "concepts/shisaku-human-transformation",
    "concepts/shisaku-human-idion-structure", "concepts/kosei-mining"],
   ["not-included"],
@@ -55,6 +56,7 @@ groups = [
    "concepts/shisaku-prediction-model-interpretation",
    "concepts/shisaku-qualia-interpretation",
    "concepts/shisaku-value-interpretation",
+   "concepts/chakugan-primacy",
    "concepts/shisaku-cognitive-frame", "concepts/shisaku-human-transformation",
    "concepts/shisaku-human-idion-structure", "concepts/kosei-mining"],
   ["not-included"],
