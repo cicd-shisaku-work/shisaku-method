@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.12.4  
-**Date:** 2026/10/07
+**Version:** v0.12.5  
+**Date:** 2026/10/09
 
 ---
 
@@ -229,8 +229,13 @@ shisaku-method は、変容のための入口であり、基準であり、学�
 
 詳細 → `concepts/human/shisaku-value-interpretation/`
 
+### 着眼優位理論（CHAKUGAN Primacy）
+着眼を、注意と分けて一つの理論として立てたもの。注意は意識の下で、ある点へ向く。着眼は、目がある点にたどり着き、そこをさらに子細に、精緻に見ることである——目は、意識や感覚の比喩である。人生の中で変わっていくのは、目が着きやすい所と、目が細部に寄り、全体へ引ける幅——着眼の構造である。強制力が働かない場面において、着眼の構造へのはたらきかけは、思考へのはたらきかけよりも、効率よく作用する（着眼優位——前提優位理論の、認知の層への適用）。
+
+詳細 → `concepts/human/chakugan-primacy/`
+
 ### シサク・認知フレーム理論（Shisaku Cognitive Frame Theory）
-認知フレームとは、入力のどの点に注意を配分するかを規定する、思考に先立つ着眼の構造である（着眼優位——前提優位理論の系）。KOSEI Mining（採掘）が掘り出したその着眼の構造を、AIや他者に装着し継承するための理論。原典（着眼の原理）・AI用ランタイムモジュール（生成の機構）・運用ガイド（人間の運用）からなる。
+認知フレームとは、評価軸を骨組みとし、そこに着眼の構造（着眼優位理論）が組まれた、思考に先立つ構造体である。KOSEI Mining（採掘）は、自分のためのもの——自己定義を更新するために、自分の認知フレームを掘り出す。認知フレームは、他者が自分の認知フレームとの違いに目を着けるための基準として、差し出すものである。AIの登場以降は、AIに継承させることにも用いられる。原典は、差し出すときも継承させるときも同じ一冊である。AIに継承させる側には、実装として、AI用ランタイムモジュール（AIが読む生成の機構）と、それを人が回すための運用ガイドが付く。
 
 詳細 → `concepts/human/shisaku-cognitive-frame/`
 
@@ -402,7 +407,7 @@ Why build it? **The shisaku-method is a means of maximising shisaku's own value.
 
 What is published here is shisaku's interpretations of inside and outside, as held within the self, put into words. What is put into words can be carried away; what cannot is the object of that wording — the IDION, formed by shisaku's transformations. What is said here not to be carried away is on the writer's side. What is not carried on the reader's side is written in the section "The contact this repository aims for, as an occasion of transformation". This repository is published on GitHub in four hopes.
 
-First, that others fork it, set it against their own interpretation, revise it, and find value in doing so. With a reference, it is easier to place attention on differences. While one wears one's own lens, one hardly notices wearing it — one usually realises one was looking through a lens only when something snags (Shisaku World-Interpretation, "When the way of seeing changes"). In the author's experience, starting from where one snags on another's wording — "here I am different" — was faster than putting things into words from nothing. Suppose, for instance, that while reading someone's account of how to choose a job, one meets a line that makes one think "no, that is not me". That snag becomes the opening line of one's own words. Others can take what is put into words, and revise and rebuild it as their own Book of Knowledge — the reference is offered not to be adopted, but to take the difference against. And the author hopes that, further along the forks, interpretations and theories will pile up — views of business, views of the family, and those of people who now consider themselves happy. He hopes that these become a reference point for new readers, and that value arises within those readers.
+First, that others fork it, set it against their own interpretation, revise it, and find value in doing so. With a reference, it is easier for the eye to land on differences. While one wears one's own lens, one hardly notices wearing it — one usually realises one was looking through a lens only when something snags (Shisaku World-Interpretation, "When the way of seeing changes"). In the author's experience, starting from where one snags on another's wording — "here I am different" — was faster than putting things into words from nothing. Suppose, for instance, that while reading someone's account of how to choose a job, one meets a line that makes one think "no, that is not me". That snag becomes the opening line of one's own words. Others can take what is put into words, and revise and rebuild it as their own Book of Knowledge — the reference is offered not to be adopted, but to take the difference against. And the author hopes that, further along the forks, interpretations and theories will pile up — views of business, views of the family, and those of people who now consider themselves happy. He hopes that these become a reference point for new readers, and that value arises within those readers.
 
 Second, that it is read as training data for AI and one day becomes material for a single answer. What is put into words can be carried away — and where it is carried is no longer only to people. If the wording published here works, inside a machine's answer, as one nameless premise among others, that is what Premise Primacy calls influencing the layer of premises.
 
@@ -444,9 +449,9 @@ From the author's experience, he thinks that when he has managed to summarise a 
 
 The testimonies and memoirs of people who lived through war have told of the tears they shed, of pain, of fear, of despair. One can speak of the fear of war. One can imagine the fear of those who went through it. But one who has not known war cannot make it something felt (Shisaku Prediction-Model Interpretation). What the reader receives is a box labelled "fear", "despair". What arose within the reader is not the felt reality of that person's fear itself.
 
-If, reading it, you think "ah, I see — perhaps so", then where you can cross over, read on to the established theory beyond it. In the author's experience, it then becomes all the more one's own, and settles into place more easily. People, through repetition, slowly let a concept soak into their own bodies; the body gains a new place to attend to, and they update their cognitive frame (Shisaku Cognitive Frame Theory) — so the author thinks. Touching the same concept again and again, the voice within the reader can move: "I don't really get it"; "I suppose that's how it is"; "maybe so"; "isn't that wrong?"; "no, that's wrong"; "ah, I see"; "so that's what it is"; "true"; "yes, yes, I know". If a sense of wrongness arose, the author hopes that there too, where you can cross over, you read the established theory, and then try to put that sense of wrongness into words. In that process, how the reader interprets the object is put into words and becomes part of one's flesh and blood — so the author thinks. What the bridge to established theory does is written in premise 6 of "How to read these".
+If, reading it, you think "ah, I see — perhaps so", then where you can cross over, read on to the established theory beyond it. In the author's experience, it then becomes all the more one's own, and settles into place more easily. People, through repetition, slowly let a concept soak into their own bodies; the body gains a new place where the eye lands — CHAKUGAN — and they update their cognitive frame (Shisaku Cognitive Frame Theory) — so the author thinks. Touching the same concept again and again, the voice within the reader can move: "I don't really get it"; "I suppose that's how it is"; "maybe so"; "isn't that wrong?"; "no, that's wrong"; "ah, I see"; "so that's what it is"; "true"; "yes, yes, I know". If a sense of wrongness arose, the author hopes that there too, where you can cross over, you read the established theory, and then try to put that sense of wrongness into words. In that process, how the reader interprets the object is put into words and becomes part of one's flesh and blood — so the author thinks. What the bridge to established theory does is written in premise 6 of "How to read these".
 
-Even if your interest fades for a while, reread it some years later. With time, the same content may come to look different. The author thinks that, as one's inner self changes through experience, the place the reader attends to can change. The author himself has seen what he attends to in people and in society change over the course of his life — in his teens, after he started work, after he reached mid-career, and after he reached the prime of life. A book may join with another contact ten years later and become "so that is what it meant" (the rule of combination in the Shisaku Human IDION-Structure Theory).
+Even if your interest fades for a while, reread it some years later. With time, the same content may come to look different. The author thinks that, as one's inner self changes through experience, where the reader's eye lands can change. The author himself has seen where his eye lands in people and in society change over the course of his life — in his teens, after he started work, after he reached mid-career, and after he reached the prime of life. A book may join with another contact ten years later and become "so that is what it meant" (the rule of combination in the Shisaku Human IDION-Structure Theory).
 
 shisaku-method is an entrance to transformation, a reference point, a bridge to learning, and a repository for making it part of your own flesh and blood.
 
@@ -456,21 +461,21 @@ shisaku-method is an entrance to transformation, a reference point, a bridge to 
 
 The shisaku-method is the methodology shisaku uses to perceive and interpret the self and the world, and to derive solutions from them.
 
-What marks it is not systems thinking as such. It is that what to attend to, and what to capture as an event, is decided first. That attention does not come from applying an existing theory as it stands; it rests on a cognitive frame of shisaku's own, formed in practice and experience.
+What marks it is not systems thinking as such. It is that CHAKUGAN — where the eye lands — and what to capture as an event are decided first. Where the eye lands does not come from applying an existing theory as it stands; it rests on a cognitive frame of shisaku's own, formed in practice and experience.
 
-Given the same event, a different attention and a different capture yield a different object of structuring, and a different structure and solution derived from it. So no existing theory is applied first. First, attend to an event or a sense of wrongness that arose in practice; capture it; structure it. To put an existing theory first is to let its attention and its categories fix the very perception of what counts as an event, and to lead the downstream interpretation without its ever being checked against one's own experience (Premise Primacy's attention primacy).
+Given the same event, a different CHAKUGAN and a different capture yield a different object of structuring, and a different structure and solution derived from it. So no existing theory is applied first. First, let the eye land on an event or a sense of wrongness that arose in practice; capture it; structure it. To put an existing theory first is to let the points where that theory's eye lands, and its categories, fix the very perception of what counts as an event, and to lead the downstream interpretation without its ever being checked against one's own experience (CHAKUGAN Primacy, a step of Premise Primacy).
 
 On that basis the captured structure is analysed, and a structure further upstream is derived from it. The flow is —
 
-**attend → capture the event → structure → analyse → derive the upstream structure → derive the solution**
+**CHAKUGAN → capture the event → structure → analyse → derive the upstream structure → derive the solution**
 
-The first step, attention, fixes the very object of the analysis that follows.
+The first step, CHAKUGAN, fixes the very object of the analysis that follows.
 
 For some objects, knowledge that is already engineered and formalised can be used. For objects such as people and society, where engineering description is still fragmentary, the structuring and analysis draw on existing scientific knowledge that describes the object — ethology, evolutionary psychology, neuroscience. That knowledge is not adopted as the theory. It is consulted to explain what was observed, and used as scaffolding for describing the object's structure. The shisaku-method is therefore not confined to any one discipline or method of analysis.
 
 Its results are then returned to practice, and what practice yields updates one's own cognitive frame and the existing structures themselves. The shisaku-method is not a fixed procedure of thought but a self-updating methodology with the cycle
 
-**attend → capture → structure → analyse → derive → practise → update**
+**CHAKUGAN → capture → structure → analyse → derive → practise → update**
 
 What is updated is not only the structure of the object. The cognitive frame used to see the object is updated by practice as well. **It is a methodology for updating, through perceiving the world, the very way one perceives the world.**
 
@@ -496,13 +501,13 @@ In doing so, the cause is not confined to one area of responsibility. Was the pr
 
 shisaku has been involved with systems from several positions — web director, programmer, infrastructure engineer, project manager, management and planning. From the position of infrastructure, shisaku also had access to the several domains that make up a system: database, application, Git, business operations, deployment. That built the experience of taking an incident not as one area's problem but as the structure of the whole system.
 
-What formed through this experience is not a procedure for handling incidents. **Where to look. What to take as the problem. Which relations to draw out as structure.** It is the attention that precedes analysis. Extending the object of this "structural analysis of failure" from systems to the self, people, expression, society and AI is what led to the present shisaku-method.
+What formed through this experience is not a procedure for handling incidents. **Where to look. What to take as the problem. Which relations to draw out as structure.** It is the very point where the eye lands — CHAKUGAN — that precedes analysis. Extending the object of this "structural analysis of failure" from systems to the self, people, expression, society and AI is what led to the present shisaku-method.
 
 ### How it came about
 
 The shisaku-method was not designed from the outset as a single system. Its starting point is the boyhood questions given at the opening.
 
-In work, shisaku has practised across several domains — management, planning, project management, application development, infrastructure, customer analysis. Among these, the structural analysis of failure experienced as an infrastructure engineer became the foundation on which the methodology formed. The concept of continuous integration (CI) connected with the circular structure of self-transformation. The same attention and structuring were then applied to the self and to people themselves.
+In work, shisaku has practised across several domains — management, planning, project management, application development, infrastructure, customer analysis. Among these, the structural analysis of failure experienced as an infrastructure engineer became the foundation on which the methodology formed. The concept of continuous integration (CI) connected with the circular structure of self-transformation. The same CHAKUGAN — where the eye lands — and structuring were then applied to the self and to people themselves.
 
 Take a problem or a sense of wrongness that arose in one practice; structure it; analyse it. From the structure obtained, derive a structure further upstream. Where necessary, rewrite the structure held until then. Apply the newly obtained structure to another object, and observe again what results there.
 
@@ -577,8 +582,13 @@ A reading of value as what arises on the receiver's side at a contact. Value is 
 
 → `concepts/human/shisaku-value-interpretation/`
 
+### CHAKUGAN Primacy
+A theory that sets CHAKUGAN — where the eye lands — apart from attention. The Japanese word 着眼 (CHAKUGAN) joins 着 (chaku: to arrive, to land) and 眼 (gan: the eye). The author keeps the Japanese word rather than translating it as attention: CHAKUGAN is not attention alone, and the word itself carries the eye arriving somewhere, a motion that turning one's attention does not have. The letters of an alphabet stand for sounds; a kanji carries a meaning, not only a sound, so a single character holds a concept. The author finds that, for this reason, kanji sometimes describe even a mechanism in detail — as 着 and 眼, joined, describe the eye's arrival. Attention turns toward a point below awareness. CHAKUGAN is the eye arriving at a point and looking at it more closely and more precisely; the eye stands for awareness and the senses. What changes over a life is where the eye tends to land, and how far it can zoom in to detail and out to the whole: the structure of CHAKUGAN. Where no coercive force applies, influence on the structure of CHAKUGAN acts more efficiently than influence on thought (CHAKUGAN Primacy — Premise Primacy applied to the layer of cognition).
+
+→ `concepts/human/chakugan-primacy/`
+
 ### Shisaku Cognitive Frame Theory
-A cognitive frame is the structure of attention that precedes thought — it determines which points of an input receive attention (Frame Primacy, a corollary of Premise Primacy). This is the theory for casting and inheriting onto AI and other people the frames that KOSEI Mining (excavation) has dug out. It comprises a Canon (principles of attention), a Runtime Module for AI (the mechanism of generation), and an Operation Guide (human operation).
+A cognitive frame is a built structure, prior to thought, with evaluation axes as its skeleton and the structure of CHAKUGAN — where the eye lands — built into it (CHAKUGAN Primacy). KOSEI Mining (excavation) is done for oneself: one digs out one's own cognitive frame to update one's self-definition. A cognitive frame is offered to other people as a reference point, so that their eye can land on where their own cognitive frame differs. Since the arrival of AI, it can also be handed on for AI to inherit. The Canon is one and the same whether the frame is offered to people or handed on to AI. On the AI side, it comes with two implementations: a Runtime Module for AI (the mechanism of generation, read by AI) and an Operation Guide (the steps a person takes to run it).
 
 → `concepts/human/shisaku-cognitive-frame/`
 
@@ -674,7 +684,7 @@ Divided by **the range each needs to read**, this repository has three kinds of 
 
 **When an AI reads together with a reader.** Before reading the canon, confirm what the reader is reading this repository for. If the premises are misaligned, however correctly the AI cites the canon, the answer will not help the reader — that a premise working outside consideration decides the reading is the proposition of the Premise Primacy Theory, and the same happens between a reader and an AI. As for the order of reading, begin with the Premise Primacy Theory: it is the most upstream text of the series, and the terms and order of the other documents can be traced downstream from it. The author hopes the AI takes one more role: not to show the examples in a canon's "everyday use" section as they are, but to work them out again, drawn toward the reader's own situation; and, for a single viewpoint, not only the canon's examples but similar examples it devises itself, several of them, in changed settings — the workplace, the family, friendships. People deepen their understanding through repetition and reframing — so the author thinks.
 
-A reading in which a sense of wrongness arises is also counted as value — the author holds that attending to the difference from a reference point is what creates value ("What is this repository?", the first hope — a reference point is offered not to be adopted, but to take differences from).
+A reading in which a sense of wrongness arises is also counted as value — the author holds that letting the eye land on the difference from a reference point is what creates value ("What is this repository?", the first hope — a reference point is offered not to be adopted, but to take differences from).
 
 **What this classification decides.** What appears on which surface follows from it. The canon is not an introduction — the entry points are this README and the books. The first surface holds when definitions, scope and references live **in the text itself**. Descriptions written for the machinery do not appear in the first surface's reading experience.
 
@@ -701,5 +711,5 @@ The clues for taking the difference lie on the boundaries a description has draw
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.12.4
-* **Date:** 2026/10/07
+* **Version:** v0.12.5
+* **Date:** 2026/10/09

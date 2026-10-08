@@ -2,6 +2,6 @@
 id: concepts/shisaku-cognitive-frame
 ---
 # Shisaku Cognitive Frame Theory
-A cognitive frame is the structure of attention that precedes thought — it determines which points of an input receive attention (Frame Primacy, a corollary of Premise Primacy). This is the theory for casting and inheriting onto AI and other people the frames that KOSEI Mining (excavation) has dug out. It comprises a Canon (principles of attention), a Runtime Module for AI (the mechanism of generation), and an Operation Guide (human operation).
+A cognitive frame is a built structure, prior to thought, with evaluation axes as its skeleton and the structure of CHAKUGAN — where the eye lands — built into it (CHAKUGAN Primacy). KOSEI Mining (excavation) is done for oneself: one digs out one's own cognitive frame to update one's self-definition. A cognitive frame is offered to other people as a reference point, so that their eye can land on where their own cognitive frame differs. Since the arrival of AI, it can also be handed on for AI to inherit. The Canon is one and the same whether the frame is offered to people or handed on to AI. On the AI side, it comes with two implementations: a Runtime Module for AI (the mechanism of generation, read by AI) and an Operation Guide (the steps a person takes to run it).
 
 → `{{path:shisaku-cognitive-frame}}`
