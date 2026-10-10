@@ -2,8 +2,8 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.12.5  
-**Date:** 2026/10/09
+**Version:** v0.12.6  
+**Date:** 2026/10/11
 
 ---
 
@@ -240,12 +240,12 @@ shisaku-method は、変容のための入口であり、基準であり、学�
 詳細 → `concepts/human/shisaku-cognitive-frame/`
 
 ### シサク・ヒト変容理論と四成分
-前提優位理論をヒト種の「表現による変容」へ展開した系。**二相**——入口（表現者の IDION）と出口（受け手の変容＝四成分）——に同じ変容が立ち、帰趨（残存／変容の二値・成分ごと）を通し軸に、両端共通の過程（接触→気づき→再演段→照合段→承認段→書き換え段→定常化段→折り返し段）と深度語彙（変容深度・変容広さ・自己距離／共鳴深度・共鳴距離・共鳴強度・共鳴負荷）の区別を置き、四つの構造理論——**軌跡（何を体験させ何を変容させるか）／表現（どう実装するか）／距離（何が届き何が届かないか）／共鳴（実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・深度語彙・変容の過程の八段・距離軸の全域スキャン・共鳴の入口・共鳴事例の分解表・クオリア欲求の類型・媒体の四層マップ）を持つ。上流は二軸——**前提優位理論（力学の最上流）とシサク・世界解釈（目的・観方の最上流＝なぜ表現するか・人間はシステムという世界解釈）**。
+前提優位理論をヒト種の「表現による変容」へ展開した系。**二相**——入口（表現者の IDION）と出口（受け手の変容＝四成分）——に同じ変容が立ち、帰趨（残存／変容の二値・成分ごと）を通し軸に、両端共通の過程（接触→気づき→再演段→照合段→承認段→書き換え段→定常化段→折り返し段）と深度語彙（変容深度・身体浸透深度・変容広さ・自己距離／共鳴深度・共鳴距離・共鳴強度・共鳴負荷）の区別を置き、四つの構造理論——**軌跡（何を体験させ何を変容させるか）／表現（どう実装するか）／距離（何が届き何が届かないか）／共鳴（実際に何が鳴り何が残ったか）**——を統べる上位理論。各成分は、応用層の補足資料（変容の対象層・深度語彙・変容の過程の八段・距離軸の全域スキャン・共鳴の入口・共鳴事例の分解表・クオリア欲求の類型・媒体の四層マップ）を持つ。上流は二軸——**前提優位理論（力学の最上流）とシサク・世界解釈（目的・観方の最上流＝なぜ表現するか・人間はシステムという世界解釈）**。
 
 詳細 → `concepts/human/shisaku-human-transformation/`（変容・上位）／`-trajectory-structure/`（軌跡）／`-expression-structure/`（表現）／`-distance-structure/`（距離）／`-kyomei-structure/`（共鳴）
 
 ### シサク・ヒト IDION 構造理論
-シサク・ヒト変容理論の**入口側**——表現が湧き出す基体＝IDION——**接触によって変容するその人の予測モデルと、それを用いて認知し、判定する機構と、それらを動かす身体駆動**——の構造理論（シサク・ヒト変容理論の主体の位置に立つ）。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、予測モデルの書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、本人がどれだけ変容したかを変容量（縦＝変容深度・変容広さ——たどりの長さと本数——／横＝結合則）で読み、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを、自分の IDION から出たものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は、日本文化を背景とする、IDION に最も近い日本語。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）／レンズとの同型（見え方の変化の検査道具）／語の地図（個性・KOSEI・IDION）。
+シサク・ヒト変容理論の**入口側**——表現が湧き出す基体＝IDION——**接触によって変容するその人の予測モデルと、それを用いて認知し、判定する機構と、それらを動かす身体駆動**——の構造理論（シサク・ヒト変容理論の主体の位置に立つ）。四成分が出口側（受け手の変容）を担うのに対し、同じ「変容」の入口端に立つ。IDION を起源でなく、予測モデルの書き換えを成立させた経緯（変容コスト——闘いはその一形態・統合もある）と非移転で弁別し、本人がどれだけ変容したかを変容量（縦＝変容深度・身体浸透深度・変容広さ——たどりの長さと、身体の側の書き換えと、本数——／横＝結合則）で読み、判定を本人／受け手で非対称に分け、偽装を「自分の IDION に無いものを、自分の IDION から出たものとして表現すること」として道徳でなく力学で定義し、品格を誠実＋視線に較正する。KOSEI（個性）は、日本文化を背景とする、IDION に最も近い日本語。補足資料——具体事例集と分離検出／変容コストの形態の地図／層と軸の地図／システムとの同型（設計の検査道具）／レンズとの同型（見え方の変化の検査道具）／語の地図（個性・KOSEI・IDION）。
 
 詳細 → `concepts/human/shisaku-human-idion-structure/`
 
@@ -598,7 +598,7 @@ An extension of Premise Primacy to human transformation through expression. Two 
 → `concepts/human/shisaku-human-transformation/` (transformation, umbrella) / `-trajectory-structure/` / `-expression-structure/` / `-distance-structure/` / `-kyomei-structure/`
 
 ### Shisaku Human IDION-Structure Theory
-The *entry side* of the Shisaku Human Transformation Theory — the structure of the ground from which expression wells up, IDION — **the person's prediction models, which transform through contact, the mechanism that uses them to perceive and to judge, and the bodily drive that moves them** — (it stands at the subject's position in that theory). Where the four components carry the exit side (the receiver's transformation), IDION stands at the entry end of the same transformation. It distinguishes IDION not by origin but by the traceable history of a rewrite of prediction models (transformation cost — struggle is one form, integration another) and by non-transferability; reads how far the person has transformed as transformation quantity (vertical = transformation depth and breadth — the length of the traced path and the number of judgments moved — / horizontal = the combination rule); splits judgment asymmetrically between the person and the receiver; defines disguise as "expressing what is not in one's IDION as having come from one's IDION" by mechanics rather than morality; and calibrates dignity as honesty + gaze. KOSEI (個性) is the Japanese word closest to IDION, set against the background of Japanese culture. Supplements — worked cases and separation detection / a map of transformation-cost forms / a map of layers and axes / system isomorphism (a design check tool) / lens isomorphism (a check tool for changes in seeing) / a map of the words kosei, KOSEI and IDION.
+The *entry side* of the Shisaku Human Transformation Theory — the structure of the ground from which expression wells up, IDION — **the person's prediction models, which transform through contact, the mechanism that uses them to perceive and to judge, and the bodily drive that moves them** — (it stands at the subject's position in that theory). Where the four components carry the exit side (the receiver's transformation), IDION stands at the entry end of the same transformation. It distinguishes IDION not by origin but by the traceable history of a rewrite of prediction models (transformation cost — struggle is one form, integration another) and by non-transferability; reads how far the person has transformed as transformation quantity (vertical = transformation depth, body permeation depth and breadth — the length of the traced path, how far the prediction models on the body side are rewritten, and the number of judgments moved — / horizontal = the combination rule); splits judgment asymmetrically between the person and the receiver; defines disguise as "expressing what is not in one's IDION as having come from one's IDION" by mechanics rather than morality; and calibrates dignity as honesty + gaze. KOSEI (個性) is the Japanese word closest to IDION, set against the background of Japanese culture. Supplements — worked cases and separation detection / a map of transformation-cost forms / a map of layers and axes / system isomorphism (a design check tool) / lens isomorphism (a check tool for changes in seeing) / a map of the words kosei, KOSEI and IDION.
 
 → `concepts/human/shisaku-human-idion-structure/`
 
@@ -711,5 +711,5 @@ The clues for taking the difference lie on the boundaries a description has draw
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.12.5
-* **Date:** 2026/10/09
+* **Version:** v0.12.6
+* **Date:** 2026/10/11

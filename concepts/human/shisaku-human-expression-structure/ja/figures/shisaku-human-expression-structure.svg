@@ -41,7 +41,7 @@
 
   <!-- Title -->
   <text class="title" x="540" y="40" text-anchor="middle" style="font-size:25px">シサク・ヒト表現構造理論</text>
-  <text class="sub" x="540" y="63" text-anchor="middle" style="font-size:14px">Shisaku Human Expression-Structure Theory（v0.1.6）</text>
+  <text class="sub" x="540" y="63" text-anchor="middle" style="font-size:14px">Shisaku Human Expression-Structure Theory（v0.1.11）</text>
   <text class="sub" x="540" y="84" text-anchor="middle" style="font-size:12.5px">それをどう実装するか　／　上流から逆算され下流から折り返すカスケード　／　変容という目的関数（シサク・ヒト変容理論の表現成分）</text>
 
   <!-- Cascade (center-left) -->
@@ -99,7 +99,7 @@
   <rect class="c-prem" x="628" y="360" width="408" height="60" rx="8"/>
   <text class="ann" x="642" y="380" font-weight="700" style="fill:#3a6a3a">IDION 依存の非対称</text>
   <text class="ann" x="642" y="397" style="font-size:11.5px">上流（IDION）は AI 代替不可、下流（技術）は代替可。</text>
-  <text class="ann" x="642" y="412" style="font-size:11.5px;fill:#3a6a3a">依存は狙う変容深度に比例。IDION なき生成は平均へ漂流。</text>
+  <text class="ann" x="642" y="412" style="font-size:10.5px;fill:#3a6a3a">依存は狙う変容深度・身体浸透深度に比例。IDION なき生成は平均へ漂流。</text>
 
   <!-- Ethics band -->
   <rect class="c-eth" x="44" y="556" width="992" height="46" rx="8"/>
