@@ -2,7 +2,7 @@
 
 **Author:** shisaku  
 **Status:** 継続的インテグレーション中 / Continuously Integrating  
-**Version:** v0.12.6  
+**Version:** v0.12.7  
 **Date:** 2026/10/11
 
 ---
@@ -215,7 +215,7 @@ shisaku-method は、変容のための入口であり、基準であり、学�
 詳細 → `concepts/universal/premise-primacy/`
 
 ### シサク・予測モデル解釈（Shisaku Prediction-Model Interpretation）
-前提優位理論の下で、**期待を先に出す側**をどう読むかの解釈。予測モデルを**実体**として、前提を**それが検討されずに働いている状態**として分ける。言葉にしても実体は出ていかず、出ていくのは言葉にしたものだけである——そこで**次元が減る**（独立に変わりうるものの数が減る）。解釈であるため反証条件を持たず、学説へのブリッジを持つ。
+前提優位理論の下で、**期待を先に出す側**をどう読むかの解釈。予測モデルを**実体**として、前提を**それが検討されずに働いている状態**として分ける。言葉にしても実体は出ていかず、出ていくのは言葉にしたものだけである——そこで**次元が減る**（独立に変わりうるものの数が減る）。ヒトについては、言えること・分かったことの予測モデルを言葉の側、やれること・変わったことの予測モデルを身体の側と名指し、どちらも身体の内にあるとする。
 
 詳細 → `concepts/universal/shisaku-prediction-model-interpretation/`
 
@@ -568,7 +568,7 @@ The most upstream foundational theory on which the concepts in this repository s
 → `concepts/universal/premise-primacy/`
 
 ### Shisaku Prediction-Model Interpretation
-Under Premise Primacy, a reading of what stands on the expectation-first side. It separates the prediction model, an entity, from the premise, which is the state of that entity operating without being examined. Putting something into words does not move the entity out: what leaves is only what was put into words, and there the dimensions are fewer — fewer things that can vary independently. Being an interpretation, it carries no falsification clause, and carries a bridge to established theory in its place.
+Under Premise Primacy, a reading of what stands on the expectation-first side. It separates the prediction model, an entity, from the premise, which is the state of that entity operating without being examined. Putting something into words does not move the entity out: what leaves is only what was put into words, and there the dimensions are fewer — fewer things that can vary independently. For humans, it names the prediction models of what one can say and has understood the word side, and those of what one can do and has changed the body side, and holds that both are within the body.
 
 → `concepts/universal/shisaku-prediction-model-interpretation/`
 
@@ -711,5 +711,5 @@ The clues for taking the difference lie on the boundaries a description has draw
 
 **shisaku-method Repository**
 * **Author / Explorer:** shisaku
-* **Version:** v0.12.6
+* **Version:** v0.12.7
 * **Date:** 2026/10/11
