@@ -34,7 +34,7 @@
 
   <!-- Title -->
   <text class="title" x="540" y="40" text-anchor="middle" style="font-size:25px">シサク・ヒト共鳴構造理論</text>
-  <text class="sub" x="540" y="63" text-anchor="middle" style="font-size:14px">Shisaku Human Kyōmei-Structure Theory（v0.3.1）</text>
+  <text class="sub" x="540" y="63" text-anchor="middle" style="font-size:14px">Shisaku Human Kyōmei-Structure Theory（v0.3.5）</text>
   <text class="sub" x="540" y="84" text-anchor="middle" style="font-size:12.5px">実際に受け手側で何が起きたか　／　再演による同調と、帰趨（残存／変容）　／　（シサク・ヒト変容理論の共鳴成分）</text>
 
   <!-- 再演による同調 (top flow) -->
@@ -69,7 +69,7 @@
   <rect class="c-prem" x="700" y="148" width="336" height="120" rx="8"/>
   <text class="panelH" x="716" y="168">三つの軸（潰さず独立に）</text>
   <text class="ann" x="716" y="190" style="font-size:11.5px">・入口（同調の起動点）＝どの扉から鳴るか</text>
-  <text class="ann" x="716" y="210" style="font-size:11.5px">・深さ＝どこまで深く鳴ったか（共鳴深度≠変容深度）</text>
+  <text class="ann" x="716" y="210" style="font-size:9.5px">・深さ＝どこまで深く鳴ったか（共鳴深度≠変容深度≠身体浸透深度）</text>
   <text class="ann" x="716" y="230" style="font-size:11.5px">・広さ＝どれだけ多くに届いたか</text>
   <text class="ann" x="716" y="252" style="font-size:11px;fill:#256a6a">入口⊥深さ／広さは別軸（鼻歌＝深いが広さ0）</text>
 
