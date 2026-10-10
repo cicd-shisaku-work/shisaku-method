@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  シサク・ヒト変容理論 (Shisaku Human Transformation Theory) v0.3.5
+  シサク・ヒト変容理論 (Shisaku Human Transformation Theory) v0.4
   設計・監査用の図（人間向け）。学説は傍証である。
   統一様式 v1（四成分の固定色：軌跡=青／表現=緑／距離=紫／共鳴=teal／変容=橙／IDION=葡萄色／駆動=赤褐）。
   Copyright (c) 2026 shisaku. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
@@ -51,7 +51,7 @@
 
   <!-- Title -->
   <text class="title" x="540" y="38" font-size="25" text-anchor="middle">シサク・ヒト変容理論</text>
-  <text class="sub" x="540" y="60" font-size="14" text-anchor="middle">Shisaku Human Transformation Theory（v0.3.5）</text>
+  <text class="sub" x="540" y="60" font-size="14" text-anchor="middle">Shisaku Human Transformation Theory（v0.4）</text>
   <text class="sub" x="540" y="80" font-size="12.5" text-anchor="middle">二相＝入口（IDION）／出口（四成分）　／　同じ変容が両端に立つ　／　帰趨＝残存／変容の二値が通し軸　／　上流依存＝前提優位理論</text>
 
   <!-- naming rule (top-right) -->
@@ -120,7 +120,7 @@
     <rect class="c-stage" x="532" y="300" width="112" height="46" rx="6" stroke="#a3472a" stroke-width="1.8"/>
     <text class="stg" x="588" y="318" fill="#a3472a">4 承認段＝関門</text><text class="stgs" x="588" y="333" style="font-size:8px">検知→候補の予測モデル→承認</text>
     <rect class="c-stage" x="654" y="300" width="112" height="46" rx="6" stroke="#b07a3a"/>
-    <text class="stg" x="710" y="318">5 書き換え段</text><text class="stgs" x="710" y="333">変容深度・変容広さ</text>
+    <text class="stg" x="710" y="316">5 書き換え段</text><text class="stgs" x="710" y="329" style="font-size:8.5px">変容深度・身体浸透深度</text><text class="stgs" x="710" y="340" style="font-size:8.5px">変容広さ</text>
     <rect class="c-stage" x="776" y="300" width="112" height="46" rx="6" stroke="#b07a3a"/>
     <text class="stg" x="832" y="318">6 定常化段</text><text class="stgs" x="832" y="333">持続</text>
     <rect class="c-stage" x="898" y="300" width="114" height="46" rx="6"/>
@@ -135,7 +135,7 @@
   <text class="transh" x="62" y="406">帰趨 ＝ 残存 ／ 変容（二値・成分ごと・「消える」枡は無い）——変容が通し軸</text>
   <text class="transb" x="62" y="430">・変容＝判定の値が動いた、または括りが変わって意図的に戻せない差分。残存＝残るが判定は動いていない（格納・未説明・保留・在庫＝後の結合の材料）。</text>
   <text class="transb" x="62" y="452">・帰趨は接触の四成分（対象・状況・自己観測・提示物）ごと・対象層ごとに読む。不可逆は意図に対して（巻き戻しは新しい変容）。減衰は持続の軸。</text>
-  <text class="transb" x="62" y="474">・深度語彙：変容深度（最長のたどり）≠変容広さ（本数）≠自己距離（帰属）≠持続≠在庫／共鳴深度≠共鳴強度≠共鳴距離≠共鳴負荷／深度≠種類（対象層）。</text>
+  <text class="transb" x="62" y="474" style="font-size:11px">・深度語彙：変容深度（最長のたどり）≠身体浸透深度≠変容広さ（本数）≠自己距離（帰属）≠持続≠在庫／共鳴深度≠共鳴強度≠共鳴距離≠共鳴負荷／深度≠種類（対象層）。</text>
   <text class="transb" x="62" y="496" fill="#7a5a2a">・累積は加算でなく結合（規則の正本＝IDION「累積の結合則」）。目標変容 ≠ 実際の変容——その差が自己監査（しっくり感）の信号。</text>
 
   <!-- loops -->
